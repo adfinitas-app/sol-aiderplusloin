@@ -1,0 +1,147 @@
+<form data-abide method="get" id="getphone" action="{{ site.url }}/remerciement/{{ page.permalink }}.html" class="form custom">
+    <div class="email-field">
+        <label>Email <small>requis</small>
+        <input type="email" name="email" required pattern="email" >
+        </label>
+        <small class="error">Vous devez indiquer un email dans un format valide</small>
+    </div>
+    {% if page.form.civility.visibility == true %}
+    <div class="civility-field">
+        {% if page.form.civility.required == true %}
+        <label>Civilité <small>requis</small>
+        <select required class="medium" id="civility">
+            <option value="">Sélectionner une civilité</option>
+            <option value="1">Monsieur</option>
+            <option value="2">Madame</option>
+        </select>
+        </label>
+        <small class="error">Vous devez indiquer une civilité</small>
+        {% else %}
+        <label>Civilité
+        <select class="medium" id="civility">
+            <option value="">Sélectionner une civilité</option>
+            <option value="1">Monsieur</option>
+            <option value="2">Madame</option>
+        </select>
+        </label>
+        {% endif %}
+    </div>
+    {% else %}
+        <input type="hidden" name="civility">
+    {% endif %}
+    {% if page.form.firstname.visibility == true %}
+    <div class="firstname-field">
+        {% if page.form.firstname.required == true %}
+        <label>Votre prénom <small>requis</small>
+        <input type="text" name="firstname" required pattern="alpha_numeric">
+        </label>
+        <small class="error">Vous devez indiquer un prénom</small>
+        {% else %}
+        <label>Votre prénom
+        <input type="text" name="firstname" pattern="alpha_numeric">
+        </label>
+        <small class="error">Le format est invalide</small>
+        {% endif %}
+    </div>
+    {% else %}
+        <input type="hidden" name="firstname">
+    {% endif %}
+    {% if page.form.lastname.visibility == true %}
+        <div class="lastname-field">
+        {% if page.form.lastname.required == true %}
+        <label>Votre nom <small>requis</small>
+        <input type="text" name="lastname" required pattern="alpha_numeric">
+        </label>
+        <small class="error">Vous devez indiquer un nom</small>
+        {% else %}
+        <label>Votre nom
+        <input type="text" name="lastname" pattern="alpha_numeric">
+        </label>
+        <small class="error">Le format est invalide</small>
+        {% endif %}
+    </div>
+    {% else %}
+        <input type="hidden" name="lastname">
+    {% endif %}
+    {% if page.form.address1.visibility == true %}
+    <div class="address1-field">
+        {% if page.form.address1.required == true %}
+        <label>Votre adresse <small>requis</small>
+        <input type="text" name="address1" required placeholder="17 rue exemple">
+        </label>
+        <small class="error">Vous devez indiquer une adresse</small>
+        {% else %}
+        <label>Votre adresse
+        <input type="text" name="address1" placeholder="17 rue exemple" pattern="alpha_numeric">
+        </label>
+        <small class="error">Le format est invalide</small>
+        {% endif %}
+    </div>
+    {% else %}
+        <input type="hidden" name="address1">
+    {% endif %}
+    {% if page.form.address2.visibility == true %}
+    <div class="address2-field">
+        <label>Complément d'adresse
+        <input type="text" name="address2" placeholder="Bâtiment exemple">
+        </label>
+        <small class="error">Le format est invalide</small>
+    </div>
+    {% else %}
+        <input type="hidden" name="address2">
+    {% endif %}
+    {% if page.form.postcode.visibility == true %}
+    <div class="zipcode-field">
+        {% if page.form.postcode.required == true %}
+        <label>Code postal <small>requis</small>
+        <input type="text" name="postcode" required placeholder="75001" pattern="number">
+        </label>
+        <small class="error">Vous devez indiquer un code postal</small>
+        {% else %}
+        <label>Code postal
+        <input type="text" name="postcode" placeholder="75001" pattern="number">
+        </label>
+        <small class="error">Le format est invalide</small>
+        {% endif %}
+    </div>
+    {% else %}
+        <input type="hidden" name="postcode">
+    {% endif %}
+    {% if page.form.city.required == true %}
+    <div class="city-field">
+        {% if page.city_required == true %}
+        <label>Ville <small>requis</small>
+        <input type="text" name="city" required placeholder="Paris" pattern="alpha_numeric">
+        </label>
+        <small class="error">Vous devez indiquer une ville</small>
+        {% else %}
+        <label>Ville 
+        <input type="text" name="city" placeholder="Paris" pattern="alpha_numeric">
+        </label>
+        <small class="error">Le format est invalide</small>
+        {% endif %}
+    </div>
+    {% else %}
+        <input type="hidden" name="city">
+    {% endif %}
+    {% if page.form.phone.visibility == true %}
+        {% if page.form.phone.required == true %}
+            <div class="phone-field">
+                <label>Téléphone <small>requis</small>
+                <input type="tel" name="phone" pattern="number" required>
+                </label>
+                <small class="error">Vous devez indiquer un numéro de téléphone au bon format</small>
+            </div>
+        {% else %}
+            <div class="phone-field">
+                <label>Téléphone
+                <input type="tel" name="phone" pattern="number" placeholder="0612134565">
+                </label>
+                <small class="error">Vous devez indiquer un numéro de téléphone au bon format</small>
+            </div>
+        {% endif %}
+    {% else %}
+        <input type="hidden" name="phone">
+    {% endif %}
+    <button type="submit" class="radius medium">Valider</button>
+</form>

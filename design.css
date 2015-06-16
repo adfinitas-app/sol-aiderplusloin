@@ -1,0 +1,499 @@
+sup
+{
+	font-size: 47px;
+	font-weight: normal;
+}
+p
+{
+	font-family: helvetica;
+}
+body
+{
+	background-color: black;
+}
+.top
+{
+	height: 192px;
+	background-color: #ffffff;
+}
+.container
+{
+	width: 1200px;
+	padding-left: 30px;
+}
+.toptop
+{
+	padding-left: 30px;
+}
+/*.span3
+{
+	border: 1px solid black;
+}*/
+.image_description_fille
+{
+	margin-left: 80px;
+	margin-top: 35px;
+	float: left;
+}
+.row
+{
+	width: 1200px;
+	background-color: #ffffff;
+}
+.temoignage
+{
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/fond_temoiniage.jpg');
+	background-size: 100% 730px;
+	height: 723px;
+	display: none;
+}
+.bouleverse
+{
+	color: #B82C00;
+	font-weight: bold;
+	font-size: 18px;
+}
+.span12
+{
+	margin-left: 120px;
+}
+.logo_top
+{
+	margin-top: 30px;
+	vertical-align: middle;
+}
+.marge_left_n_top
+{
+    margin-left: 130px;
+	margin-top: 50px;
+}
+.marge_left_n_top2
+{
+    margin-left: 310px;
+	margin-top: 80px;
+}
+.chaines
+{
+	display: inline;
+}
+.titre_description
+{
+	margin-left: 220px;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	color: #A52600;
+}
+.sous_titre_description
+{
+	font-weight: lighter;
+	font-size: 20px;
+	color: #ffffff;
+}
+.sous_titre_description2
+{
+	font-weight: lighter;
+	font-size: 17px;
+	color: #000000;
+}
+.deduction
+{
+	margin-top: 25px;
+	margin-left: 5px;
+	text-align: center;
+}
+.text-picto1
+{
+	font-weight: bold;
+	margin-left: 35px;
+	font-size: 80px;
+	color: #B32C00;
+	text-align: center;
+    margin-top: 10px;
+}
+.text-picto2
+{
+	font-weight: bold;
+	margin-left: 0px;
+	font-size: 80px;
+	color: #B32C00;
+	text-align: center;
+    margin-top: 10px;
+}
+.text-picto3
+{
+	font-weight: bold;
+	margin-left: 30px;
+	font-size: 80px;
+	color: #B32C00;
+	text-align: center;
+    margin-top: 10px;
+}
+.dates
+{
+	font-size: 16px;
+	color: #7E1F00;
+}
+.equivalence
+{
+	width: 330px;
+	text-align: center;
+	margin-left: -40px;
+	margin-top: 25px;
+	color: #666666;
+}
+.footer_top
+{
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/fond_footer_mid.jpg');
+	height: 158px;
+}
+.center
+{
+	text-align: center;
+	padding-top: 35px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.cercle1
+{
+	margin-left: 32px;
+	margin-top: 41px;
+}
+.sous_maillon
+{
+	font-size: 26px;
+}
+.text_chaine
+{
+	text-align: center;
+	margin-left: 200px;
+}
+.text_chaine2
+{
+	text-align: center;
+	margin-left: 70px;
+}
+.rejoignez
+{
+	margin-top: 35px;
+	margin-left: 10px;
+	text-align: center;
+}
+.picto1
+{
+	margin-top: 33px;
+	padding-bottom: 35px;
+	margin-left: 50px;
+}
+.picto2
+{
+	padding-bottom: 35px;
+	margin-top: 33px;
+	margin-left: 27px;
+}
+.sandra_description
+{
+	text-align: justify;
+	line-height: 24px;
+	color: #444444;
+	font-size: 18px;
+}
+.picto3
+{
+	padding-bottom: 35px;
+	margin-top: 33px;
+	margin-left: 75px;
+}
+.text_chaine3
+{
+	text-align: center;
+	margin-left: 55px;
+}
+.bot_top
+{
+	height: 785px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/fond_bot_top.jpg');	
+}
+.bot_mid
+{
+	height: 151px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/bottom_middle_fond.jpg');
+}
+.bot1
+{
+	height: 107px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/fond_bot1.jpg');
+}
+.bot2
+{
+	height: 83px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/fond_bot2.jpg');
+}
+.bot3
+{
+	height: 40px;
+	background-color: #777777;
+}
+.txt_bot3
+{
+	font-size: 22px;
+	color: white;
+	margin-top: -10px;
+}
+.span13
+{
+	width:95%;
+}
+.txt_bot1
+{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+}
+.txt_bot2_1
+{
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 28px;
+}
+.txt_bot2_2
+{
+	color: #777777;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 13px;
+}
+.transparence
+{
+	margin-top: 30px;
+	margin-left: -30px;
+	font-size: 26px;
+	color: black;
+}
+.petit_transparence
+{
+	font-size: 22px;
+	color: #BABABA;
+	line-height: 25px;
+	font-weight: lighter;
+}
+.text_footer_top
+{
+	text-align: center;
+	padding-left: 40px;
+	margin-top: 20px;
+	font-size: 20px;
+	padding-right: 30px;
+}
+.sous_sous_maillon
+{
+	font-family: Georgia;
+	line-height: 25px;
+	font-size: 18px;
+}
+.cercle2
+{
+	margin-left: 4px;
+	margin-top: 41px;
+}
+.cercle3
+{
+	margin-left: 11px;
+	margin-top: 41px;
+}
+.lire
+{
+	margin-top: 10px;
+}
+.solidarite
+{
+	font-size: 22px;
+	text-align: center;
+	line-height: 30px;
+}
+.description
+{
+	margin-top: 20px;
+}
+.temoignage2
+{
+    background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/fond_dona_marie.jpg');
+	background-size: 100% 730px;
+	height: 723px;
+	display: none;
+}
+.monde
+{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 36px;
+	margin-left: 20px;
+}
+.video
+{
+	height: 545px;
+    background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/fond_video.jpg');
+}
+.video_position
+{
+	margin-left: 100px;
+	margin-top: 45px;
+}
+.autre
+{
+	text-align: center;
+	color: #B21A15;
+	text-decoration: underline;
+	font-size: 22px;
+}
+.autre:hover
+{
+	text-align: center;
+	color: #B21A15;
+	text-decoration: none;
+	font-size: 22px;
+}
+.title_middle
+{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 39px;
+	line-height: 44px;
+	font-weight: bold;
+}
+.sub_title_middle
+{
+	text-align: center;
+	font-size: 24px;
+}
+.top_bt
+{
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/font_top_bt.jpg');
+	background-repeat: no-repeat;
+	height: 596px;
+}
+.fond_middle
+{
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/middle_fond.jpg');
+	background-repeat: no-repeat;
+	height: 650px;
+}
+
+.don_pop
+{
+    margin-left: 30px;
+}
+/* Barre de don(collée) */
+
+.barre_don
+{
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/fond_barre_don.jpg');
+	background-repeat: repeat-x;
+	opacity: 20%;
+	height: 71px;
+	display: none;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+}
+.logo_barre
+{
+	margin-left: 200px;
+    margin-top: 10px;
+}
+.dons_pourcent
+{
+    margin-top: 20px;
+    width: 260px;
+    display: inline;
+}
+.actuel
+{
+    text-align: left;
+    display: inline;
+}
+.objectif
+{
+    text-align: right;
+    float: right;
+    display: inline;
+}
+.container_barre
+{
+    width: 100%;
+    text-align: center;
+}
+.slogant_barre
+{
+    margin-top: 10px;
+	margin-left: 20px;
+}
+/** Design scroll navigator on the left : **/
+
+.standardNav{
+		position: fixed !important;
+		overflow: visible;
+		top: 70%;
+		left: 50%;
+		padding: 5px;
+		margin: -250px 0 0 -630px;
+		width: 70px;
+		z-index: 9999;
+	}
+
+	.standardNav ul{
+		display: block;
+		margin-left: 20px;
+		padding: 0px;
+		list-style: none;
+		-webkit-border-radius: 0px 0px 15px;
+		-moz-border-radius:  0px 0px 15px;
+		border-radius: 0px 15px 15px 0px;
+		background: #BEB9B5;
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+	}
+
+	.standardNav.left{
+		margin-left: -645px;
+	}
+	
+	.standardNav li{
+		display: block;
+	}
+	
+	.standardNav li a{
+		display: block;	
+		font-weight: normal;
+		padding: 8px 10px;
+		background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/cercle_off.jpg');
+		text-decoration: none;
+		background-repeat: no-repeat;
+		color: #ffffff;
+		background-position: 14px 7px;
+		height: 20px;
+		font-size: 12px;
+	}	
+	
+	.standardNav li a:hover{
+		color: #333;
+	}
+	
+	.standardNav li.active a{
+		font-weight: bold;
+		background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-landing_page/images/cercle_on.jpg');
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: 14px 7px;
+		color: #ffffff;
+	}
+
+/* Style of fancybox videoclip */
+.clip {
+	background-color: #000;
+	display: none;
+}

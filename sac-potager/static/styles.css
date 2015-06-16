@@ -1,0 +1,659 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0;
+}
+ul, ol {
+	list-style-type: none;
+}
+table {
+	border:0;
+	border-spacing:0;
+	empty-cells:show;
+}
+th, td {
+	text-align:left;
+	font-weight:normal;
+}
+body {
+	text-align: left; 
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+}
+.conteneur {
+	width: 940px; 
+	margin: 0 auto;
+	text-align: left;
+	overflow: hidden;
+	position: relative;
+}
+.bt-arrondi {
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+	text-indent: 35px;
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+	position: relative;
+}
+.bt-arrondi span {
+	display: block;
+	width: 100%;
+}
+.bt-arrondi.blanc {
+	color: #3e3e3e;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+}
+.bt-arrondi.blanc span {
+	background: url(img/fleche-grise.png) no-repeat 14px center;
+}
+.bt-arrondi.vert {
+	color: #fff;
+	background: url(img/fond-bt-vert.png) repeat-x 0 0;
+}
+.bt-arrondi.vert span {
+	background: url(img/fleche-blanche.png) no-repeat 14px center;
+}
+.bt-arrondi.rouge {
+	color: #fff;
+	font-size: 17px;
+	text-indent: 33px;
+	background: url(img/fond-bt-rouge.png) repeat-x 0 0;
+}
+.bt-arrondi.rouge span {
+	background: url(img/fleche-blanche2.png) no-repeat 15px center;
+}
+/* --_-_-_-- header -_-_---_-*/
+header {
+	width: 100%;
+	display: block;
+	height: 450px;
+	background: url(img/fond-header.gif) repeat-x top left;
+}
+header .conteneur {
+	background: url(http://www.solidarites.org/media/sac-potager/img/visu-fond-header-optimized2.png) no-repeat 28px 16px;
+	height: 466px;
+}
+h1 {
+	margin: 18px 0 0 66px;
+	float: left;
+}
+blockquote {
+	border: 0;
+	margin: 107px 110px 0 0;
+	float: right;
+	padding: 0;
+	color: #4e4e4e;
+	font-size: 20px;
+	position: relative;
+	font-family: 'Calibri';
+	line-height: 24px;
+}
+blockquote span {
+	color: #009318;
+	font-size: 34px;
+	display: block;
+	line-height: 32px;
+}
+blockquote:before,
+blockquote:after {
+    position: absolute;
+	width: 17px;
+	height: 18px;
+}
+blockquote:before {
+    left: -23px;
+    top: -2px;
+	background: url(img/guillemets-ouverts.png) no-repeat 0 0;
+}
+blockquote:after {
+    bottom: -5px;
+    left: auto;
+    right: -14px;
+    top: auto;
+	background: url(img/guillemets-fermes.png) no-repeat 0 0;
+}
+.signature {
+	margin: 13px 0 85px 460px;
+	float: left;
+	color: #6c6c6c;
+	background: url(img/photo-boinet.png) no-repeat 0 0;
+	padding: 23px 0 0 96px;
+	height: 68px;
+}
+header .signature span {
+	color: #000;
+}
+header .bt-arrondi.blanc {
+	clear: both;
+	float: left;
+	width: 216px;
+	margin: 0 15px 0 200px;
+}
+header .bt-arrondi.vert {
+	float: left;
+	width: 272px;
+	margin-left: 15px;
+}
+/* --_-_-_-- bandeau dons -_-_---_-*/
+.bandeau-dons {
+	background: #8A6A51;
+}
+.bandeau-dons.fixed {
+	background:#8A6A51;
+	width: 100%;
+	z-index: 99;
+}
+.bandeau-mobilisation {
+	background: url(img/fond-baseline-2.png) no-repeat center -5px;
+}
+.bandeau-dons .conteneur {
+	height: 64px;
+}
+/*
+.fixed .conteneur {
+	height: 48px;
+	padding-top: 10px;
+}
+*/
+.baseline {
+	margin: 25px 0 20px 20px;
+	text-transform: uppercase;
+	font-family: 'Calibri';
+}
+/*
+.fixed .baseline{
+	display: none;
+}
+*/
+.baseline .important {
+	font-size: 42px;
+	color: #b01f16;
+	line-height: 24px;
+	font-weight: bolder;
+}
+.compteur {
+	background: url(img/fond-compteur.gif) repeat top left;
+	width: 312px;
+	border: 1px solid #392a1f;
+	margin: 5px 0 0 20px;
+	float: left;
+}
+.compteur span {
+	display: block;
+	background: #fff;
+	color: #69513e;
+	line-height: 20px;
+	text-indent: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+.obj  {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0 0 20px;
+	float: left;
+	line-height: 22px;
+	font-family: 'Calibri';
+}
+.obj  strong {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.bandeau-dons .bt-arrondi.rouge,
+.fixed .bt-arrondi.rouge {
+	float: right;
+	top: 5px;
+	width: 225px;
+	margin-right: 8px;
+	-moz-box-shadow: 0 0 4px #050506;
+	-webkit-box-shadow: 0 0 4px #050506;
+	box-shadow: 0 0 4px #050506;
+}
+/* --_-_-_-- bandeau but -_-_---_-*/
+.bandeau-but {
+	background: #d3bfaf;
+	padding: 24px 0 20px 0;
+}
+.bandeau-but p {
+	float: left;
+	width: 443px;
+	margin: 0 0 0 20px;
+	font-size: 15px;
+	color: #554132;
+}
+/* --_-_-_-- bandeau exemple -_-_---_-*/
+.bandeau-exemple {
+	height: 717px;
+	background: url(http://www.solidarites.org/media/sac-potager/img/fond-txt-optimized2.jpg) no-repeat center top;
+	background-size: cover;
+}
+.bandeau-exemple .encart {
+	margin: 114px 0 0 52px;
+	background: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 417px;
+	padding: 22px 25px 25px 25px;
+	position: relative;
+}
+.bandeau-exemple .encart h3 {
+	color: #554132;
+	font-size: 36px;
+	padding: 0 0 14px 0;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0;
+	font-family: 'Calibri';
+	line-height: 31px;
+}
+.bandeau-exemple .encart p {
+	color: #333232;
+	font-size: 15px;
+	margin: 0 0 25px 0;
+}
+.bandeau-exemple .bt-arrondi.vert {
+	width: 268px;
+	margin: 0 auto;
+	font-size: 17px;
+}
+/* --_-_-_-- bandeau explications -_-_---_-*/
+.bandeau-explications {
+	background: #f5e5d8;
+}
+.bandeau-explications h3 {
+	color: #554132;
+	font-size: 35px;
+	text-align: center;
+	padding: 40px 0 10px 0;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0;
+	font-family: 'Calibri';
+	line-height: 31px;
+}
+.bandeau-explications h3 span {
+	color: #009318;
+	display: block;
+}
+.txt-details {
+	color: #554132;
+	font-size: 15px;
+	text-align: center;	
+	margin: 0 0 20px 0;
+}
+.lien-temoignage {
+	display: block;
+	position: absolute;
+	top: 162px;
+	right: 15px;
+}
+.lien-temoignage img{
+	display: block;
+	margin-bottom: 7px;
+}
+.lien-temoignage span {
+	display: block;
+	background: url(img/fleche-marron.png) no-repeat left 3px;
+	padding-left: 16px;
+	color: #554132;
+	line-height: 14px;
+	font-size: 13px;
+}
+.liste-exemples {
+	margin: 0 0 0 52px;
+}
+.liste-exemples li {
+	float: left;
+	color: #554132;
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 23px;
+	line-height: normal;
+}
+.liste-exemples li.cultiver {
+	width: 256px;
+	margin-right: 45px;
+}
+.liste-exemples li.jardiner {
+	width: 240px;
+}
+.liste-exemples li.nourrir {
+	width: 277px;
+	float: right;
+	margin-right: 38px;
+}
+.liste-exemples li .visu {
+	height: 303px;
+}
+.liste-exemples li.cultiver .visu {
+	padding-top: 132px;
+	height: 171px;
+}
+.liste-exemples li.jardiner .visu  {
+	margin-left: -109px;
+}
+.liste-exemples li.nourrir .visu  {
+	margin-left: -30px;
+	padding-top: 21px;
+	height: 282px;
+}
+.liste-exemples li h4 {
+	font-size: 22px;
+	font-weight: normal;
+	font-family: 'Calibri';
+	line-height: 18px;
+}
+.liste-exemples li p {
+	margin: 0 0 10px 0;
+	line-height: 14px;
+}
+.liste-exemples li .lien-sav-plus {
+	display: block;
+	color: #9e8571;
+	line-height: 14px;
+	outline: none;
+}
+.liste-exemples li .lien-sav-plus .depliant {
+	display: block;
+	margin: 8px auto 0 auto;
+	color: #fff;
+	width: 22px;
+	height: 15px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 15px;
+	font-size: 14px;
+	background: #554132;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	    cursor: pointer;
+}
+.encart-details {
+	clear: both;
+	background: #faf2ec;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 802px;
+	margin: 0 auto 77px auto;
+	position: relative;
+	display: none;
+}
+.encart-details .titre {
+	color: #554132;
+    font-size: 30px;
+	padding: 20px 0 15px;
+    text-align: center;
+	border-bottom: 1px solid #e9e0d9;
+	margin-bottom: 33px;
+	font-family: 'Calibri';
+}
+/*
+.encart-details .chapeau {
+	display:inline-block;
+	color: #554132;
+    font-size: 15px;
+	width:300px;
+}
+*/
+.encart-details .chapeau {
+	display:inline-block;
+	color: #554132;
+    font-size: 15px;
+	margin:0 2em 2em;
+}
+
+.encart-details .image-1 {
+margin:0 24px 24px 24px;
+vertical-align: top;
+}
+.encart-details .element {
+	width:258px;
+	color:#76604F;
+	float:left;
+}
+.encart-details .element ul {
+	list-style-type: disc;
+	margin-left: 4em;
+	color:#76604F;
+}
+
+.encart-details .methode {
+	margin: 0;
+}
+.encart-details h5.fleche-basse, .encart-details h6.fleche-basse {
+	background: url(img/fleche-bas.png) no-repeat bottom center;
+	font-size:13px;
+	text-transform:uppercase;
+	text-align: center;
+	margin: 0 3em 1em 5em;
+	height: 57px;
+}
+.encart-details .element-footer {
+	text-align: center;
+	margin: 0 0 2em 3em;
+	color:#554132;
+}
+.encart-details .methode li {
+	float: left;
+	margin: 0 0 30px 20px;
+	position: relative;
+	width: 240px;
+	line-height: normal;
+}
+.encart-details .methode li .num {
+	position: absolute;
+	color: #fffefe;
+	/*font-size: 15px;*/
+	font-size: 19px;
+	text-align: center;
+	background: #009318;
+	line-height: 30px;
+	height: 30px;
+	width: 30px;
+	top: -15px;
+	left: 100px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	font-family: 'Calibri';
+}
+.encart-details .methode li img {
+	display: block;
+	margin-bottom: 8px;
+}
+.encart-details .methode li .txt {
+	text-align: center;
+	color: #836955;
+	font-size: 13px;
+	padding: 0 4px;
+	height: 65px;
+	margin: 0;
+	line-height: normal;
+}
+/* --_-_-_-- bandeau videos -_-_---_-*/
+.bandeau-videos {
+	background: #8a6a51 url(img/fond-video.jpg) no-repeat top center;
+	min-height: 592px;
+}
+.bandeau-videos .titre {
+	color: #fff;
+	text-align: center;
+	font-size: 35px;
+	margin: 75px 0 15px 0;
+	font-family: 'Calibri';
+}
+.bandeau-videos .video {
+	width: 560px;
+	margin: 0 auto 6px auto;
+	-moz-box-shadow: 0 0 4px #050506;
+	-webkit-box-shadow: 0 0 4px #050506;
+	box-shadow: 0 0 4px #050506;
+}
+.bandeau-videos .liste-videos {
+	width: 560px;
+	margin: 3em auto 95px auto;
+	overflow: hidden;
+}
+.bandeau-videos .liste-videos li {
+	width: 134px;
+	margin: 0 28px 0 0;
+	line-height: normal;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+.bandeau-videos .liste-videos li +li + li {
+	margin-right: 0;
+}
+.bandeau-videos .liste-videos li img {
+	display: block;
+	margin-bottom: 7px;
+	-moz-box-shadow: 0 0 4px #050506;
+	-webkit-box-shadow: 0 0 4px #050506;
+	box-shadow: 0 0 4px #050506;
+}
+.bandeau-videos .liste-videos li .overlay {
+	height: 89px;
+	display: block;
+	width: 100%;
+	background: #6d6d6d;
+	opacity: 0.4;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.bandeau-videos .liste-videos li a {
+	color: #d5d5d5;
+}
+.bandeau-videos .liste-videos li.actif a {
+	color: #fff;
+}
+/* --_-_-_-- footer -_-_---_-*/
+footer {
+	width: 100%;
+	clear: both;
+	display: block;
+	background: #000;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+footer a {
+	color: #d1d1d1;
+	margin-right: 12px;
+	padding-left: 8px;
+	background: url(img/fleche-rouge.png) no-repeat center left;
+}
+footer a:hover {
+	color: #d1d1d1;
+}
+.bt-arrondi:hover,
+.lien-temoignage:hover,
+.bandeau-videos .liste-videos li a:hover,
+.liste-exemples li .lien-sav-plus:hover {
+	text-decoration: none;
+}
+
+
+/*-_-_-_-_-_-_- polices -_-_-_-_-_-_- */
+@font-face {
+	font-family: 'Calibri';
+	src: url('fonts/calibri.eot');
+	src: url('fonts/calibri.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/calibri.woff') format('woff'),
+			 url('fonts/calibri.ttf') format('truetype'),
+			 url('fonts/calibri.svg#calibri') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+		font-family: 'Calibri-Bold';
+		src: url('fonts/ccalibrib.eot');
+		src: url('fonts/ccalibrib.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/ccalibrib.woff') format('woff'),
+				 url('fonts/ccalibrib.ttf') format('truetype'),
+				 url('fonts/ccalibrib.svg#calibrib') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+/*-_-_-_-_-_-_- classes generales -_-_-_-_-_-_- */
+.fleft {
+	float: left !important;
+}
+.fright {
+	float: left !important;
+}
+.clear { 
+	clear: both !important;
+}
+.clear-100prc { 
+	clear: both !important; 
+	float: left !important;
+	width: 100% !important;
+}
+.no-display {
+	display:none !important;
+}
+.no-margin {
+	margin:0 !important;
+}
+.no-padding {
+	padding:0 !important;
+}
+.no-bg {
+	background:none !important;
+}
+.hidden {
+	display:block !important;
+	border:0 !important;
+	margin:0 !important;
+	padding:0 !important;
+	font-size:0 !important;
+	line-height:0 !important;
+	width:0 !important;
+	height:0 !important;
+	overflow:hidden !important;
+}
+
+
+/*-_-_-_-_-_-_- styles ie -_-_-_-_-_-_- */
+/*-__-_-_- styles ie8 --_-_-_- */
+.ie8 .bt-arrondi,
+.ie8 .bandeau-exemple .encart,
+.ie8 .liste-exemples li .lien-sav-plus .depliant,
+.ie8 .encart-details,
+.ie8 .encart-details .methode li .num,
+.ie7 .bt-arrondi,
+.ie7 .bandeau-exemple .encart,
+.ie7 .liste-exemples li .lien-sav-plus .depliant,
+.ie7 .encart-details,
+.ie7 .encart-details .methode li .num { behavior: url(css/pie.htc)}
+
+/*-__-_-_- styles ie7 --_-_-_- */
+.ie7 header {}
+
+/*-__-_-_- styles ie6 --_-_-_- */
+.ie6 header {}
+.ie6 img,
+.ie6 div,
+.ie6 a,
+.ie6 input,
+.ie6 p,
+.ie6 ul,
+.ie6 li { behavior: url(css/iepngfix.htc) }
+

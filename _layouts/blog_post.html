@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    {% include analytics/woopra.html %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{{site.url}}/css/foundation.css" />
+    <link rel="stylesheet" href="{{site.url}}/css/app.css" />
+    <script src="{{site.url}}/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    {% include stickybar.html %}
+    <div class="row">
+        <div class="large-9 large-centered columns" role="content">
+          <article>
+            <header class="header-post">
+             <h1 class="text-center">{{ page.title }}</h1> 
+             <div class="row">
+                <div class="large-12 columns text-center">
+                    <p>
+                        <a href="{{site.url}}" class="previous">&larr; Blog accueil</a>
+                        {% if page.author %}
+                        <span> | </span>
+                        <span>{{ page.author }}</span>
+                        {% endif %}
+                        <span> | </span>
+                        <span>{{ page.date | date_to_string }}</span>
+                    </p>
+                    <hr/>
+                </div>
+             </div>
+             </header>
+            {{ content }}
+          </article>
+        </div>
+    </div>
+    <div class="row full-with">
+        <div class="large-6 columns">
+         {% if page.previous %}
+            <ul class="inline-list">
+                <li>&larr;</li>
+                <li><img src="{{ page.previous.thumbnail }}" width="50"/></li>
+                <li><a href="{{site.url}}{{ page.previous.url }}"> {{ page.previous.title }} </a></li>
+            </ul>
+         {% endif %}
+        </div>
+        <div class="large-6 columns">
+         {% if page.next %}
+            <ul class="inline-list">
+                <li><a href="{{site.url}}{{ page.next.url }}">{{ page.next.title }}</a></li>
+                <li><img src="{{ page.next.thumbnail }}" width="50"/></li>
+                <li>&rarr;</a></li>
+            </ul>
+         {% endif %}
+        </div>
+    </div>
+    {% include footer.html %}
+	{% include analytics/analytics.html %}
+    <script src="{{site.url}}/js/vendor/jquery.js"></script>
+    <script src="{{site.url}}/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+     
+       
+     
+     
+       
+     
+    
+

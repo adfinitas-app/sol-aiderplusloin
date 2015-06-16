@@ -1,0 +1,71 @@
+/* Standard Colors */
+a, a:hover, a:focus, a:visited, a:link {color: #00adee;}
+
+.btn-lg {border: 2px solid white;} .btn-lg:hover {background-color: #ff4848; border: 2px solid #fff;}
+.btn-default {background-color: transparent; color: #fff;} .btn-default:hover {background-color: #ff4848; border: 2px solid white; color: #fff;}
+.btn a, btn a:hover, btn a:focus, btn a:link {color: inherit;}
+
+*::selection {
+	background: rgba(255,72,72,0.3);
+}
+*::-moz-selection {
+	background: rgba(255,72,72,0.3);
+}
+
+/*Bootstra Overwrite*/
+.text-success {
+	color: #82c600;	
+}
+.text-warning {
+	color: #ffba00;	
+}
+.text-danger {
+	color: #ff3c00;	
+}
+
+/* HTML Structure Style */
+.colored {
+	color: #ff4848;	
+}
+.acolored {
+	color: #fff;	
+}
+.bordered {
+	border-color: #ff4848;	
+}
+.icon-one {
+	color: #ff4848;
+	background: #fff;
+	border-color: #ff4848;
+	box-shadow: 0px 0px 0px 3px #fff;
+}
+.icon-one:hover {
+	color: #fff;
+	background: #ff4848;
+}
+.icon-two {
+	color: #ff4848;
+	background: #444;
+	border-color: #ff4848;
+	box-shadow: 0px 0px 0px 3px #444;
+}
+.icon-two:hover {
+	color: #222;
+	background: #ff4848;
+}
+.footer-icon, .footer-icon a, .footer-icon a:focus, .footer-icon a:visited, .footer-icon a:link  {
+	color: #fff!important;
+	padding: 10px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.footer-icon:hover, .footer-icon a:hover {
+	color: #ff4848!important;
+}
+
+/* Menu Style Classes */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+background-color: #ff4848;}
+.dropdown-menu>li>a {color: #fff;}
+.dropdown-menu {background-color: #ff4848; border: 1px solid #ff4848;}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {color: #ff4848;}

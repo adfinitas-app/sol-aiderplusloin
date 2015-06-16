@@ -1,0 +1,154 @@
+---
+layout: test
+title: TEST CARE
+---
+<div class="row">
+    <div class="large-12 columns">
+    <h1>Testeur email transactionnel</h1>
+    </div>
+</div>
+<form action="/index.html" method="get" data-abide>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+            <label>Email <small>requis</small>
+                <input type="text" name="email" placeholder="amasselin@adfinitas.fr" required/>
+            </label>
+            <small class="error">L'email est requis</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+         <label>Civilité
+            <select name="civility">
+            <option value="">Pas de civilité</option>
+            <option value="1">Madame</option>
+            <option value="2">Monsieur</option>
+            <option value="3">Mademoiselle</option>
+            </select>
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Prénom
+            <input type="text" name="firstname" placeholder="Arnaud" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Nom
+            <input type="text" name="name" placeholder="Masselin" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Téléphone
+            <input type="text" name="phone" placeholder="01.67.34.67.89" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Adresse Ligne 1 
+            <input type="text" name="address1" placeholder="Business Park" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Adresse Ligne 2 
+            <input type="text" name="address2" placeholder="36 rue Firondelle" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Code postal
+            <input type="text" name="postcode" placeholder="59700" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Ville
+            <input type="text" name="city" placeholder="Marcq en Baroeul" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+         <label>Pays
+        <select name="country">
+        <option value="">Pas de pays</option>
+          <option value="FR">France</option>
+          <option value="GY">Allemagne</option>
+        </select>
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+        <label>Type de réaction
+        <select name="type_reponse">
+          <option value="PROMESSE">Promesse</option>
+          <option value="INDECIS">Indécis</option>
+          <option value="REFUS">Refus</option>
+          <option value="INJOIGNABLE">Injoignable</option>
+        </select>
+         </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+         <label>Fréquence
+        <select name="frequency">
+            <option value="">Pas de fréquence</option>
+          <option value="once">Ponctuel</option>
+          <option value="regular">Régulier</option>
+        </select>
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Montant
+            <input type="text" name="amount" placeholder="15" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+      <label>Origine
+        <select name="origine">
+          <option value="CHANGE">Change.org</option>
+          <option value="JDF">Jdf</option>
+        </select>
+      </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+        <label>Genre TV
+        <select name="genre_tv">
+          <option value="M">Homme</option>
+          <option value="F">Femme</option>
+        </select>
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-centered columns">
+        <label>Nom complet TV
+            <input type="text" name="nom_complet_tv" placeholder="Iman Adhri" />
+        </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+        <button type="submit">Envoyer</button>
+        </div>
+    </div>
+</div>
+</form>

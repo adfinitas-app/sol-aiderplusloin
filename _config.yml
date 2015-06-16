@@ -1,0 +1,42 @@
+url: "http://aiderplusloin.solidarites.org"
+name: Aider plus loin - SOLIDARITÉS INTERNATIONAL
+title: Aider plus loin - SOLIDARITÉS INTERNATIONAL
+logo: "http://www.adfinitas.fr/wp-content/themes/adfinitas/images/logo-adfinitas.png"
+paginate: 3
+paginate_path: "/page:num"
+permalink: "/article/:title"
+encoding: UTF-8
+woopra_id: solidarites.org
+google_analytics_id: UA-15931825-1
+url_iraiser: "https://dons.solidarites.org"
+collections:
+  formulaires:
+    output: true
+    permalink: "/formulaire/:title/"
+  remerciements:
+    output: true
+    permalink: "/remerciement/:title/"
+  petitions:
+    output: true
+    permalink: "/petition/:title/"
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: blog_post
+  - scope:
+      path: ""
+      type: formulaires
+    values:
+      layout: form
+  - scope:
+      path: ""
+      type: remerciements
+    values:
+      layout: thank
+  - scope:
+      path: ""
+      type: petitions
+    values:
+      layout: blog_home

@@ -1,0 +1,12 @@
+.blog-nav{margin-bottom:3rem}
+.header-post{padding:3rem 0}
+.header-post hr {
+    background-color: #333232;
+    border: medium none;
+    height: 5px;
+    margin: 3.5em auto 0;
+    width: 140px;}
+li.name {line-height:2.5em;}   
+.name a{color:white;}   
+#accueil h1{color:white;text-align:center;padding:3em 0}
+li.author{line-height:3em}
