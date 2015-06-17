@@ -89,10 +89,14 @@
       origine:p['origine'],
       phone:p['phone'],
       promesse_amount:p['amount'],
-      promesse_frequency:p['frequency'], 
+      promesse_frequency: p['frequency'], 
       type_reponse:p['type_reponse']
     });
   </script>
+    <script type="text/javascript">
+    _cio.track("phone", { amount: p['amount'], frequency: p['frequency'], genre_tv: p['genre_tv'], nom_complet_tv: p['nom_complet_tv'],origine: p['origine'],type_reponse: p['type_reponse']});
+  </script>
+    
     -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
