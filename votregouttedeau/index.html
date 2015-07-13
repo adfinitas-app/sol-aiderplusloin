@@ -20,6 +20,7 @@
 <link href="static/css/styles.css" type="text/css" rel="stylesheet" media="screen">
 <script type="text/javascript" src="static/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="static/js/functions.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
 <!--[if IE]><script src="static/js/html5-ie.js"></script><![endif]-->
 <script type="text/javascript">
 
@@ -67,6 +68,14 @@ if ('email' in p) {
 woopra.track();
 </script>
 <!-- End of Woopra Code -->
+<script type="text/javascript">
+    $(document).ready(function(){
+         var fb = new Firebase("https://sol-aiderplusloin.firebaseio.com/counter");
+         fb.on("value", function(ss){
+             $("#counter").text(ss.val());
+         });
+    });
+</script>
 
 	</head>
 	
@@ -166,7 +175,7 @@ woopra.track();
 				<div class="bloc-form">
     <h2 class="titre">
     	<span class="ligne1 exo-medium">REJOIGNEZ LES</span>
-    	<span class="ligne2 exo-bold">186 949</span>
+    	<span id="counter" class="ligne2 exo-bold"></span>
     	<span class="ligne3 exo-bold">SIGNATAIRES</span>
     </h2>
     <p class="signataires">
