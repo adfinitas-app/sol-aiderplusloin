@@ -75,14 +75,18 @@ if ('email' in p) {
         name: p['firstname'] + ' ' + p['lastname'],
         phone: p['phone']
     });
+    woopra.track('inscription', {
+    	title: document.title,
+    	url: document.location.href,
+    	optin: p["optin"]
+    });
+    var fb = new Firebase("https://sol-aiderplusloin.firebaseio.com/counter");
+    fb.transaction(function(currentValue) {
+        return (currentValue||0) + 1;
+    }
 }
 
 woopra.track();
-woopra.track('inscription', {
-	title: document.title,
-	url: document.location.href,
-	optin: p["optin"]
-});
 </script>
 <!-- End of Woopra Code -->
 <script type="text/javascript">
