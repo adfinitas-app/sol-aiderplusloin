@@ -99,7 +99,7 @@ woopra.track();
 		$(".don_link").attr("href", function(i, val){
 			return val + "&firstname=" + p['firstname'] + "&lastname=" + p['lastname'] + "&email=" + p['email'];
 		});
-		$("body").append("<!-- Pixel Acxiom --><NOSCRIPT><IMG src=\"http://www.acxtrk.com/pixel.track?CID=246658&p=img&MerchantReferenceID=\"" + p['email'] + " width=\"1\" height=\"1\" border=\"0\" /></NOSCRIPT>");
+		$("body").append("<!-- Pixel Acxiom --><NOSCRIPT><IMG src=\"http://www.acxtrk.com/pixel.track?CID=246658&p=img&MerchantReferenceID=" + p['email'] + "\" width=\"1\" height=\"1\" border=\"0\" /></NOSCRIPT>");
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
 		script.src = "http://www.acxtrk.com/pixel.track?CID=246658&MerchantReferenceID=" + p['email'];
