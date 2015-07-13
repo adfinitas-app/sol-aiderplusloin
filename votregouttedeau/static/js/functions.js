@@ -39,10 +39,14 @@ function inputValue()
 	});
 }
 
+function incCounter() {
+    var fb = new Firebase("https://sol-aiderplusloin.firebaseio.com/counter/");
+}
    
 $(document).ready(function()
 {	
 	inputValue();
+	incCounter();
 });
 
 
