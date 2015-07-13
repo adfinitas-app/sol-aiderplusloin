@@ -84,7 +84,7 @@ if ('email' in p) {
     var fb = new Firebase("https://sol-aiderplusloin.firebaseio.com/counter");
     fb.transaction(function(currentValue) {
         return (currentValue||0) + 1;
-    }
+    });
 }
 
 woopra.track();
