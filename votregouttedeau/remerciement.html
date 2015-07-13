@@ -85,6 +85,7 @@ if ('email' in p) {
     fb.transaction(function(currentValue) {
         return (currentValue||0) + 1;
     });
+    Firebase.goOffline();
 }
 
 woopra.track();
