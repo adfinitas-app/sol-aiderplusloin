@@ -1,1 +1,1 @@
-/ http://www.solidarites.org/fr/aiderplusloin
+/index.html http://www.solidarites.org/fr/aiderplusloin
