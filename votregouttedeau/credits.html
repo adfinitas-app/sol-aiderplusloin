@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="fr"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="fr"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="fr"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="fr"><![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta property="og:title" content="Sur votregouttedeau.org, avec SOLIDARITES INTERNATIONAL, j'agis contre l'eau insalubre" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="VotreGoutteDeau.org" />
+	<meta property="og:description" content="L'eau insalubre tue 3,6 millions de personnes chaque année. Agissons contre l'eau insalubre en signant la pétition sur votregouttedeau.org." />
+	<meta property="og:url" content="http://www.votregouttedeau.org" />
+	<meta property="og:image" content="http://www.votregouttedeau.org/static/images/logo-solidarites.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="365" />
+	<title>Sur votregouttedeau.org, avec SOLIDARITES INTERNATIONAL, j'agis contre l'eau insalubre</title>
+	<link href="static/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="static/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="static/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="static/js/functions.js"></script>
+	<!--[if IE]><script src="static/js/html5-ie.js"></script><![endif]-->
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-15931825-5']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+	<!-- Start of Woopra Code -->
+	<script>
+		function extractUrlParams(){
+			var t = document.location.search.substring(1).split('&'); var f = [];
+			for (var i=0; i<t.length; i++){
+				var x = t[ i ].split('=');
+				f[x[0]]=decodeURIComponent(x[1]);
+			}
+			return f;
+		};
+
+		(function(){
+			var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+		})("woopra");
+
+		woopra.config({
+			domain: 'solidarites.org'
+		});
+
+		var p = extractUrlParams();
+
+		if ('email' in p) {
+			if ('lastname' in p && 'firstname' in p) {
+				woopra.identify({
+					email: p['email'],
+					name: p['firstname'] + ' ' + p['lastname']
+				});
+			} else {woopra.identify({email: p['email']})}
+		}
+
+		woopra.track();
+	</script>
+	<!-- End of Woopra Code -->
+
+</head>
+
+<body>
+	<div class="page-credits clear-100prc">
+		<div class="conteneur">
+			<header>
+				<p class="logo editable"><a href="http://solidarites.org/fr/" target="_blank"><img src="../static/images/logo-solidarites.png" alt="Solidarités International" /></a></p>
+				<h1 class="baseline exo-medium editable">
+					Avec SOLIDARITES INTERNATIONAL,
+					<strong><img class="editable" src="../static/images/titre.png" alt="j'agis contre l'eau insalubre" /></strong>
+				</h1>
+			</header>
+
+			<div class="col-gauche editable">
+				<a class="lien-retour" href="/">Retour</a>
+				<p class="stitre-petition sep">
+					Crédits<br /><br />
+				</p>
+				<p class="txt-petition">
+					Les photos sont la propriété de SOLIDARITES INTERNATIONAL.
+					<br /><br />
+					La vidéo a été réalisée par BDDP Unlimited et Hush
+					<br /><br />
+					Le site a été réalisé par Adfinitas
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function fbs_click()
+		{
+			u=location.href;
+			t=document.title;
+			window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
+			return false;
+		}
+	</body>
+	</html>

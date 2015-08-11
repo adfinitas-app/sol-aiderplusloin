@@ -1,3 +1,7 @@
+---
+layout: migration
+video: "http://player.vimeo.com/video/60658247"
+---
 <!DOCTYPE html>
 <html lang="fr">
 	<!--[if lt IE 7 ]><html class="ie ie6" lang="fr"><![endif]-->
@@ -122,22 +126,22 @@ woopra.track();
 		            </div>
 		            
 		            <div class="bloc-video">
-		                <iframe src="http://player.vimeo.com/video/60658247" width="607" height="350" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		                <iframe src="{{page.video}}" width="607" height="350" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 		            </div>	
 		             
 		            <div class="bloc-bas bloc-chiffres">
-		                <p class="titre-rubrique exo-medium">
+		                <p class="titre-rubrique exo-medium editable">
 		                    <span><strong class="exo-bold">EN CHIFFRES</strong>
 		                    L'eau insalubre, 1ere cause de mortalité</span>
 		                </p>
-		                <div class="enfant">
+		                <div class="enfant editable">
 		                    <!-- <p class="bleu exo-black">1<span class="virgule">,</span>5 MILLION D'ENFANTS</p> -->
 		                    <p class="bleu exo-black">600 000 ENFANTS</p>
 		                    <p class="exo-medium">DE MOINS DE CINQ ANS</p> 
 		                    <p class="exo-black">MEURENT</p>
 		                    de simples maladies<br />diarrhéiques  
 		                </div>
-		                <p class="goutte">
+		                <p class="goutte editable">
 		                    <span class="exo-bold"><span>2,6</span><br />
 		                    MILLIARDS<br />
 		                    DE PERSONNES</span>
@@ -147,19 +151,19 @@ woopra.track();
 		                    déféquent encore<br />
 		                    à l'air libre.		
 		                </p>
-		                <p class="monde">
+		                <p class="monde editable">
 		                    <span class="exo-bold prc">50%</span>
 		                    <span class="exo-bold">DE LA POPULATION<br />MONDIALE N'A PAS<br />ACCÈS À UNE EAU POTABLE</span> 
 		                    Dont 1,9 milliard de personnes<br />
 		                    qui n'ont d'autre choix que de boire<br />
 		                    une eau dangereuse.
 		                </p>
-		                <p class="sources">
+		                <p class="sources editable">
 		                    Sources : • Article de Gérard Payen publié dans «Le droit à l'eau potable et à l'assainissement,<br />
 		                    sa mise en oeuvre en Europe». Sous la direction d'Heni Smets. Éditions Johanet. Janvier 2012 • OMS 
 		                </p>
 		            </div>
-		            <div class="bloc-bas bloc-agir">
+		            <div class="bloc-bas bloc-agir editable">
 		                <p class="exo-bold">AGIR ICI, <span>AIDER LÀ-BAS</span></p>
 		                <ul class="liens">
 		                    <li><a href="http://porteurdeau.solidarites.org/" target="_blank">Devenir porteur d'eau</a></li>
@@ -172,51 +176,51 @@ woopra.track();
 		            </div>
 		        </div>
 				
-				<div class="bloc-form">
-    <h2 class="titre">
-    	<span class="ligne1 exo-medium">REJOIGNEZ LES</span>
-    	<span id="counter" class="ligne2 exo-bold"></span>
-    	<span class="ligne3 exo-bold">SIGNATAIRES</span>
-    </h2>
-    <p class="signataires">
-        <strong>dont</strong>
-        Bernard Kouchner, Florence Aubenas, Thierry Ardisson, Tikken Jah Fakoly, Gérard Payen, Camille Lacourt, Philippe Croizon, Bernard de la Villardière, Patrice Franceschi, André Santini, Kristalina Georgieva…
-    </p>
-    <p class="signez exo-black">Signez la pétition</p>
-    <form action="remerciement.html" method="GET">
-    	
-    	<p> <select id="id_civilities" name="civilities">
-        <option value="M">M.</option>
-        <option value="MLLE">Mlle</option>
-        <option value="MME">Mme</option>
-        </select></p>
-        <p> <input placeholder="Prénom" name="firstname" id="id_firstname" maxlength="200" type="text" required="required" /></p>
-        <p> <input placeholder="Nom" name="lastname" id="id_lastname" maxlength="200" type="text" required="required" /></p>
-        <p> <input placeholder="Email" name="email" id="id_email" maxlength="200" type="text" required="required" /></p>
-        <p> <input placeholder="Téléphone" name="phone" id="id_phone" maxlength="20" type="text" /></p>
-        <p><label for="id_optin_0">Souhaitez-vous vous abonner à notre newsletter ?</label> <ul>
-        <li><label for="id_optin_0"><input id="id_optin_0" value="oui" checked="checked" name="optin" type="radio" class="lbl-radio" /> Oui</label></li>
-        <li><label for="id_optin_1"><input value="non" name="optin" id="id_optin_1" type="radio" class="lbl-radio" /> Non</label></li>
-        </ul></p>
-        <input type="submit" value="Je signe la pétition"  class="bt-rouge" />
-    </form>
-    <ul class="reseaux">
-        <li>partager :</li>
-        <li><a title="Partager sur Facebook" href="http://www.facebook.com/share.php?u=http://www.votregouttedeau.org" onclick="return fbs_click()" target="_blank"><img src="static/images/picto-facebook.png" alt="facebook" /></a></li>
-        <li><a href="https://twitter.com/intent/tweet?text=Avec @Solidarites_Int, j'agis contre l'eau insalubre&url=http://www.votregouttedeau.org" target="_blank"><img src="static/images/picto-twitter.png" alt="twitter" /></a></li>
-    </ul>
-</div>
-            </div>
-        </div>
+		        <div class="bloc-form">
+		        	<h2 class="titre">
+		        		<span class="ligne1 exo-medium editable">REJOIGNEZ LES</span>
+		        		<span id="counter" class="ligne2 exo-bold"></span>
+		        		<span class="ligne3 exo-bold editable">SIGNATAIRES</span>
+		        	</h2>
+		        	<p class="signataires editable">
+		        		<strong>dont</strong>
+		        		Bernard Kouchner, Florence Aubenas, Thierry Ardisson, Tikken Jah Fakoly, Gérard Payen, Camille Lacourt, Philippe Croizon, Bernard de la Villardière, Patrice Franceschi, André Santini, Kristalina Georgieva…
+		        	</p>
+		        	<p class="signez exo-black editable">Signez la pétition</p>
+		        	<form action="remerciement.html" method="GET">
+
+		        		<p> <select id="id_civilities" name="civilities">
+		        			<option value="M">M.</option>
+		        			<option value="MLLE">Mlle</option>
+		        			<option value="MME">Mme</option>
+		        		</select></p>
+		        		<p> <input placeholder="Prénom" name="firstname" id="id_firstname" maxlength="200" type="text" required="required" /></p>
+		        		<p> <input placeholder="Nom" name="lastname" id="id_lastname" maxlength="200" type="text" required="required" /></p>
+		        		<p> <input placeholder="Email" name="email" id="id_email" maxlength="200" type="text" required="required" /></p>
+		        		<p> <input placeholder="Téléphone" name="phone" id="id_phone" maxlength="20" type="text" /></p>
+		        		<p><label for="id_optin_0" class="editable">Souhaitez-vous vous abonner à notre newsletter ?</label> <ul>
+		        			<li><label for="id_optin_0"><input id="id_optin_0" value="oui" checked="checked" name="optin" type="radio" class="lbl-radio" /> Oui</label></li>
+		        			<li><label for="id_optin_1"><input value="non" name="optin" id="id_optin_1" type="radio" class="lbl-radio" /> Non</label></li>
+		        		</ul></p>
+		        		<input type="submit" value="Je signe la pétition"  class="bt-rouge" />
+		        	</form>
+		        	<ul class="reseaux">
+		        		<li class="editable">partager :</li>
+		        		<li><a title="Partager sur Facebook" href="http://www.facebook.com/share.php?u=http://www.votregouttedeau.org" onclick="return fbs_click()" target="_blank"><img src="static/images/picto-facebook.png" alt="facebook" /></a></li>
+		        		<li><a href="https://twitter.com/intent/tweet?text=Avec @Solidarites_Int, j'agis contre l'eau insalubre&url=http://www.votregouttedeau.org" target="_blank"><img src="static/images/picto-twitter.png" alt="twitter" /></a></li>
+		        	</ul>
+		        </div>
+		    </div>
+		</div>
 		
 		<script type="text/javascript">
-	function fbs_click()
-	{
-		u=location.href;
-		t=document.title;
-		window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
-		return false;
-	}
-</script>
+			function fbs_click()
+			{
+				u=location.href;
+				t=document.title;
+				window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
+				return false;
+			}
+		</script>
 	</body>
-</html>
+	</html>
