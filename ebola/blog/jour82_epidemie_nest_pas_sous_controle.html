@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Start of Woopra Code -->
+    <script>
+    function extractUrlParams(){
+    var t = document.location.search.substring(1).split('&'); var f = [];
+    for (var i=0; i<t.length; i++){
+	    var x = t[ i ].split('=');
+	    f[x[0]]=decodeURIComponent(x[1]);
+	}
+	return f;
+    };
+    
+    (function(){
+	var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+    })("woopra");
+    
+    woopra.config({
+	domain: 'solidarites.org'
+    });
+    
+    var p = extractUrlParams();
+    
+    if ('email' in p) {
+	if ('lastname' in p && 'firstname' in p) {
+	    woopra.identify({
+		email: p['email'],
+		name: p['firstname'] + ' ' + p['lastname']
+	    });
+	} else {woopra.identify({email: p['email']})}
+    }
+    
+    woopra.track();
+    </script>
+    <!-- End of Woopra Code -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Jour 82 : l’épidémie n’est PAS sous contrôle - Ebola - Blog SOLIDARITÉS INTERNATIONAL</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="./css/clean-blog.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-8b3b75b1-1d44-1395-c69e-1953d4d37762", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" target="_blank" href="http://www.solidarites.org/fr/"><img src="./img/blog-logo.png" alt="SOLIDARIT&Eacute;S INTERNATIONAL" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                <a target="_blank" href="http://ebola.solidarites.org/"><img src="./img/site-ebola.png" alt="" /></a>
+                </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="don" href="https://dons.solidarites.org/?cid=122" target="_blank"><img src="./img/blog-header-don.png" alt="Je fais un don" /></a>
+                    <!--<li>
+                        <a href="/index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">Blog</a>
+                    </li>-->
+                </li></ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <div class="container-shadow">
+    <header class="intro-header" style="background-image: url('./img/blog-header.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading editable"><h1>Jour 82 : L&rsquo;&eacute;pid&eacute;mie n&rsquo;est PAS sous contr&ocirc;le</h1><h2 class="subheading"><br />Depuis plusieurs semaines, l&rsquo;&eacute;pid&eacute;mie Ebola qui &eacute;tait en baisse dans les 3 pays d&rsquo;Afrique de l&rsquo;Ouest touch&eacute;s par le virus (Guin&eacute;e, Sierra Leone, Liberia) repart &agrave; la hausse notamment en Sierra Leone...</h2><p><span class="meta">Post&eacute;&nbsp;par SOLIDARIT&Eacute;S INTERNATIONAL, le 19 f&eacute;vrier 2015</span></p></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 repeatables">
+                	<p class="editable">Depuis plusieurs semaines, l&rsquo;&eacute;pid&eacute;mie Ebola qui &eacute;tait en baisse dans les 3 pays d&rsquo;Afrique de l&rsquo;Ouest touch&eacute;s par le virus (Guin&eacute;e, Sierra Leone, Liberia) repart &agrave; la hausse notamment en Sierra Leone. La mobilisation ne doit pas cesser car &laquo; il suffit d&rsquo;un seul cas &raquo; pour que l&rsquo;&eacute;pid&eacute;mie s&rsquo;&eacute;tende de nouveau, explique Fanny Rochette de retour de Sierra Leone.&nbsp;<br /><br />Si au mois de janvier 2015, on constatait en Afrique de l&rsquo;Ouest une forte diminution des infections et du nombre de d&eacute;c&egrave;s li&eacute;s au virus Ebola, depuis le d&eacute;but du mois de f&eacute;vrier, le nombre de cas d&eacute;tect&eacute; augmente : plus de 144 nouveaux cas ont &eacute;t&eacute; recens&eacute;s entre le 2 et le 8 f&eacute;vrier en Sierra Leone, contre 124 la semaine pr&eacute;c&eacute;dente. Ainsi, les efforts de tous, et de la communaut&eacute; internationale en particulier, doivent se poursuivre afin d&rsquo;&eacute;radiquer la maladie qui a d&eacute;j&agrave; tu&eacute;e pr&egrave;s de 9 000 personnes depuis son apparition d&eacute;but 2013 dont plus de 3 200 en Sierra Leone.</p>                                                                                                       
+                	<h2 class="section-heading editable">Seulement 20% des nouveaux cas sont enregistr&eacute;s</h2>                                                                                                       
+                	<p class="editable">En Sierra Leone, o&ugrave; SOLIDARIT&Eacute;S INTERNATIONAL agit aux cot&eacute;s de M&eacute;decins du Monde dans le centre de traitement de Moyamba, l&rsquo;&eacute;pid&eacute;mie reste pourtant une r&eacute;elle menace pour le pays. Car si on compte 5 cas au Lib&eacute;ria et 39 en Guin&eacute;e, La Sierra Leone en compte elle encore 80. Malgr&eacute; la baisse du nombre de cas constat&eacute;s depuis plusieurs semaines, les risques de reprise restent tr&egrave;s &eacute;lev&eacute;s. &laquo; <em>Seulement 20% des nouveaux cas sont enregistr&eacute;s sur les listes du contact tracing. Les enterrements secrets exposants les participants a un fort risque de contaminations continuent et le temps moyen entre l&rsquo;apparition des sympt&ocirc;mes et l&rsquo;isolation du malade est encore trop &eacute;lev&eacute;&nbsp;</em>&raquo;, explique ainsi Sandra Lamarque, responsable de la cellule Ebola qui s&rsquo;inqui&egrave;te aussi de l&rsquo;approche de la saison des pluies. &laquo; <em>Avec les fortes pr&eacute;cipitations que connait la Sierra Leone et le mauvais &eacute;tat des voies de communication, il y un risque de ne plus pouvoir acc&eacute;der &agrave; certaines communaut&eacute;s</em> &raquo;.&nbsp;</p>                                                                                                       
+                	                                                                                                       
+                	<h2 class="section-heading editable">Un nouveau mandat pour SOLIDARIT&Eacute;S INTERNATIONAL</h2>                                                                                                       
+                	<p class="editable">Face &agrave; la hausse du nombre de cas av&eacute;r&eacute;s d&rsquo;Ebola depuis quelques semaines, la vigilance de nos &eacute;quipes sur place ne faiblit pas. Pour lutter contre le virus et contre la reprise de sa course folle tuant dans le silence, le travail des m&eacute;decins qui apportent une aide aux malades ne suffit pas. Pour cette raison, SOLIDARIT&Eacute;S INTERNATIONAL &nbsp;a d&eacute;cid&eacute; de sortir du centre de Moyamba et de participer &agrave; la pr&eacute;vention aupr&egrave;s des communaut&eacute;s. &laquo; <em>Nous allons d&eacute;velopper des activit&eacute;s de sensibilisation &agrave; Moyamba pour acc&eacute;l&eacute;rer la fin de l&rsquo;&eacute;pid&eacute;mie d&egrave;s la fin du mois de f&eacute;vrier&nbsp;</em>&raquo;.</p>                                                                                                       
+                	<h2 class="section-heading editable">&laquo; Il suffit d&rsquo;un oubli&eacute;&hellip; &raquo;</h2>                                                                                                       
+                	                                                                                                       
+                	                                                                                                       
+                	
+                	
+                	<p class="editable">Pour Fanny Rochette administratrice de retour de Sierra Leone, la lutte doit continuer coute que coute. &laquo; <em>Parce que ce n&rsquo;est pas termin&eacute; ! On sait qu&rsquo;un cas, juste un seul, peut en entra&icirc;ner tellement d&rsquo;autres. Il suffit d&rsquo;un ; un oubli&eacute; ; un de trop&hellip;On n&rsquo;arr&ecirc;te pas un combat quand on n&rsquo;est pas s&ucirc;r d&rsquo;avoir compl&egrave;tement combattu l&rsquo;adversaire, de peur, de risque qu&rsquo;il ne revienne par derri&egrave;re.<br />Il reste des personnes malades, des personnes qui m&eacute;ritent elles aussi tout ce que l&rsquo;on a pu apporter aux autres, il reste des communaut&eacute;s qui n&rsquo;ont pas &eacute;t&eacute; encore suffisamment inform&eacute;es, il reste des centres qui ne sont pas encore suffisamment s&eacute;curis&eacute;s, il reste encore beaucoup &agrave; faire.<br />Enfin, juste et simplement, Ebola est toujours l&agrave; </em>&raquo;.<br /><br /><a href="http://www.solidarites.org/fr/nos-missions/ebola-sierra-leone/actualites-sierra-leone/1071-ebola-les-risques-de-reprise-sont-eleves">Infographie</a> : comprendre les chiffres 2015 en images.</p> 
+                	
+                	<p class="editable"><img class="img-responsive" alt="" width="800" height="530" src="./../uploads/versions/eboalestenfrance---(0-8-599-397-800-530)---.jpg" /> <span class="text-muted caption">BDDP &amp; Fils</span></p>
+                	
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <a href="https://dons.solidarites.org/?cid=122" class="don button">Je fais barrage,<br />je fais un don</a>
+                <br />
+                <a href="http://ebola.solidarites.org/blog" class="home reverse button editable">Retour à l'accueil</a>
+                <br />
+                <div class="share-it">
+                    <span class="st_twitter_hcount" displaytext="Tweet"></span>
+                    <span class="st_facebook_hcount" displaytext="Facebook"></span>
+                </div>
+                    <ul class="list-inline text-center hide">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; SOLIDARIT&Eacute;S INTERNATIONAL 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="./js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="./js/clean-blog.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-15931825-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+
+</body>
+
+</html>
