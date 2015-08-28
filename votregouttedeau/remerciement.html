@@ -73,6 +73,9 @@
 			if ('email' in p) {
 				woopra.identify({
 					email: p['email'],
+					civility: p['civilities'],
+					firstname: p['firstname'],
+					lastname: p['lastname'],
 					name: p['firstname'] + ' ' + p['lastname'],
 					phone: p['phone']
 				});
