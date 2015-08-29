@@ -3,7 +3,7 @@ name: Aider plus loin - SOLIDARITÉS INTERNATIONAL
 title: Aider plus loin - SOLIDARITÉS INTERNATIONAL
 logo: "http://www.adfinitas.fr/wp-content/themes/adfinitas/images/logo-adfinitas.png"
 paginate: 3
-paginate_path: "/page:num"
+paginate_path: "/ebola/blog/list/page:num"
 permalink: "/article/:title"
 encoding: UTF-8
 woopra_id: solidarites.org
