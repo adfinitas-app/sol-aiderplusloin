@@ -1,2 +1,9 @@
 ---
+title:
+subtitle:
+meta:
+ title:
+ description:
+post_date:
+auteur:
 ---
