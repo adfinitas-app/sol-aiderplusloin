@@ -16,14 +16,3 @@ collections:
   ebola_blog_EN:
     output: true
     permalink: "/ebola/en/blog/post/:title/"
-defaults:
-  - scope:
-      path: ""
-      type: ebola_blog_FR
-    values:
-      layout: blog_post_FR
-  - scope:
-      path: ""
-      type: ebola_blog_EN
-    values:
-      layout: blog_post_EN
