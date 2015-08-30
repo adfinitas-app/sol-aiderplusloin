@@ -12,7 +12,7 @@ url_iraiser: "https://dons.solidarites.org"
 collections:
   ebola_blog_FR:
     output: true
-    permalink: "/ebola/blog/article/:title/"
+    permalink: "/ebola/blog/article/:title.html"
   ebola_blog_EN:
     output: true
-    permalink: "/ebola/en/blog/post/:title/"
+    permalink: "/ebola/en/blog/post/:title.html"
