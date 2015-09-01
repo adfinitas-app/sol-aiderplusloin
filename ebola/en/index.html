@@ -46,19 +46,54 @@
     <meta property="og:description" content="The SOLIDARITÉS INTERNATIONAL team is helping to fight the #Ebola epidemic in #SierraLeone. Find out about our exceptional response to this extraordinary crisis on ebola.solidarites.org."/>
     <meta property="og:site_name" content="ÉBOLA : Doctors provide medical care, SOLIDARITÉS INTERNATIONAL ensures protection."/>
  
-    <link rel="stylesheet" href="/ebola/en/css/app.css" />
+    <link rel="stylesheet" href="./css/app.css" />
     
-    <link rel="stylesheet" type="text/css" href="/ebola/en/bower_components/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./bower_components/slick/slick.css"/>
 
-				
-    <script src="/ebola/en/bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="./bower_components/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="./bower_components/modernizr/modernizr.js"></script>
+	<script type="text/javascript">
+	function goToByScroll(id){
+	      // Remove "link" from the ID
+	    id = id.replace("link", "");
+	      // Scroll
+	    $('html,body').animate({
+	        scrollTop: $("#"+id).offset().top},
+	        'slow');
+	}
+	$(function () {
+		$('#ctr').click(function() {
+		goToByScroll("centre")
+		});
+		$('#def').click(function() {
+		goToByScroll("defi");
+		});
+		$('#prog').click(function() {
+		goToByScroll("progression");
+		});
+		$('#mis').click(function() {
+		goToByScroll("mission");
+		});
+		$('#equi').click(function() {
+		goToByScroll("equipe");
+		});
+		$('#sout').click(function() {
+		goToByScroll("soutien");
+		});
+		$('#blg').click(function() {
+		goToByScroll("blog");
+		});
+	});
+	</script>
   </head>
   <body>
-    <div class="fixed" data-magellan-expedition="fi xed">
-      <nav class="top-bar" data-topbar role="navigation">
+    <div class="fixed" data-magellan-expedition="fixed">
+      <nav class="top-bar" data-topbar="" role="navigation">
        <ul class="title-area">
 	 <li data-magellan-arrival="header" class="name">
-	   <h1><a href="#header"><img src="/ebola/en/images/logo.png" alt="SOLIDARITÉS INTERNATIONAL" /></a></h1>
+	   <h1><a href="#header"><img src="./images/logo.png" alt="SOLIDARITÉS INTERNATIONAL" /></a></h1>
 	 </li>
 	 <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
        </ul>
@@ -69,13 +104,13 @@
      
 	 <!-- Left Nav Section -->
 	 <ul class="left">          
-	   <li data-magellan-arrival="defi"><a href="#defi">The challenge</a></li>
-	   <li data-magellan-arrival="progression"><a href="#progression">The spread of the virus</a></li>
-	   <li data-magellan-arrival="mission"><a href="#mission">Our mission</a></li>
-	   <li data-magellan-arrival="centre" class="show-for-xmedium-up"><a href="#centre">Our centre</a></li>
-	   <li data-magellan-arrival="equipe"><a href="#equipe">Our team</a></li>
-	   <li data-magellan-arrival="soutien"><a href="#soutien">Your support</a></li>
-	   <li data-magellan-arrival="blog" class="show-for-xmedium-up"><a href="#blog">Blog</a></li>
+	   <li data-magellan-arrival="defi"><a href="#defi" id="def">The challenge</a></li>
+	   <li data-magellan-arrival="progression"><a href="#progression" id="prog">The spread of the virus</a></li>
+	   <li data-magellan-arrival="mission"><a href="#mission" id="mis">Our mission</a></li>
+	   <li data-magellan-arrival="centre" class="show-for-xmedium-up"><a id="ctr" href="#centre">Our centre</a></li>
+	   <li data-magellan-arrival="equipe"><a href="#equipe" id="equi">Our team</a></li>
+	   <li data-magellan-arrival="soutien"><a href="#soutien" id="sout">Your support</a></li>
+	   <li data-magellan-arrival="blog" class="show-for-xmedium-up"><a href="#blog" id="blg">Blog</a></li>
 	 </ul>
        </section>
      </nav>
@@ -96,7 +131,7 @@
     </div>
     </div>
     
- <a name="defi" data-magellan-destination="defi"></a>
+ <a name="defi" data-magellan-destination="defi" id="defi"></a>
       <h2 class="text-center center"><span>ÉBOLA, THE VIRUS WHICH DEFIES HUMANKIND</span></h2>
 	
     <div class="defi bg">
@@ -155,7 +190,7 @@
 
     </div>
 
- <a name="progression" data-magellan-destination="progression"></a>
+ <a name="progression" data-magellan-destination="progression" id="progression"></a>
     <h2 class="text-center center"><span>THE EPIDEMIC IS SPREADING</span></h2>
       <div class="progression bg">
       <div class="row">
@@ -180,7 +215,7 @@
     </div>
     
 
- <a name="mission" data-magellan-destination="mission"></a>
+ <a name="mission" data-magellan-destination="mission" id="mission"></a>
 	
     <h2 class="text-center center">
     <span>
@@ -214,7 +249,7 @@
     </div>
 
 
- <a name="traitement" data-magellan-destination="traitement"></a>
+ <a name="traitement" data-magellan-destination="traitement" id="traitement"></a>
     <h2 class="text-center center"><span>WITH NO KNOWN CURE FOR THE DISEASE, OUR EXPERTISE IN WATER, HYGIENE AND SANITATION IS CRUCIAL TO STOPPING THE EPIDEMIC AND SAVING THOUSANDS OF LIVES.</span></h2>
     <div class="row traitement">
       <div class="large-12 columns">
@@ -224,7 +259,7 @@
 	      
 		<div class="row">
 		  <div class="xlarge-8 xlarge-offset-2 large-10 large-offset-1 end texte columns text-center">
-		   <div class="picto"><img src="/ebola/en/images/ico-eau.png" alt="" /></div>
+		   <div class="picto"><img src="./images/ico-eau.png" alt="" /></div>
 		   <p>
 		    <b>Managing water supplies</b>
 		   </p>
@@ -241,7 +276,7 @@
 		<div class="row">
 		  <div class="xlarge-8 xlarge-offset-2 large-10 large-offset-1 end texte columns text-center">
 			
-		   <div class="picto"><img src="/ebola/en/images/ico-decontaminer.png" alt="" /></div>
+		   <div class="picto"><img src="./images/ico-decontaminer.png" alt="" /></div>
 		   <p>
 		    <b>Decontamination</b>
 		   </p>
@@ -259,7 +294,7 @@
 	      
 		<div class="row">
 		  <div class="xlarge-8 xlarge-offset-2 large-10 large-offset-1 end  texte columns text-center">
-		   <div class="picto"><img src="/ebola/en/images/ico-enterrement.png" alt="" /></div>
+		   <div class="picto"><img src="./images/ico-enterrement.png" alt="" /></div>
 		  <p>
 		    <b>Ensuring safe burials</b>
 		   </p>
@@ -278,7 +313,7 @@
     </div>
     
     
- <a name="centre" data-magellan-destination="centre"></a>
+ <a name="centre" data-magellan-destination="centre" id="centre"></a>
   <h2 class="text-center center">
 	<span>
 	  OUR CENTRE
@@ -291,10 +326,10 @@
   
 	<div class="row first">
 	  <div class="large-4 columns">
-	    <img src="/ebola/en/images/centre-1.png" alt="" />
+	    <img src="./images/centre-1.png" alt="" />
 	  </div>
 	  <div class="large-4 columns">
-	    <img src="/ebola/en/images/centre-2.png" alt="" />
+	    <img src="./images/centre-2.png" alt="" />
 	  </div>
 	  <div class="large-4 columns sierra">
 	    <h3>La Sierra Leone,<small>in the midst of the epidemic</small></h3>
@@ -321,7 +356,7 @@
 	    </p>
 	  </div>
 	  <div class="large-8 bg columns">
-	    <img src="/ebola/en/images/centre-3.png" alt="" class="hide-for-medium-up" />
+	    <img src="./images/centre-3.png" alt="" class="hide-for-medium-up" />
 	  </div>
 	</div>
     
@@ -329,7 +364,7 @@
       </div>
     </div>
   
- <a name="equipe" data-magellan-destination="equipe"></a>
+ <a name="equipe" data-magellan-destination="equipe" id="equipe"></a>
     <h2 class="text-center center">
      <span>
        OUR TEAM
@@ -345,9 +380,10 @@
   
       <div class="intro-video">
 	<div class="launch-video">
-	  <img src="/ebola/en/images/play-video.png" alt="" />
+	  <img src="./images/play-video.png" alt="" />
 	</div>
 	<h3><span>SOLIDARITÉS INTERNATIONAL and its on-site team are totally committed to stemming the epidemic and saving thousands of lives!</span>
+    <a name="blog" data-magellan-destination="blog" id="blog"></a>
 	<br /><small>Sandra LAMARQUE, ÉBOLA task force manager</small>
 	</h3>
       </div>
@@ -383,7 +419,6 @@
 	<div class="row">
 	  <div class="large-6 medium-12 small-12 columns">
 	    <p>
-	      <a name="blog" data-magellan-destination="blog"></a>
 	      Follow the SOLIDARITÉS INTERNATIONAL team in Moyamba, Sierra Leone
 	      <br /><a href="http://aiderplusloin.solidarites.org/ebola/en/blog/" target="_blank">See our team’s blog</a>
 	    </p>
@@ -400,7 +435,7 @@
     </h3>
       
       
- <a name="soutien" data-magellan-destination="soutien"></a>
+ <a name="soutien" data-magellan-destination="soutien" id="soutien"></a>
     <div class="soutien bg">
     <div class="row">
       <div class="large-12 end columns text-center">
@@ -496,10 +531,10 @@
 	</div>
 	<div class="large-2 columns text-center large-text-right">
 	  <a href="http://twitter.com/home?status=Help+%40Solidarites_Int+stop+the+spread+of+%23Ebola+in+%23SierraLeone+%E2%86%92+http%3A%2F%2Febola.solidarites.org%2Fen" target="_blank" class="twitter">
-	    <img src="/ebola/en/images/share-tw.png" alt="tweet" />
+	    <img src="./images/share-tw.png" alt="tweet" />
 	  </a>
 	  <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://ebola.solidarites.org/en" target="_blank" class="facebook">
-	    <img src="/ebola/en/images/share-fb.png" alt="tweet" />
+	    <img src="./images/share-fb.png" alt="tweet" />
 	  </a>
 	</div>
       </div>
