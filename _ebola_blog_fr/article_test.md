@@ -1,3 +1,0 @@
----
----
-everybody is ok
