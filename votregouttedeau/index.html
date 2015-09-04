@@ -119,7 +119,7 @@ function completeAndRedirect(){
        return false;
 		}
 		if (document.getElementById("id_phone").value != null && document.getElementById("id_phone").value != "" && document.getElementById("id_phone").value != "Téléphone") {
-			var regtel = /^(\+[0-9]{1,3}|0)[0-9]{3}( ){0,1}[0-9]{7,8}\b/gm;
+			var regtel = /(0|(\\+33)|(0033))[1-9][0-9]{8}/;
 			if (regtel.test(document.getElementById("id_phone").value) == false)
 			{
 				$("#outform").html("<br><span>Ce numéro de téléphone n'est pas valide.<span>");
