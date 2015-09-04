@@ -30,6 +30,8 @@ body {
 	line-height: 18px;
 	background: url('../images/fond-body.gif') repeat top center;
 }
+.iti-flag {background-image: url("tel-input/build/img/flags.png");}
+.iti-flag {background-image: url("tel-input/build/img/flags@2x.png");}
 .page-home {
 	background: url('../images/fond-home.jpg') no-repeat top center;
 }

@@ -22,6 +22,7 @@ video: "http://player.vimeo.com/video/60658247"
 <title>Sur aiderplusloin.solidarites.org/votregouttedeau/, avec SOLIDARITES INTERNATIONAL, j'agis contre l'eau insalubre</title>
 <link href="static/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="static/css/styles.css" type="text/css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" href="tel-input/build/css/intlTelInput.css">
 <script type="text/javascript" src="static/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="static/js/functions.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
@@ -80,6 +81,58 @@ woopra.track();
          });
     });
 </script>
+<script type="text/javascript">
+function completeAndRedirect(){
+		if (document.getElementById("id_firstname").value == null || document.getElementById("id_firstname").value == "" || document.getElementById("id_firstname").value == "Prénom*") {
+		$("#outform").html("<br><span>Le champ Prénom n'a pas été remplis.<span>");
+		$("#outform").css("color", "red");
+		$("#outform").css("text-align", "center");
+		$("#outform").css({"padding-top": "15px", "padding-bottom": "15px"});
+       return false;
+		}
+		if (document.getElementById("id_lastname").value == null || document.getElementById("id_lastname").value == "" || document.getElementById("id_lastname").value == "Nom*") {
+		$("#outform").html("<br><span>Le champ Nom n'a pas été remplis.<span>");
+		$("#outform").css("color", "red");
+		$("#outform").css("text-align", "center");
+		$("#outform").css({"padding-top": "15px", "padding-bottom": "15px"});
+       return false;
+		}
+		if (document.getElementById("id_email").value == null || document.getElementById("id_email").value == "" || document.getElementById("id_email").value == "Email*") {
+		$("#outform").html("<br><span>Le champ Email n'a pas été remplis.<span>");
+		$("#outform").css("color", "red");
+		$("#outform").css("text-align", "center");
+		$("#outform").css({"padding-top": "15px", "padding-bottom": "15px"});
+       return false;
+		}
+		if (document.getElementById("id_ville").value == null || document.getElementById("id_ville").value == "" || document.getElementById("id_ville").value == "Ville*") {
+		$("#outform").html("<br><span>Le champ Ville n'a pas été remplis.<span>");
+		$("#outform").css("color", "red");
+		$("#outform").css("text-align", "center");
+		$("#outform").css({"padding-top": "15px", "padding-bottom": "15px"});
+       return false;
+		}
+		if (document.getElementById("id_pays").value == null || document.getElementById("id_pays").value == "" || document.getElementById("id_pays").value == "Pays*") {
+		$("#outform").html("<br><span>Le champ Pays n'a pas été remplis.<span>");
+		$("#outform").css("color", "red");
+		$("#outform").css("text-align", "center");
+		$("#outform").css({"padding-top": "15px", "padding-bottom": "15px"});
+       return false;
+		}
+		if (document.getElementById("id_phone").value != null && document.getElementById("id_phone").value != "" && document.getElementById("id_phone").value != "Téléphone") {
+			var regtel = /^(\+[0-9]{1,3}|0)[0-9]{3}( ){0,1}[0-9]{7,8}\b/gm;
+			if (regtel.test(document.getElementById("id_phone").value) == false)
+			{
+				$("#outform").html("<br><span>Ce numéro de téléphone n'est pas valide.<span>");
+				$("#outform").css("color", "red");
+				$("#outform").css("text-align", "center");
+				$("#outform").css({"padding-top": "15px", "padding-bottom": "15px"});
+		       return false;
+			}
+		}
+    $( "#form" ).submit();
+}
+
+</script>
 
 	</head>
 	
@@ -90,7 +143,6 @@ woopra.track();
     <p class="logo editable"><a target="_blank" href="http://solidarites.org/fr/"><img alt="Solidarités International" data-cms-source="/votregouttedeau/index.html" data-cms-index="1" src="static/images/logo-solidarites.png" /></a></p>
     <h1 class="baseline exo-medium editable">Avec SOLIDARITES INTERNATIONAL, <strong><img alt="j'agis contre l'eau insalubre" data-cms-source="/votregouttedeau/index.html" data-cms-index="3" src="static/images/titre.png" /></strong></h1>
 </header>
-				
 				<div class="col-gauche">
 		            <p class="goutte editable"><span class="exo-bold">L&#39;eau<br />insalubre<br />tue 2,6 millions</span> <span class="exo-medium">de personnes<br />chaque ann&eacute;e</span> Ensemble, mettons fin<br />&agrave; cette h&eacute;catombe et<br />au silence qui<br />l&#39;entoure !</p>
 		            <div class="bulle editable"><p class="titre exo-medium"><span class="exo-black">Une p&eacute;tition</span> sera remise au secr&eacute;taire<br />g&eacute;n&eacute;ral des Nations Unies</p><ul data-cms-source="/votregouttedeau/index.html" data-cms-index="6"><li>Pour que chaque &ecirc;tre humain ait acc&egrave;s<br />&agrave; l&#39;eau potable et &agrave; l&#39;assainissement.</li><li>Pour que des engagements forts soient<br />pris pour lutter contre ce fl&eacute;au</li></ul><p><a style="font-size: 100%" data-cms-source="/votregouttedeau/index.html" data-cms-index="7" href="petition.html">Lire le texte int&eacute;gral<br />de la p&eacute;tition</a></p></div>
@@ -120,26 +172,26 @@ woopra.track();
 		        	</h2>
 		        	<p class="signataires editable"><strong>dont</strong> Bernard Kouchner, Florence Aubenas, Thierry Ardisson, Tikken Jah Fakoly, G&eacute;rard Payen, Camille Lacourt, Philippe Croizon, Bernard de la Villardi&egrave;re, Patrice Franceschi, Andr&eacute; Santini, Kristalina Georgieva&hellip;</p>
 		        	<p class="signez exo-black editable">Signez la p&eacute;tition</p>
-		        	<form action="remerciement.html" method="GET">
-
+		        	<form id="form" action="remerciement.html" method="GET">
 		        		<p> <select id="id_civilities" name="civilities">
 		        			<option value="1">M.</option>
 		        			<option value="3">Mlle</option>
 		        			<option value="2">Mme</option>
 		        		</select></p>
-		        		<p> <input placeholder="Prénom*" name="firstname" id="id_firstname" maxlength="200" type="text" required="required" class=""></p>
-		        		<p> <input placeholder="Nom*" name="lastname" id="id_lastname" maxlength="200" type="text" required="required" class=""></p>
-		        		<p id="insert-it"> <input placeholder="Email*" name="email" id="id_email" maxlength="200" type="text" required="required" class=""></p>
-		        		<p> <input placeholder="Ville*" name="ville" id="id_ville" maxlength="200" type="text" required="required" class="">
+		        		<p> <input placeholder="Prénom*" name="firstname" id="id_firstname" maxlength="200" type="text" style="valid: false" novalidate required></p>
+						<p> <input placeholder="Nom*" name="lastname" id="id_lastname" maxlength="200" type="text" required class=""></p>
+		        		<p> <input placeholder="Email*" name="email" id="id_email" maxlength="200" type="text" required class=""></p>
+		        		<p> <input placeholder="Ville*" name="ville" id="id_ville" maxlength="200" type="text" required class="">
 		        		</p>
-		        		<p> <input placeholder="Pays*" name="pays" id="id_pays" maxlength="200" type="text" required="required" class="">
+		        		<p> <input placeholder="Pays*" name="pays" id="id_pays" maxlength="200" type="text" required class="">
 		        		</p>
-		        		<p> <input placeholder="Téléphone" name="phone" id="id_phone" maxlength="20" type="text" /></p>
+		        		<p> <input placeholder="Téléphone" name="phone" id="id_phone" maxlength="20" type="text"/></p>
 		        		<p><label for="id_optin_0"><span class="editable">>Souhaitez-vous vous abonner à notre newsletter ?</span></label> <ul>
 		        			<li><label for="id_optin_0"><input id="id_optin_0" value="oui" checked="checked" name="optin" type="radio" class="lbl-radio" /> Oui</label></li>
 		        			<li><label for="id_optin_1"><input value="non" name="optin" id="id_optin_1" type="radio" class="lbl-radio" /> Non</label></li>
 		        		</ul></p>
-		        		<input id="sub" type="submit" value="Je signe la pétition" class="bt-rouge" />
+		        		<p id="outform"></p>
+		        		<input onclick="completeAndRedirect()" id="sub" type="button" value="Je signe la pétition" class="bt-rouge"/>
 		        	</form>
 		        	<ul class="reseaux">
 		        		<li class="editable">partager :</li>
@@ -149,7 +201,6 @@ woopra.track();
 		        </div>
 		    </div>
 		</div>
-		
 		<script type="text/javascript">
 			function fbs_click()
 			{
