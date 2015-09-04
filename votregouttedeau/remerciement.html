@@ -95,7 +95,9 @@ equivalences :
 					firstname: p['firstname'],
 					lastname: p['lastname'],
 					name: p['firstname'] + ' ' + p['lastname'],
-					phone: p['phone']
+					phone: p['phone'],
+					country: p['ville'],
+					country: p['pays']
 				});
 				woopra.track('inscription', {
 					title: document.title,
