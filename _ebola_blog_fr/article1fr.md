@@ -21,8 +21,6 @@ blabla bla bla
 
 ## Title
 
-{{page.page_date | date: &quot;%d/%e/%Y&quot;}}
-
 {% include video.html %}
 
 {% include image.html %}
