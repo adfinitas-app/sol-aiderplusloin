@@ -111,7 +111,7 @@
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <div class="container-shadow">
-    <header class="intro-header" style="background-image: {% if page.banner_path != empty %}url('{{page.banner_path}}'){% else %}url('{{site.url}}/ebola/blog/img/blog-header.png'){% endif %}">
+    <header class="intro-header" style="background-image: {% if page.banner_path != "" %}url('{{page.banner_path}}'){% else %}url('{{site.url}}/ebola/blog/img/blog-header.png'){% endif %}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
