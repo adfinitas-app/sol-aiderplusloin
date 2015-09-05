@@ -125,14 +125,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">         
-                {% for staff_member in site.staff %}
+                {% for billet in ebola_blog_fr %}
                 <div>
                 	<div class="post-preview">
                 		<h2 class="post-title">
-                		    <a href="{{}}">{{}}</a>
+                		    <a href="{{billet.url}}">{{billet.titre}}</a>
                 		</h2>
-                		<h3 class="post-subtitle">{{}}</h3>
-                		<p class="post-meta">Post&eacute; par {{}}, le {{}}</p>
+                		<h3 class="post-subtitle">{{billet.subtitle}}</h3>
+                		<p class="post-meta">Post&eacute; par {{billet.auteur}}, le {{billet.post_date}}</p>
                 	</div> 
                 	<hr />
                 </div>
