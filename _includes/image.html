@@ -1,8 +1,6 @@
 <img class="module_img {% if page.image.center %}centered{% endif %}" src="{{ page.image.image }}" alt="{% if page.image.alt %}{{ page.image.alt }}{% endif %}">
 {% if page.image.legende != empty %}
-<div class="row">
-  <div class="large-12 columns">
+<div class="row caption">
     <p>{{ page.image.legende }}</p>
-  </div>
 </div>
 {% endif %}
