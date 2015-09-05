@@ -1,19 +1,19 @@
 ---
 title: title
-titre:
-subtitle:
-auteur:
-page_date: 2015-09-05T00:00:00.000Z
+titre: ""
+subtitle: ""
+auteur: ""
+page_date:
 meta:
-  title:
-  description:
+  title: ""
+  description: ""
 video:
   code_embed_de_la_video: ""
-  legende:
+  legende: ""
 image:
   image_path: ""
-  alt:
-  legende:
+  alt: ""
+  legende: ""
   center: false
 ---
 blabla bla bla
