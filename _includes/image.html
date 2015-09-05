@@ -1,8 +1,8 @@
-<img class="module_img {% if page.module_img.center %}centered{% endif %}" src="{{ page.module_img.image }}" alt="{% if page.module_img.alt %}{{ page.module_img.alt }}{% endif %}">
-{% if page.module_img.legende != empty %}
+<img class="module_img {% if page.image.center %}centered{% endif %}" src="{{ page.image.image }}" alt="{% if page.image.alt %}{{ page.image.alt }}{% endif %}">
+{% if page.image.legende != empty %}
 <div class="row">
   <div class="large-12 columns">
-    <p>{{ page.module_img.legende }}</p>
+    <p>{{ page.image.legende }}</p>
   </div>
 </div>
 {% endif %}
