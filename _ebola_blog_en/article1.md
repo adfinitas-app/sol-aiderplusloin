@@ -2,7 +2,6 @@
 layout: blog_post_en
 title: test
 titre: test
-banner_path: ""
 subtitle: test subtitle
 auteur: Arnaud
 page_date: 2015-09-05T00:00:00.000Z
