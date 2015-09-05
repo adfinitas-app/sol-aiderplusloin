@@ -35,20 +35,18 @@
     woopra.track();
     </script>
     <!-- End of Woopra Code -->
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
     <title>{{page.meta.title}}</title>
+    <meta name="description" content="{{page.meta.description}}">
+    <meta name="author" content="{{site.author}}">
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{site.url}}/ebola/en/blog/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{site.url}}/statics/ebola/blog/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{site.url}}/ebola/en/blog/css/clean-blog.css" rel="stylesheet">
+    <link href="{{site.url}}/statics/ebola/blog/css/clean-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -63,6 +61,12 @@
     <![endif]-->
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">stLight.options({publisher: "ur-8b3b75b1-1d44-1395-c69e-1953d4d37762", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    <style>.content h2 {
+        color: #2e2e2e;
+        font-size: 36px;
+        margin-top: 60px;
+        font-weight: 700;}
+    </style>
 </head>
 
 <body>
@@ -78,24 +82,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" target="_blank" href="http://www.solidarites.org/en"><img src="./img/blog-logo.png" alt="SOLIDARIT&Eacute;S INTERNATIONAL"></a>
+                <a class="navbar-brand" target="_blank" href="http://www.solidarites.org/fr/"><img src="{{site.url}}/statics/ebola/blog/img/blog-logo.png" alt="SOLIDARIT&Eacute;S INTERNATIONAL"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                <a target="_blank" href="http://ebola.solidarites.org/en"><img src="./img/site-ebola.png" alt=""></a>
+                <a target="_blank" href="http://aiderplusloin.solidarites.org/ebola"><img src="{{site.url}}/statics/ebola/blog/img/site-ebola.png" alt=""></a>
                 </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="don" href="https://dons.solidarites.org/b/my-donation?cid=122" target="_blank"><img src="./img/blog-header-don.png" alt="To help stop Ebola, Donate now"></a>
+                        <a class="don" href="https://dons.solidarites.org/?cid=122" target="_blank"><img src="{{site.url}}/statics/ebola/blog/img/blog-header-don.png" alt="Je fais un don"></a>
                     <!--<li>
                         <a href="/index.html">Accueil</a>
                     </li>
                     <li>
-                        <a href="/blog/index.html">Blog</a>
+                        <a href="index.html">Blog</a>
                     </li>-->
                 </li></ul>
             </div>
@@ -107,14 +111,14 @@
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <div class="container-shadow">
-    <header class="intro-header" style="background-image: url('./img/blog-header.png')">
+    <header class="intro-header" style="background-image:url('{{site.url}}/statics/ebola/blog/img/blog-header.png')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading editable">
-                    	<h1>{{page.title}}</h1>
-                    	<h2 class="subheading">{{page.subtitle}}</h2>
-                    	<p><span class="meta">Posted by&nbsp;{{page.auteur}}, {{page.post_date}}</span></p>
+                    <div class="post-heading">
+                    	<h1>{{page.titre}}</h1>
+                      <h2 class="subheading">{{page.subtitle}}</h2>
+                    	<p><span class="meta">Posté par {{page.auteur}}, le {{page.page_date | date: "%d/%m/%Y"}}</span></p>
                     </div>
                 </div>
             </div>
@@ -125,8 +129,7 @@
     <article>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 repeatables">
-
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content">
                 	{{content}}
 
                 </div>
@@ -139,15 +142,15 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1  text-center">
-                    <a href="https://dons.solidarites.org/b/my-donation?cid=122" class="don button">To help stop EBOLA,<br>donate now</a>
-                    <br>
-                    <a href="http://aiderplusloin.solidarites.org/ebola/en/blog" class="home reverse button">Back to homepage</a>
-                    <br>
-                    <div class="share-it">
-                        <span class="st_twitter_hcount" displaytext="Tweet"></span>
-                        <span class="st_facebook_hcount" displaytext="Facebook"></span>
-                    </div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <a href="https://dons.solidarites.org/?cid=122" class="button don">Je fais barrage,<br>je fais un don</a>
+                <br>
+                <a href="http://aiderplusloin.solidarites.org/ebola/blog" class="button reverse home">Retour à l'accueil</a>
+                <br>
+                <div class="share-it">
+                    <span class="st_twitter_hcount" displaytext="Tweet"></span>
+                    <span class="st_facebook_hcount" displaytext="Facebook"></span>
+                </div>
                     <ul class="list-inline text-center hide">
                         <li>
                             <a href="#">
@@ -174,21 +177,21 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted editable">Copyright &copy; SOLIDARIT&Eacute;S INTERNATIONAL 2014</p>
+                    <p class="copyright text-muted">Copyright &copy; SOLIDARIT&Eacute;S INTERNATIONAL {{ site.time | date: '%y' }}</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- jQuery -->
-    <script src="{{site.url}}/ebola/en/blog/js/jquery.js"></script>
+    <script src="{{site.url}}/statics/ebola/blog/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{site.url}}/ebola/en/blog/js/bootstrap.min.js"></script>
+    <script src="{{site.url}}/statics/ebola/blog/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{site.url}}/ebola/en/blog/js/clean-blog.min.js"></script>
-    <script src="{{site.url}}/ebola/en/blog/js/app.js"></script>
+    <script src="{{site.url}}/statics/ebola/blog/js/clean-blog.min.js"></script>
+    <script src="{{site.url}}/statics/ebola/blog/js/app.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
