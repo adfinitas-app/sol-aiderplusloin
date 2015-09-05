@@ -3,7 +3,7 @@ title: Test2
 titre: blabla
 subtitle: blabla
 auteur: ""
-page_date: null
+page_date: 2015-09-03T00:00:00.000Z
 meta:
   title: ""
   description: ""
