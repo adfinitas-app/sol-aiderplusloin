@@ -13,7 +13,7 @@ video:
 image:
   image: "http://www.ac-grenoble.fr/ien.vienne1-2/spip/IMG/bmp_Image004.bmp"
   alt: Oiseaux
-  legende: ""
+  legende: test de légende
   center: true
 ---
 blabla bla bla
