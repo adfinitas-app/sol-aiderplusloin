@@ -8,6 +8,7 @@ permalink: "/article/:title"
 encoding: UTF-8
 woopra_id: solidarites.org
 google_analytics_id: UA-15931825-1
+author: "SOLIDARITÉS INTERNATIONAL"
 url_iraiser: "https://dons.solidarites.org"
 collections:
   ebola_blog_fr:
