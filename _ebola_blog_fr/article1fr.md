@@ -1,5 +1,4 @@
 ---
-layout: blog_post_fr
 title: title
 titre:
 subtitle:
