@@ -1,0 +1,8 @@
+<img class="module_img {% if page.module_img.center %}centered{% endif %}" src="{{ page.module_img.image }}" alt="{% if page.module_img.alt %}{{ page.module_img.alt }}{% endif %}">
+{% if page.module_img.legende != empty %}
+<div class="row">
+  <div class="large-12 columns">
+    <p>{{ page.module_img.legende }}</p>
+  </div>
+</div>
+{% endif %}
