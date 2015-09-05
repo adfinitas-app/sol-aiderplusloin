@@ -1,9 +1,9 @@
 ---
 title: Test3
-titre: blabla
+titre: blabla2
 subtitle: blabla
 auteur: ""
-page_date: "2015-09-05 21:28:32"
+page_date: 2015-09-04T00:00:00.000Z
 meta:
   title: ""
   description: ""
