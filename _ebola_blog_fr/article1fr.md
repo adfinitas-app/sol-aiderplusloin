@@ -1,6 +1,10 @@
 ---
 layout: blog_post_fr
 title: test
+heading: test
+meta:
+  title:
+  description:
 subtitle: test subtitle
 auteur: Arnaud
 page_date: 2015-09-05T00:00:00.000Z
