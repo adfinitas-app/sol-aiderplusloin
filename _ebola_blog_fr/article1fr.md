@@ -1,9 +1,9 @@
 ---
 title: title
-titre: "blabla"
-subtitle: "blabla"
+titre: blabla
+subtitle: blabla
 auteur: ""
-page_date:
+page_date: 2015-09-05T00:00:00.000Z
 meta:
   title: ""
   description: ""
