@@ -1,5 +1,5 @@
 ---
-title: Test3
+title: jour97-formation-crf-3-solidarites-international
 titre: Jour 97 - J’ai suivi la formation Ebola (3)
 subtitle: "Je m’appelle Rachel. Je travaille chez Solidarités International depuis 2010, et je suis chargée de communication depuis près de deux ans. Dans ce cadre, je vais bientôt partir en Sierra Leone..."
 auteur: Rachel Erskine
