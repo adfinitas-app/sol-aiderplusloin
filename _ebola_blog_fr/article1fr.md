@@ -1,7 +1,7 @@
 ---
 title: title
-titre: ""
-subtitle: ""
+titre: "blabla"
+subtitle: "blabla"
 auteur: ""
 page_date:
 meta:
