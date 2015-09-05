@@ -16,4 +16,4 @@ collections:
     permalink: "/ebola/blog/article/:title.html"
   ebola_blog_en:
     output: true
-    permalink: "/ebola/en/blog/post/:title.html"
+    permalink: "/ebola/en/blog/article/:title.html"
