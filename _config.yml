@@ -17,3 +17,14 @@ collections:
   ebola_blog_en:
     output: true
     permalink: "/ebola/en/blog/article/:title.html"
+defaults:
+- scope:
+    path: ""
+    type: "ebola_blog_fr"
+  values:
+    layout: blog_post_fr
+- scope:
+    path: ""
+    type: "ebola_blog_en"
+  values:
+    layout: blog_post_en
