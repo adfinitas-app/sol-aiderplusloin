@@ -20,4 +20,4 @@ blabla bla bla
 
 {{page.page_date | date: &quot;%d/%e/%Y&quot;}}
 
-{% include &quot;video.html&quot; %}
+{% include video.html %}
