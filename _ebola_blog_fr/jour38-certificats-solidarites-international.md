@@ -12,7 +12,7 @@ video:
   legende: ""
 image:
   image_path: /uploads/b6mx7r5ceaaojna.jpg
-  alt: "Le certificat \"Free From Ebola\""
+  alt: "Le certificat 'Free From Ebola'"
   legende: "Le certificat \"Free From Ebola\""
   center: true
 ---
