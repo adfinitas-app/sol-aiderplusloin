@@ -16,6 +16,6 @@ image:
   legende: "BDDP & Fils"
   center: true
 ---
-Mercredi, nous vous proposions de visualiser le centre de prise en charge de Moyamba gr&acirc;ce a une photo a&eacute;rienne. Aujourd’hui, d&eacute;couvrez le centre depuis le ciel film&eacute; par un drone des &eacute;quipes norv&eacute;giennes qui travaillent dans le centre. 
+Mercredi, nous vous proposions de visualiser le centre de prise en charge de Moyamba gr&acirc;ce a une photo a&eacute;rienne. Aujourd’hui, d&eacute;couvrez le centre depuis le ciel film&eacute; par un drone des &eacute;quipes norv&eacute;giennes qui travaillent dans le centre.
 
 {% include video.html %}
