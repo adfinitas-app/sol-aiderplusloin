@@ -1,18 +1,23 @@
 ---
 title: Jour49 Comprendre Ebola Intervention International
-titre: "Jour 52 - \"57 entretiens, 11 recrutements\""
-subtitle: "Ancien expatrié de SOLIDARITÉS INTERNATIONAL, Kien-Vy Lam est de retour au siège de l’organisation en tant que chargé de recrutement et de suivi des expatriés..."
+titre: "Jour 51 – Comprendre Ebola : l’intervention"
+subtitle: Tous les jours cette semaine nous vous proposons via des infographies de mieux comprendre le virus Ebola...
 auteur: SOLIDARITÉS INTERNATIONAL
-page_date: "2015-09-06 17:08:43"
+page_date: 2015-01-19T00:00:00.000Z
 meta:
-  title: "Jour 52 - \"57 entretiens, 11 recrutements\""
-  description: "Ancien expatrié de SOLIDARITÉS INTERNATIONAL, Kien-Vy Lam est de retour au siège de l’organisation en tant que chargé de recrutement et de suivi des expatriés..."
+  title: "Jour 51 – Comprendre Ebola : l’intervention"
+  description: Tous les jours cette semaine nous vous proposons via des infographies de mieux comprendre le virus Ebola...
 video:
   code_embed_de_la_video: ""
   legende: ""
 image:
-  image_path: /uploads/si-msf ebola training-28.jpg
-  alt: Kien Vy Lam (allongé) lors de la formation MSF en Belgique.
-  legende: Kien Vy Lam (allongé) lors de la formation MSF en Belgique.
+  image_path: /uploads/ebolasol.jpg
+  alt: "Infographie : Eugénie Brière"
+  legende: "Infographie : Eugénie Brière"
   center: true
 ---
+### L'intervention
+
+Au sein du centre de prise en charge de Moyamba, les &eacute;quipes de SOLIDARIT&Eacute;S INTERNATIONAL prot&egrave;gent les m&eacute;decins qui eux apportent des soins aux malades. Nos &eacute;quipes sont &eacute;galement en charge de la d&eacute;contamination du centre. Pour cela, elles g&egrave;rent la blanchisserie, d&eacute;sinfectent le mat&eacute;riel m&eacute;dical, d&eacute;contaminent le centre avec des solutions chlor&eacute;es, elle fournissent de l’eau aux malades (eau de boisson, de lavage et de d&eacute;sinfection), elles g&egrave;rent les d&eacute;chets contamin&eacute;s et non contamin&eacute;s, elles g&egrave;rent les enterrements des patients d&eacute;c&eacute;d&eacute;s et approvisionnent les 500 personnes du centre en eau.
+
+{% include image.html %}
