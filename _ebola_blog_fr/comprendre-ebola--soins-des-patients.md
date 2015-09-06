@@ -1,9 +1,9 @@
 ---
-title: Comprendre Ebola  Soins Des Patients
-titre: "Jour 51 – Comprendre Ebola : l’intervention"
+title: Jour 48 - Comprendre Ebola  Soins Des Patients
+titre: Jour 48 - Comprendre Ebola  Soins Des Patients
 subtitle: Tous les jours cette semaine nous vous proposons via des infographies de mieux comprendre le virus Ebola...
 auteur: SOLIDARITÉS INTERNATIONAL
-page_date: "2015-09-06 17:13:40"
+page_date: 2015-01-16T00:00:00.000Z
 meta:
   title: "Jour 51 – Comprendre Ebola : l’intervention"
   description: Tous les jours cette semaine nous vous proposons via des infographies de mieux comprendre le virus Ebola...
