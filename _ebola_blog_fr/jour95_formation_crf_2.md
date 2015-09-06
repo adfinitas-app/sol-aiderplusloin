@@ -1,7 +1,7 @@
 ---
 title: jour95_formation_crf_2
 titre: "Jour 96 - J'ai suivi la formation Ebola (2)"
-subtitle: "Je m’appelle Rachel. Je travaille chez Solidarités International depuis 2010, et je suis chargée de communication depuis près de deux ans. Dans ce cadre, je vais bientôt partir en Sierra Leone... - See more at: http://aiderplusloin.solidarites.org/ebola/blog/jour95_formation_crf_2.html#sthash.HYN9rk61.dpuf"
+subtitle: "Je m’appelle Rachel. Je travaille chez Solidarités International depuis 2010, et je suis chargée de communication depuis près de deux ans. Dans ce cadre, je vais bientôt partir en Sierra Leone..."
 auteur: Rachel Erskine
 page_date: 2015-03-04T00:00:00.000Z
 meta:
