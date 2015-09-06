@@ -20,7 +20,6 @@ Nous sommes en pleine formation des &eacute;quipes nationales qui travailleront 
 
 ### Arr&ecirc;ter le virus
 
-Enfin, une des raisons qu’on ne peut pas ignorer est que le gouvernement a mis en place des primes pour tous les "travailleurs Ebola". Toutes les personnes qui travaillent au sein d’un centre de traitement des malades re&ccedil;oivent une grosse prime compar&eacute;e &agrave; leur salaire : cela peut facilement doubler ce dernier. Et ces derniers ne sont pas les seuls &agrave; &ecirc;tre &eacute;ligible &agrave; cette prime. Les &eacute;quipes d&eacute;di&eacute;es aux enterrements y ont droit elles aussi.
-Enfin, la raison principale qui pousse les volontaires &agrave; travailler dans le centre c’est cette volont&eacute; d’œuvrer &agrave; arr&ecirc;ter ce virus qui les "tuent" depuis d&eacute;j&agrave; trop longtemps.
+Enfin, une des raisons qu’on ne peut pas ignorer est que le gouvernement a mis en place des primes pour tous les "travailleurs Ebola". Toutes les personnes qui travaillent au sein d’un centre de traitement des malades re&ccedil;oivent une grosse prime compar&eacute;e &agrave; leur salaire : cela peut facilement doubler ce dernier. Et ces derniers ne sont pas les seuls &agrave; &ecirc;tre &eacute;ligible &agrave; cette prime. Les &eacute;quipes d&eacute;di&eacute;es aux enterrements y ont droit elles aussi. Enfin, la raison principale qui pousse les volontaires &agrave; travailler dans le centre c’est cette volont&eacute; d’œuvrer &agrave; arr&ecirc;ter ce virus qui les "tuent" depuis d&eacute;j&agrave; trop longtemps.
 
 {% include image.html %}
