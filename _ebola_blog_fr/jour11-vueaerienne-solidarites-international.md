@@ -16,6 +16,6 @@ image:
   legende: Vue aérienne du cenrte de prise en charge de Moyamba
   center: true
 ---
-Ci-dessous d&eacute;couvrez la vue a&eacute;rienne du centre de prise en charge des malades atteints par le virus Ebola dans lequel les docteurs de M&eacute;decins du Monde Espagne prennent en charge les malades. Quant aux &eacute;quipes de  SOLIDARIT&Eacute;S INTERNATIONAL, elles devront prot&eacute;ger le personnel de sant&eacute; et d&eacute;sinfecter le centre.
+Ci-dessous d&eacute;couvrez la vue a&eacute;rienne du centre de prise en charge des malades atteints par le virus Ebola dans lequel les docteurs de M&eacute;decins du Monde Espagne prennent en charge les malades. Quant aux &eacute;quipes de SOLIDARIT&Eacute;S INTERNATIONAL, elles devront prot&eacute;ger le personnel de sant&eacute; et d&eacute;sinfecter le centre.
 
 {% include image.html %}
