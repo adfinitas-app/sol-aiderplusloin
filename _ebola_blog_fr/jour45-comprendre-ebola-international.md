@@ -16,6 +16,6 @@ image:
   legende: "Infographie : Eugénie Brière"
   center: true
 ---
-Tous les jours cette semaine nous vous proposons via des infographies de mieux comprendre le virus Ebola. Apparue en 1976 en R&eacute;publique D&eacute;mocratique du Congo, le virus tire son nom de la rivi&egrave;re Ebola o&ugrave; le premier cas a &eacute;t&eacute; recens&eacute;.  Avec un taux de mortalit&eacute; compris entre 25% et 90%, Ebola est une maladie infectieuse d’origine virale qui a co&ucirc;t&eacute; la vie &agrave; 2220 personnes entre 1976 et 2013. Depuis sa r&eacute;apparition en 2014, elle a tu&eacute; 3 fois plus de personnes en 1 an qu’en 37 ans.  Au 24 d&eacute;cembre 2014, selon l’OMS, on comptait 19 497 cas notifi&eacute;s de maladie &agrave; virus Ebola, dont 7588 d&eacute;c&egrave;s. 
+Tous les jours cette semaine nous vous proposons via des infographies de mieux comprendre le virus Ebola. Apparue en 1976 en République Démocratique du Congo, le virus tire son nom de la rivière Ebola où le premier cas a été recensé.  Avec un taux de mortalité compris entre 25% et 90%, Ebola est une maladie infectieuse d’origine virale qui a coûté la vie à 2220 personnes entre 1976 et 2013. Depuis sa réapparition en 2014, elle a tué 3 fois plus de personnes en 1 an qu’en 37 ans.  Au 24 décembre 2014, selon l’OMS, on comptait 19 497 cas notifiés de maladie à virus Ebola, dont 7588 décès.
 
 {% include image.html %}
