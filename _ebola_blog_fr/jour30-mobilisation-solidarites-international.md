@@ -15,14 +15,7 @@ image:
   alt: "Infographie : P. David/Photo : C. Decorde"
   legende: "Infographie : P. David/Photo : C. Decorde"
   center: true
-images:
-  image:
-    image_path: /uploads/ebolaequivalence_solidaritesinternational (2).jpg
-    alt: "Infographie : P. David/Photo : C. Decorde"
-    legende: "Infographie : P. David/Photo : C. Decorde"
-    center: true
 ---
-A Moyamba, la premi&egrave;re rotation a eu lieu. Fanny Rochette a pris le chemin de la France apr&egrave;s 6 semaines de travail acharn&eacute; et c’est Daisy Fargier qui [malgr&eacute; la peur a pris le relais](http://ebola.solidarites.org./jour12-ebola%20la%20peur%20et%20lengagement-%20solidarites-international.html).  Responsable du service AGIR (service Audit et Gestion int&eacute;gr&eacute;e des Risques) au si&egrave;ge, Daisy s’est port&eacute;e volontaire depuis le d&eacute;but. D&egrave;s les premiers jours de la mobilisation Ebola chez SOLIDARITES INTERNATIONAL, elle, comme d’autres, ont annonc&eacute; leur volont&eacute; de se mettre au service de la lutte contre la maladie sur le terrain.
-A Moyamba donc, la mobilisation continue. Les meetings s’enchainent (photo 1) pour que chacun puisse &ecirc;tre le plus efficace possible (photo 2).
+A Moyamba, la premi&egrave;re rotation a eu lieu. Fanny Rochette a pris le chemin de la France apr&egrave;s 6 semaines de travail acharn&eacute; et c’est Daisy Fargier qui [malgr&eacute; la peur a pris le relais](http://ebola.solidarites.org./jour12-ebola%20la%20peur%20et%20lengagement-%20solidarites-international.html). Responsable du service AGIR (service Audit et Gestion int&eacute;gr&eacute;e des Risques) au si&egrave;ge, Daisy s’est port&eacute;e volontaire depuis le d&eacute;but. D&egrave;s les premiers jours de la mobilisation Ebola chez SOLIDARITES INTERNATIONAL, elle, comme d’autres, ont annonc&eacute; leur volont&eacute; de se mettre au service de la lutte contre la maladie sur le terrain. A Moyamba donc, la mobilisation continue. Les meetings s’enchainent (photo 1) pour que chacun puisse &ecirc;tre le plus efficace possible (photo 2).
 
-[Lire la derni&egrave;re chronique de Sandra Lamarque sur Liberation.fr ](http://www.liberation.fr/monde/2014/12/22/ebola-chacun-essaie-de-garder-le-sourire-derriere-son-masque_1167033)
+[Lire la derni&egrave;re chronique de Sandra Lamarque sur Liberation.fr](http://www.liberation.fr/monde/2014/12/22/ebola-chacun-essaie-de-garder-le-sourire-derriere-son-masque_1167033)
