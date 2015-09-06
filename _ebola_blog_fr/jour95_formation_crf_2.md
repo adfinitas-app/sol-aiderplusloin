@@ -20,9 +20,9 @@ Je m’appelle Rachel. Je travaille chez Solidarit&eacute;s International depuis
 
 ### #2 - Sur une mission Ebola, on ne fait jamais rien tout seul.
 
-Lors de la formation CRF, l’accent est vraiment mis sur l’aspect pratique. On apprend les protocoles et proc&eacute;dures, et on passe tr&egrave;s vite &agrave; la mise en situation. Dans ce but, la Croix Rouge a construit une r&eacute;plique de centre de traitement dans leurs locaux, permettant aux participants de se confronter aux d&eacute;fis auxquels ils feront face une fois sur le terrain. 
+Lors de la formation CRF, l’accent est vraiment mis sur l’aspect pratique. On apprend les protocoles et proc&eacute;dures, et on passe tr&egrave;s vite &agrave; la mise en situation. Dans ce but, la Croix Rouge a construit une r&eacute;plique de centre de traitement dans leurs locaux, permettant aux participants de se confronter aux d&eacute;fis auxquels ils feront face une fois sur le terrain.
 
-Prendre les bon r&eacute;flexes &agrave; ce stade est essentiel, car une fois sur place chacun est responsable non seulement de sa propre sant&eacute; mais de celle de ses co-&eacute;quipiers. Un oubli, une erreur de la part d’une seule personne peuvent mettre en danger toute une &eacute;quipe. 
+Prendre les bon r&eacute;flexes &agrave; ce stade est essentiel, car une fois sur place chacun est responsable non seulement de sa propre sant&eacute; mais de celle de ses co-&eacute;quipiers. Un oubli, une erreur de la part d’une seule personne peuvent mettre en danger toute une &eacute;quipe.
 
 Ainsi, nous avons appris &agrave; nous habiller en combinaison de protection individuelle - et &agrave; nous d&eacute;shabiller - afin de r&eacute;duire le risque de contamination. Toujours en bin&ocirc;me, pour &ecirc;tre absolument certain d’avoir bien respect&eacute; les protocoles. "Sur une mission Ebola, on ne fait jamais rien tout seul," nous a-t-on r&eacute;p&eacute;t&eacute; pendant la formation. Par le biais de jeux de r&ocirc;le et de mises en situation, nous avons accueilli des ambulances, soign&eacute; des patients, g&eacute;r&eacute; des corps - le tout en combinaison. M&ecirc;me s’il fait quinze degr&eacute;s de moins &agrave; Paris qu’en Sierra Leone, se mouvoir et respirer dans la combinaison reste un vrai d&eacute;fi.
 
