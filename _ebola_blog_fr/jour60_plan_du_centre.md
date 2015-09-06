@@ -16,6 +16,8 @@ image:
   legende: Vue aérienne du centre de prise en charge des malades à Moyamba
   center: true
 ---
-Il y a quelques semaines nous vous proposions un sch&eacute;ma en 3D du centre de prise en charge de Moyamba en Sierra Leone o&ugrave; nos &eacute;quipes œuvrent chaque jour &agrave; d&eacute;sinfecter le centre et &agrave; d&eacute;contaminer le mat&eacute;riel afin de contenir le virus Ebola dans la zone rouge. 
+Il y a quelques semaines nous vous proposions un sch&eacute;ma en 3D du centre de prise en charge de Moyamba en Sierra Leone o&ugrave; nos &eacute;quipes œuvrent chaque jour &agrave; d&eacute;sinfecter le centre et &agrave; d&eacute;contaminer le mat&eacute;riel afin de contenir le virus Ebola dans la zone rouge.
 
-Aujourd’hui nous vous proposons une vue a&eacute;rienne de ce centre avec le d&eacute;tails des b&acirc;timents, &agrave; quoi ils servent et o&ugrave; ils se situent afin de mieux comprendre son fonctionnement. 
+Aujourd’hui nous vous proposons une vue a&eacute;rienne de ce centre avec le d&eacute;tails des b&acirc;timents, &agrave; quoi ils servent et o&ugrave; ils se situent afin de mieux comprendre son fonctionnement.
+
+{% include image.html %}
