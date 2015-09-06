@@ -18,9 +18,7 @@ image:
 ---
 ### Transmission
 
-Il existe plusieurs modes de transmission du virus Ebola. En effet, celui-ci se transmet par contact direct avec tout liquide biologique d’une personne malade : sang, vomissures, sueur, salives, selles, urines, plaies, muqueuses, sperme, lait maternel, organes.
-Il peut &eacute;galement se transmettre par contact indirect par le linge sale ou la literie souill&eacute;e d'une personne malade, par contact avec une personne d&eacute; c&eacute;d&eacute;e suspect&eacute;e du virus Ebola. Enfin, le virus peut se transmettre par consommation crue ou  contact physique d'animaux porteurs du virus, vivants ou morts.
-En revanche, le virus ne se transmet pas par contact avec une personne qui n’a aucun sympt&ocirc;me, m&ecirc;me si elle est porteuse du virus. Ebola ne se transmet pas non plus par voie a&eacute;rienne. Le virus ne se propage pas dans l’air, il faut un contact physique.
+Il existe plusieurs modes de transmission du virus Ebola. En effet, celui-ci se transmet par contact direct avec tout liquide biologique d’une personne malade : sang, vomissures, sueur, salives, selles, urines, plaies, muqueuses, sperme, lait maternel, organes. Il peut &eacute;galement se transmettre par contact indirect par le linge sale ou la literie souill&eacute;e d'une personne malade, par contact avec une personne d&eacute; c&eacute;d&eacute;e suspect&eacute;e du virus Ebola. Enfin, le virus peut se transmettre par consommation crue ou contact physique d'animaux porteurs du virus, vivants ou morts. En revanche, le virus ne se transmet pas par contact avec une personne qui n’a aucun sympt&ocirc;me, m&ecirc;me si elle est porteuse du virus. Ebola ne se transmet pas non plus par voie a&eacute;rienne. Le virus ne se propage pas dans l’air, il faut un contact physique.
 
 {% include image.html %}
 
