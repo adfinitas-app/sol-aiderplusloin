@@ -16,14 +16,12 @@ image:
   legende: "L'équipe en charge de la lessive (zone de faible risque)"
   center: true
 ---
-Voil&agrave; donc deux jours que les 3 premiers patients sont arriv&eacute;s dans le centre de prise en charge de Moyamba.
-De leur c&ocirc;t&eacute;, les &eacute;quipes soignantes se relayent d&eacute;j&agrave; dans la zone rouge (celle o&ugrave; sont alit&eacute;s les patients) avec leur combinaison : habillage, rotation, d&eacute;sinfection, d&eacute;shabillage… (voir les photos ci-dessous)
-Lire la chronique compl&egrave;te de Sandra Lamarque sur Liberation.fr
+Voil&agrave; donc deux jours que les 3 premiers patients sont arriv&eacute;s dans le centre de prise en charge de Moyamba. De leur c&ocirc;t&eacute;, les &eacute;quipes soignantes se relayent d&eacute;j&agrave; dans la zone rouge (celle o&ugrave; sont alit&eacute;s les patients) avec leur combinaison : habillage, rotation, d&eacute;sinfection, d&eacute;shabillage… (voir les photos ci-dessous) Lire la chronique compl&egrave;te de Sandra Lamarque sur Liberation.fr
 
 ![](/uploads/versions/01. ppe dressing---x----1024-683x---.jpg)*Habillage de la combinaison de protection*
 
-![](/uploads/versions/02. last verification---x----1024-683x---.jpg)*Derni&egrave;re v&eacute;rification avant d'entrer dans la zone rouge *
+![](/uploads/versions/02. last verification---x----1024-683x---.jpg)*Derni&egrave;re v&eacute;rification avant d'entrer dans la zone rouge*
 
-![](/uploads/versions/03. first team going in---x----1024-683x---.jpg)*La premi&egrave;re &eacute;quipe s'appr&ecirc;te &agrave; rentrer dans la zone rouge *
+![](/uploads/versions/03. first team going in---x----1024-683x---.jpg)*La premi&egrave;re &eacute;quipe s'appr&ecirc;te &agrave; rentrer dans la zone rouge*
 
 ![](/uploads/versions/04. in the high risk zone---x----1024-683x---.jpg)*La premi&egrave;re &eacute;quipe dans la zone rouge*
