@@ -11,10 +11,10 @@ video:
   code_embed_de_la_video: ""
   legende: ""
 image:
-  image_path: uploads/versions/rachel crf ebola---(0-1-500-331-800-530)---.jpg
+  image_path: /uploads/rachel crf ebola.jpg
   alt: Rachel Erskine lors de la formation Ebola
   legende: Rachel Erskine lors de la formation Ebola
-  center: false
+  center: true
 ---
 Je m’appelle Rachel. Je travaille chez Solidarit&eacute;s International depuis 2010, et je suis charg&eacute;e de communication depuis pr&egrave;s de deux ans. Dans ce cadre, je vais bient&ocirc;t partir en Sierra Leone afin de r&eacute;colter des t&eacute;moignages, des informations et des images pour nourrir notre communication sur la crise Ebola. Cette semaine, j’ai eu la chance d’assister &agrave; une formation de pr&eacute;-d&eacute;ploiement Ebola mise en place &agrave; Paris par la Croix Rouge Fran&ccedil;aise (CRF).
 
