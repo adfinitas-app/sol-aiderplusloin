@@ -16,7 +16,7 @@ image:
   legende: "Infographie : Eugénie Brière"
   center: true
 ---
-Les sympt&ocirc;mes
+### Les sympt&ocirc;mes
 
 Il existe deux phases de sympt&ocirc;mes pour le virus Ebola. La premi&egrave;re comporte des risques de transmission relativement faibles : apparition brutale de fi&egrave;vre, maux de t&ecirc;te, faiblesse intense, irritation de la gorge et douleurs musculaires. A ce stade, il n’existe que peu de risques de transmettre la maladie. En revanche, quand arrive la deuxi&egrave;me phase, les risques de transmission sont beaucoup plus &eacute;lev&eacute;s. Les sympt&ocirc;mes &agrave; ce stade sont aussi beaucoup plus &eacute;vidents et sp&eacute;cifiques &agrave; la maladie : vomissements, &eacute;ruption cutan&eacute;es, h&eacute;morragies internes et externes, insuffisance r&eacute;nale et h&eacute;patique ainsi que des diarrh&eacute;es.
 
