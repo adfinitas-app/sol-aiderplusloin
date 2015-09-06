@@ -12,7 +12,7 @@ video:
   legende: ""
 image:
   image_path: /uploads/solidaritesinternational_ebola_moyamba.jpg
-  alt: "Tous les staffs travaillant ce matin entourent nos deux patientes, le tout avec une chanson spéciale \"Ebola Free\", et Abdul notre psychosocial worker danse avec l’une d’entre elles."
+  alt: "Tous les staffs travaillant ce matin entourent nos deux patientes, le tout avec une chanson spéciale Ebola Free, et Abdul notre psychosocial worker danse avec l’une d’entre elles."
   legende: "Tous les staffs travaillant ce matin entourent nos deux patientes, le tout avec une chanson spéciale \"Ebola Free\", et Abdul notre psychosocial worker danse avec l’une d’entre elles."
   center: true
 ---
