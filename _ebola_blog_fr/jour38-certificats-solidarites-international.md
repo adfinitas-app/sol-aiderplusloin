@@ -16,6 +16,6 @@ image:
   legende: "Le certificat \"Free From Ebola\""
   center: true
 ---
-Si depuis le d&eacute;but de cette nouvelle ann&eacute;e les d&eacute;c&egrave;s sont nombreux dans le centre de Moyamba, des moments de joie surviennent aussi. Hier, le 5 janvier, 4 nouveaux patients ont pu sortir du centre. 4 nouveaux "Ebola Survivor" comme on les appelle ici. Et c’est avec un certificat (voir photo) que ces "survivants" nous quittent et pourront bient&ocirc;t serrer leur(s) enfant(s), leur conjoint, leurs parents dans leurs bras. 
+Si depuis le d&eacute;but de cette nouvelle ann&eacute;e les d&eacute;c&egrave;s sont nombreux dans le centre de Moyamba, des moments de joie surviennent aussi. Hier, le 5 janvier, 4 nouveaux patients ont pu sortir du centre. 4 nouveaux "Ebola Survivor" comme on les appelle ici. Et c’est avec un certificat (voir photo) que ces "survivants" nous quittent et pourront bient&ocirc;t serrer leur(s) enfant(s), leur conjoint, leurs parents dans leurs bras.
 
 {% include image.html %}
