@@ -1,18 +1,21 @@
 ---
 title: Jour62_videoaerienne
-titre: Jour 66 - Le centre de Moyamba en 3D
-subtitle: "Depuis le mois de février 2014, une épidémie de MVE (Maladie à virus EBOLA) touche l’Afrique de l’Ouest. Apparue en Guinée, cette épidémie s’est étendue à la Sierra Leone et au Libéria..."
+titre: Jour 62 - Vidéo aérienne du centre de Moyamba
+subtitle: Découvrez une vue aérienne du centre de Moyamba en Sierra Leone filmé par un drone.
 auteur: SOLIDARITÉS INTERNATIONAL
-page_date: "2015-09-06 11:55:21"
+page_date: 2015-01-30T00:00:00.000Z
 meta:
-  title: Jour 66 - Le centre de Moyamba en 3D
-  description: "Depuis le mois de février 2014, une épidémie de MVE (Maladie à virus EBOLA) touche l’Afrique de l’Ouest. Apparue en Guinée, cette épidémie s’est étendue à la Sierra Leone et au Libéria..."
+  title: Jour 62 - Vidéo aérienne du centre de Moyamba
+  description: Découvrez une vue aérienne du centre de Moyamba en Sierra Leone filmé par un drone.
 video:
-  code_embed_de_la_video: "<iframe width=\"735\" height=\"413\" src=\"https://www.youtube.com/embed/0VCzbnPX8do\" frameborder=\"0\" allowfullscreen=\"\" data-cms-source=\"/ebola/blog/article/jour66_video3dcentre.html\" data-cms-index=\"7\"></iframe>"
-  legende: "© Réalisation : Grégory Jaillard / Voix off : Charles Mendiant"
+  code_embed_de_la_video: "<iframe width=\"730\" height=\"411\" src=\"https://www.youtube.com/embed/dMto5zbPexk\" frameborder=\"0\" allowfullscreen></iframe>"
+  legende: ""
 image:
   image_path: /uploads/eboalestenfrance.jpg
   alt: EBOLA EST EN FRANCE
   legende: "BDDP & Fils"
   center: true
 ---
+Mercredi, nous vous proposions de visualiser le centre de prise en charge de Moyamba gr&acirc;ce a une photo a&eacute;rienne. Aujourd’hui, d&eacute;couvrez le centre depuis le ciel film&eacute; par un drone des &eacute;quipes norv&eacute;giennes qui travaillent dans le centre. 
+
+{% include video.html %}
