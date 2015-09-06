@@ -1,18 +1,21 @@
 ---
 title: Jour11 Vueaerienne Solidarites International
-titre: "Jour 12 – Ebola : la peur et l’engagement"
-subtitle: "Responsable du service AGIR, Daisy Fargier fait partie des membres du siège qui se sont portés volontaire pour faire partie de notre équipe déployée en Sierra Leone. Elle se confie."
+titre: Jour 11 - Vue aérienne
+subtitle: Découvrez la vue aérienne du centre de prise en charge des malades de Moyamba...
 auteur: SOLIDARITÉS INTERNATIONAL
-page_date: "2015-09-06 22:45:37"
+page_date: 2014-12-10T00:00:00.000Z
 meta:
-  title: "Jour 12 – Ebola : la peur et l’engagement"
-  description: "Responsable du service AGIR, Daisy Fargier fait partie des membres du siège qui se sont portés volontaire pour faire partie de notre équipe déployée en Sierra Leone. Elle se confie."
+  title: Jour 11 - Vue aérienne
+  description: Découvrez la vue aérienne du centre de prise en charge des malades de Moyamba...
 video:
   code_embed_de_la_video: ""
   legende: ""
 image:
-  image_path: /uploads/daisy ok.jpg
-  alt: "Daisy Fargier, Responsable du service Audit et Gestion intégrée des Risques (AGIR)"
-  legende: "Daisy Fargier, Responsable du service Audit et Gestion intégrée des Risques (AGIR)"
+  image_path: /uploads/emc vu du ciel.jpg
+  alt: Vue aérienne du cenrte de prise en charge de Moyamba
+  legende: Vue aérienne du cenrte de prise en charge de Moyamba
   center: true
 ---
+Ci-dessous d&eacute;couvrez la vue a&eacute;rienne du centre de prise en charge des malades atteints par le virus Ebola dans lequel les docteurs de M&eacute;decins du Monde Espagne prennent en charge les malades. Quant aux &eacute;quipes de  SOLIDARIT&Eacute;S INTERNATIONAL, elles devront prot&eacute;ger le personnel de sant&eacute; et d&eacute;sinfecter le centre.
+
+{% include image.html %}
