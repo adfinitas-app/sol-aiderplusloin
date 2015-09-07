@@ -15,6 +15,7 @@ image:
   alt: "Infographie : Eugénie Brière"
   legende: "Infographie : Eugénie Brière"
   center: true
+  adjust: true
 ---
 ### Les sympt&ocirc;mes
 
