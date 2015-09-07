@@ -5,41 +5,41 @@
  */
 @font-face {
     font-family: 'VerbCompLight';
-    src: url('/css/fonts/VerbCompRegular.eot');
-    src: url('/css/fonts/VerbCompLight.eot?#iefix') format('embedded-opentype'),
-         url('/css/fonts/VerbCompLight.woff') format('woff'),
-         url('/css/fonts/VerbCompLight.ttf') format('truetype'),
-         url('/css/fonts/VerbCompLight.svg#VerbCompLight') format('svg');
+    src: url('/statics/ebola/blog/fonts/VerbCompRegular.eot');
+    src: url('/statics/ebola/blog/fonts/VerbCompLight.eot?#iefix') format('embedded-opentype'),
+         url('/statics/ebola/blog/fonts/VerbCompLight.woff') format('woff'),
+         url('/statics/ebola/blog/fonts/VerbCompLight.ttf') format('truetype'),
+         url('/statics/ebola/blog/fonts/VerbCompLight.svg#VerbCompLight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'VerbCompRegular';
-    src: url('/css/fonts/VerbCompRegular.eot');
-    src: url('/css/fonts/VerbCompRegular.eot?#iefix') format('embedded-opentype'),
-         url('/css/fonts/VerbCompRegular.woff') format('woff'),
-         url('/css/fonts/VerbCompRegular.ttf') format('truetype'),
-         url('/css/fonts/VerbCompRegular.svg#VerbCompRegular') format('svg');
+    src: url('/statics/ebola/blog/fonts/VerbCompRegular.eot');
+    src: url('/statics/ebola/blog/fonts/VerbCompRegular.eot?#iefix') format('embedded-opentype'),
+         url('/statics/ebola/blog/fonts/VerbCompRegular.woff') format('woff'),
+         url('/statics/ebola/blog/fonts/VerbCompRegular.ttf') format('truetype'),
+         url('/statics/ebola/blog/fonts/VerbCompRegular.svg#VerbCompRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'VerbCompBold';
-    src: url('/css/fonts/VerbCompRegular-Bold.eot');
-    src: url('/css/fonts/VerbCompRegular-Bold.eot?#iefix') format('embedded-opentype'),
-         url('/css/fonts/VerbCompRegular-Bold.woff') format('woff'),
-         url('/css/fonts/VerbCompRegular-Bold.ttf') format('truetype'),
-         url('/css/fonts/VerbCompRegular-Bold.svg#VerbCompRegular-Bold') format('svg');
+    src: url('/statics/ebola/blog/fonts/VerbCompRegular-Bold.eot');
+    src: url('/statics/ebola/blog/fonts/VerbCompRegular-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/statics/ebola/blog/fonts/VerbCompRegular-Bold.woff') format('woff'),
+         url('/statics/ebola/blog/fonts/VerbCompRegular-Bold.ttf') format('truetype'),
+         url('/statics/ebola/blog/fonts/VerbCompRegular-Bold.svg#VerbCompRegular-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'VerbCompBlack';
-    src: url('/css/fonts/verbcompblack-webfont.eot');
-    src: url('/css/fonts/verbcompblack-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/css/fonts/verbcompblack-webfont.woff') format('woff'),
-         url('/css/fonts/verbcompblack-webfont.ttf') format('truetype'),
-         url('/css/fonts/verbcompblack-webfont.svg#verbcompblack') format('svg');
+    src: url('/statics/ebola/blog/fonts/verbcompblack-webfont.eot');
+    src: url('/statics/ebola/blog/fonts/verbcompblack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/statics/ebola/blog/fonts/verbcompblack-webfont.woff') format('woff'),
+         url('/statics/ebola/blog/fonts/verbcompblack-webfont.ttf') format('truetype'),
+         url('/statics/ebola/blog/fonts/verbcompblack-webfont.svg#verbcompblack') format('svg');
     font-weight: normal;
     font-style: normal;
 }
