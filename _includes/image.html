@@ -1,4 +1,4 @@
-<p class="{% if page.image.center %}text-center{% endif %}"><img class="module_img" src="{{ page.image.image_path }}" alt="{% if page.image.alt %}{{ page.image.alt }}{% endif %}" {% if page.image.adjust %}style="width:100%"{% endif %}>
+<p class="{% if page.image.center %}text-center{% endif %}"><img class="module_img" src="{{ page.image.image_path }}" alt="{% if page.image.alt %}{{ page.image.alt }}{% endif %}" style="{% if page.image.adjust %}width:100%{% endif %}">
 </p>
 {% if page.image.legende != empty %}
 <p class="caption">{{ page.image.legende }}</p>
