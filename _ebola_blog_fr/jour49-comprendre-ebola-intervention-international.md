@@ -1,5 +1,5 @@
 ---
-title: Jour49 Comprendre Ebola Intervention International
+title: Jour51 Comprendre Ebola Intervention International
 titre: "Jour 51 – Comprendre Ebola : l’intervention"
 subtitle: Tous les jours cette semaine nous vous proposons via des infographies de mieux comprendre le virus Ebola...
 auteur: SOLIDARITÉS INTERNATIONAL
@@ -15,6 +15,7 @@ image:
   alt: "Infographie : Eugénie Brière"
   legende: "Infographie : Eugénie Brière"
   center: true
+  adjust: true
 ---
 ### L'intervention
 
