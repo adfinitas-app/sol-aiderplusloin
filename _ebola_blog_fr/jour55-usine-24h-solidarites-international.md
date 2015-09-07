@@ -15,6 +15,7 @@ image:
   alt: Une équipe de nuit dans le centre de Moyamba
   legende: Une équipe de nuit dans le centre de Moyamba
   center: true
+  adjust: true
 ---
 Daisy Fargier est de retour de 6 semaines en Sierra Leone. Administratrice RH sur la mission, elle revient fatigu&eacute;e mais heureuse d’avoir participer &agrave; la lutte contre Ebola. "Quand je suis parti, je disais &ecirc;tre motiv&eacute; par "la peur" de cette maladie. Mais sur place, la peur a laiss&eacute; place &agrave; la fatigue. Nous nous entrainions tous dans le boulot. Nous ne sommes pas fatigu&eacute; d’avoir eu une mission trop dure mais plut&ocirc;t car nous &eacute;tions en veille permanente : le centre est comme une usine qui a besoin de fonctionner 24h sur 24. Le soir, je m’&eacute;croulais sur mon lit. Je n’ai pas regard&eacute; un seul film ni une seule s&eacute;rie pendant cette mission. Pour un humanitaire sur le terrain, je vous assure que c’est extr&ecirc;mement rare !"
 
