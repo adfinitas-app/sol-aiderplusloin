@@ -15,6 +15,7 @@ image:
   alt: "L'équipe en charge de la lessive (zone de faible risque)"
   legende: "L'équipe en charge de la lessive (zone de faible risque)"
   center: true
+  adjust: true
 ---
 Ce matin, le psychologue (Abdul) et moi avons visit&eacute; le centre d&eacute;di&eacute; aux enfants de cas confirm&eacute;s d'Ebola. C’est un centre g&eacute;r&eacute; par les autorit&eacute;s dans lequel les enfants sont pris en charge si les deux parents sont malades ou si celui qui reste n’a pas la possibilit&eacute; de prendre soin des enfants. Une fois dans le centre, les enfants sont mis en quarantaine pendant 21 jours (ils ne sont pas autoris&eacute;s &agrave; sortir et les visiteurs ne sont pas autoris&eacute;s). Le centre est g&eacute;r&eacute; et dot&eacute; par des survivants, des malades qui ont r&eacute;ussi &agrave; vaincre la maladie. Nous avons pu rencontrer les enfants de l'une de nos patientes (nomm&eacute;e Isatu). Nous leur avons donn&eacute; des nouvelles de leur m&egrave;re et avons pris des photos d'eux que nous nous avons ramen&eacute;es &agrave; Isatu.
 
