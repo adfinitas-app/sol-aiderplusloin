@@ -15,6 +15,7 @@ image:
   alt: Apprendre à vêtir sa PPE (équipement de protection) lors de la formation
   legende: Apprendre à vêtir sa PPE (équipement de protection) lors de la formation
   center: true
+  adjust: true
 ---
 Je m’appelle Rachel. Je travaille chez Solidarit&eacute;s International depuis 2010, et je suis charg&eacute;e de communication depuis pr&egrave;s de deux ans. Dans ce cadre, je vais bient&ocirc;t partir en Sierra Leone afin de r&eacute;colter des t&eacute;moignages, des informations et des images pour nourrir notre communication sur la crise Ebola. Pour pr&eacute;parer au mieux ma mission, j’ai assist&eacute; &agrave; une formation de pr&eacute;-d&eacute;ploiement Ebola mise en place &agrave; Paris par la Croix Rouge Fran&ccedil;aise (CRF).
 
