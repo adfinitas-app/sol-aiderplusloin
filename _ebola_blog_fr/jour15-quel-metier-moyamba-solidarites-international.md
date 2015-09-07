@@ -15,6 +15,7 @@ image:
   alt: EC ECHO - Jean-Louis Mosser
   legende: EC ECHO - Jean-Louis Mosser
   center: true
+  adjust: true
 ---
 Nous sommes en pleine formation des &eacute;quipes nationales qui travailleront avec les m&eacute;decins dans le centre. Les candidatures affluent de toute part. Il y a eu et il y a encore beaucoup de demande pour travailler dans le centre. Les offres d’emplois ne sont pas nombreuses en Sierra Leone. Encore moins depuis quelques temps. Les &eacute;coles et les universit&eacute;s &eacute;tant ferm&eacute;es, des milliers de professeurs, enseignants, maitresses sont aujourd’hui d&eacute;pourvus de travail. Et les cons&eacute;quences socio&eacute;conomiques de ces fermetures sont dramatiques. Outre les salaires qui ne tombent pas pour les enseignants, les &eacute;l&egrave;ves eux n’ont plus acc&egrave;s &agrave; l’apprentissage tout comme des centaines de milliers d’&eacute;tudiants n’ont plus la possibilit&eacute; d’avancer dans leur &eacute;tudes.
 
