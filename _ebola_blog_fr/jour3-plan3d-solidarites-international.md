@@ -1,18 +1,19 @@
 ---
 title: Jour3 Plan3d Solidarites International
-titre: Jour 10 - Mauvaises nouvelles
-subtitle: "En Sierra Leone, le virus Ebola progresse beaucoup trop vite..."
+titre: Jour 3 - Le centre de prise en charge de Moyamba
+subtitle: Découvrez le plan du centre de prise en charge des malades atteints par le virus Ebola...
 auteur: SOLIDARITÉS INTERNATIONAL
-page_date: "2015-09-07 21:19:15"
+page_date: 2014-12-02T00:00:00.000Z
 meta:
-  title: Jour 10 - Mauvaises nouvelles
-  description: "En Sierra Leone, le virus Ebola progresse beaucoup trop vite..."
+  title: Jour 3 - Le centre de prise en charge de Moyamba
+  description: Découvrez le plan du centre de prise en charge des malades atteints par le virus Ebola...
 video:
   code_embed_de_la_video: ""
   legende: ""
 image:
-  image_path: /uploads/100_bed_ebola_treatment_unit 05.jpg
-  alt: Plan de l’unité de prise en charge des malades confirmés
-  legende: Plan de l’unité de prise en charge des malades confirmés
+  image_path: /uploads/schéma etc.jpg
+  alt: Le plan du centre de prise en charge de Moyamba
+  legende: Le plan du centre de prise en charge de Moyamba
   center: true
 ---
+{% include image.html %}
