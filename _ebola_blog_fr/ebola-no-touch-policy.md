@@ -15,6 +15,7 @@ image:
   alt: 1ère réunion sur place
   legende: 1ère réunion sur place
   center: true
+  adjust: false
 ---
 Apr&egrave;s plusieurs mois de formation et de pr&eacute;paration des &eacute;quipes de SOLIDARIT&Eacute;S INTERNATIONAL, Andrea, sp&eacute;cialiste Eau, Hygi&egrave;ne et Assainissement et moi-m&ecirc;me, d&eacute;barquons &agrave; Freetown afin de lancer notre programme de r&eacute;ponse Ebola.
 
