@@ -11,7 +11,7 @@ video:
   code_embed_de_la_video: ""
   legende: ""
 image:
-  image_path: /uploads/schéma etc.jpg
+  image_path: /uploads/schemaetc.jpg
   alt: Le plan du centre de prise en charge de Moyamba
   legende: Le plan du centre de prise en charge de Moyamba
   center: true
