@@ -16,10 +16,8 @@ image:
   legende: Andrea sous sa combinaison de protection
   center: true
 ---
-Andrea est donc &agrave; Bo dans un centre de prise en charge MSF. Apr&egrave;s une formation &agrave; Bruxelles, le voil&agrave; d&eacute;sormais plong&eacute; dans le grand bain. Cette fois-ci plus le droit &agrave; l’erreur quand il enfile sa combinaison. Il est dans un centre en fonctionnement et le niveau de risque est bien plus &eacute;lev&eacute; qu’en Belgique. Mais il est entour&eacute; et lui-m&ecirc;me d&eacute;j&agrave; bien pr&eacute;par&eacute;. Lire son interview
+Andrea est donc à Bo dans un centre de prise en charge MSF. Après une formation à Bruxelles, le voilà désormais plongé dans le grand bain. Cette fois-ci plus le droit à l’erreur quand il enfile sa combinaison. Il est dans un centre en fonctionnement et le niveau de risque est bien plus élevé qu’en Belgique. Mais il est entouré et lui-même déjà bien préparé. Lire son interview
 
-### 14 camions &agrave; d&eacute;charger &agrave; la force des bras
+### 14 camions à décharger à la force des bras
 
-Ce m&ecirc;me jour, Emmanuel, notre logisticien et Julio, ainsi que l’&eacute;quipe de MDM r&eacute;ceptionnent 14 camions de mat&eacute;riel et consommables en provenance de Freetown. Il faut tout d&eacute;charger et tout installer dans les stocks, en vue de l’installation future des &eacute;quipements au cours des prochains jours. Un vrai chantier de titan : il n’y a pas de trans-palette, tout se fait &agrave; la force des bras. Heureusement tout le monde se mobilise.
-
- 
+Ce même jour, Emmanuel, notre logisticien et Julio, ainsi que l’équipe de MDM réceptionnent 14 camions de matériel et consommables en provenance de Freetown. Il faut tout décharger et tout installer dans les stocks, en vue de l’installation future des équipements au cours des prochains jours. Un vrai chantier de titan : il n’y a pas de trans-palette, tout se fait à la force des bras. Heureusement tout le monde se mobilise.
