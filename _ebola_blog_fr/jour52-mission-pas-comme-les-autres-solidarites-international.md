@@ -15,6 +15,7 @@ image:
   alt: Kien Vy Lam (allongé) lors de la formation MSF en Belgique.
   legende: Kien Vy Lam (allongé) lors de la formation MSF en Belgique.
   center: true
+  adjust: true
 ---
 Ancien expatri&eacute; de SOLIDARIT&Eacute;S INTERNATIONAL, Kien-Vy Lam est de retour au si&egrave;ge de l’organisation en tant que charg&eacute; de recrutement et de suivi des expatri&eacute;s pour la mission Ebola. Depuis le si&egrave;ge, il doit recruter entre six et huit expatri&eacute;s pour la Sierra Leone, toutes les six semaines. Il nous explique son m&eacute;tier et les contraintes auxquelles il doit faire face pour cette mission pas comme les autres.
 
