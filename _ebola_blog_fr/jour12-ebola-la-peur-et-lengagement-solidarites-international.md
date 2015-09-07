@@ -15,6 +15,7 @@ image:
   alt: "Daisy Fargier, Responsable du service Audit et Gestion intégrée des Risques (AGIR)"
   legende: "Daisy Fargier, Responsable du service Audit et Gestion intégrée des Risques (AGIR)"
   center: true
+  adjust: true
 ---
 Depuis le premier cas d’Ebola en mars 2014, j’ai su que je partirai sur le terrain. Cette crise est totalement injuste. Cette maladie frappe au hasard, &agrave; l’aveugle : il n’y a pas de traitement, on doit contenir l’&eacute;pid&eacute;mie… Et puis il y a ma m&egrave;re qui travaille en Guin&eacute;e, pas directement sur Ebola, mais elle y est confront&eacute;e.  C’est donc un engagement tr&egrave;s personnel.
 
