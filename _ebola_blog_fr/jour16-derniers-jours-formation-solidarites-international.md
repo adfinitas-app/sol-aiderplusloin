@@ -15,6 +15,7 @@ image:
   alt: "Formation de l'équipe de Moyamba dans la désinfection des ambulances"
   legende: "Formation de l'équipe de Moyamba dans la désinfection des ambulances"
   center: true
+  adjust: true
 ---
 Le jour J approche &agrave; grands pas. L’ouverture du centre de prise en charge des malades aura lieu dans quelques jours et il reste encore beaucoup &agrave; faire. R&eacute;ussir &agrave; pr&eacute;parer un centre en si peu de temps est un challenge de tous les instants auquel nous faisons face depuis que nous sommes sur place…et ce n’est pas fini. Aujourd’hui, c’est la derni&egrave;re journ&eacute;e de formation pour les &eacute;quipes nationales. Elle est primordiale : les formateurs, les volontaires de SOLIDARIT&Eacute;S INTERNATIONAL devront faire une ultime s&eacute;lection car malheureusement, tous les participants Sierra L&eacute;onais, malgr&eacute; leur courage et leur volont&eacute;, ne sont pas encore pr&ecirc;ts.
 
