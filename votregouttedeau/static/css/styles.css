@@ -229,6 +229,12 @@ header .baseline {
 	width: 25%;
 	padding-bottom: 10px;
 }
+.country-list .country {
+	float: inherit;
+	width: 25%;
+	padding-bottom: 10px;
+}
+
 .bloc-form ul li .lbl-radio {
 	margin-right: 5px;
 }

@@ -25,7 +25,7 @@ https://github.com/Bluefieldscom/intl-tel-input.git
         // add or remove input placeholder with an example number for the selected country
         autoPlaceholder: true,
         // default country
-        defaultCountry: "",
+        defaultCountry: "fr",
         // geoIp lookup function
         geoIpLookup: null,
         // don't insert international dial codes
@@ -35,7 +35,7 @@ https://github.com/Bluefieldscom/intl-tel-input.git
         // display only these countries
         onlyCountries: [],
         // the countries at the top of the list. defaults to united states and united kingdom
-        preferredCountries: [ "us", "gb" ],
+        preferredCountries: [],
         // specify the path to the libphonenumber script to enable validation/formatting
         utilsScript: ""
     }, keys = {
