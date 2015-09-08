@@ -118,17 +118,6 @@ function completeAndRedirect(){
 		$("#outform").css({"padding-top": "15px", "padding-bottom": "15px"});
        return false;
 		}
-		if (document.getElementById("id_phone").value != null && document.getElementById("id_phone").value != "" && document.getElementById("id_phone").value != "Téléphone") {
-			var regtel = /^\+?(?:[0-9]●?){6,14}[0-9]/g
-			if (regtel.test(document.getElementById("id_phone").value) == false)
-			{
-				$("#outform").html("<br><span>Ce numéro de téléphone n'est pas valide.<span>");
-				$("#outform").css("color", "red");
-				$("#outform").css("text-align", "center");
-				$("#outform").css({"padding-top": "15px", "padding-bottom": "15px"});
-		       return false;
-			}
-		}
     $( "#form" ).submit();
 }
 
