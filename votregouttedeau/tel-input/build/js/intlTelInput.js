@@ -1,5 +1,5 @@
 /*
-International Telephone Input v6.0.6
+International Telephone Input v6.0.8
 https://github.com/Bluefieldscom/intl-tel-input.git
 */
 // wrap in UMD - see https://github.com/umdjs/umd/blob/master/jqueryPlugin.js
@@ -33,7 +33,7 @@ https://github.com/Bluefieldscom/intl-tel-input.git
         // number type to use for placeholders
         numberType: "MOBILE",
         // display only these countries
-        onlyCountries: ["fr"],
+        onlyCountries: [],
         // the countries at the top of the list. defaults to united states and united kingdom
         preferredCountries: [ "us", "gb" ],
         // specify the path to the libphonenumber script to enable validation/formatting
@@ -850,6 +850,9 @@ https://github.com/Bluefieldscom/intl-tel-input.git
         _updatePlaceholder: function() {
             if (window.intlTelInputUtils && !this.hadInitialPlaceholder && this.options.autoPlaceholder && this.selectedCountryData) {
                 var iso2 = this.selectedCountryData.iso2, numberType = intlTelInputUtils.numberType[this.options.numberType || "FIXED_LINE"], placeholder = iso2 ? intlTelInputUtils.getExampleNumber(iso2, this.options.nationalMode, numberType) : "";
+                if (typeof this.options.customPlaceholder === "function") {
+                    placeholder = this.options.customPlaceholder(placeholder, this.selectedCountryData);
+                }
                 this.telInput.attr("placeholder", placeholder);
             }
         },
@@ -1128,7 +1131,7 @@ https://github.com/Bluefieldscom/intl-tel-input.git
     $.fn[pluginName].getCountryData = function() {
         return allCountries;
     };
-    $.fn[pluginName].version = "6.0.6";
+    $.fn[pluginName].version = "6.0.8";
     // Tell JSHint to ignore this warning: "character may get silently deleted by one or more browsers"
     // jshint -W100
     // Array of country objects for the flag dropdown.
