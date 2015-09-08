@@ -153,7 +153,7 @@ function completeAndRedirect(){
 			return i;
 		}
 			$("#id_phone").click(function () {
-				$("#id_phone").val("+" + allCountries[findpays(document.getElementById("id_pays").value)][2]);
+				$("#id_phone").attr("placeholder", "+" + allCountries[findpays(document.getElementById("id_pays").value)][2] + "000000000");
 			});
 	});
 </script>
@@ -285,7 +285,7 @@ function completeAndRedirect(){
 								<option value="fo" class="paysel">Faroe Islands</option>
 								<option value="fj" class="paysel">Fiji</option>
 								<option value="fi" class="paysel">Finland</option>
-								<option value="fr">France</option>
+								<option value="fr" class="paysel" selected="selected">France</option>
 								<option value="gf" class="paysel">French Guiana</option>
 								<option value="pf" class="paysel">French Polynesia</option>
 								<option value="tf" class="paysel">French Southern Territories</option>
