@@ -29,7 +29,7 @@ https://github.com/Bluefieldscom/intl-tel-input.git
         // geoIp lookup function
         geoIpLookup: null,
         // don't insert international dial codes
-        nationalMode: true,
+        nationalMode: false,
         // number type to use for placeholders
         numberType: "MOBILE",
         // display only these countries
@@ -37,7 +37,7 @@ https://github.com/Bluefieldscom/intl-tel-input.git
         // the countries at the top of the list. defaults to united states and united kingdom
         preferredCountries: [],
         // specify the path to the libphonenumber script to enable validation/formatting
-        utilsScript: ""
+        utilsScript: "./tel-input/lib/libphonenumber/build/utils.js"
     }, keys = {
         UP: 38,
         DOWN: 40,
