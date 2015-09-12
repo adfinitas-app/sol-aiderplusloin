@@ -13,14 +13,17 @@ slideshow:
   slide1_path: "/statics/ebola/landingpage/images/slide1.png"
   slide2_path: "/statics/ebola/landingpage/images/slide2.png"
   slide3_path: "/statics/ebola/landingpage/images/slide3.png"
-mission:
-  image_path: "/statics/ebola/landingpage/images/mission.png"
-traitement:
-  image1_path: "/statics/ebola/landingpage/images/traitement-1.png"
-  image2_path: "/statics/ebola/landingpage/images/traitement-2.png"
-  image3_path: "/statics/ebola/landingpage/images/traitement-3.png"
-equipe:
-  image_path: "/statics/ebola/landingpage/images/bg-video.png"
+background_image:
+  progression:
+    image_path: "/statics/ebola/landingpage/images/bg-epidemie.png"
+  mission:
+    image_path: "/statics/ebola/landingpage/images/mission.png"
+  traitement:
+    image1_path: "/statics/ebola/landingpage/images/traitement-1.png"
+    image2_path: "/statics/ebola/landingpage/images/traitement-2.png"
+    image3_path: "/statics/ebola/landingpage/images/traitement-3.png"
+  equipe:
+    image_path: "/statics/ebola/landingpage/images/bg-video.png"
 equivalences:
   equivalence1:
     amount: 80
@@ -80,10 +83,11 @@ equivalences:
     <link rel="stylesheet" type="text/css" href="/statics/ebola/landingpage/bower_components/slick/slick.css" />
     <script src="/statics/ebola/landingpage/bower_components/modernizr/modernizr.js"></script>
     <style>
-    .mission .bg {background-image: url({{page.mission.image_path}});}
-    .traitement .traitement1 {background-image: url({{page.traitement.image1_path}});}
-    .traitement .traitement2 {background-image: url({{page.traitement.image2_path}});}
-    .traitement .traitement3 {background-image: url({{page.traitement.image3_path}});}
+    .progression {background-image: url({{page.background_image.progression.image_path}});}
+    .mission .bg {background-image: url({{page.background_image.mission.image_path}});}
+    .traitement .traitement1 {background-image: url({{page.background_image.traitement.image1_path}});}
+    .traitement .traitement2 {background-image: url({{page.background_image.traitement.image2_path}});}
+    .traitement .traitement3 {background-image: url({{page.background_image.traitement.image3_path}});}
     .equipe {background-image: url({{page.equipe.image_path}});}
     .defi .slide1 .row {background-image: url({{page.slideshow.slide1_path}});}
     .defi .slide2 .row {background-image: url({{page.slideshow.slide2_path}});}
@@ -516,7 +520,7 @@ equivalences:
       <div class="row">
 	<div class="large-10 columns">
 	  <span class="sol"><a href="http://www.solidarites.org/fr/" target="_blank" class="editable">©SOLIDARITÉS INTERNATIONAL</a></span>
-	  <span>Réalisé par <a href="http://adfinitas.fr" target="_blank" class="editable">Adfinitas</a></span>
+	  <span>Réalisé par <a href="http://adfinitas.fr" target="_blank">Adfinitas</a></span>
 	  <span><a href="http://www.solidarites.org/fr/mentions-legales" target="_blank" class="editable">Mentions Légales</a></span>
 	  <span><a href="http://www.solidarites.org/fr/nous-contacter/contacter-le-service-relations-donateurs?view=message&layout=message&pf=1&redirect_on_success=" target="_blank" class="editable">Contact</a></span>
 	  <span>Nous rejoindre :
