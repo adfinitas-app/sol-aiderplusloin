@@ -38,20 +38,20 @@ panel:
       contenu:
       image_path:
 equivalences:
-  id_iraiser:
+  id_iraiser: 102
   height: 554
   panel1:
-    image_path:
-    copyright:
-    amount:
+    image_path: /uploads/versions/liban-refugiesorg---(0-0-331-164-331-164)---.jpg
+    copyright: @Marine Pradel
+    amount: 41
   panel2:
-    image_path:
-    copyright:
-    amount:
+    image_path: /uploads/versions/camerounrefugiesorg---(0-7-331-150-361-164)---.jpg
+    copyright: ©SOLIDARITÉS INTERNATIONAL
+    amount: 70
   panel3:
-    image_path:
-    copyright:
-    amount:
+    image_path: /uploads/versions/refugiesorgmyanmar---(0-0-331-164-331-164)---.jpg
+    copyright: ©SOLIDARITÉS INTERNATIONAL
+    amount: 120
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -259,9 +259,9 @@ woopra.track();
                         <div class="box box--1">
                             <a href="https://dons.solidarites.org/b?cid={{page.equivalences.id_iraiser}}&amount={{ page.equivalences.panel1.amount | times:100 }}&frequency=once" target="_blank">
                                 <figure>
-                                    <img src="/uploads/versions/liban-refugiesorg---(0-0-331-164-331-164)---.jpg" alt="Marine Pradel" height="164" width="331" data-cms-source="/refugies/index.html" data-cms-index="22" />
+                                    <img src="{{ page.equivalences.panel1.image_path }}" alt="{{ page.equivalences.panel1.copyright }}" height="164" width="331" data-cms-source="/refugies/index.html" data-cms-index="22" />
                                     <figcaption>
-                                        <span>@Marine Pradel</span>
+                                        <span>{{ page.equivalences.panel1.copyright }}</span>
                                     </figcaption>
                                 </figure>
                                 
@@ -283,9 +283,9 @@ woopra.track();
                         <div class="box box--2">
                             <a href="https://dons.solidarites.org/b?cid={{page.equivalences.id_iraiser}}&amount={{ page.equivalences.panel2.amount | times:100 }}&frequency=once" target="_blank">
                                 <figure>
-                                    <img src="/uploads/versions/camerounrefugiesorg---(0-7-331-150-361-164)---.jpg" alt="" height="164" width="361" data-cms-source="/refugies/index.html" data-cms-index="30" />
+                                    <img src="{{ page.equivalences.panel2.image_path }}" alt="{{ page.equivalences.panel2.copyright }}" height="164" width="361" data-cms-source="/refugies/index.html" data-cms-index="30" />
                                     <figcaption>
-                                        <span>©SOLIDARITÉS INTERNATIONAL</span>
+                                        <span>{{ page.equivalences.panel2.copyright }}</span>
                                     </figcaption>
                                 </figure>
                                 
@@ -307,9 +307,9 @@ woopra.track();
                         <div class="box box--3">
                             <a href="https://dons.solidarites.org/b?cid={{page.equivalences.id_iraiser}}&amount={{ page.equivalences.panel3.amount | times:100 }}&frequency=once" target="_blank">
                                 <figure>
-                                    <img src="/uploads/versions/refugiesorgmyanmar---(0-0-331-164-331-164)---.jpg" alt="" height="164" width="331" data-cms-source="/refugies/index.html" data-cms-index="38" />
+                                    <img src="{{ page.equivalences.panel3.image_path }}" alt="{{ page.equivalences.panel3.copyright }}" height="164" width="331" data-cms-source="/refugies/index.html" data-cms-index="38" />
                                     <figcaption>
-                                        <span>©SOLIDARITÉS INTERNATIONAL</span>
+                                        <span>{{ page.equivalences.panel3.copyright }}</span>
                                     </figcaption>
                                 </figure>
                                 
