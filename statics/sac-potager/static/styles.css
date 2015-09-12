@@ -644,9 +644,6 @@ footer a:hover {
 .ie7 .encart-details,
 .ie7 .encart-details .methode li .num { behavior: url(css/pie.htc)}
 
-/*-__-_-_- styles ie7 --_-_-_- */
-.ie7 header {}
-
 /*-__-_-_- styles ie6 --_-_-_- */
 .ie6 header {}
 .ie6 img,
