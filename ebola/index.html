@@ -2,18 +2,20 @@
 cid_iraiser: 122
 meta:
   title: "Faire barrage à l'épidémie d'Ébola en Sierra Leone - SOLIDARITÉS INTERNATIONAL"
-  description:
-  keywords:
+  description: "L’équipe de @SolidaritésInternational œuvre pour stopper l’épidémie d’#Ebola en #SierraLeone. À crise hors norme, une réponse exceptionnelle, à découvrir sur aiderplusloin.solidarites.org/ebola/."
+  keywords: "ébola, épidémie, Sierra Léone"
 facebook:
   title: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
   description: "L’équipe de @SolidaritésInternational œuvre pour stopper l’épidémie d’#Ebola en #SierraLeone. À crise hors norme, une réponse exceptionnelle, à découvrir sur aiderplusloin.solidarites.org/ebola/."
   image_path: "/statics/ebola/landing/images/header.png"
   site_name: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
-slideshow:
-  slide1_path: "/statics/ebola/landingpage/images/slide1.png"
-  slide2_path: "/statics/ebola/landingpage/images/slide2.png"
-  slide3_path: "/statics/ebola/landingpage/images/slide3.png"
 background_image:
+  header:
+    image_path: "/statics/ebola/landingpage/images/header.png"
+  slideshow:
+    slide1_path: "/statics/ebola/landingpage/images/slide1.png"
+    slide2_path: "/statics/ebola/landingpage/images/slide2.png"
+    slide3_path: "/statics/ebola/landingpage/images/slide3.png"
   progression:
     image_path: "/statics/ebola/landingpage/images/bg-epidemie.png"
   mission:
@@ -72,7 +74,8 @@ equivalences:
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{page.meta.title}}</title>
-
+    <meta name="description" content="{{page.meta.description}}" />
+    <meta name="keywords" content="{{page.meta.keywords}}" />
     <meta property="og:title" content="{{page.facebook.title}}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{site.url}}/ebola" />
@@ -83,15 +86,16 @@ equivalences:
     <link rel="stylesheet" type="text/css" href="/statics/ebola/landingpage/bower_components/slick/slick.css" />
     <script src="/statics/ebola/landingpage/bower_components/modernizr/modernizr.js"></script>
     <style>
+    .header {background-image: url({{page.background_image.header.image_path}});}
     .progression {background-image: url({{page.background_image.progression.image_path}});}
     .mission .bg {background-image: url({{page.background_image.mission.image_path}});}
     .traitement .traitement1 {background-image: url({{page.background_image.traitement.image1_path}});}
     .traitement .traitement2 {background-image: url({{page.background_image.traitement.image2_path}});}
     .traitement .traitement3 {background-image: url({{page.background_image.traitement.image3_path}});}
-    .equipe {background-image: url({{page.equipe.image_path}});}
-    .defi .slide1 .row {background-image: url({{page.slideshow.slide1_path}});}
-    .defi .slide2 .row {background-image: url({{page.slideshow.slide2_path}});}
-    .defi .slide3 .row {background-image: url({{page.slideshow.slide3_path}});}
+    .equipe {background-image: url({{page.background_image.equipe.image_path}});}
+    .defi .slide1 .row {background-image: url({{page.background_image.slideshow.slide1_path}});}
+    .defi .slide2 .row {background-image: url({{page.background_image.slideshow.slide2_path}});}
+    .defi .slide3 .row {background-image: url({{page.background_image.slideshow.slide3_path}});}
     </style>
   </head>
   <body>
