@@ -19,20 +19,26 @@ panel:
   panel3:
     media_path: //player.vimeo.com/video/81391471?color=B21914
 equivalences:
-  id_iraiser: 102
+  cid_iraiser: 102
   height: 554
   panel1:
+    titre: "Liban"
+    amount: 41
+    contenu: "C'est le coût d'un filtre à eau pour une famille."
     image_path: /uploads/versions/liban-refugiesorg---(0-0-331-164-331-164)---.jpg
     copyright: "@Marine Pradel"
-    amount: 41
   panel2:
+    titre: "Calais, France"
+    amount: 70
+    contenu: "C'est le coût de 5 kits eau potable par personne."
     image_path: /uploads/versions/camerounrefugiesorg---(0-7-331-150-361-164)---.jpg
     copyright: ©SOLIDARITÉS INTERNATIONAL
-    amount: 70
   panel3:
+    titre: "Myanmar"
+    amount: 120
+    contenu: "Contribuer à la réalisation d'un forage"
     image_path: /uploads/versions/refugiesorgmyanmar---(0-0-331-164-331-164)---.jpg
     copyright: ©SOLIDARITÉS INTERNATIONAL
-    amount: 120
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -238,7 +244,7 @@ woopra.track();
 
                     <div class="row">
                         <div class="box box--1">
-                            <a href="https://dons.solidarites.org/b?cid={{page.equivalences.id_iraiser}}&amount={{ page.equivalences.panel1.amount | times:100 }}&frequency=once" target="_blank">
+                            <a href="https://dons.solidarites.org/b?cid={{page.equivalences.cid_iraiser}}&amount={{ page.equivalences.panel1.amount | times:100 }}&frequency=once" target="_blank">
                                 <figure>
                                     <img src="{{ page.equivalences.panel1.image_path }}" alt="{{ page.equivalences.panel1.copyright }}" height="164" width="331" data-cms-source="/refugies/index.html" data-cms-index="22" />
                                     <figcaption>
@@ -246,13 +252,13 @@ woopra.track();
                                     </figcaption>
                                 </figure>
                                 
-                                <span class="pays editable">Liban</span>
-                                <span class="montant editable">41<sup>€</sup></span>
-                                <span class="deduction editable">11€ après déduction fiscale*</span>
+                                <span class="pays">{{ page.equivalences.panel1.titre }}</span>
+                                <span class="montant">{{ page.equivalences.panel1.amount }}<sup>€</sup></span>
+                                <span class="deduction">{{ page.equivalences.panel1.amount | divided_by : 4 | ceil }}€ après déduction fiscale*</span>
 
                                 <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-hiver-2013/images/layout/don-equal.png" alt="" class="equal" />
 
-                                <h5 class="editable">C&#39;est le co&ucirc;t d&#39;un filtre &agrave; eau pour une famille.</h5>
+                                <h5 class="editable">{{ page.equivalences.panel1.contenu }}</h5>
 
                                 <div class="donate">
                                     <span class="btn btn--donate">J'aide maintenant</span>
@@ -270,13 +276,13 @@ woopra.track();
                                     </figcaption>
                                 </figure>
                                 
-                                <span class="pays editable">&nbsp;Calais, France</span>
-                                <span class="montant editable">70<sup>€</sup></span>
-                                <span class="deduction editable">18€ après déduction fiscale*</span>
+                                <span class="pays">{{ page.equivalences.panel2.titre }}</span>
+                                <span class="montant">{{ page.equivalences.panel2.amount }}<sup>€</sup></span>
+                                <span class="deduction">{{ page.equivalences.panel2.amount | divided_by : 4 | ceil }}€ après déduction fiscale*</span>
 
                                 <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-hiver-2013/images/layout/don-equal.png" alt="" class="equal" />
 
-                                <h5 class="editable">C&#39;est le co&ucirc;t de 5 kits eau potable par personne.</h5>
+                                <h5 class="editable">{{ page.equivalences.panel2.contenu }}</h5>
 
                                 <div class="donate">
                                     <span class="btn btn--donate">J'aide maintenant</span>
@@ -294,13 +300,13 @@ woopra.track();
                                     </figcaption>
                                 </figure>
                                 
-                                <span class="pays editable">Myanmar</span>
-                                <span class="montant editable">120<sup>€</sup></span>
-                                <span class="deduction editable">30€ après déduction fiscale*</span>
+                                <span class="pays">{{ page.equivalences.panel3.titre }}</span>
+                                <span class="montant">{{ page.equivalences.panel3.amount }}<sup>€</sup></span>
+                                <span class="deduction">{{ page.equivalences.panel3.amount | divided_by : 4 | ceil }}€ après déduction fiscale*</span>
 
                                 <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-hiver-2013/images/layout/don-equal.png" alt="" class="equal" />
 
-                                <h5 class="editable">Contribuer &agrave; la r&eacute;alisation d&#39;un forage</h5>
+                                <h5>{{ page.equivalences.panel3.contenu }}</h5>
 
                                 <div class="donate">
                                     <span class="btn btn--donate">J'aide maintenant</span>
@@ -311,7 +317,7 @@ woopra.track();
 
                     <div class="other">
                         <p><a href="https://dons.solidarites.org/b?cid={{page.equivalences.id_iraiser}}" target="_blank">Je donne un autre montant</a></p>
-                        <p class="editable">*75% de d&eacute;duction fiscale</p>
+                        <p>*75% de d&eacute;duction fiscale</p>
                     </div>
                 </div>
 
