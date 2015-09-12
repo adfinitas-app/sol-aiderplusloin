@@ -95,7 +95,7 @@ blockquote {
 	font-family: 'Calibri';
 	line-height: 24px;
 }
-blockquote span {
+blockquote .titre-vert {
 	color: #009318;
 	font-size: 34px;
 	display: block;
