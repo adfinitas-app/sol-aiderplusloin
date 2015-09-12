@@ -1,5 +1,17 @@
+---
+cid_iraiser: 122
+meta
+  title: "Faire barrage à l'épidémie d'Ébola en Sierra Leone - SOLIDARITÉS INTERNATIONAL"
+  description:
+  keywords:
+facebook:
+  title: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
+  description: "L’équipe de @SolidaritésInternational œuvre pour stopper l’épidémie d’#Ebola en #SierraLeone. À crise hors norme, une réponse exceptionnelle, à découvrir sur aiderplusloin.solidarites.org/ebola/."
+  image_path: "/statics/ebola/landing/images/header.png"
+  site_name: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
+---
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="fr">
   <head>
     <!-- Start of Woopra Code -->
     <script>
@@ -37,39 +49,31 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Faire barrage à l'épidémie d'Ébola en Sierra Leone - SOLIDARITÉS INTERNATIONAL</title>
+    <title>{{page.meta.title}}</title>
 
-    <meta property="og:title" content="EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège." />
+    <meta property="og:title" content="{{page.facebook.title}}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://aiderplusloin.solidarites.org/ebola" />
-    <meta property="og:image" content="http://aiderplusloin.solidarites.org/ebola/images/header.png" />
-    <meta property="og:description" content="L’équipe de @SolidaritésInternational
-    œuvre pour stopper l’épidémie d’#Ebola
-    en #SierraLeone. À crise hors norme, une
-    réponse exceptionnelle, à découvrir sur
-    ebola.solidarites.org." />
-    <meta property="og:site_name" content="EBOLA : les médecins soignent, SOLIDARITÉS
-    INTERNATIONAL protège." />
-
-    <link rel="stylesheet" href="css/app.css" />
-
-    <link rel="stylesheet" type="text/css" href="bower_components/slick/slick.css" />
-
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <meta property="og:url" content="{{site.url}}/ebola" />
+    <meta property="og:image" content="{{site.url}}{{page.facebook.image_path}}" />
+    <meta property="og:description" content="{{page.facebook.description}}" />
+    <meta property="og:site_name" content="{{page.facebook.site_name}}" />
+    <link rel="stylesheet" href="/statics/ebola/landingpage/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="/statics/ebola/landingpage/bower_components/slick/slick.css" />
+    <script src="/statics/ebola/landingpage/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
     <div class="fixed" data-magellan-expedition="fixed">
       <nav class="top-bar" data-topbar="" role="navigation">
        <ul class="title-area">
 	 <li data-magellan-arrival="header" class="name">
-	   <h1><a href="#header"><img src="images/logo.png" alt="SOLIDARITÉS INTERNATIONAL" /></a></h1>
+	   <h1><a href="#header"><img src="/statics/ebola/landingpage/images/logo.png" alt="SOLIDARITÉS INTERNATIONAL" /></a></h1>
 	 </li>
 	 <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
        </ul>
 
        <section class="top-bar-section">
 	 <!-- Right Nav Section -->
-	 <ul class="right"><li><a class="button" href="https://dons.solidarites.org/?cid=122" target="_blank">Je fais un Don</a></li></ul>
+	 <ul class="right"><li><a class="button" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}" target="_blank">Je fais un Don</a></li></ul>
 
 	 <!-- Left Nav Section -->
 	 <ul class="left">
@@ -79,7 +83,7 @@
 	   <li data-magellan-arrival="centre" class="show-for-xmedium-up"><a href="#centre">Notre centre</a></li>
 	   <li data-magellan-arrival="equipe"><a href="#equipe">Notre équipe</a></li>
 	   <li data-magellan-arrival="soutien"><a href="#soutien">Votre soutien</a></li>
-	   <li data-magellan-arrival="blog" class="show-for-xmedium-up"><a href="#blog">Le blog</a></li>
+	   <li data-magellan-arrival="blog" class="show-for-xmedium-up"><a href="/ebola/blog/">Le blog</a></li>
 	 </ul>
        </section>
      </nav>
@@ -93,7 +97,7 @@
 	<h2>Les médecins soignent, <strong>SOLIDARITÉS INTERNATIONAL</strong> protège.</h2>
 	<div class="row">
 	  <div class="large-4 large-offset-4 end columns text-center">
-	    <a href="https://dons.solidarites.org/?cid=122" target="_blank" class="button">Je fais barrage, <span>je fais un don</span></a>
+	    <a href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}" target="_blank" class="button">Je fais barrage, <span>je fais un don</span></a>
 	  </div>
 	</div>
       </div>
@@ -202,7 +206,7 @@
 
 	<div class="row">
 	  <div class="large-8 bg columns">
-	    <!--<img src="images/mission.png" alt="" />-->
+	    <!--<img src="/statics/ebola/landingpage/images/mission.png" alt="" />-->
 	  </div>
 	  <div class="large-4 columns">
 	    <ul>
@@ -229,7 +233,7 @@
 
 		<div class="row">
 		  <div class="xlarge-8 xlarge-offset-2 large-10 large-offset-1 end texte columns text-center">
-		   <div class="picto"><img src="images/ico-eau.png" alt="" /></div>
+		   <div class="picto"><img src="/statics/ebola/landingpage/images/ico-eau.png" alt="" /></div>
 		   <p>
 		    <b>Gérer l’accès à l’eau du centre</b>
 		   </p>
@@ -246,7 +250,7 @@
 		<div class="row">
 		  <div class="xlarge-8 xlarge-offset-2 large-10 large-offset-1 end texte columns text-center">
 
-		   <div class="picto"><img src="images/ico-decontaminer.png" alt="" /></div>
+		   <div class="picto"><img src="/statics/ebola/landingpage/images/ico-decontaminer.png" alt="" /></div>
 		   <p>
 		    <b>Décontaminer et protéger</b>
 		   </p>
@@ -264,7 +268,7 @@
 
 		<div class="row">
 		  <div class="xlarge-8 xlarge-offset-2 large-10 large-offset-1 end  texte columns text-center">
-		   <div class="picto"><img src="images/ico-enterrement.png" alt="" /></div>
+		   <div class="picto"><img src="/statics/ebola/landingpage/images/ico-enterrement.png" alt="" /></div>
 		  <p>
 		    <b>Sécuriser l’enterrement des corps</b>
 		   </p>
@@ -296,10 +300,10 @@
 
 	<div class="row first">
 	  <div class="large-4 columns">
-	    <img src="images/centre-1.png" alt="" />
+	    <img src="/statics/ebola/landingpage/images/centre-1.png" alt="" />
 	  </div>
 	  <div class="large-4 columns">
-	    <img src="images/centre-2.png" alt="" />
+	    <img src="/statics/ebola/landingpage/images/centre-2.png" alt="" />
 	  </div>
 	  <div class="large-4 columns sierra">
 	    <h3>La Sierra Leone,<small>1<sup>er</sup> foyer de l’épidémie</small></h3>
@@ -326,7 +330,7 @@
 	    </p>
 	  </div>
 	  <div class="large-8 bg columns">
-	    <img src="images/centre-3.png" alt="" class="hide-for-medium-up" />
+	    <img src="/statics/ebola/landingpage/images/centre-3.png" alt="" class="hide-for-medium-up" />
 	  </div>
 	</div>
 
@@ -350,7 +354,7 @@
 
       <div class="intro-video">
 	<div class="launch-video">
-	  <img src="images/play-video.png" alt="" />
+	  <img src="/statics/ebola/landingpage/images/play-video.png" alt="" />
 	</div>
 	<h3><span>L’engagement de SOLIDARITÉS INTERNATIONAL et de son équipe terrain est total pour arrêter l’épidémie et épargner des milliers de vies !</span>
 	<br /><small>Sandra LAMARQUE, Responsable Cellule Urgence Ébola</small>
@@ -424,7 +428,7 @@
 		  <p class="lab">
 		    un don de
 		  </p>
-		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid=122&amount=8000&frequency=once">80 €</a>
+		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=8000&frequency=once">80 €</a>
 		 <p class="equivalence">
 		  correspond au coût d'un <br /><b>pulvérisateur</b> de chlore.
 		  </p>
@@ -432,14 +436,14 @@
 		    Soit un don de 20€ après la déduction<br /> fiscale de l'impôt sur le revenu
 		  </p>
 		 </div>
-                 <a target="_blank" href="https://dons.solidarites.org/?cid=122&amount=8000&frequency=once" class="btn-80 button">Je fais barrage, <span>je fais un don</span></a>
+                 <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=8000&frequency=once" class="btn-80 button">Je fais barrage, <span>je fais un don</span></a>
 	      </div>
 	      <div class="large-4 medium-4 small-12 columns columns-don text-center">
 		<div class="cta-don don-160">
 		  <p class="lab">
 		    un don de
 		  </p>
-		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid=122&amount=16000&frequency=once">160 €</a>
+		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=16000&frequency=once">160 €</a>
 		 <p class="equivalence">
 		  correspond au coût de la prise en<br /> charge d’un patient pour <b>1 journée</b><br /> par nos hygiénistes.
 		  </p>
@@ -447,14 +451,14 @@
 		    Soit un don de 40€ après la déduction<br /> fiscale de l'impôt sur le revenu
 		  </p>
 		 </div>
-                 <a target="_blank" href="https://dons.solidarites.org/?cid=122&amount=16000&frequency=once" class="btn-160 button">Je fais barrage, <span>je fais un don</span></a>
+                 <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=16000&frequency=once" class="btn-160 button">Je fais barrage, <span>je fais un don</span></a>
 	      </div>
 	      <div class="large-4 medium-4 end small-12 columns columns-don text-center">
 		<div class="cta-don don-320">
 		  <p class="lab">
 		    un don de
 		  </p>
-		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid=122&amount=32000&frequency=once">320 €</a>
+		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=32000&frequency=once">320 €</a>
 		 <p class="equivalence">
 		  correspond au coût de la prise en<br /> charge d’un patient pour <b>2 jours</b>.<br />
 		  </p>
@@ -462,7 +466,7 @@
 		    Soit un don de 80€ après la déduction<br /> fiscale de l'impôt sur le revenu
 		  </p>
 		 </div>
-                 <a target="_blank" href="https://dons.solidarites.org/?cid=122&amount=32000&frequency=once" class="btn-320 button">Je fais barrage, <span>je fais un don</span></a>
+                 <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=32000&frequency=once" class="btn-320 button">Je fais barrage, <span>je fais un don</span></a>
 	      </div>
             </div>
 
@@ -494,11 +498,11 @@
 	  </span>
 	</div>
 	<div class="large-2 columns text-center large-text-right">
-	  <a href="http://twitter.com/home?status=Vous+aussi%2C+faites+barrage+%C3%A0+%23Ebola+avec+%40Solidarites_Int+qui+agit+en+%23SierraLeone+%E2%86%92+http%3A%2F%2Febola.solidarites.org" target="_blank" class="twitter">
-	    <img src="images/share-tw.png" alt="tweet" />
+	  <a href="http://twitter.com/home?status=Vous+aussi%2C+faites+barrage+%C3%A0+%23Ebola+avec+%40Solidarites_Int+qui+agit+en+%23SierraLeone+%E2%86%92+http%3A%2F%2F{{site.url}}/ebola" target="_blank" class="twitter">
+	    <img src="/statics/ebola/landingpage/images/share-tw.png" alt="tweet" />
 	  </a>
-	  <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://ebola.solidarites.org" target="_blank" class="facebook">
-	    <img src="images/share-fb.png" alt="tweet" />
+	  <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]={{site.url}}/ebola" target="_blank" class="facebook">
+	    <img src="/statics/ebola/landingpage/images/share-fb.png" alt="tweet" />
 	  </a>
 	</div>
       </div>
@@ -510,10 +514,10 @@
       </div>
   </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script type="text/javascript" src="bower_components/slick/slick.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="/statics/ebola/landingpage/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/statics/ebola/landingpage/bower_components/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="/statics/ebola/landingpage/bower_components/slick/slick.min.js"></script>
+    <script src="/statics/ebola/landingpage/js/app.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
