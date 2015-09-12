@@ -1,5 +1,8 @@
 ---
-layout: migration
+meta:
+  title: "SOLIDARITÉS INTERNATIONAL - Le sac potager, une solution aux problèmes alimentaires"
+  description: "Le sac potager de Solidarités International permet de répondre aux problèmes alimentaires des habitants des bidonvilles et des camps de réfugiés"
+  keywords: "Sac potager, lutter contre la faim"
 video: "http://www.youtube.com/embed/ZnXYfHNsHNY"
 ---
 <!DOCTYPE html>
@@ -10,9 +13,9 @@ video: "http://www.youtube.com/embed/ZnXYfHNsHNY"
 <head>
     {% include analytics/woopra.html %}
     <meta charset="utf-8" />
-    <title>SOLIDARITÉS INTERNATIONAL - Le sac potager, une solution aux problèmes alimentaires</title>
-    <meta name="keywords" content="Sac potager, lutter contre la faim" />
-    <meta name="description" content="Le sac potager de Solidarités International permet de répondre aux problèmes alimentaires des habitants des bidonvilles et des camps de réfugiés" />
+    <title>{{ page.meta.title }}</title>
+    <meta name="keywords" content="{{ page.meta.keywords }}" />
+    <meta name="description" content="{{ page.meta.description }}" />
 	<link href="/statics/sac-potager/static/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
 	<link href="/statics/sac-potager/static/styles.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
@@ -27,9 +30,9 @@ video: "http://www.youtube.com/embed/ZnXYfHNsHNY"
 	<div class="conteneur">
 		<h1 class="logo-sol"><img src="/statics/sac-potager/static/img/logo-solidarites.png" alt="Solidarités International" /></h1>
 		<blockquote>
-			<span class="editable">Avec le sac potager,</span>
-            faisons fleurir des garde-manger dans les<br />
-			bidonvilles et les camps de réfugiés.
+			<span class="editable titre-vert">Avec le sac potager,</span>
+            <span class="editable">faisons fleurir des garde-manger dans les<br />
+			bidonvilles et les camps de réfugiés.</span>
 		</blockquote>
 		<p class="signature editable"><span data-cms-source="/sac-potager/index.html" data-cms-index="2">Alain Boinet</span><br />Fondateur de<br />SOLIDARITÉS INTERNATIONAL</p>
         <a class="bt-arrondi blanc bt-navig editable" href="#divProbleme"><span>Comprendre le problème</span></a>
