@@ -97,40 +97,6 @@ equivalences:
     .defi .slide2 .row {background-image: url({{page.background_image.slideshow.slide2_path}});}
     .defi .slide3 .row {background-image: url({{page.background_image.slideshow.slide3_path}});}
     </style>
-
-	<script type="text/javascript">
-	function goToByScroll(id){
-	      // Remove "link" from the ID
-	    id = id.replace("link", "");
-	      // Scroll
-	    $('html,body').animate({
-	        scrollTop: $("#"+id).offset().top},
-	        'slow');
-	}
-	$(function () {
-		$('#ctr').click(function() {
-		goToByScroll("centre")
-		});
-		$('#def').click(function() {
-		goToByScroll("defi");
-		});
-		$('#prog').click(function() {
-		goToByScroll("progression");
-		});
-		$('#mis').click(function() {
-		goToByScroll("mission");
-		});
-		$('#equi').click(function() {
-		goToByScroll("equipe");
-		});
-		$('#sout').click(function() {
-		goToByScroll("soutien");
-		});
-		$('#blg').click(function() {
-		goToByScroll("blog");
-		});
-	});
-	</script>
   </head>
   <body>
     <div class="fixed" data-magellan-expedition="fixed">
@@ -596,7 +562,39 @@ equivalences:
     <script src="/statics/ebola/landingpage/bower_components/foundation/js/foundation.min.js"></script>
     <script type="text/javascript" src="/statics/ebola/landingpage/bower_components/slick/slick.min.js"></script>
     <script src="/statics/ebola/landingpage/js/app.js"></script>
-
+    <script type="text/javascript">
+    	function goToByScroll(id){
+    	      // Remove "link" from the ID
+    	    id = id.replace("link", "");
+    	      // Scroll
+    	    $('html,body').animate({
+    	        scrollTop: $("#"+id).offset().top},
+    	        'slow');
+    	}
+    	$(function () {
+    		$('#ctr').click(function() {
+    		goToByScroll("centre")
+    		});
+    		$('#def').click(function() {
+    		goToByScroll("defi");
+    		});
+    		$('#prog').click(function() {
+    		goToByScroll("progression");
+    		});
+    		$('#mis').click(function() {
+    		goToByScroll("mission");
+    		});
+    		$('#equi').click(function() {
+    		goToByScroll("equipe");
+    		});
+    		$('#sout').click(function() {
+    		goToByScroll("soutien");
+    		});
+    		$('#blg').click(function() {
+    		goToByScroll("blog");
+    		});
+    	});
+    </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
