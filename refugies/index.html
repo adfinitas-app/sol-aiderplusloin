@@ -2,7 +2,9 @@
 layout: migration
 video1: //player.vimeo.com/video/81102597?color=B21914
 video2: //player.vimeo.com/video/81391471?color=B21914
-titre: "Réfugiés, Déplacés - SOLIDARITÉS INTERNATIONAL"
+meta:
+  titre: "Réfugiés, Déplacés - SOLIDARITÉS INTERNATIONAL"
+  description: "SOLIDARITÉS INTERNATIONAL vient en aide aux réfugiés syriens au Liban, aux réfugiés à Calais et aux déplacés du Myanmar"
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -13,10 +15,10 @@ titre: "Réfugiés, Déplacés - SOLIDARITÉS INTERNATIONAL"
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <title>{{page.titre}}</title>
+        <title>{{page.meta.titre}}</title>
 
-        <meta property="og:title" content="Solidarités International" />
-        <meta property="og:url" content="http://refugies.solidarites.org" />
+        <meta property="og:title" content="{{page.meta.titre}}" />
+        <meta property="og:url" content="http://aiderplusloin.solidarites.org/refugies/" />
         <meta property="og:description" content="Réfugiés, rescapés, déplacés, ils ont tout perdu… Découvrez leurs histoires." />
         <meta property="og:image" content="https://s3.amazonaws.com/heroku-adfinitas-campaign/sol-hiver-2013/images/facebook-thumb.jpg" />
 
