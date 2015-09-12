@@ -9,6 +9,21 @@ facebook:
   description: "L’équipe de @SolidaritésInternational œuvre pour stopper l’épidémie d’#Ebola en #SierraLeone. À crise hors norme, une réponse exceptionnelle, à découvrir sur aiderplusloin.solidarites.org/ebola/."
   image_path: "/statics/ebola/landing/images/header.png"
   site_name: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
+mission:
+  image_path: "/statics/ebola/landingpage/images/mission.png"
+traitement:
+  image1_path: "/statics/ebola/landingpage/images/traitement-1.png"
+  image2_path: "/statics/ebola/landingpage/images/traitement-2.png"
+  image3_path: "/statics/ebola/landingpage/images/traitement-3.png"
+equipe:
+  image_path: "/statics/ebola/landingpage/images/bg-video.png"
+equivalences:
+  equivalence1:
+    amount: 80
+  equivalence2:
+    amount: 160
+  equivalence3:
+    amount: 320
 ---
 <!DOCTYPE html>
 <html class="no-js" lang="fr">
@@ -60,6 +75,13 @@ facebook:
     <link rel="stylesheet" href="/statics/ebola/landingpage/css/app.css" />
     <link rel="stylesheet" type="text/css" href="/statics/ebola/landingpage/bower_components/slick/slick.css" />
     <script src="/statics/ebola/landingpage/bower_components/modernizr/modernizr.js"></script>
+    <style>
+    .mission .bg {background-image: url({{page.mission.image_path}});}
+    .traitement .traitement1 {background-image: url({{page.traitement.image1_path}});}
+    .traitement .traitement2 {background-image: url({{page.traitement.image2_path}});}
+    .traitement .traitement3 {background-image: url({{page.traitement.image3_path}});}
+    .equipe {background-image: url({{page.equipe.image_path}});}
+    </style>
   </head>
   <body>
     <div class="fixed" data-magellan-expedition="fixed">
@@ -172,7 +194,7 @@ facebook:
 
 	<div class="row agir">
 	  <div class="large-5 large-offset-7 end columns">
-	    <p class:"editable">
+	    <p class="editable">
 	      <strong>ÉBOLA</strong>
 	      <br />Aujourd'hui
 	      <br /><strong>+ de 16 000 cas diagnostiqués</strong>
@@ -425,53 +447,53 @@ facebook:
 	    <div class="row dons">
 	      <div class="large-4 medium-4 small-12 columns columns-don text-center">
 		<div class="cta-don don-80">
-		  <p class="lab">
+		  <p class="lab editable">
 		    un don de
 		  </p>
-		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=8000&frequency=once">80 €</a>
-		 <p class="equivalence">
+		  <a target="_blank" class="montant editable" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount={{page.equivalences.equivalence1.amount | times : 100}}&frequency=once">80 €</a>
+		 <p class="equivalence editable">
 		  correspond au coût d'un <br /><b>pulvérisateur</b> de chlore.
 		  </p>
-		 <p class="fiscal">
+		 <p class="fiscal editable">
 		    Soit un don de 20€ après la déduction<br /> fiscale de l'impôt sur le revenu
 		  </p>
 		 </div>
-                 <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=8000&frequency=once" class="btn-80 button">Je fais barrage, <span>je fais un don</span></a>
+          <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount={{page.equivalences.equivalence1.amount | times : 100}}&frequency=once" class="btn-80 button editable">Je fais barrage, <span>je fais un don</span></a>
 	      </div>
 	      <div class="large-4 medium-4 small-12 columns columns-don text-center">
 		<div class="cta-don don-160">
-		  <p class="lab">
+		  <p class="lab editable">
 		    un don de
 		  </p>
-		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=16000&frequency=once">160 €</a>
-		 <p class="equivalence">
+		  <a target="_blank" class="montant editable" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount={{page.equivalences.equivalence2.amount | times : 100}}&frequency=once">160 €</a>
+		 <p class="equivalence editable">
 		  correspond au coût de la prise en<br /> charge d’un patient pour <b>1 journée</b><br /> par nos hygiénistes.
 		  </p>
-		 <p class="fiscal">
+		 <p class="fiscal editable">
 		    Soit un don de 40€ après la déduction<br /> fiscale de l'impôt sur le revenu
 		  </p>
 		 </div>
-                 <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=16000&frequency=once" class="btn-160 button">Je fais barrage, <span>je fais un don</span></a>
+          <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount={{page.equivalences.equivalence2.amount | times : 100}}&frequency=once" class="btn-160 button editable">Je fais barrage, <span>je fais un don</span></a>
 	      </div>
 	      <div class="large-4 medium-4 end small-12 columns columns-don text-center">
 		<div class="cta-don don-320">
-		  <p class="lab">
+		  <p class="lab editable">
 		    un don de
 		  </p>
-		  <a target="_blank" class="montant" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=32000&frequency=once">320 €</a>
-		 <p class="equivalence">
+		  <a target="_blank" class="montant editable" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount={{page.equivalences.equivalence3.amount | times : 100}}&frequency=once">320 €</a>
+		 <p class="equivalence editable">
 		  correspond au coût de la prise en<br /> charge d’un patient pour <b>2 jours</b>.<br />
 		  </p>
-		 <p class="fiscal">
+		 <p class="fiscal editable">
 		    Soit un don de 80€ après la déduction<br /> fiscale de l'impôt sur le revenu
 		  </p>
 		 </div>
-                 <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount=32000&frequency=once" class="btn-320 button">Je fais barrage, <span>je fais un don</span></a>
+          <a target="_blank" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}&amount={{page.equivalences.equivalence3.amount | times : 100}}&frequency=once" class="btn-320 button editable">Je fais barrage, <span>je fais un don</span></a>
 	      </div>
-            </div>
+    </div>
 
 	    <div class="legit editable"><p><strong>93.6% de nos ressources sont consacr&eacute;s au terrain (chiffres 2013).</strong><br />Nos comptes sont certifi&eacute;s par Auditeurs &amp; Conseils Associ&eacute;s, commissaires aux comptes. Ils sont consultables sur notre site Internet. <!--Nos comptes sont certifiés par Mr Eric Chapuis, IDF Expertise et Conseil, Commissaire aux comptes. Ils sont consultables sur notre site Internet.--><br /><strong>75% de d&eacute;duction d&#39;imp&ocirc;t : vous pouvez d&eacute;duire de vos imp&ocirc;ts sur le revenu 75% du montant de votre don.</strong></p></div>
-	    <h4>
+	    <h4 class="editable">
 	      ÉBOLA. Les médecins soignent, SOLIDARITÉS INTERNATIONAL protège.
 	    </h4>
 
@@ -486,10 +508,10 @@ facebook:
     <footer>
       <div class="row">
 	<div class="large-10 columns">
-	  <span class="sol"><a href="http://www.solidarites.org/fr/" target="_blank">©SOLIDARITÉS INTERNATIONAL</a></span>
-	  <span>Réalisé par <a href="http://adfinitas.fr" target="_blank">Adfinitas</a></span>
-	  <span><a href="http://www.solidarites.org/fr/mentions-legales" target="_blank">Mentions Légales</a></span>
-	  <span><a href="http://www.solidarites.org/fr/nous-contacter/contacter-le-service-relations-donateurs?view=message&layout=message&pf=1&redirect_on_success=" target="_blank">Contact</a></span>
+	  <span class="sol"><a href="http://www.solidarites.org/fr/" target="_blank" class="editable">©SOLIDARITÉS INTERNATIONAL</a></span>
+	  <span>Réalisé par <a href="http://adfinitas.fr" target="_blank" class="editable">Adfinitas</a></span>
+	  <span><a href="http://www.solidarites.org/fr/mentions-legales" target="_blank" class="editable">Mentions Légales</a></span>
+	  <span><a href="http://www.solidarites.org/fr/nous-contacter/contacter-le-service-relations-donateurs?view=message&layout=message&pf=1&redirect_on_success=" target="_blank" class="editable">Contact</a></span>
 	  <span>Nous rejoindre :
 	  <a href="https://www.facebook.com/SOLIDARITES.INTERNATIONAL?fref=ts" target="_blank" class="fb social" ttle="facebook"></a>
 	  <a href="https://twitter.com/Solidarites_Int" target="_blank" class="tw social" title="twitter"></a>
