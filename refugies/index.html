@@ -10,15 +10,14 @@ panel:
   panel1:
     height: 10
     media_path: //player.vimeo.com/video/81102597?color=B21914
-    temoignage:
-      activate: true
-      titre: ""
-      introduction: ""
-      contenu: ""
-      image_path: ""
   panel2:
     height: 10
     media_path: /uploads/versions/alisscalais1253x700_mini---x0-0-1253-700-1253-700x---.jpg
+    temoignage:
+      titre: "Aliss"
+      introduction: "18 ans, originaire du Darfour, installé sur le site de La Lande, près de Calais."
+      contenu: "Au Darfour, la sécurité est mauvaise, il y a souvent des combats. Lorsque j’ai moi-même été menacé personnellement, j’ai décidé de fuir pour sauver ma vie. C’était il y a deux ans. J’ai traversé le Sahara et la Libye en voiture. J’ai pris une pirogue pour traverser la mer, puis je suis arrivé en Italie, puis en France. J’ai eu de la chance : je n’ai pas dépensé beaucoup d’argent ; je n’ai pas fait appel à un passeur. Ça fait deux mois que je suis dans ce camp. Contrairement à beaucoup d’autres personnes ici, je ne veux pas aller en Angleterre. Je n’en peux plus de voyager. J’ai décidé d’apprendre le français et de rester. J’ai déposé une demande d’asile politique, j’attends un prochain rendez-vous en novembre."
+      image_path: "/uploads/versions/alisscalais1000x559---x0-0-1000-559-1253-700x---.jpg"
   panel3:
     height: 10
     media_path: //player.vimeo.com/video/81391471?color=B21914
@@ -364,15 +363,14 @@ woopra.track();
             <div class="cp-outer">
                 <div class="cp-inner">
 
-                    <p class="author text--right mb20 editable"><strong>Aliss</strong><br /><span>18 ans, originaire du Darfour, install&eacute; sur le site de La Lande, pr&egrave;s de Calais.</span></p>
+                    <p class="author text--right mb20 editable">
+                        <strong>{{ page.panel.panel2.temoignage.titre }}</strong>
+                        <br />
+                        <span>{{ page.panel.panel2.temoignage.introduction }}</span></p>
 
-                    <img src="/uploads/versions/alisscalais1000x559---x0-0-1000-559-1253-700x---.jpg" class="img--testi editable" alt="" width="545" />
+                    <img src="{{ page.panel.panel2.temoignage.image_path }}" class="img--testi" alt="" width="545" />
 
-                    <p class="text--georgia--normal editable"></p>
-
-                    <p class="text--georgia editable">&quot;Au Darfour, la s&eacute;curit&eacute; est mauvaise, il y a souvent des combats. Lorsque j&rsquo;ai moi-m&ecirc;me &eacute;t&eacute; menac&eacute; personnellement, j&rsquo;ai d&eacute;cid&eacute; de fuir pour sauver ma vie. C&rsquo;&eacute;tait il y a deux ans. J&rsquo;ai travers&eacute; le Sahara et la Libye en voiture. J&rsquo;ai pris une pirogue pour traverser la mer, puis je suis arriv&eacute; en Italie, puis en France. J&rsquo;ai eu de la chance : je n&rsquo;ai pas d&eacute;pens&eacute; beaucoup d&rsquo;argent ; je n&rsquo;ai pas fait appel &agrave; un passeur. &Ccedil;a fait deux mois que je suis dans ce camp. Contrairement &agrave; beaucoup d&rsquo;autres personnes ici, je ne veux pas aller en Angleterre. Je n&rsquo;en peux plus de voyager. J&rsquo;ai d&eacute;cid&eacute; d&rsquo;apprendre le fran&ccedil;ais et de rester. J&rsquo;ai d&eacute;pos&eacute; une demande d&rsquo;asile politique, j&rsquo;attends un prochain rendez-vous en novembre.&quot;.</p>
-
-                    <p class="text--georgia mb30 editable"></p>
+                    <p class="text--georgia">{{ page.panel.panel2.temoignage.content }}</p>
 
                     <button class="btn btn--close pull--right cp-close">Fermer</button>
                 </div>
