@@ -13,7 +13,6 @@ image:
   center: true
   adjust: true
 ---
-Here’s what the Moyamba care centre looks like, as seen from the sky.
-Below is a picture of the Moyamba care centre, seen from the sky. In just a few days, the medical team from Doctors of the World Spain will take in their first patients. SOLIDARIT&Eacute;S INTERNATIONAL’s job will be to protect the medical staff and disinfect the centre. 
+Here’s what the Moyamba care centre looks like, as seen from the sky. Below is a picture of the Moyamba care centre, seen from the sky. In just a few days, the medical team from Doctors of the World Spain will take in their first patients. SOLIDARIT&Eacute;S INTERNATIONAL’s job will be to protect the medical staff and disinfect the centre.
 
 {% include image.html %}
