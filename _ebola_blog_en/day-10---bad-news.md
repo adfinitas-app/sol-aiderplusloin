@@ -15,6 +15,6 @@ image:
 ---
 We’ve had some bad news today. The Ebola epidemic is spreading fast in Sierra Leone: as of this week, it’s now the worst-affected country. 7,798 cases have been recorded in the country, and care facilities are far from sufficient. The number of beds available represents only 30% of what is required.
 
-This is what the treatment unit for confirmed cases should look like by early 2015. 
+This is what the treatment unit for confirmed cases should look like by early 2015.
 
 {% include image.html %}
