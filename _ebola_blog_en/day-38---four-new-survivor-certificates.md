@@ -7,12 +7,12 @@ video:
   code_embed_de_la_video: ""
   legende: ""
 image:
-  image_path: /uploads/andrea.jpg
-  alt: "Andrea Angioletti and Guillaume Crocq, Watsan Manager"
-  legende: "Andrea Angioletti and Guillaume Crocq, Watsan Manager"
+  image_path: /uploads/ebola_certificat.jpg
+  alt: "The 'Free of Ebola\" certificate"
+  legende: "The 'Free of Ebola\" certificate"
   center: true
-  adjust: false
+  adjust: true
 ---
-ince the beginning of the year, we’ve experienced a number of deaths at Moyamba Treatment Centre - but there have also been more joyful moments. Yesterday, on January 5th, four more patients were able to leave the centre. They now join the ranks of the "Ebola Survivors", as they are called here. They leave the centre with a certificate (see below) and will soon be able to hold their children, husbands, wives and parents in their arms once again. 
+ince the beginning of the year, we’ve experienced a number of deaths at Moyamba Treatment Centre - but there have also been more joyful moments. Yesterday, on January 5th, four more patients were able to leave the centre. They now join the ranks of the "Ebola Survivors", as they are called here. They leave the centre with a certificate (see below) and will soon be able to hold their children, husbands, wives and parents in their arms once again.
 
 {% include image.html %}
