@@ -1,5 +1,5 @@
 ---
-title: "Day 1 - Ebola: No Touch Policy"
+title: Day 1 - Ebola No Touch Policy
 subtitle: "Andrea Angioletti, one of our first two volunteers to go to Sierra Leone, is back in France..."
 auteur: Fanny Rochette
 page_date: 2014-12-30T00:00:00.000Z
