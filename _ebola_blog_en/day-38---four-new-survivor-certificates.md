@@ -8,8 +8,8 @@ video:
   legende: ""
 image:
   image_path: /uploads/ebola_certificat.jpg
-  alt: "The 'Free of Ebola\" certificate"
-  legende: "The 'Free of Ebola\" certificate"
+  alt: "The 'Free of Ebola' certificate"
+  legende: "The 'Free of Ebola' certificate"
   center: true
   adjust: true
 ---
