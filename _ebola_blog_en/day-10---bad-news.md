@@ -1,15 +1,20 @@
 ---
-title: Day 10   Bad News
-subtitle: "Andrea Angioletti, one of our first two volunteers to go to Sierra Leone, is back in France..."
-auteur: SOLIDARITES INTERNATIONAL
-page_date: "2015-09-13 20:31:33"
+title: Day 10 - Bad news
+subtitle: We’ve had some bad news today...
+auteur: Fanny Rochette
+page_date: 2014-12-10T00:00:00.000Z
 video:
   code_embed_de_la_video: ""
   legende: ""
 image:
-  image_path: /uploads/andrea.jpg
-  alt: "Andrea Angioletti and Guillaume Crocq, Watsan Manager"
-  legende: "Andrea Angioletti and Guillaume Crocq, Watsan Manager"
+  image_path: /uploads/100_bed_ebola_treatment_unit 05---(132-0-898-595-800-530)---.jpg
+  alt: Diagram of the treatment unit
+  legende: Diagram of the treatment unit
   center: true
-  adjust: false
+  adjust: true
 ---
+We’ve had some bad news today. The Ebola epidemic is spreading fast in Sierra Leone: as of this week, it’s now the worst-affected country. 7,798 cases have been recorded in the country, and care facilities are far from sufficient. The number of beds available represents only 30% of what is required.
+
+This is what the treatment unit for confirmed cases should look like by early 2015. 
+
+{% include image.html %}
