@@ -3,9 +3,6 @@ title: "Ebola No Touch Policy"
 subtitle: "Après plusieurs mois de formation et de préparation des équipes de SOLIDARITÉS INTERNATIONAL, Andrea, spécialiste Eau, Hygiène et Assainissement et moi-même, débarquons à Freetown..."
 auteur: Fanny Rochette
 page_date: 2014-11-30T00:00:00.000Z
-meta:
-  title: "Jour 1 - Ebola : No Touch Policy"
-  description: "Après plusieurs mois de formation et de préparation des équipes de SOLIDARITÉS INTERNATIONAL, Andrea, spécialiste Eau, Hygiène et Assainissement et moi-même, débarquons à Freetown..."
 video:
   code_embed_de_la_video: ""
   legende: ""
