@@ -1,8 +1,8 @@
 ---
-title: Day 38   Four New Survivor Certificates
-subtitle: "Andrea Angioletti, one of our first two volunteers to go to Sierra Leone, is back in France..."
-auteur: SOLIDARITES INTERNATIONAL
-page_date: "2015-09-13 19:23:30"
+title: Day 38 - Four new survivor certificates
+subtitle: "Yesterday, on January 5th, four more patients were able to leave the centre. They now join the ranks of the \"Ebola Survivors\", as they are called here..."
+auteur: Daisy Fargier
+page_date: 2015-01-06T00:00:00.000Z
 video:
   code_embed_de_la_video: ""
   legende: ""
@@ -13,3 +13,6 @@ image:
   center: true
   adjust: false
 ---
+ince the beginning of the year, we’ve experienced a number of deaths at Moyamba Treatment Centre - but there have also been more joyful moments. Yesterday, on January 5th, four more patients were able to leave the centre. They now join the ranks of the "Ebola Survivors", as they are called here. They leave the centre with a certificate (see below) and will soon be able to hold their children, husbands, wives and parents in their arms once again. 
+
+{% include image.html %}
