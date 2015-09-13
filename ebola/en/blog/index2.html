@@ -95,7 +95,7 @@ header:
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="don" href="{{site.url_iraiser}}/b/my-donation?cid={{page.cid_iraiser}}" target="_blank"><img src="/statics/ebola/blog/img/blog-header-don.png" alt="To help stop Ebola, Donate now"></a>
-                    </li>-->
+                    </li>
                 </li></ul>
             </div>
         </div>
@@ -127,7 +127,7 @@ header:
                       <a href="{{billet.url}}">{{billet.titre}}</a>
                   </h2>
                   <h3 class="post-subtitle">{{billet.subtitle}}</h3>
-                  <p class="post-meta">Post&eacute; par {{billet.auteur}}, le {{billet.page_date | date: "%d/%m/%Y"}}</p>
+                  <p class="post-meta">Posted by {{billet.auteur}}, {{billet.page_date | date: ""%A %-d %B %Y""}}</p>
                 </div>
                 <hr />
               </div>
