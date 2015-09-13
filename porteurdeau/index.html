@@ -1,24 +1,31 @@
 ---
-layout: migration
+meta:
+  title: "L’EAU EST TOUT SAUF UN JEU – SOLIDARITES INTERNATIONAL"
+  description: "L'eau insalubre tue 3,6 millions de personnes chaque année. Agissons contre l'eau insalubre en signant la pétition sur aiderplusloin.solidarites.org/votregouttedeau/"
+facebook:
+  title: "L’EAU EST TOUT SAUF UN JEU – SOLIDARITES INTERNATIONAL"
+  site_name: "VotreGoutteDeau"
+  description: "Pour la Journée Mondiale de l’Eau le 22 mars, mobilisez-vous pour l’accès à l’eau potable de millions d’enfants aux côtés de l’ONG @Solidarités International et devenez #porteurdeau."
+  image_path: "/porteurdeau/images/enfant-charlene.jpg"
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
     {% include analytics/woopra.html %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L’EAU EST TOUT SAUF UN JEU – SOLIDARITES INTERNATIONAL</title>
+    <title>{{page.meta.title}}</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="{{site.url}}/porteurdeau/js/modernizr/modernizr.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="{{site.url}}/porteurdeau/js/InfinitySlider/loading/loading-bars.css" type="text/css" media="all" />
-    <meta property="og:title" content="L’EAU EST TOUT SAUF UN JEU – SOLIDARITES INTERNATIONAL "/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://aiderplusloin.org/porteurdeau/"/>
-    <meta property="og:image" content="{{site.url}}/porteurdeau/images/enfant-charlene.jpg"/>
-    <meta property="og:description" content="Pour la Journée Mondiale de l’Eau le 22 mars, mobilisez-vous pour l’accès à l’eau potable de millions d’enfants aux côtés de l’ONG @Solidarités International et devenez #porteurdeau."/>
-    <meta property="og:site_name" content="L’EAU EST TOUT SAUF UN JEU – SOLIDARITES INTERNATIONAL "/>
+    <meta property="og:title" content="{{page.facebook.title}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{site.url}}/porteurdeau/" />
+    <meta property="og:image" content="{{site.url}}{{page.facebook.image_path}}" />
+    <meta property="og:description" content="{{page.facebook.description}}" />
+    <meta property="og:site_name" content="L’EAU EST TOUT SAUF UN JEU – SOLIDARITES INTERNATIONAL " />
   </head>
   <body>
     <div class="contain-to-grid sticky el-top">
@@ -29,15 +36,14 @@ layout: migration
           <div class="large-1 medium-2 small-2 columns title-area">
                 <h1><a href="http://www.solidarites.org/fr/" target="_blank" class="logo-sticky"><img src="{{site.url}}/porteurdeau/images/header-logo.png" alt="" /></a></h1>
                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-              <!--<li class="toggle-topbar menu-icon"><a href="#"><span><img src="{{site.url}}/porteurdeau/images/burger.png" alt="" /></span></a></li>-->
-            </ul>
+              <!--<li class="toggle-topbar menu-icon"><a href="#"><span><img src="{{site.url}}/porteurdeau/images/burger.png" alt="" />-->
+            
           </div>
           <div class="large-2 medium-3 show-for-medium-up columns h2 text-right">
-            <div class="align text-left"><h2 id="baseline-1" class="editable">Donner accès à l’eau,
-            <br />c’est aider plus loin</h2></div>
+            <div class="align text-left"><h2 id="baseline-1" class="editable">Donner acc&egrave;s &agrave; l&rsquo;eau,<br />c&rsquo;est aider plus loin</h2></div>
           </div>
           <div class="large-6 show-for-large-up columns">
-            <h3 id="baseline-2" class="editable">Soutiens notre combat et rejoins les <span class="nowrap">180 000</span> signataires de notre pétition : "De l’eau potable pour tous"</h3>
+            <h3 id="baseline-2" class="editable">Soutiens notre combat et rejoins les <span class="nowrap">180 000</span> signataires de notre p&eacute;tition : &quot;De l&rsquo;eau potable pour tous&quot;</h3>
           </div>
           <div class="large-3 medium-6 small-10 columns end" id="baseline-3">
           <form id="form-mail" action="http://www.votregouttedeau.org/" class="show-for-large-up" method="GET" target="_blank">
@@ -93,37 +99,37 @@ layout: migration
         <div class="row">
           <div class="large-4  medium-4 columns charlene">
             <figure>
-              <img src="{{site.url}}/porteurdeau/images/enfant-charlene.jpg" alt="Charlène" class="editable" />
+              <img alt="Charlène" class="editable" src="http://aiderplusloin.solidarites.org/porteurdeau/images/enfant-charlene.jpg" />
               <figcaption><span class="editable"><strong>“ Tous les matins c’est moi qui vais chercher l’eau au puits ”</strong><br />Charlène</span></figcaption>
             </figure>
           </div>
           <div class="large-4 medium-4 columns djime light">
             <figure>
-              <img src="{{site.url}}/porteurdeau/images/enfant-djime.jpg" alt="Djime" class="editable" />
+              <img alt="Djime" class="editable" src="http://aiderplusloin.solidarites.org/porteurdeau/images/enfant-djime.jpg" />
               <figcaption><span class="editable"><strong>“ Je buvais de l'eau qui me donnait la diarrhée ”</strong><br />Djime</span></figcaption>
             </figure>
           </div>
           <div class="large-4 medium-4 columns louise">
             <figure>
-              <img src="{{site.url}}/porteurdeau/images/enfant-louise.jpg" alt="Louise" class="editable"/>
+              <img alt="Louise" class="editable" src="http://aiderplusloin.solidarites.org/porteurdeau/images/enfant-louise.jpg" />
               <figcaption><span class="editable"><strong>“ Ma petite soeur a été très malade, on m'a dit que c'était le choléra ”</strong><br />Louise</span></figcaption>
             </figure>
           </div>
           <div class="large-4 medium-4 columns celestine light">
             <figure>
-              <img src="{{site.url}}/porteurdeau/images/enfant-celestine.jpg" alt="Célestine" class="editable" />
+              <img alt="Célestine" class="editable" src="http://aiderplusloin.solidarites.org/porteurdeau/images/enfant-celestine.jpg" />
               <figcaption><span class="editable"><strong>“ Je n'avais pas le temps d'aller à l'école ”</strong><br />Célestine</span></figcaption>
             </figure>
           </div>
           <div class="large-4 medium-4 columns paul">
             <figure>
-              <img src="{{site.url}}/porteurdeau/images/enfant-paul.jpg" alt="Paul" class="editable" />
+              <img alt="Paul" class="editable" src="http://aiderplusloin.solidarites.org/porteurdeau/images/enfant-paul.jpg" />
               <figcaption><span class="editable"><strong>“ Mon papa ne pouvait pas arroser son champ ”</strong><br />Paul</span></figcaption>
             </figure>
           </div>
           <div class="large-4 medium-4 columns sandie light">
             <figure>
-              <img src="{{site.url}}/porteurdeau/images/enfant-sandie.jpg" alt="Sandie-Caroline" class="editable" />
+              <img alt="Sandie-Caroline" class="editable" src="http://aiderplusloin.solidarites.org/porteurdeau/images/enfant-sandie.jpg" />
               <figcaption><span class="editable"><strong>“ Dans le centre de santé où j'étais soignée, l'eau n'était pas bonne ”</strong><br />Sandie-Caroline</span></figcaption>
             </figure>
           </div>
@@ -137,11 +143,7 @@ layout: migration
     <div class="row">
       <div class="large-12 columns text-center">
         <div class="row">
-          <h2 class="editable"><strong>L’eau</strong> est source de bonne santé, d'éducation, de travail.
-          <br />L’eau</strong> sauve et transforme la vie !
-          <span>
-          <a id="CTA1-textJME15" href="https://dons.solidarites.org/b?cid=153" target="_blank" class="editable"><strong>Avec SOLIDARITES INTERNATIONAL,
-          <br /> devenez des porteurs d’eau en faisant un <span class="nowrap">don !</span></strong></a></span> </h2>
+          <h2 class="editable"><strong>L&rsquo;eau</strong> est source de bonne sant&eacute;, d&#39;&eacute;ducation, de travail.<br />L&rsquo;eau sauve et transforme la vie ! <span> <a id="CTA1-textJME15" target="_blank" data-cms-source="/porteurdeau/index.html" data-cms-index="15" href="https://dons.solidarites.org/b?cid=153"><strong>Avec SOLIDARITES INTERNATIONAL,<br />devenez des porteurs d&rsquo;eau en faisant un <span class="nowrap">don !</span></strong></a></span></h2>
         </div>
       </div>
     </div>
@@ -155,10 +157,8 @@ layout: migration
         <div class="row section-1">
           <div class="large-4 medium-4 columns">
             <div class="charlene">
-              <h3 class="editable">Charlène, 8 ans, <small>République Centrafricaine</small></h3>
-              <p class="temoignage editable">
-                “ Tous les matins c’est moi qui vais chercher l’eau au puits”
-              </p>
+              <h3 class="editable">Charl&egrave;ne, 8 ans, <small>R&eacute;publique Centrafricaine</small></h3>
+              <p class="temoignage editable">&ldquo; Tous les matins c&rsquo;est moi qui vais chercher l&rsquo;eau au puits&rdquo;</p>
             </div>
           </div>
           <div class="large-8 medium-8 columns">
@@ -166,8 +166,8 @@ layout: migration
           </div>
         </div>
         <div class="row section-2 text-center">
-          <p class="editable">Avant, pour Charlène, <strong>l'eau était tout sauf un jeu</strong> : une marche de plusieurs heures, des diarrhées fréquentes et peu de temps libre pour aller à l’école. Aujourd’hui, grâce au puits que <b>SOLIDARITÉS INTERNATIONAL</b> a foré dans son village de Kabo, la vie de Charlène a changé. Le puits est à quelques pas de sa maison. Elle est en meilleure santé, elle va à l’école et son village se développe avec l’élevage, l’agriculture et l’artisanat.</p>
-          <h3 class="editable">Besoin vital, l’eau est aussi au cœur de toutes les activités humaines.</h3>
+          <p class="editable">Avant, pour Charl&egrave;ne, <strong>l&#39;eau &eacute;tait tout sauf un jeu</strong> : une marche de plusieurs heures, des diarrh&eacute;es fr&eacute;quentes et peu de temps libre pour aller &agrave; l&rsquo;&eacute;cole. Aujourd&rsquo;hui, gr&acirc;ce au puits que <b>SOLIDARIT&Eacute;S INTERNATIONAL</b> a for&eacute; dans son village de Kabo, la vie de Charl&egrave;ne a chang&eacute;. Le puits est &agrave; quelques pas de sa maison. Elle est en meilleure sant&eacute;, elle va &agrave; l&rsquo;&eacute;cole et son village se d&eacute;veloppe avec l&rsquo;&eacute;levage, l&rsquo;agriculture et l&rsquo;artisanat.</p>
+          <h3 class="editable">Besoin vital, l&rsquo;eau est aussi au c&oelig;ur de toutes les activit&eacute;s humaines.</h3>
         </div>
       </div>
     </div>
@@ -185,10 +185,8 @@ layout: migration
     <div id="cta-don">
     <div class="row">
       <div class="large-12 columns text-center">
-        <p class="editable">50% de la population mondiale n’a pas accès à l’eau potable. Parmi eux, des millions d’enfants. <small>(source OMS 2012)</small>
-<br />Avec <b>SOLIDARITÉS INTERNATIONAL</b>, construisez des puits pour transformer leur vie. Ensemble, agissons.
-</p>
-        <h2 class="editable">Devenez porteur d’eau.</h2>
+        <p class="editable">50% de la population mondiale n&rsquo;a pas acc&egrave;s &agrave; l&rsquo;eau potable. Parmi eux, des millions d&rsquo;enfants. <small>(source OMS 2012)</small><br />Avec <b>SOLIDARIT&Eacute;S INTERNATIONAL</b>, construisez des puits pour transformer leur vie. Ensemble, agissons.</p>
+        <h2 class="editable">Devenez porteur d&rsquo;eau.</h2>
 
 
 
@@ -205,7 +203,7 @@ layout: migration
     <div id="message-2" data-magellan-destination="possible">
     <div class="row">
       <div class="large-12 columns text-center">
-          <h2 class="editable">Avec l'eau, tout devient possible</h2>
+          <h2 class="editable">Avec l&#39;eau, tout devient possible</h2>
       </div>
     </div>
     </div>
@@ -241,35 +239,28 @@ layout: migration
                   <!--Start Content-->
                   <div class="iS-Content">
 
-                          <div class="iS-Items iS-Hoverstop" data-loopTime="8000">
-                                  <div class="iS-Item text-center"
-                                          data-effectIn=" zoomin fadein" data-effectInTime="500" data-effectInDelay="0"
-                                          data-effectOut=" zoomout" data-effectOutTime="500" data-effectOutDelay="1500">
+                          <div class="iS-Items iS-Hoverstop" data-looptime="8000">
+                                  <div class="iS-Item text-center" data-effectin=" zoomin fadein" data-effectintime="500" data-effectindelay="0" data-effectout=" zoomout" data-effectouttime="500" data-effectoutdelay="1500">
     <div class="bg" style="background-image:url({{site.url}}/porteurdeau/images/slide-1.jpg);"></div>
     <div class="row">
       <div class="large-12 columns">
-                                          <h3 class="editable">L'eau, c'est la santé</h3>
-                                          <p class="editable">Donner accès à l’eau potable est vital.
-                                          <br />Avoir assez d’eau pour boire et se laver et des toilettes propres, restent le meilleur moyen de ne pas tomber malade . Apporter de l’eau en qualité et en quantité suffisante permet donc de faire reculer les maladies hydriques et les épidémies qui tuent chaque année <strong>2,6 millions de personnes</strong>.
-                                          </p>
+                                          <h3 class="editable">L&#39;eau, c&#39;est la sant&eacute;</h3>
+                                          <p class="editable">Donner acc&egrave;s &agrave; l&rsquo;eau potable est vital.<br />Avoir assez d&rsquo;eau pour boire et se laver et des toilettes propres, restent le meilleur moyen de ne pas tomber malade . Apporter de l&rsquo;eau en qualit&eacute; et en quantit&eacute; suffisante permet donc de faire reculer les maladies hydriques et les &eacute;pid&eacute;mies qui tuent chaque ann&eacute;e <strong>2,6 millions de personnes</strong>.</p>
 
                                           <h4><a class="CTA2-TextJME15 editable" href="https://dons.solidarites.org/b?cid=153" target="_blank">Pour la santé, devenez porteur d’eau !</a></h4>
-                                          <a target="_blank" href="https://dons.solidarites.org/b?cid=153" class="button big radius CTA3-BTN-JME15 editable" >Faites un don</a>
+                                          <a target="_blank" href="https://dons.solidarites.org/b?cid=153" class="button big radius CTA3-BTN-JME15 editable">Faites un don</a>
                                           </div>
       </div>
                                   </div>
                           </div>
 
-                          <div class="iS-Items iS-Hoverstop" data-loopTime="8000">
-                                  <div class="iS-Item text-center"
-                                          data-effectIn=" zoomin fadein" data-effectInTime="500" data-effectInDelay="0"
-                                          data-effectOut=" zoomout" data-effectOutTime="500" data-effectOutDelay="1500">
+                          <div class="iS-Items iS-Hoverstop" data-looptime="8000">
+                                  <div class="iS-Item text-center" data-effectin=" zoomin fadein" data-effectintime="500" data-effectindelay="0" data-effectout=" zoomout" data-effectouttime="500" data-effectoutdelay="1500">
     <div class="bg" style="background-image:url({{site.url}}/porteurdeau/images/slide-2.jpg);"></div>
     <div class="row">
       <div class="large-12 columns">
-                                          <h3 class="editable">L’eau potable combat la malnutrition </h3>
-                                          <p class="editable"><strong>L’eau et la malnutrition sont liées</strong> : un enfant qui a souvent des diarrhées n’assimile pas correctement les éléments nutritifs de ses aliments, rendant son corps plus fragile. Selon l’OMS, <strong>30% des cas de malnutrition infantile</strong> sont dus à de mauvaises conditions d’accès à l’eau et à l’hygiène.
-                                          <br />Assurer une eau potable aux enfants de moins de 5 ans est un levier pour lutter contre la malnutrition.</p>
+                                          <h3 class="editable">L&rsquo;eau potable combat la malnutrition</h3>
+                                          <p class="editable"><strong>L&rsquo;eau et la malnutrition sont li&eacute;es</strong>&nbsp;: un enfant qui a souvent des diarrh&eacute;es n&rsquo;assimile pas correctement les &eacute;l&eacute;ments nutritifs de ses aliments, rendant son corps plus fragile. Selon l&rsquo;OMS, <strong>30% des cas de malnutrition infantile</strong> sont dus &agrave; de mauvaises conditions d&rsquo;acc&egrave;s &agrave; l&rsquo;eau et &agrave; l&rsquo;hygi&egrave;ne.<br />Assurer une eau potable aux enfants de moins de 5 ans est un levier pour lutter contre la malnutrition.</p>
                                           <h4><a class="CTA2-TextJME15 editable" href="https://dons.solidarites.org/b?cid=153" target="_blank">Contre la malnutrition, devenez porteur d’eau !</a></h4>
                                           <a target="_blank" href="https://dons.solidarites.org/b?cid=153" class="button big radius CTA3-BTN-JME15 editable">Faites un don</a>
                                           </div>
@@ -277,17 +268,13 @@ layout: migration
                                   </div>
                           </div>
 
-                          <div class="iS-Items iS-Hoverstop" data-loopTime="8000">
-                                  <div class="iS-Item text-center"
-                                          data-effectIn=" zoomin fadein" data-effectInTime="500" data-effectInDelay="0"
-                                          data-effectOut=" zoomout" data-effectOutTime="500" data-effectOutDelay="1500">
+                          <div class="iS-Items iS-Hoverstop" data-looptime="8000">
+                                  <div class="iS-Item text-center" data-effectin=" zoomin fadein" data-effectintime="500" data-effectindelay="0" data-effectout=" zoomout" data-effectouttime="500" data-effectoutdelay="1500">
     <div class="bg" style="background-image:url({{site.url}}/porteurdeau/images/slide-3.jpg);"></div>
     <div class="row">
       <div class="large-12 columns">
-                                          <h3 class="editable">De l’eau pour apprendre</h3>
-                                          <p class="editable">Un élève en bonne santé est plus attentif. Il est aussi tout simplement plus présent, alors que les Nations unies estiment que <strong>272 millions de journées scolaires</strong> sont perdues chaque année en raison de maladies diarrhéiques.
-                                          <br />Plus présents, plus attentifs, les élèves et notamment les petites filles, pourront apprendre un métier, percevoir un meilleur revenu et améliorer les conditions de vie de leur famille.
-                                          </p>
+                                          <h3 class="editable">De l&rsquo;eau pour apprendre</h3>
+                                          <p class="editable">Un &eacute;l&egrave;ve en bonne sant&eacute; est plus attentif. Il est aussi tout simplement plus pr&eacute;sent, alors que les Nations unies estiment que <strong>272 millions de journ&eacute;es scolaires</strong> sont perdues chaque ann&eacute;e en raison de maladies diarrh&eacute;iques.<br />Plus pr&eacute;sents, plus attentifs, les &eacute;l&egrave;ves et notamment les petites filles, pourront apprendre un m&eacute;tier, percevoir un meilleur revenu et am&eacute;liorer les conditions de vie de leur famille.</p>
                                           <h4><a class="CTA2-TextJME15 editable" href="https://dons.solidarites.org/b?cid=153" target="_blank">Pour l’éducation pour tous, devenez porteur d’eau !</a></h4>
                                           <a target="_blank" href="https://dons.solidarites.org/b?cid=153" class="button big radius CTA3-BTN-JME15 editable">Faites un don</a>
           <div class="clearfix"></div>
@@ -296,16 +283,13 @@ layout: migration
                                   </div>
                           </div>
 
-                          <div class="iS-Items iS-Hoverstop" data-loopTime="8000">
-                                  <div class="iS-Item text-center"
-                                          data-effectIn=" zoomin fadein" data-effectInTime="500" data-effectInDelay="0"
-                                          data-effectOut=" zoomout" data-effectOutTime="500" data-effectOutDelay="1500">
+                          <div class="iS-Items iS-Hoverstop" data-looptime="8000">
+                                  <div class="iS-Item text-center" data-effectin=" zoomin fadein" data-effectintime="500" data-effectindelay="0" data-effectout=" zoomout" data-effectouttime="500" data-effectoutdelay="1500">
     <div class="bg" style="background-image:url({{site.url}}/porteurdeau/images/slide-4.jpg);"></div>
     <div class="row">
       <div class="large-12 columns">
-                                          <h3 class="editable">L’eau, source d’une économie vertueuse</h3>
-                                          <p class="editable">Un approvisionnement en eau douce constitue la base pour développer les activités économiques en milieu rural : l’irrigation permet de cultiver, et de sauver les récoltes en cas de sécheresse, d’augmenter les rendements, de diversifier ses cultures, d’abreuver et de nourrir le bétail. En meilleure santé, les travailleurs ayant accès à l’eau potable sont aussi plus productifs et augmentent leurs revenus. <strong>Une dynamique s’enclenche, celle du développement</strong>.
-</p>
+                                          <h3 class="editable">L&rsquo;eau, source d&rsquo;une &eacute;conomie vertueuse</h3>
+                                          <p class="editable">Un approvisionnement en eau douce constitue la base pour d&eacute;velopper les activit&eacute;s &eacute;conomiques en milieu rural&nbsp;: l&rsquo;irrigation permet de cultiver, et de sauver les r&eacute;coltes en cas de s&eacute;cheresse, d&rsquo;augmenter les rendements, de diversifier ses cultures, d&rsquo;abreuver et de nourrir le b&eacute;tail. En meilleure sant&eacute;, les travailleurs ayant acc&egrave;s &agrave; l&rsquo;eau potable sont aussi plus productifs et augmentent leurs revenus. <strong>Une dynamique s&rsquo;enclenche, celle du d&eacute;veloppement</strong>.</p>
                                           <h4><a class="CTA2-TextJME15 editable" href="https://dons.solidarites.org/b?cid=153" target="_blank">Pour développer l’économie, devenez porteur d’eau!</a></h4>
                                           <a target="_blank" href="https://dons.solidarites.org/b?cid=153" class="button big radius CTA3-BTN-JME15 editable">Faites un don</a>
           <div class="clearfix"></div>
@@ -324,15 +308,15 @@ layout: migration
 
 
       </div>
-    </div>
-    </div>
+    
+    
 
     <!--MESSAGE 3-->
     <div id="message-3">
     <div class="row">
       <div class="large-12 columns text-center">
         <div class="row">
-          <h2 class="editable">En agissant concrètement pour l’accès à l’eau potable et à l’assainissement, <b>SOLIDARITÉS INTERNATIONAL</b> améliore les conditions sanitaires de millions de familles dans le monde et participe à leur développement économique</h2>
+          <h2 class="editable">En agissant concr&egrave;tement pour l&rsquo;acc&egrave;s &agrave; l&rsquo;eau potable et &agrave; l&rsquo;assainissement, <b>SOLIDARIT&Eacute;S INTERNATIONAL</b> am&eacute;liore les conditions sanitaires de millions de familles dans le monde et participe &agrave; leur d&eacute;veloppement &eacute;conomique</h2>
         </div>
       </div>
     </div>
@@ -346,44 +330,33 @@ layout: migration
 
         <div class="large-6 medium-6 columns image text-right">
           <div class="bg-1" data-order="1"><div class="align text-center">
-            <h2 class="editable">
-              SANTÉ – DIGNITÉ
-              <small>Lutter contre les épidémies</small>
-            </h2>
+            <h2 class="editable">SANT&Eacute; &ndash; DIGNIT&Eacute; <small>Lutter contre les &eacute;pid&eacute;mies</small></h2>
           </div></div>
           <div class="hide bg-2" data-order="2"><div class="align text-center">
-            <h2 class="editable">
-              MALNUTRITION
-              <small>Combattre la faim avec de l’eau</small>
-            </h2>
+            <h2 class="editable">MALNUTRITION <small>Combattre la faim avec de l&rsquo;eau</small></h2>
           </div></div>
           <div class="hide bg-3" data-order="3"><div class="align text-center">
-            <h2 class="editable">
-              ÉDUCATION ET DÉVELOPPEMENT<br />ÉCONOMIQUE
-              <small>Remettre les familles sur le chemin de l’autonomie</small>
-            </h2>
+            <h2 class="editable">&Eacute;DUCATION ET D&Eacute;VELOPPEMENT<br />&Eacute;CONOMIQUE <small>Remettre les familles sur le chemin de l&rsquo;autonomie</small></h2>
           </div></div>
         </div>
         <div class="large-6 medium-6 columns light"><div class="align text-center">
-          <div class="" data-order="1">
-            <h3 class="editable">De l’eau potable pour les exilés syriens</h3>
-            <p class="editable">Les familles syriennes réfugiées au Liban ont tout perdu. Survivant dans des conditions précaires (tentes, terrain vagues, immeubles en construction), leurs besoins sont immenses. </p>
+          <div data-order="1">
+            <h3 class="editable">De l&rsquo;eau potable pour les exil&eacute;s syriens</h3>
+            <p class="editable">Les familles syriennes r&eacute;fugi&eacute;es au Liban ont tout perdu. Survivant dans des conditions pr&eacute;caires (tentes, terrain vagues, immeubles en construction), leurs besoins sont immenses.</p>
           </div>
           <div class="hide" data-order="2">
-            <h3 class="editable">De l’eau potable pour les enfants somaliens </h3>
-            <p class="editable">En Somalie, quatre ans après la famine qui a causé la mort de plus de 250 000 personnes, toutes les conditions sont malheureusement réunies pour une nouvelle crise humanitaire. 51 000 enfants sont en danger de mort !</p>
+            <h3 class="editable">De l&rsquo;eau potable pour les enfants somaliens</h3>
+            <p class="editable">En Somalie, quatre ans apr&egrave;s la famine qui a caus&eacute; la mort de plus de 250 000 personnes, toutes les conditions sont malheureusement r&eacute;unies pour une nouvelle crise humanitaire. 51 000 enfants sont en danger de mort !</p>
           </div>
           <div class="hide" data-order="3">
-            <h3 class="editable">De l’eau pour de meilleures récoltes</h3>
-            <p class="editable">Au Myanmar (ex Birmanie), le manque d’eau ne permet pas de produire suffisamment et met en danger la santé et le bien-être de la population. En période sèche, les femmes et les enfants parcourent de longues distances pour aller chercher de l’eau, ce qui empêchent les enfants d’aller à l’école, et les mamans de travailler dans les champs.</p>
+            <h3 class="editable">De l&rsquo;eau pour de meilleures r&eacute;coltes</h3>
+            <p class="editable">Au Myanmar (ex Birmanie), le manque d&rsquo;eau ne permet pas de produire suffisamment et met en danger la sant&eacute; et le bien-&ecirc;tre de la population. En p&eacute;riode s&egrave;che, les femmes et les enfants parcourent de longues distances pour aller chercher de l&rsquo;eau, ce qui emp&ecirc;chent les enfants d&rsquo;aller &agrave; l&rsquo;&eacute;cole, et les mamans de travailler dans les champs.</p>
           </div>
         </div></div>
 
         <div class="large-6 medium-6 columns light text-right"><div class="align text-center">
-          <div class="" data-order="1">
-            <h5 class="editable">Les actions de SOLIDARITÉS INTERNATIONAL :
-              <br /><strong>apporter une aide d’urgence aux réfugiés</strong>
-            </h5>
+          <div data-order="1">
+            <h5 class="editable">Les actions de SOLIDARIT&Eacute;S INTERNATIONAL&nbsp;:<br /><strong>apporter une aide d&rsquo;urgence aux r&eacute;fugi&eacute;s</strong></h5>
             <ul class="text-left">
               <li class="editable">Distribuer des kits d’hygiène
                 <small>(savons, brosses à dents, couches, serviettes)</small>
@@ -395,9 +368,7 @@ layout: migration
             </ul>
           </div>
           <div class="hide" data-order="2">
-            <h5 class="editable">Les réponses de SOLIDARITÉS INTERNATIONAL :
-              <br /><strong>garantir l’accès à l’eau potable et l’alimentation</strong>
-            </h5>
+            <h5 class="editable">Les r&eacute;ponses de SOLIDARIT&Eacute;S INTERNATIONAL&nbsp;:<br /><strong>garantir l&rsquo;acc&egrave;s &agrave; l&rsquo;eau potable et l&rsquo;alimentation</strong></h5>
             <ul class="text-left">
               <li class="editable">Rendre l’eau potable en distribuant des filtres céramiques </li>
               <li class="editable">Réhabiliter des captages d’eau existants et construire des puits</li>
@@ -407,26 +378,21 @@ layout: migration
             </ul>
           </div>
           <div class="hide" data-order="3">
-            <h5 class="editable">Les réponses de SOLIDARITÉS INTERNATIONAL :
-              <br /><strong>Faire de l’eau un levier économique</strong>
-            </h5>
+            <h5 class="editable">Les r&eacute;ponses de SOLIDARIT&Eacute;S INTERNATIONAL&nbsp;:<br /><strong>Faire de l&rsquo;eau un levier &eacute;conomique</strong></h5>
             <ul class="text-left">
               <li class="editable">Equiper les forages de pompes solaires
-              <li class="editable">Réaliser des systèmes de récupération de l’eau de pluie 
-              <li class="editable">Amener de l’eau dans les écoles et les centres de santé
-              <li class="editable">Faire la promotion de l’hygiène dans les villages
-              <li class="editable">Former les villageois à la maintenance des points d’eau
-            </ul>
+              </li><li class="editable">Réaliser des systèmes de récupération de l’eau de pluie 
+              </li><li class="editable">Amener de l’eau dans les écoles et les centres de santé
+              </li><li class="editable">Faire la promotion de l’hygiène dans les villages
+              </li><li class="editable">Former les villageois à la maintenance des points d’eau
+            </li></ul>
           </div>
         </div></div>
         <div class="large-6 medium-6 columns dark tick"><div class="align">
           <div class=" kit1" data-order="1">
             <div class="text-center">
               <span class="kit"><span class="value-don editable">68</span><sup>€</sup></span>
-              <h4 class=" text-left editable">
-                <span>1 kit d’hygiène +
-                <br />1 filtre à eau à 1 famille</span>
-              </h4>
+              <h4 class=" text-left editable"><span>1 kit d&rsquo;hygi&egrave;ne +<br />1 filtre &agrave; eau &agrave; 1 famille</span></h4>
             </div>
             <p class="text-center">
               <a target="_blank" id="CTA4-EQUI-JME15-68" href="https://dons.solidarites.org/b?cid=153&once_grid[]=6800&once_grid[]=7000&once_grid[]=7500&amount=6800&frequency=once" class="button big radius CTA4-PROJETS-JME15 editable">Faites un don</a>
@@ -435,10 +401,7 @@ layout: migration
           <div class="hide" data-order="2">
             <div class="text-center">
               <span class="kit kit2"><span class="value-don editable">111</span><sup>€</sup></span>
-              <h4 class=" text-left editable">
-                <span>De l’eau potable +
-                <br />Des coupons alimentaires pour 1 famille pendant 3 mois</span>
-              </h4>
+              <h4 class=" text-left editable"><span>De l&rsquo;eau potable +<br />Des coupons alimentaires pour 1 famille pendant 3 mois</span></h4>
             </div>
             <p class="text-center">
               <a target="_blank" id="CTA4-EQUI-JME15-111" href="https://dons.solidarites.org/b?cid=153&once_grid[]=11100&once_grid[]=11500&once_grid[]=12000&amount=11100&frequency=once" class="button big radius CTA4-PROJETS-JME15 editable">Faites un don</a>
@@ -447,9 +410,7 @@ layout: migration
           <div class="hide" data-order="3">
             <div class="text-center">
               <span class="kit kit3"><span class="value-don editable">140</span><sup>€</sup></span>
-              <h4 class=" text-left editable">
-                <span>1 accès à l’eau potable dans une école pour 300 enfants</span>
-              </h4>
+              <h4 class=" text-left editable"><span>1 acc&egrave;s &agrave; l&rsquo;eau potable dans une &eacute;cole pour 300 enfants</span></h4>
             </div>
             <p class="text-center">
               <a target="_blank" id="CTA4-EQUI-JME15-140" href="https://dons.solidarites.org/b?cid=153&once_grid[]=14000&once_grid[]=14500&once_grid[]=15000&amount=14000&frequency=once" class="button big radius CTA4-PROJETS-JME15 editable">Faites un don</a>
@@ -475,7 +436,7 @@ layout: migration
     <div class="row">
       <div class="large-12 columns text-center">
         <div class="row">
-          <h2><img src="{{site.url}}/porteurdeau/images/titre-medium.png" alt="" class="editable" /></h2>
+          <h2><img alt="" class="editable" src="http://aiderplusloin.solidarites.org/porteurdeau/images/titre-medium.png" /></h2>
           <p>
             <a target="_blank" href="https://dons.solidarites.org/b?cid=153" class="button big radius CTA-FOOTER-JME15 editable">Je deviens porteur d’eau
             <br />Je fais un don</a>
@@ -516,7 +477,7 @@ layout: migration
             <a href="https://www.facebook.com/SOLIDARITES.INTERNATIONAL" target="_blank" class="share facebook"><i class="fa fa-facebook"></i><img src="{{site.url}}/porteurdeau/images/footer-share-fb.png" alt="" /></a>
             <a href="https://twitter.com/solidarites_int" target="_blank" class="share twitter"><i class="fa fa-twitter"></i><img src="{{site.url}}/porteurdeau/images/footer-share-twt.png" alt="" /></a>
             <a href="https://instagram.com/solidaritesinternational/" target="_blank" class="share instagram"><i class="fa fa-instagram"></i><img src="{{site.url}}/porteurdeau/images/footer-share-itg.png" alt="" /></a>
-            <a href="https://www.youtube.com/user/SOLIDARITES" target="_blank" class="share youtube"><i class="fa fa-youtube"></i><img src="{{site.url}}/porteurdeau/images/footer-share-yt.png" alt="" /></li></a>
+            <a href="https://www.youtube.com/user/SOLIDARITES" target="_blank" class="share youtube"><i class="fa fa-youtube"></i><img src="{{site.url}}/porteurdeau/images/footer-share-yt.png" alt="" /></a></li>
           </ul>
           </div>
         </div>
