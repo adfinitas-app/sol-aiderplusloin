@@ -1,6 +1,6 @@
 ---
 title: "Day 1 - Ebola: No Touch Policy"
-subtitle: "Andrea Angioletti, one of our first two volunteers to go to Sierra Leone, is back in France..."
+subtitle: "After months of training and preparation, the SOLIDARITÉS INTERNATIONAL team has made it to Freetown to launch our Ebola response."
 auteur: Fanny Rochette
 page_date: 2014-11-30T00:00:00.000Z
 video:
