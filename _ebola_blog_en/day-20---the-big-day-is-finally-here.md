@@ -13,6 +13,6 @@ image:
   center: true
   adjust: true
 ---
-In Moyamba, the big day is finally here: the Ebola care centre, managed by Doctors of the World Spain with the support of SOLIDARIT&Eacute;S INTERNATIONAL, opens its doors today. The teams are ready to welcome their first few patients, who should arrive in the next few hours. 
+In Moyamba, the big day is finally here: the Ebola care centre, managed by Doctors of the World Spain with the support of SOLIDARIT&Eacute;S INTERNATIONAL, opens its doors today. The teams are ready to welcome their first few patients, who should arrive in the next few hours.
 
 {% include image.html %}
