@@ -11,30 +11,30 @@ facebook:
   image_path: "/statics/porteurdeau/images/enfant-charlene.jpg"
 portraits:
   portrait1:
-    image-path: "/statics/porteurdeau/images/enfant-charlene.jpg"
+    image_path: "/statics/porteurdeau/images/enfant-charlene.jpg"
     contenu: "Tous les matins c’est moi qui vais chercher l’eau au puits"
     prenom: "Charlène"
   portrait2:
-    image-path: "/statics/porteurdeau/images/enfant-djime.jpg"
+    image_path: "/statics/porteurdeau/images/enfant-djime.jpg"
     contenu: "Je buvais de l'eau qui me donnait la diarrhée"
     prenom: "Djime"
   portrait3:
-    image-path: "/statics/porteurdeau/images/enfant-louise.jpg"
+    image_path: "/statics/porteurdeau/images/enfant-louise.jpg"
     contenu: "Ma petite soeur a été très malade, on m'a dit que c'était le choléra"
     prenom: "Louise"
   portrait4:
-    image-path: "/statics/porteurdeau/images/enfant-celestine.jpg"
+    image_path: "/statics/porteurdeau/images/enfant-celestine.jpg"
     contenu: "Je n'avais pas le temps d'aller à l'école"
     prenom: "Célestine"
   portrait5:
-    image-path: "/statics/porteurdeau/images/enfant-paul.jpg"
+    image_path: "/statics/porteurdeau/images/enfant-paul.jpg"
     contenu: "Mon papa ne pouvait pas arroser son champ"
     prenom: "Paul"
   potrtrait6:
-    image-path: "/statics/porteurdeau/images/enfant-sandie.jpg"
+    image_path: "/statics/porteurdeau/images/enfant-sandie.jpg"
     contenu: "Dans le centre de santé où j'étais soignée, l'eau n'était pas bonne"
     prenom: "Sandie-Caroline"
-bouton_don:
+boutons_don:
   bouton1:
     montant: 10
     upgrade1: 15
@@ -259,8 +259,8 @@ equivalences:
 
 
 
-        <span id="don-1"><a href="{{site.url_iraiser}}/b?cid={{page.cid_iraiser}}&once_grid[]={{page.boutons.bouton1.montant | times : 100}}&once_grid[]={{page.boutons.bouton1.upgrade1 | times : 100}}&once_grid[]={{page.boutons.bouton1.upgrade2 | times : 100}}&amount={{page.boutons.bouton1.montant | times : 100}}&frequency=once" class="small button BTN-GP-MONTANT-P1-JME15" target="_blank"><span class="value-don">{{page.boutons.bouton1.montant | times : 100}}</span> €</a></span>
-        <span id="don-2"><a href="{{site.url_iraiser}}/b?cid={{page.cid_iraiser}}&once_grid[]={{page.boutons.bouton2.montant | times : 100}}&once_grid[]={{page.boutons.bouton2.upgrade1 | times : 100}}&once_grid[]={{page.boutons.bouton2.upgrade2 | times : 100}}&amount={{page.boutons.bouton2.montant | times : 100}}&frequency=once" class="small button BTN-GP-MONTANT-P1-JME15" target="_blank"><span class="value-don">{{page.boutons.bouton2.montant | times : 100}}</span> €</a></span>
+        <span id="don-1"><a href="{{site.url_iraiser}}/b?cid={{page.cid_iraiser}}&once_grid[]={{page.boutons_don.bouton1.montant | times : 100}}&once_grid[]={{page.boutons_don.bouton1.upgrade1 | times : 100}}&once_grid[]={{page.boutons_don.bouton1.upgrade2 | times : 100}}&amount={{page.boutons_don.bouton1.montant | times : 100}}&frequency=once" class="small button BTN-GP-MONTANT-P1-JME15" target="_blank"><span class="value-don">{{page.boutons_don.bouton1.montant | times : 100}}</span> €</a></span>
+        <span id="don-2"><a href="{{site.url_iraiser}}/b?cid={{page.cid_iraiser}}&once_grid[]={{page.boutons_don.bouton2.montant | times : 100}}&once_grid[]={{page.boutons_don.bouton2.upgrade1 | times : 100}}&once_grid[]={{page.boutons_don.bouton2.upgrade2 | times : 100}}&amount={{page.boutons_don.bouton2.montant | times : 100}}&frequency=once" class="small button BTN-GP-MONTANT-P1-JME15" target="_blank"><span class="value-don">{{page.boutons_don.bouton2.montant | times : 100}}</span> €</a></span>
         <span id="don-3"><a href="{{site.url_iraiser}}/b?cid={{page.cid_iraiser}}" target="_blank" class="small button btn-autre BTN-GP-AUTRE-P1-JME15">Autre montant</a></span>
       </div>
     </div>
