@@ -17,7 +17,7 @@ Training for the national staff who’ll work alongside the medical team is in f
 
 ## Stopping the virus in its tracks
 
-Another explanation for the influx of applications is that the Sierra Leonean government has established a system of bonuses for all those working on the Ebola crisis. Anyone working in a care centre receives a huge bonus, which is easily equivalent to twice their salary. People employed to bury bodies receive the same bonuses. 
+Another explanation for the influx of applications is that the Sierra Leonean government has established a system of bonuses for all those working on the Ebola crisis. Anyone working in a care centre receives a huge bonus, which is easily equivalent to twice their salary. People employed to bury bodies receive the same bonuses.
 
 Of course, the main reason that people apply to work in the ETC is because they want to be part of efforts to stop the spread of Ebola. It has already been responsible for too many deaths.
 
