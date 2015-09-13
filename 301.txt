@@ -45,3 +45,26 @@
 /ebola/blog/jour3-plan3d-%20solidarites-international.html /ebola/blog/article/jour3-plan3d-solidarites-international.html
 /ebola/blog/jour2-ebola-ce-virus-invisible-solidarites-international.html /ebola/blog/article/jour2-ebola-ce-virus-invisible-solidarites-international.html
 /ebola-no-touch-policy.html /ebola/blog/article/ebola-no-touch-policy.html
+/ebola/en/blog/./day44andreas back.html	/ebola/en/blog/article/day-44-andrea-s-back.html
+/ebola/en/blog/./day 40 - evacuation.html	/ebola/en/blog/article/day-40-evacuation.html
+/ebola/en/blog/./day 38 - four new survivor certificates.html	/ebola/en/blog/article/day-38-four-new-survivor-certificates.html
+/ebola/en/blog/./day 37 - one death every day.html	/ebola/en/blog/article/day-37-one-death-every-day.html
+/ebola/en/blog/./day 33 - the most joyful day to date.html	/ebola/en/blog/article/day-33-the-most-joyful-day-to-date.html
+/ebola/en/blog/./day 32 - 20 patients, and two pieces of good news.html	/ebola/en/blog/article/day-32-20-patients-and-two-pieces-of-good-news.html
+/ebola/en/blog/./day 21 - the first patients arrive.html	/ebola/en/blog/article/day-21-the-first-patients-arrive.html
+/ebola/en/blog/./day 20 - the big day is finally here.html	/ebola/en/blog/article/day-20-the-big-day-is-finally-here.html
+/ebola/en/blog/./day 18 - the opening ceremony.html	/ebola/en/blog/article/day-18-the-opening-ceremony.html
+/ebola/en/blog/./day 17 - last checks.html	/ebola/en/blog/article/day-17-last-checks.html
+/ebola/en/blog/./day 16 - the final days of training.html	/ebola/en/blog/article/day-16-the-final-days-of-training.html
+/ebola/en/blog/./day 15 - what is the profession.html	/ebola/en/blog/article/day-15-what-is-the-profession-of-most-people-applying-to-work-at-the-etc.html
+/ebola/en/blog/./day 13 - significant needs.html	/ebola/en/blog/article/day-13-significant-needs.html
+/ebola/en/blog/./day 12 - ebola  joining the fight despite the fear.html	/ebola/en/blog/article/day-11-aerial-view-of-the-etc.html
+/ebola/en/blog/./day 11 - aerial view of the etc.html	/ebola/en/blog/article/day-12-ebola-joining-the-fight-despite-the-fear.html
+/ebola/en/blog/./day 10 - bad news.html	/ebola/en/blog/article/day-10-bad-news.html
+/ebola/en/blog/./day 9 - finalising the protocol.html	/ebola/en/blog/article/day-9-finalising-the-protocol.html
+/ebola/en/blog/./day 6 - we get the keys.html	/ebola/en/blog/article/day-6-we-get-the-keys.html
+/ebola/en/blog/./day 5-andrea attends a training session in bo.html	/ebola/en/blog/article/day-5-andrea-attends-a-training-session-in-bo.html
+/ebola/en/blog/./day 4-setting-up-and-settling-in.html	/ebola/en/blog/article/day-4-setting-up-and-settling-in.html
+/ebola/en/blog/./day 3-the-etc-schema.html	/ebola/en/blog/article/day-3-the-moyamba-ebola-care-centre.html
+/ebola/en/blog/./day 2_ebolathe invisiblevirus.html	/ebola/en/blog/article/day-2-ebola-the-invisible-virus.html
+/ebola/en/blog/./day1-ebola-no-touch-policy.html	/ebola/en/blog/article/day-1-ebola-no-touch-policy.html
