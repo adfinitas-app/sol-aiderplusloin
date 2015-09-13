@@ -17,6 +17,6 @@ Today, Julio is finalising the disinfection protocol. These incredibly precise d
 
 Meanwhile, Andrea and Emmanuel are supervising the installation of the equipment in the centre, and checking the material one last time. Everything thing needs to be in working order before the training starts, so that what the trainees experience is as close as possible to what will be their daily reality for the next nine months.
 
-As for me, I’m still running around trying to open a bank account, finalise our HR policy and finish recruiting the team. 
+As for me, I’m still running around trying to open a bank account, finalise our HR policy and finish recruiting the team.
 
 {% include image.html %}
