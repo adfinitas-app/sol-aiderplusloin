@@ -1,5 +1,5 @@
 /index.html http://www.solidarites.org/fr/aiderplusloin
-/ebola/blog/jour45-comprendre-ebola-international.html
+/ebola/blog/jour45-comprendre-ebola-international.html /ebola/blog/
 /ebola/blog/jour95_formation_crf_2.html /ebola/blog/article/jour96-formation-crf-2.html
 /ebola/blog/jour97-formation-crf-3-solidarites-international.html /ebola/blog/article/jour97-formation-crf-3-solidarites-international.html
 /ebola/blog/jour95_formation_crf.html /ebola/blog/article/jour95-formation-crf.html
