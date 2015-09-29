@@ -30,7 +30,7 @@ facebook:
 <title>{{page.meta.title}}</title>
 <link href="static/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="static/css/styles.css" type="text/css" rel="stylesheet" media="screen" />
-<link rel="stylesheet" href="tel-input/build/css/intlTelInput.css">
+<link rel="stylesheet" href="tel-input/build/css/intlTelInput.css" />
 <script type="text/javascript" src="static/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="static/js/functions.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
@@ -174,21 +174,21 @@ function completeAndRedirect(){
 		        			<option value="3">Mlle</option>
 		        			<option value="2">Mme</option>
 		        		</select></p>
-		        		<p> <input placeholder="Prénom*" name="firstname" id="id_firstname" maxlength="200" type="text" style="valid: false" novalidate required></p>
-						<p> <input placeholder="Nom*" name="lastname" id="id_lastname" maxlength="200" type="text" required class=""></p>
-		        		<p> <input placeholder="Email*" name="email" id="id_email" maxlength="200" type="text" required class=""></p>
-		        		<p> <input placeholder="Ville*" name="ville" id="id_ville" maxlength="200" type="text" required class="">
+		        		<p> <input placeholder="Prénom*" name="firstname" id="id_firstname" maxlength="200" type="text" style="valid: false" novalidate required /></p>
+						<p> <input placeholder="Nom*" name="lastname" id="id_lastname" maxlength="200" type="text" required /></p>
+		        		<p> <input placeholder="Email*" name="email" id="id_email" maxlength="200" type="text" required /></p>
+		        		<p> <input placeholder="Ville*" name="ville" id="id_ville" maxlength="200" type="text" required />
 		        		</p>
-		        		<p> <input placeholder="Pays*" name="pays" id="id_pays" maxlength="200" type="text"/></p>
+		        		<p> <input placeholder="Pays*" name="pays" id="id_pays" maxlength="200" type="text" /></p>
 		        		<p style="margin-bottom: 5px">
-					      <input id="id_phone" name="phone" type="text" width="260">
+					      <input id="id_phone" name="phone" type="text" width="260" />
 		        		</p>
 		        		<p><label for="id_optin_0"><span class="editable">>Souhaitez-vous vous abonner à notre newsletter ?</span></label> <ul>
-		        			<li><label for="id_optin_0"><input id="id_optin_0" value="oui" checked="checked" name="optin" type="radio" class="lbl-radio"/> Oui</label></li>
-		        			<li><label for="id_optin_1"><input value="non" name="optin" id="id_optin_1" type="radio" class="lbl-radio"/> Non</label></li>
+		        			<li><label for="id_optin_0"><input id="id_optin_0" value="oui" checked="checked" name="optin" type="radio" class="lbl-radio" /> Oui</label></li>
+		        			<li><label for="id_optin_1"><input value="non" name="optin" id="id_optin_1" type="radio" class="lbl-radio" /> Non</label></li>
 		        		</ul></p>
 		        		<p id="outform"></p>
-		        		<input onclick="completeAndRedirect()" id="sub" type="button" value="Je signe la pétition" class="bt-rouge"/>
+		        		<input onclick="completeAndRedirect()" id="sub" type="button" value="Je signe la pétition" class="bt-rouge" />
 		        	</form>
 		        	<ul class="reseaux">
 		        		<li class="editable">partager :</li>
