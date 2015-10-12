@@ -9,11 +9,6 @@ $(document).ready(function(){
 	    pauseOnHover: false,
             arrows: true
 	});
-        $('.launch-video').click(function(e){
-          $('.intro-video').hide();
-          $('#video-play').removeClass('hide');
-          $('#video-play iframe').attr('src','//www.youtube.com/embed/Qdx-daSaJmc?autoplay=1');
-        });
 	
 	/** Woopra + ga events **/
 	$('.top-bar .right a.button').on('click', function( event ) {
