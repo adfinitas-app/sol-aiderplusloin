@@ -8,6 +8,7 @@ facebook:
   site_name: "VotreGoutteDeau"
   description: "L'eau insalubre tue 3,6 millions de personnes chaque année. Agissons contre l'eau insalubre en signant la pétition sur aiderplusloin.solidarites.org/votregouttedeau/"
   image_path: "/votregouttedeau/static/images/logo-solidarites.jpg"
+image_path: ../images/guilletmets-haut.png
 ---
 <!DOCTYPE html>
 <html lang="fr">
@@ -35,6 +36,13 @@ facebook:
 	<script type="text/javascript" src="static/js/functions.js"></script>
 	<script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
 	<!--[if IE]><script src="static/js/html5-ie.js"></script><![endif]-->
+   <style type="text/css"> 
+        .signature blockquote:before {
+            left: -23px;
+            top: -13px;
+        	background: url({{page.image_path}}) no-repeat 0 0;
+        }
+   </style> 
 	<script type="text/javascript">
 
 		var _gaq = _gaq || [];
