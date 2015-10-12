@@ -686,6 +686,12 @@ header .baseline {
 .signature blockquote span:first-child {
 	margin-left: -6px;
 }
+.signature blockquote:after {
+    bottom: -4px;
+        left: 320px;
+        top: auto;
+    	background: url(../images/guilletmets-bas.png) no-repeat 0 0;
+    }
 .signature blockquote .guillemet {
 	position: absolute;
 }
@@ -722,7 +728,7 @@ header .baseline {
 }
 .note-petition {
 	color: #8d8d8d;
-	font-size: 12px;
+font-size: 12px;
 	line-height: 14px;
 	margin: 0 15px 50px 10px;
 	text-align: justify;
