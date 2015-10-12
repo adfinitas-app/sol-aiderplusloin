@@ -6,7 +6,10 @@ meta:
   description: "Le sac potager de Solidarités International permet de répondre aux problèmes alimentaires des habitants des bidonvilles et des camps de réfugiés"
   keywords: "Sac potager, lutter contre la faim"
 fond_probleme_path: "http://www.solidarites.org/media/sac-potager/img/fond-txt-optimized2.jpg"
-contenu:
+facebook:
+  title: ""
+  site_name: ""
+  description: " contenu:
   header_background: http://www.solidarites.org/media/sac-potager/img/visu-fond-header-optimized2.png
   logo_path: "/statics/sac-potager/static/img/logo-solidarites.png"
   logo_url: ""
@@ -23,6 +26,12 @@ video: "http://www.youtube.com/embed/ZnXYfHNsHNY"
     <title>{{ page.meta.title }}</title>
     <meta name="keywords" content="{{ page.meta.keywords }}" />
     <meta name="description" content="{{ page.meta.description }}" />
+    <meta property="og:title" content="{{page.facebook.title}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{page.facebook.site_name}}" />
+    <meta property="og:description" content="{{page.facebook.description}}" />
+    <meta property="og:url" content="{{site.url}}/sac-potager/" />
+    <meta property="og:image" content="{{site.url}}{{page.facebook.image_path}}" />
 	<link href="/statics/sac-potager/static/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
 	<link href="/statics/sac-potager/static/styles.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
