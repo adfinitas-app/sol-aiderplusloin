@@ -679,17 +679,6 @@ header .baseline {
 	width: 14px;
 	height: 12px;
 }
-.signature blockquote:before {
-    left: -23px;
-    top: -13px;
-	background: url(../images/guilletmets-haut.png) no-repeat 0 0;
-}
-.signature blockquote:after {
-    bottom: -4px;
-    left: 320px;
-    top: auto;
-	background: url(../images/guilletmets-bas.png) no-repeat 0 0;
-}
 .signature .directeur span,
 .signature blockquote span {
 	display: block;
