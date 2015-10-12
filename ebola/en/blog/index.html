@@ -9,6 +9,11 @@ meta:
 contenu:
   logo: "/statics/ebola/landingpage/images/logo.png"
   logo_url: "http://www.solidarites.org/en"
+facebook:
+  title: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
+  description: "L’équipe de @SolidaritésInternational œuvre pour stopper l’épidémie d’#Ebola en #SierraLeone. À crise hors norme, une réponse exceptionnelle, à découvrir sur aiderplusloin.solidarites.org/ebola/."
+  image_path: "/statics/ebola/landingpage/images/header.png"
+  site_name: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
 header:
   image_path: "/statics/ebola/blog/img/blog-header.png"
 ---
@@ -58,9 +63,9 @@ header:
     <meta property="og:title" content="ÉBOLA : Doctors provide medical care, SOLIDARITÉS INTERNATIONAL ensures protection.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{site.url}}/ebola/en/blog">
-    <meta property="og:image" content="{{site.url}}/ebola/en/images/header.png">
-    <meta property="og:description" content="The SOLIDARITÉS INTERNATIONAL team is helping to fight the #Ebola epidemic in #SierraLeone. Find out about our exceptional response to this extraordinary crisis on aiderplusloin.solidarites.org/ebola/.">
-    <meta property="og:site_name" content="EBOLA : Doctors provide medical care, SOLIDARITÉS INTERNATIONAL ensures protection.">
+    <meta property="og:image" content="{{site.url}}{page.facebook.image_path}}">
+    <meta property="og:description" content="{{page.facebook.description}}" />
+    <meta property="og:site_name" content="{{page.facebook.site_name}}" />
     <title>{{page.meta.title}}</title>
     <link href="/statics/ebola/blog/css/bootstrap.min.css" rel="stylesheet">
     <link href="/statics/ebola/blog/css/clean-blog.css" rel="stylesheet">
