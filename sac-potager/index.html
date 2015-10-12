@@ -7,6 +7,7 @@ meta:
   keywords: "Sac potager, lutter contre la faim"
 fond_probleme_path: "http://www.solidarites.org/media/sac-potager/img/fond-txt-optimized2.jpg"
 contenu:
+  header_background: http://www.solidarites.org/media/sac-potager/img/visu-fond-header-optimized2.png
   logo_path: "/statics/sac-potager/static/img/logo-solidarites.png"
   logo_url: ""
 video: "http://www.youtube.com/embed/ZnXYfHNsHNY"
@@ -27,6 +28,12 @@ video: "http://www.youtube.com/embed/ZnXYfHNsHNY"
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="/statics/sac-potager/static/functions.js"></script>
     <!--[if IE]><script src="/statics/sac-potager/static/html5-ie.js"><!--[endif]---->
+   <style type="text/css"> 
+        header .conteneur {
+        	background: url({{page.contenu.header_background}}) no-repeat 28px 16px;
+        	height: 466px;
+        }
+   </style> 
 </head>
 
 
