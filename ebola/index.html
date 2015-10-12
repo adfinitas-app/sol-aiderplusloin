@@ -4,8 +4,10 @@ meta:
   title: "Faire barrage à l'épidémie d'Ébola en Sierra Leone - SOLIDARITÉS INTERNATIONAL"
   description: "L’équipe de @SolidaritésInternational œuvre pour stopper l’épidémie d’#Ebola en #SierraLeone. À crise hors norme, une réponse exceptionnelle, à découvrir sur aiderplusloin.solidarites.org/ebola/."
   keywords: "ébola, épidémie, Sierra Léone"
+contenu:
   logo: "/statics/ebola/landingpage/images/logo.png"
   logo_url: "#header"
+  text_button: "Je fais un Don"
 facebook:
   title: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
   description: "L’équipe de @SolidaritésInternational œuvre pour stopper l’épidémie d’#Ebola en #SierraLeone. À crise hors norme, une réponse exceptionnelle, à découvrir sur aiderplusloin.solidarites.org/ebola/."
@@ -105,14 +107,14 @@ equivalences:
       <nav class="top-bar" data-topbar="" role="navigation">
        <ul class="title-area">
 	 <li data-magellan-arrival="header" class="name">
-	   <h1><a href="{{page.meta.logo_url}}"><img src="{{page.meta.logo}}" alt="SOLIDARITÉS INTERNATIONAL" /></a></h1>
+	   <h1><a href="{{page.contenu.logo_url}}"><img src="{{page.contenu.logo}}" alt="SOLIDARITÉS INTERNATIONAL" /></a></h1>
 	 </li>
 	 <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
        </ul>
 
        <section class="top-bar-section">
 	 <!-- Right Nav Section -->
-	 <ul class="right"><li><a class="button" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}" target="_blank">Je fais un Don</a></li></ul>
+	 <ul class="right"><li><a class="button" href="https://dons.solidarites.org/?cid={{page.cid_iraiser}}" target="_blank">{{page.contenu.text_button}}</a></li></ul>
 
 	 <!-- Left Nav Section -->
 	 <ul class="left">
