@@ -7,6 +7,7 @@ meta:
 contenu:
   logo: "/statics/ebola/landingpage/images/logo.png"
   logo_url: "#header"
+  video_url: "//www.youtube.com/embed/Qdx-daSaJmc?autoplay=1"
 facebook:
   title: "EBOLA : les médecins soignent, SOLIDARITÉS INTERNATIONAL protège."
   description: "L’équipe de @SolidaritésInternational œuvre pour stopper l’épidémie d’#Ebola en #SierraLeone. À crise hors norme, une réponse exceptionnelle, à découvrir sur aiderplusloin.solidarites.org/ebola/."
@@ -589,6 +590,15 @@ equivalences:
     		$('#blg').click(function() {
     		goToByScroll("blog");
     		});
+    	});
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.launch-video').click(function(e){
+              $('.intro-video').hide();
+              $('#video-play').removeClass('hide');
+              $('#video-play iframe').attr('src','{{page.contenu.video_url}}');
+            });
     	});
     </script>
 <script>
