@@ -19,11 +19,39 @@
     	var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
         })("woopra");
         
+        function getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1);
+		if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+
+function setCookie(cname, cvalue, exdate) {
+	var expires = "expires="+exdate.toUTCString();
+	document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+$(document).ready(function(){
+	ck = getCookie("wooTracker");
+	if (ck.length != 0) {
+		var now = new Date();
+		var time = now.getTime();
+		time += 5 * 1000;
+		now.setTime(time);
+		setCookie("wooTracker", ck, now);
+	}
+});
+        
         woopra.config({
             domain: '{{ site.woopra_id }}'
         });
         woopra.track();
     </script>
+    
     <script>
         if ('email' in p && p['email'] != "" && p['email'] != null) {
             woopra.identify({
