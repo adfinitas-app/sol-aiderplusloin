@@ -4,6 +4,13 @@
 <html class="no-js" lang="en">
 <head>
     <script>
+    var now = new Date();
+	var time = now.getTime();
+	time += 5 * 1000;
+	now.setTime(time);
+	now.toUTCString();
+    </script>
+    <script>
         function extractUrlParams(){ 
         var t = document.location.search.substring(1).split('&'); var f = [];
         for (var i=0; i<t.length; i++){
@@ -20,7 +27,8 @@
         })("woopra");
         
         woopra.config({
-            domain: '{{ site.woopra_id }}'
+            domain: '{{ site.woopra_id }}',
+            cookie_expire: now
         });
         woopra.track();
     </script>
