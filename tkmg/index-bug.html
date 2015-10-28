@@ -4,6 +4,10 @@
 <html class="no-js" lang="en">
 <head>
     <script>
+        var d = new Date();
+        d.setMilliseconds(100);
+    </script>
+    <script>
         function extractUrlParams(){ 
         var t = document.location.search.substring(1).split('&'); var f = [];
         for (var i=0; i<t.length; i++){
@@ -20,7 +24,8 @@
         })("woopra");
         
         woopra.config({
-            domain: '{{ site.woopra_id }}'
+            domain: '{{ site.woopra_id }}',
+            cookie_expire: d
         });
         woopra.track();
     </script>
