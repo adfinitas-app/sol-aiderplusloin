@@ -25,35 +25,6 @@
         woopra.track();
     </script>
     <script>
-        function getCookie(cname) {
-	var name = cname + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0; i<ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0)==' ') c = c.substring(1);
-		if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
-	}
-	return "";
-}
-
-function setCookie(cname, cvalue, exdate) {
-	var expires = "expires="+exdate.toUTCString();
-	document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-
-$(document).ready(function(){
-	ck = getCookie("wooTracker");
-	if (ck.length != 0) {
-		var now = new Date();
-		var time = now.getTime();
-		time += 5 * 1000;
-		now.setTime(time);
-		setCookie("wooTracker", ck, now);
-	}
-});
-    </script>
-   
-    <script>
         if ('email' in p && p['email'] != "" && p['email'] != null) {
             woopra.identify({
             	email: p['email'],
