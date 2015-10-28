@@ -28,7 +28,7 @@
         
         woopra.config({
             domain: '{{ site.woopra_id }}',
-            cookie_name: '_' + p['email']
+            cookie_expire: now
         });
         woopra.track();
     </script>
