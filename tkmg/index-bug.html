@@ -4,8 +4,10 @@
 <html class="no-js" lang="en">
 <head>
     <script>
-        var d = new Date();
-        d.setMilliseconds(100);
+        var now = new Date();
+        var time = now.getTime();
+        var expireTime = time + 500;
+        now.setTime(expireTime);
     </script>
     <script>
         function extractUrlParams(){ 
@@ -25,7 +27,7 @@
         
         woopra.config({
             domain: '{{ site.woopra_id }}',
-            cookie_expire: d
+            cookie_expire: now
         });
         woopra.track();
     </script>
