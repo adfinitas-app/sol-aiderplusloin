@@ -64,11 +64,6 @@ function pureStr(value) {
 }
 
 function formToDb() {
-  var civility = pureStr($("select[name='homme-femme']").val());
-  if (civility == "Homme")
-    civility = "Monsieur";
-  else
-    civility = "Madame";
   var result = getResult();
   var data = {
     "schema": "sol",
@@ -96,12 +91,12 @@ function formToDb() {
       "cv_lastname": pureStr($("input[name='lastname']").val()),
       "cv_email": pureStr($("input[name='email']").val()),
       "cv_name": pureStr($("input[name='firstname']").val()) + " " + pureStr($("input[name='lastname']").val()),
-      "cv_civility": civility,
+      "cv_sexe": pureStr($("select[name='homme-femme']").val()),
       "cv_phone": pureStr($("input[name='phone']").val()),
       "cv_address1": pureStr($("input[name='address']").val()),
       "cv_postcode": pureStr($("input[name='zipcode']").val()),
       "cv_country": pureStr($("input[name='country']").val()),
-      "cv_origine": pureStr($("select[name='origine']").val()),
+      "cv_1er_contact": pureStr($("select[name='origine']").val()),
       "cv_city": pureStr($("input[name='city']").val()),
       "cv_annee_naissance": pureStr($("select[name='annee-naissance']").val()),
       /* Variables de l'evenement  */
