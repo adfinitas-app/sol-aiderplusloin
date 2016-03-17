@@ -1,4 +1,5 @@
 ---
+logo_jme: true
 ---
 <!doctype html>
 <html class="no-js" lang="en">
@@ -19,7 +20,9 @@
 	<div class="row">
 	  <div class="large-12 columns">
 	    <img class="logo" src="img/logo.svg" alt="logo"/>
-	    <img class="logo-eau" src="img/logo-eau.png" alt="Journée mondiale de l'eau"/>
+	    {% if page.logo_jme %}
+	    <img class="logo-eau" src="{{ site.data.logo_jme_path }}" alt="Journée mondiale de l'eau"/>
+	    {% endif %
 	  </div>
 	</div>
 	<div class="row">
