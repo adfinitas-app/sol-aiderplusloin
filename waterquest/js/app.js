@@ -103,6 +103,7 @@ function formToDb() {
       "cv_country": pureStr($("input[name='country']").val()),
       "cv_origine": pureStr($("select[name='origine']").val()),
       "cv_city": pureStr($("input[name='city']").val()),
+      "cv_annee_naissance": pureStr($("select[name='annee-naissance']").val()),
       /* Variables de l'evenement  */
       "event": "JME-quizz",
       "ce_score": result + "%"
