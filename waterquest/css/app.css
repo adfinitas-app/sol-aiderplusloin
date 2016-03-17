@@ -95,10 +95,6 @@ form select {
   margin-bottom: 20px;
   color: black;
 }
-form input[type="text"] {
-  margin-bottom: 20px;
-  color: black;
-}
 .mieux-connaitre {
   margin-top: 40px;
   font-family: "open sans";
@@ -146,10 +142,14 @@ form input[type="text"] {
 input, select {
   font-family: "open sans condensed";
 }
-input[type="text"], select {
+input[type="text"], input[type="tel"], form input[type="email"], select {
   border: medium none;
   padding: 7px;
   border-radius: 7px;
+}
+form input[type="text"], form input[type="tel"], form input[type="email"] {
+  margin-bottom: 20px;
+  color: black;
 }
 select {
   -webkit-appearance:none;
@@ -202,6 +202,7 @@ select {
 }
 .result .result-img {
   margin-top: 35px;
+  margin-bottom: 30px;
 }
 .result-end {
   padding-top: 5px;

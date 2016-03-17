@@ -11,9 +11,9 @@ function getResult() {
 function showAnswer() {
     result = getResult();
     $(".name").html("Test");
-    $("form#myForm").hide();
-    $("#result-" + result).show();
-    $(".result-part").show();
+    $("form#myForm").slideUp();
+    $("#result-" + result).slideDown();
+    $(".result-part").slideDown();
 }
 
 function checkFields() {}
@@ -24,7 +24,8 @@ function formToDb() {
 }
 
 function loadAnswer() {
-  $("a.validate").on("click", function() {
+  $(document).on("valid.zf.abide", function(e) {
+    e.preventDefault();
     checkFields();
     formToDb();
     showAnswer();

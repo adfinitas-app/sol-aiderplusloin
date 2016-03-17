@@ -26,7 +26,7 @@
 	    <p class="condensed light subtitle">L’EAU A DES POUVOIRS CACHÉS. TENTEZ DE LES MAITRISER !</p>
 	  </div>
 	</div>
-	<form id="myForm">
+	<form id="myForm" data-abide="ajax">
 	  <div class="row">
 	    <div class="large-12 columns">
 	      <p class="nbrquestion"><span class="first">1</span>/4</p>
@@ -36,9 +36,9 @@
 	  <div class="row">
 	    <div class="large-12 columns reponses">
 	      <ul>
-		<li><input type="radio" id="1-1" value="1" name="1"><label for="1-1"><span></span>La quantité d’eau moyenne contenue dans le corps humain</label></input></li>
-		<li><input type="radio" id="1-2" value="2" name="1"><label for="1-2"><span></span>Ce que boit un être humain en 15 jours</label></input></li>
-		<li><input type="radio" id="1-3" value="3" name="1"><label for="1-3"><span></span>Ce quantité d'eau que doivent se partager chaque jour les 30 habitants d'un village du Soudan du Sud</label></input></li>
+		<li><input type="radio" id="1-1" value="1" name="1" required><label for="1-1"><span></span>La quantité d’eau moyenne contenue dans le corps humain</label></input></li>
+		<li><input type="radio" id="1-2" value="2" name="1" required><label for="1-2"><span></span>Ce que boit un être humain en 15 jours</label></input></li>
+		<li><input type="radio" id="1-3" value="3" name="1" required><label for="1-3"><span></span>Ce quantité d'eau que doivent se partager chaque jour les 30 habitants d'un village du Soudan du Sud</label></input></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -51,9 +51,9 @@
 	  <div class="row">
 	    <div class="large-12 columns reponses">
 	      <ul>
-		<li><input type="radio" id="2-1" value="1" name="2"><label for="2-1"><span></span>Le nombre de personnes qui manquent d’un assainissement adéquat</label></input></li>
-		<li><input type="radio" id="2-2" value="2" name="2"><label for="2-2"><span></span>Le nombre de personnes mourant chaque année de la consommation d'une eau insalubre</label></input></li>
-		<li><input type="radio" id="2-3" value="3" name="2"><label for="2-3"><span></span>Le nombre de personnes atteintes par le paludisme chaque année</label></input></li>
+		<li><input type="radio" id="2-1" value="1" name="2" required><label for="2-1"><span></span>Le nombre de personnes qui manquent d’un assainissement adéquat</label></input></li>
+		<li><input type="radio" id="2-2" value="2" name="2" required><label for="2-2"><span></span>Le nombre de personnes mourant chaque année de la consommation d'une eau insalubre</label></input></li>
+		<li><input type="radio" id="2-3" value="3" name="2" required><label for="2-3"><span></span>Le nombre de personnes atteintes par le paludisme chaque année</label></input></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -66,9 +66,9 @@
 	  <div class="row">
 	    <div class="large-12 columns reponses">
 	      <ul>
-		<li><input type="radio" id="3-1" value="1" name="3"><label for="3-1"><span></span>La part de français n'ayant pas accès à l'eau potable</label></input></li>
-		<li><input type="radio" id="3-2" value="2" name="3"><label for="3-2"><span></span>La part de consommation dédiée à la boisson en France</label></input></li>
-		<li><input type="radio" id="3-3" value="3" name="3"><label for="3-3"><span></span>Le pourcentage d'habitants ayant accès à l'eau par canalisations en Afrique Sub-saharienne</label></input></li>
+		<li><input type="radio" id="3-1" value="1" name="3" required><label for="3-1"><span></span>La part de français n'ayant pas accès à l'eau potable</label></input></li>
+		<li><input type="radio" id="3-2" value="2" name="3" required><label for="3-2"><span></span>La part de consommation dédiée à la boisson en France</label></input></li>
+		<li><input type="radio" id="3-3" value="3" name="3" required><label for="3-3"><span></span>Le pourcentage d'habitants ayant accès à l'eau par canalisations en Afrique Sub-saharienne</label></input></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -81,9 +81,9 @@
 	  <div class="row">
 	    <div class="large-12 columns reponses">
 	      <ul>
-		<li><input type="radio" id="4-1" value="1" name="4"><label for="4-1"><span></span>L'augmentation d'accès à l'eau potable réalisée en 20 ans</label></input></li>
-		<li><input type="radio" id="4-2" value="2" name="4"><label for="4-2"><span></span>La part de la population mondiale n'ayant pas accès à l'eau potable</label></input></li>
-		<li><input type="radio" id="4-3" value="3" name="4"><label for="4-3"><span></span>Le pourcentage d'eau douce utilisable par l'Homme</label></input></li>
+		<li><input type="radio" id="4-1" value="1" name="4"><label for="4-1" required><span></span>L'augmentation d'accès à l'eau potable réalisée en 20 ans</label></input></li>
+		<li><input type="radio" id="4-2" value="2" name="4"><label for="4-2" required><span></span>La part de la population mondiale n'ayant pas accès à l'eau potable</label></input></li>
+		<li><input type="radio" id="4-3" value="3" name="4"><label for="4-3" required><span></span>Le pourcentage d'eau douce utilisable par l'Homme</label></input></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -94,7 +94,7 @@
 	  </div>
 	  <div class="row perso">
 	    <div class="large-12 columns fields">
-	      <select name="annee-naissance" form="myForm">
+	      <select name="annee-naissance" form="myForm" required>
 		<option value="" disabled selected>Votre année de naissance *</option>
 		<option value="2016">2016</option>
 		<option value="2015">2015</option>
@@ -214,12 +214,12 @@
 		<option value="1901">1901</option>
 		<option value="1900">1900</option>
 	      </select>
-	      <select name="homme-femme" form="myForm">
+	      <select name="homme-femme" form="myForm" required>
 		<option value="" disabled selected>Etes-vous une femme ? Un homme ? *</option>
 		<option value="homme">Homme</option>
 		<option value="test2">Femme</option>
 	      </select>
-	      <select name="homme-femme" form="myForm">
+	      <select name="homme-femme" form="myForm" required>
 		<option value="" disabled selected>Comment avez-vous connu Solidarités International * ?</option>
 		<option value="Urgence humanitaire">Urgence humanitaire</option>
 		<option value="Kit dignité">Kit dignité</option>
@@ -235,40 +235,40 @@
 	    <div class="large-12 columns fields">
 	      <div class="row">
 		<div class="large-12 columns split">
-		  <input type="text" name="firstname" placeholder="Prénom*"/>
-		  <input type="text" name="lastname" placeholder="Nom*"/>
+		  <input type="text" name="firstname" placeholder="Prénom*" required/>
+		  <input type="text" name="lastname" placeholder="Nom*" required/>
 		</div>
 	      </div>
 	      <div class="row">
 		<div class="large-12 columns">
-		  <input type="text" name="email" placeholder="Email*"/>
+		  <input type="email" name="email" placeholder="Email*" required/>
 		</div>
 	      </div>
 	      <div class="row">
 		<div class="large-12 columns">
-		  <input type="text" name="address" placeholder="Adresse*"/>
+		  <input type="text" name="address" placeholder="Adresse*" required/>
 		</div>
 	      </div>
 	      <div class="row">
 		<div class="large-12 columns split">
-		  <input type="text" name="zipcode" placeholder="Code Postal*"/>
-		  <input type="text" name="city" placeholder="Ville*"/>
+		  <input type="text" name="zipcode" placeholder="Code Postal*" required/>
+		  <input type="text" name="city" placeholder="Ville*" required/>
 		</div>
 	      </div>
 	      <div class="row">
 		<div class="large-12 columns">
-		  <input type="text" name="country" placeholder="Pays*"/>
+		  <input type="text" name="country" placeholder="Pays*" required/>
 		</div>
 	      </div>
 	      <div class="row">
 		<div class="large-12 columns split last">
-		  <input type="text" name="phone" placeholder="Téléphone*"/>
+		  <input type="tel" name="phone" placeholder="Téléphone*" required/>
 		</div>
 	      </div>
 	      <div class="row">
 		<div class="large-12 columns">
-		  <a class="button validate"><span class="bold">Validez et découvrez</span><br />si vous êtes un maître de l’eau !
-		  </a>
+		  <button type="submit" class="button validate"><span class="bold">Validez et découvrez</span><br />si vous êtes un maître de l’eau !
+		  </button>
 		</div>
 	      </div>
 	    </div>
