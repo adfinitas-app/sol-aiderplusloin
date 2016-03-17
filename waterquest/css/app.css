@@ -65,17 +65,17 @@ form li {
 input[type='radio'] {
   display:none;
 }
-input + label span {
+input + label span:not(.radio-txt) {
   display:inline-block;
   width:19px;
   height:19px;
   margin:0 10px 0 0;
   vertical-align:middle;
 }
-input[type="radio"] + label span {
+input[type="radio"] + label span:not(.radio-txt) {
   background:url("../img/radiobox.png") left top no-repeat;
 }
-input[type="radio"]:checked + label span {
+input[type="radio"]:checked + label span:not(.radio-txt) {
   background:url("../img/radiobox.png") -19px top no-repeat;
 }
 label {
