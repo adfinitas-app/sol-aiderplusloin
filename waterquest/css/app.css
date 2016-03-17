@@ -27,6 +27,25 @@ span.blue {
   height: 150px;
   margin-bottom: 2%;
 }
+@media screen and (max-width: 39.9375em) {
+  .logo {
+    float: left;
+    margin-left: 10px;
+    height: 100px;
+  }
+}
+.logo-eau {
+  position: absolute;
+  height: 100px;
+  right: 20%;
+}
+@media screen and (max-width: 39.9375em) {
+  .logo-eau {
+    float: right;
+    position: initial;
+    margin-right: 10px;
+  }
+}
 .subtitle {
   font-size: 35px;
   line-height: 0.8;
@@ -34,6 +53,13 @@ span.blue {
 .title.blue {
   font-weight: 700;
   font-size: 85px;
+}
+@media screen and (max-width: 39.9375em) {
+  .title.blue {
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 33px;
+  }
 }
 .nbrquestion {
   color: #0297d9;
@@ -53,11 +79,6 @@ span.blue {
   font-size: 22px;
   margin-top: 0px;
   margin-bottom: 12px;
-}
-.logo-eau {
-  position: absolute;
-  height: 100px;
-  right: 20%;
 }
 form li {
   list-style: none;
@@ -83,8 +104,12 @@ label {
   font-family: "open sans condensed";
 }
 .reponses {
-  padding: 0px 29%;
   text-align: left;
+}
+@media screen and (min-width: 40em) {
+  .reponses {
+    padding: 0px 29%;
+  }
 }
 form li {
 }
@@ -106,10 +131,14 @@ form select {
 .inter-text {
   font-family: "Open Sans Condensed";
   font-weight: 800;
-  padding: 0px 20%;
 }
-.fields {
-  padding: 0 30%;
+@media screen and (min-width: 40em) {
+  .inter-text {
+    padding: 0px 20%;
+  }
+  .fields {
+    padding: 0 30%;
+  }
 }
 .fields input, .fields select {
   width: 100%;
@@ -248,4 +277,14 @@ select {
 .chart-sub {
   font-size: 50px;
   display: block;
+}
+@media screen and (min-width: 40em) {
+  .show-for-small-only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .hide-for-small {
+    display: none !important;
+  }
 }
