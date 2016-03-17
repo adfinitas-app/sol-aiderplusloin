@@ -1,0 +1,250 @@
+body {
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
+  background-color: black;
+  color:white;
+  text-align: center;
+  font-family: "open sans";
+}
+.main {
+  margin-top: 6%;
+  font-size: 20px;
+}
+.condensed {
+  font-family: "Open Sans Condensed";
+}
+.align-left {
+  text-align: left;
+}
+span.blue {
+  color: #0297d9;
+}
+.light {
+  font-weight: 300;
+}
+.logo {
+  margin-top: 1%;
+  height: 150px;
+  margin-bottom: 2%;
+}
+.subtitle {
+  font-size: 35px;
+  line-height: 0.8;
+}
+.title.blue {
+  font-weight: 700;
+  font-size: 85px;
+}
+.nbrquestion {
+  color: #0297d9;
+  font-family: "open sans condensed";
+  font-weight: 300;
+  font-size: 37px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.nbrquestion .first {
+  font-family: "open sans";
+  font-weight: 800;
+}
+.question {
+  font-family: "open sans";
+  font-weight: 800;
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+.logo-eau {
+  position: absolute;
+  height: 100px;
+  right: 20%;
+}
+form li {
+  list-style: none;
+}
+input[type='radio'] {
+  display:none;
+}
+input + label span {
+  display:inline-block;
+  width:19px;
+  height:19px;
+  margin:0 10px 0 0;
+  vertical-align:middle;
+}
+input[type="radio"] + label span {
+  background:url("../img/radiobox.png") left top no-repeat;
+}
+input[type="radio"]:checked + label span {
+  background:url("../img/radiobox.png") -19px top no-repeat;
+}
+label {
+  cursor:pointer;
+  font-family: "open sans condensed";
+}
+.reponses {
+  padding: 0px 29%;
+  text-align: left;
+}
+form li {
+}
+form select {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: black;
+}
+form input[type="text"] {
+  margin-bottom: 20px;
+  color: black;
+}
+.mieux-connaitre {
+  margin-top: 40px;
+  font-family: "open sans";
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.perso {
+}
+.inter-text {
+  font-family: "Open Sans Condensed";
+  font-weight: 800;
+  padding: 0px 20%;
+}
+.fields {
+  padding: 0 30%;
+}
+.fields input, .fields select {
+  width: 100%;
+}
+.fields .split > input:first-child {
+  width: 47%;
+  margin-right: 1%;
+}
+.fields .split > input:last-child {
+  width: 49%;
+  margin-left: 1%;
+}
+.fields .split.last {
+  text-align: left;
+}
+.fields .split.last input{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.fields .validate {
+  background-color: #0297d9;
+}
+.button.validate {
+  border-radius: 8px;
+  font-size: 22px;
+  font-family: "open sans condensed";
+  font-weight: 300;
+  width: 100%;
+}
+input, select {
+  font-family: "open sans condensed";
+}
+input[type="text"], select {
+  border: medium none;
+  padding: 7px;
+  border-radius: 7px;
+}
+select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  cursor: pointer;
+  background: url("../img/select.png") #ffffff no-repeat 98% 50%;
+}
+.bold {
+  font-weight: 700;
+}
+.footer {
+  margin-top: 3%;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+.footer img {
+  height: 25px;
+  margin-left: 6px;
+}
+.footer .footer-logo {
+  height: 70px;
+}
+.footer span {
+  color: #373737;
+}
+.footer a, .footer .suivez-nous {
+  color: white;
+}
+.footer .links {
+  margin-top: 15px;
+}
+.footer .suivez-nous {
+  margin-right: 10px;
+}
+.challenge {
+  font-family: "Open Sans Condensed";
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 30px;
+}
+.result {
+  background-color: #0297d9;
+  font-family: "Open Sans Condensed";
+  padding-top: 15px;
+  margin-top: 60px;
+}
+.result .result-img {
+  margin-top: 35px;
+}
+.result-end {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: white;
+  text-align: left;
+  font-family: "Open Sans Condensed";
+  font-weight: 800;
+}
+.result-end p {
+  color: #575757;
+  margin-bottom: 0;
+}
+.result .result-title {
+  font-size: 27px;
+  font-weight: 800;
+}
+.chart-title {
+  font-family: "Open Sans Condensed";
+  font-size: 20px;
+  font-weight: 700;
+}
+.chart {
+  background-image: url("../img/0-chart.png");
+  height:136px;
+  width:136px;
+  margin: 0 auto;
+}
+.chart-end {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 8px;
+}
+.chart p {
+  font-family: "Open Sans condensed";
+  font-size: 45px;
+  font-weight: 700;
+  padding-top: 19%;
+}
+.chart-sub {
+  font-size: 50px;
+  display: block;
+}
