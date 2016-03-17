@@ -47,8 +47,9 @@ function getResult() {
 }
 
 function showAnswer() {
-  result = getResult();
-  $(".name").html("Test");
+  var result = getResult();
+  $(".name").html(pureStr($("input[name='firstname']").val()) + " " + 
+		  pureStr($("input[name='lastname']").val()));
   $("form#myForm").slideUp();
   $("#result-" + result).slideDown();
   $(".result-part").slideDown();
@@ -63,6 +64,12 @@ function pureStr(value) {
 }
 
 function formToDb() {
+  var civility = pureStr($("select[name='homme-femme']").val());
+  if (civility == "Homme")
+    civility = "Monsieur";
+  else
+    civility = "Madame";
+  var result = getResult();
   var data = {
     "schema": "sol",
     "db": {
@@ -85,11 +92,20 @@ function formToDb() {
     "woopra" : {
       "host": "solidarites.org",
       /* Variables de configuration de la fiche utilisateur  */
-      "cv_name": function() {return this.db.firstname},
-      "cv_email": function() {return this.db.email},
+      "cv_firstname": pureStr($("input[name='firstname']").val()),
+      "cv_lastname": pureStr($("input[name='lastname']").val()),
+      "cv_email": pureStr($("input[name='email']").val()),
+      "cv_name": pureStr($("input[name='firstname']").val()) + " " + pureStr($("input[name='lastname']").val()),
+      "cv_civility": civility,
+      "cv_phone": pureStr($("input[name='phone']").val()),
+      "cv_address1": pureStr($("input[name='address']").val()),
+      "cv_postcode": pureStr($("input[name='zipcode']").val()),
+      "cv_country": pureStr($("input[name='country']").val()),
+      "cv_origine": pureStr($("select[name='origine']").val()),
+      "cv_city": pureStr($("input[name='city']").val()),
       /* Variables de l'evenement  */
       "event": "JME-quizz",
-      "ce_amount": "100"
+      "ce_score": result + "%"
     }
   }
   makeCorsRequest(data);
