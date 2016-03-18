@@ -92,14 +92,19 @@ input + label span:not(.radio-txt) {
   display:inline-block;
   width:19px;
   height:19px;
-  margin:0 10px 0 0;
+  margin:8px 10px 0 0;
   vertical-align:middle;
+  float: left;
 }
 input[type="radio"] + label span:not(.radio-txt) {
   background:url("../img/radiobox.png") left top no-repeat;
 }
 input[type="radio"]:checked + label span:not(.radio-txt) {
   background:url("../img/radiobox.png") -19px top no-repeat;
+}
+.radio-txt {
+  overflow:hidden;
+  display: block;
 }
 label {
   cursor:pointer;
