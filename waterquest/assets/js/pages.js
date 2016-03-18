@@ -1,3 +1,5 @@
+---
+---
 // Global namespace
 var Pages = Pages || {};
 
