@@ -1,5 +1,20 @@
 ---
 logo_jme: true
+gif_0:
+  gif: 'http://i.giphy.com/3o7WTItveu7w0pcqoo.gif'
+  gyfi: 'http://gph.is/1WvyUfQ'
+gif_25:
+  gif: 'http://i.giphy.com/3o7WTNZvB8TaiPjycU.gif'
+  gyfi: 'http://gph.is/1MdT2CI'
+gif_50:
+  gif: 'http://i.giphy.com/xThuWvHIfufwfmyLT2.gif'
+  gyfi: 'http://gph.is/1psuefY'
+gif_75:
+  gif: 'http://i.giphy.com/xThuWlb8Mcb8uqMe3K.gif'
+  gyfi: 'http://gph.is/1UGqpQa'
+gif_100:
+  gif: 'http://i.giphy.com/xThuWnbVKcCC4Te7N6.gif'
+  gyfi: 'http://gph.is/1psur2H'
 ---
 <!doctype html>
 <html class="no-js" lang="en">
@@ -7,7 +22,8 @@ logo_jme: true
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solidarités International | Quiz</title>
+    <meta name="description" content="Participez au challenge #Water_Quest. L'eau a des pouvoirs cachés. Tentez de les maitriser !" />
+    <title>Solidarités International | Water Quest</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
@@ -20,8 +36,8 @@ logo_jme: true
 	<div class="row">
 	  <div class="large-12 columns">
 	    <img class="logo" src="img/logo.svg" alt="logo"/>
-	    {% if page.logo_jme %}
-	    <img class="logo-eau" src="{{ site.data.logo_jme_path }}" alt="Journée mondiale de l'eau"/>
+	    {% if site.data.waterquest.logo_jme %}
+	    <img class="logo-eau" src="{{ site.data.waterquest.logo_jme_path }}" alt="Journée mondiale de l'eau"/>
 	    {% endif %}
 	  </div>
 	</div>
@@ -384,47 +400,47 @@ logo_jme: true
       <div class="medium-8 columns medium-offset-2 result-end">
 	<div class="large-12 columns">
 	  <p>
-	  Suis-je un maître de l’eau ?<br />
-	  <span class="name">XXXX</span> pense que tu n’as pas le niveau. Prouve-lui le contraire !
+	  Es-tu un maître de l’eau ?<br />
+	  <span class="name">Je</span> pense que tu n’as pas le niveau. Prouve-moi le contraire !
 	  </p>
-	  <a href="http://aiderplusloin.solidarites.org/waterquest">www.aiderplusloin</a>
+	  <a href="http://aiderplusloin.solidarites.org/waterquest">www.solidarites.org</a>
 	</div>
       </div>
     </div>
     <div class="row result-part" style="display: none;">
       <div class="large-12 columns">
 	<p class="challenge">
-	Challenge tes amis sur les pouvoirs de l’eau.<br />
+	Partage cette image et challenge tes amis sur les pouvoirs de l’eau.<br />
 	<span class="blue">Sont-ils des maîtres de l’eau ?</span>
 	</p>
       </div>
     </div>
     <div class="row result-part" style="display: none;">
       <div class="large-12 columns">
-	<a href="TODO"><img src="img/twitter-color.png" alt="twitter"/></a>
-	<a href="TODO"><img src="img/facebook-color.png" alt="facebook"/></a>
+	<a href="http://twitter.com/share?url={{page.gif_0.gif}}?text=fais%20le%20test%20de%20l%27eau&via=www.solidarites.org&hashtags=water_quest"><img src="img/twitter-color.png" alt="twitter"/></a>
+	<a href="http://www.facebook.com/sharer/sharer.php?u={{page.gif_0.gyfi}}"><img src="img/facebook-color.png" alt="facebook"/></a>
       </div>
     </div>
     <div class="footer">
       <div class="row">
 	<div class="medium-3 columns align-left">
-	  <a href="TODO"><img class="footer-logo" src="img/logo.svg" alt="Logo" /></a>
+	  <a href="http://www.solidarites.org" target="_blank"><img class="footer-logo" src="img/logo.svg" alt="Logo" /></a>
 	</div>
 	<div class="medium-9 columns links">
-	  <a href="TODO">Solidarités International</a>
+	  <a href="http://www.solidarites.org " target="_blank">Solidarités International</a>
 	  <span> | </span>
-	  <a href="TODO">Mentions légales</a>
+	  <a href="http://www.solidarites.org/fr/mentions-legales" target="_blank">Mentions légales</a>
 	  <span> | </span>
-	  <a href="TODO">Crédits</a>
+	  <a href="TODO" target="_blank">Crédits</a>
 	  <span> | </span>
-	  <a href="TODO">Contact</a>
+	  <a href="http://www.solidarites.org/fr/nous-contacter/contacter-le-service-relations-donateurs?view=message&layout=message&pf=1&redirect_on_success=" target="_blank">Contact</a>
 	  <span> | </span>
 	  <span>
 	    <span class="suivez-nous">Suivez nous sur</span>
-	    <a href="TODO"><img src="img/facebook.png" alt="Facebook"></a>
-	    <a href="TODO"><img src="img/twitter.png" alt="Twitter"></a>
-	    <a href="TODO"><img src="img/instagram.png" alt="Instagram"></a>
-	    <a href="TODO"><img src="img/youtube.png" alt="YouTube"></a>
+	    <a href="https://www.facebook.com/SOLIDARITES.INTERNATIONAL" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+	    <a href="https://twitter.com/solidarites_int" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+	    <a href="https://www.instagram.com/solidaritesinternational/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+	    <a href="https://www.youtube.com/user/SOLIDARITES" target="_blank"><img src="img/youtube.png" alt="YouTube"></a>
 	  </span>
 	</div>
       </div>
