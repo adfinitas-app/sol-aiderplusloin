@@ -82,7 +82,8 @@ function formToDb() {
       "zipcode": pureStr($("input[name='zipcode']").val()),
       "city": pureStr($("input[name='city']").val()),
       "country": pureStr($("input[name='country']").val()),
-      "phone": pureStr($("input[name='phone']").val())
+      "phone": pureStr($("input[name='phone']").val()),
+      "score": result
     },
     "woopra" : {
       "host": "solidarites.org",
