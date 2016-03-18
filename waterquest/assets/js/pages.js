@@ -141,5 +141,8 @@ Pages.step1 = function() {
 		$aUp[0].volume = 0;
 		$aUp[0].play();
 		$aUp.animate({ volume : 1 }, 300, 'swing');
+
+		// redirect to quizz
+		window.location = '/waterquest/quiz.html';
 	}
 }
