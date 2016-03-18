@@ -24,7 +24,8 @@ span.blue {
 }
 .logo {
   margin-top: 1%;
-  height: 150px;
+  height: 115px;
+  width: 115px;
   margin-bottom: 2%;
 }
 @media screen and (max-width: 39.9375em) {
@@ -36,8 +37,9 @@ span.blue {
 }
 .logo-eau {
   position: absolute;
-  height: 100px;
-  right: 20%;
+  height: 74px;
+  right: 30px;
+  top: 25px;
 }
 @media screen and (max-width: 39.9375em) {
   .logo-eau {
@@ -47,12 +49,12 @@ span.blue {
   }
 }
 .subtitle {
-  font-size: 35px;
+  font-size: 27px;
   line-height: 0.8;
 }
 .title.blue {
   font-weight: 700;
-  font-size: 85px;
+  font-size: 70px;
 }
 @media screen and (max-width: 39.9375em) {
   .title.blue {
@@ -240,15 +242,18 @@ select {
   background-color: white;
   text-align: left;
   font-family: "Open Sans Condensed";
-  font-weight: 800;
 }
 .result-end p {
   color: #575757;
   margin-bottom: 0;
 }
+.result-quest {
+  font-weight: normal;
+}
 .result .result-title {
   font-size: 27px;
   font-weight: 800;
+  text-transform: uppercase;
 }
 .chart-title {
   font-family: "Open Sans Condensed";
@@ -256,11 +261,15 @@ select {
   font-weight: 700;
 }
 .chart {
-  background-image: url("../img/0-chart.png");
   height:136px;
   width:136px;
   margin: 0 auto;
 }
+.chart-0 {background-image: url("../img/0-chart.png");}
+.chart-25 {background-image: url("../img/25-chart.png");}
+.chart-50 {background-image: url("../img/50-chart.png");}
+.chart-75 {background-image: url("../img/75-chart.png");}
+.chart-100 {background-image: url("../img/100-chart.png");}
 .chart-end {
   font-family: "Open Sans Condensed";
   font-weight: 700;
@@ -273,7 +282,7 @@ select {
   font-family: "Open Sans condensed";
   font-size: 45px;
   font-weight: 700;
-  padding-top: 19%;
+  padding-top: 22%;
 }
 .chart-sub {
   font-size: 50px;
