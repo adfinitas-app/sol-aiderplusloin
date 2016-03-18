@@ -167,6 +167,7 @@ form select {
   font-family: "open sans condensed";
   font-weight: 300;
   width: 100%;
+  margin-top: 20px;
 }
 input, select {
   font-family: "open sans condensed";
