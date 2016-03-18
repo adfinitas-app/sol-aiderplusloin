@@ -109,6 +109,7 @@ function formToDb() {
 }
 
 function loadAnswer() {
+$("#id_phone").intlTelInput();
   $("#myForm").on("submit", function(e) {
     e.preventDefault();
     checkFields();
