@@ -317,3 +317,11 @@ select {
   margin-left: 10px;
   font-size: 20px;
 }
+.logo-share {
+  float: right;
+  margin-top: 10px;
+}
+.reponse-email {
+  font-size: 12px;
+  margin-top: 20px;
+}
