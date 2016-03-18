@@ -143,6 +143,8 @@ Pages.step1 = function() {
 		$aUp.animate({ volume : 1 }, 300, 'swing');
 
 		// redirect to quizz
-		window.location = '/waterquest/quiz.html';
+		setTimeout(function() {
+			window.location = '/waterquest/quiz.html';
+		}, 4500);
 	}
 }
