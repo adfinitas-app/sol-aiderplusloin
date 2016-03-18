@@ -1,0 +1,30 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "Starter front-end",
+  "private": true,
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-imageoptim": "^0.2.12",
+    "gulp-jscs": "^2.0.0",
+    "gulp-jscs-stylish": "^1.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-scss-lint": "^0.2.4",
+    "gulp-scss-lint-stylish2": "^2.0.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-svgstore": "^5.0.4",
+    "modernizr": "^3.1.0",
+    "sass-list-maps": "^1.0.0-b"
+  },
+  "scripts": {
+    "modernizr": "modernizr -c modernizr-config.json -d ./web/assets/js/vendor/modernizr.js"
+  },
+  "author": "NSL",
+  "license": "MIT"
+}

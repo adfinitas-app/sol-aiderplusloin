@@ -1,0 +1,98 @@
+/*---------------------------------------*\
+		Debug
+\*---------------------------------------*/
+
+/*
+Une condition dépendante de la variable `$debug` qui permet d'afficher les contours de tous les élements du DOM.
+*/
+$debug: (
+	"outline": 0,
+	"grid"   : 0
+);
+
+@if map-get($debug, "outline") == 1 {
+	*,
+	*:after,
+	*:before {
+		outline: 1px solid rgba(#f00, 0.5) !important;
+	}
+}
+
+@if map-get($debug, "grid") == 1 {
+	[debug] {
+		z-index: 9999;
+		position: fixed;
+		left: 50%;
+		pointer-events: none;
+		transform: translateX(-50%);
+
+		.col-xs-1 {
+			background: rgba(#00f, 0.2);
+
+			&:after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: rgba(#00f, 0.3);
+				outline: none !important;
+			}
+		}
+	}
+
+	[debug],
+	[debug] * {
+		height: 100%;
+		outline: none !important;
+	}
+}
+
+@if map-get($debug, "grid") == 0 {
+
+	[debug] {
+		display: none;
+	}
+}
+
+
+
+/*------------------------------------*\
+		Positionnement & Display
+\*------------------------------------*/
+
+// Display
+.none { display: none; }
+.table { display: table; }
+.cell { display: table-cell; }
+.inlbl {display: inline-block; }
+
+// Position
+.abs { position: absolute; }
+.rel { position: relative; }
+
+// Clearfix
+.cf { @include row; }
+
+// Float
+.left { float: left; }
+.right { float: right; }
+
+
+
+/*------------------------------------*\
+		Typographie
+\*------------------------------------*/
+
+// Alignement de texte
+.tac { text-align: center; }
+.tal { text-align: left; }
+.tar { text-align: right; }
+
+// Liste reset
+.list { @include reset-ul; }
+
+// Antialiasing
+.antialiased { @include antialiased; }
+
+// Pour les longs mots
+.hyphenate { @include hyphenate; }

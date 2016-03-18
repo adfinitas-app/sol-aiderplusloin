@@ -1,0 +1,23 @@
+// Tools
+// @import "tools/normalize";
+@import "tools/reset";
+@import "tools/variables";
+@import "tools/functions";
+@import "tools/mixins";
+@import "tools/helpers";
+
+// Global variables and settings
+@import "base/global";
+@import "base/typography";
+
+// Components
+@import "components/buttons";
+@import "components/icons";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/content";
+
+// Pages
+@import "pages/step1";

@@ -1,0 +1,727 @@
+@charset "UTF-8";
+/*------------------------------------*		CSS Reset
+
+	http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,
+button, input, select {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+main, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:after, q:before,
+blockquote:after,
+blockquote:before {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.mac button, .mac
+input {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+/*------------------------------------*		Easing
+\*------------------------------------*/
+/*------------------------------------*		Functions
+\*------------------------------------*/
+/**
+ * A function helper to avoid having to type `map-get($z-layers, ...)`
+ * Based on http://css-tricks.com/handling-z-index/
+ * @param  {string} $layer The name of the z-index
+ * @param  {number} $var   The modifier if needed
+ * @return {number}        The corresponding z-index based on the $z-layers var
+ */
+/**
+ * Remove units from the given number
+ * @param  {number} $number The number with units
+ * @return {number}
+ */
+/**
+ * Create variables for the media queries
+ * @param  {string} $breakpoint The breakpoint
+ * @param  {string} $type       Type of media query (min or max)
+ * @param  {string} $unit       The unit for the media queries (em or px)
+ * @return {string}             A media query expression
+ */
+/**
+ * Slightly lighten a color
+ * @access public
+ * @param {Color} $color - color to tint
+ * @param {Number} $percentage - percentage of `$color` in returned color
+ * @return {Color}
+ */
+/**
+ * Slightly darken a color
+ * @access public
+ * @param  {color}  $color       color to shade
+ * @param  {number} $percentage  percentage of `$color` in returned color
+ * @return {Color}
+ */
+/**
+ * Power function
+ * @param  {number} $number Number to apply power
+ * @param  {number} $exp    The exponant for the power
+ * @return {number}         The powered number
+ */
+/**
+ * Factorial function
+ * @param  {number} $number The number to factorize
+ * @return {number}         The factorised number
+ */
+/**
+ * Pi reference
+ * @return {number} Retrun PI with 11 decimals
+ */
+/**
+ * Convert deg to rad
+ * @param  {string} $angle The angle to convert
+ * @return {number}        The unitless angle converted to rad
+ */
+/**
+ * Calculate the sinus of an angle
+ * @param  {string} $angle The angle to compute
+ * @return {number}        The sinus of the given angle
+ */
+/**
+ * Calculate the cosinus of an angle
+ * @param  {string} $angle The angle to compute
+ * @return {number}        The cosinus of the given angle
+ */
+/**
+ * Calculate the tangent of an angle
+ * @param  {string} $angle The angle to compute
+ * @return {number}        The tangent of the given angle
+ */
+/*---------------------------------------*		Positions & dispositions
+\*---------------------------------------*/
+/*---------------------------------------*		Typographie
+\*---------------------------------------*/
+/*---------------------------------------*		Triangles
+\*---------------------------------------*/
+/*---------------------------------------*		SVG Responsive
+\*---------------------------------------*/
+/*
+Utilitaire pour le padding hack qui permet d'avoir des fichiers `*.svg` responsive.
+Plus d'infos ici : http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
+*/
+/*---------------------------------------*		Debug
+\*---------------------------------------*/
+/*
+Une condition dépendante de la variable `$debug` qui permet d'afficher les contours de tous les élements du DOM.
+*/
+[debug] {
+  display: none;
+}
+
+/*------------------------------------*		Positionnement & Display
+\*------------------------------------*/
+.none {
+  display: none;
+}
+
+.table {
+  display: table;
+}
+
+.cell {
+  display: table-cell;
+}
+
+.inlbl {
+  display: inline-block;
+}
+
+.abs {
+  position: absolute;
+}
+
+.rel {
+  position: relative;
+}
+
+.cf:after, .cf:before {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/*------------------------------------*		Typographie
+\*------------------------------------*/
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+.list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+.hyphenate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+/*---------------------------------------*		Styles et réglages globaux
+\*---------------------------------------*/
+/*---------------------------------------*		Sélection
+\*---------------------------------------*/
+::-moz-selection {
+  text-shadow: none;
+  color: #fff;
+  background: #00f;
+}
+
+::selection {
+  text-shadow: none;
+  color: #fff;
+  background: #00f;
+}
+
+/*---------------------------------------*		Réglages globaux
+\*---------------------------------------*/
+*,
+*:after,
+*:before {
+  position: relative;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+  background: #000;
+}
+
+html.mac {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em;
+  color: #FFF;
+  font-weight: 300;
+  height: 100%;
+}
+
+/*
+Typographie
+===========
+
+Règles de base pour tout le site (h1, h2, blockquote, etc).
+
+-->    http://type-scale.com/    <--
+
+Pratique pour générer des rythmes typographiques rapidement
+*/
+body {
+  line-height: 1.45;
+}
+
+p,
+ul,
+ol,
+blockquote {
+  margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+small {
+  font-size: 0.75em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/*------------------------------------*		Buttons
+\*------------------------------------*/
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  color: #FFF;
+  overflow: hidden;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.btn:before {
+  -webkit-transition: all 5s linear;
+          transition: all 5s linear;
+  content: '';
+  height: 100%;
+  background: #0297d9;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn span {
+  display: block;
+  line-height: 1.2em;
+  padding: 23px 70px;
+}
+
+.btn span:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 2px solid #0297d9;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover span:before {
+  -webkit-transform: scale(0.95, 0.9);
+      -ms-transform: scale(0.95, 0.9);
+          transform: scale(0.95, 0.9);
+}
+
+.btn.active:before {
+  width: 100%;
+}
+
+.btn.active span:before {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+/*------------------------------------*		Pictogrammes
+\*------------------------------------*/
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon svg {
+  -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  display: block;
+}
+
+.icon-fb,
+.svg-fb {
+  width: 8px;
+  height: 16px;
+}
+
+.icon-tw,
+.svg-tw {
+  width: 13px;
+  height: 12px;
+}
+
+.icon-insta,
+.svg-insta {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-youtube,
+.svg-youtube {
+  width: 60px;
+  height: 25px;
+}
+
+.icon-gift,
+.svg-gift {
+  width: 17px;
+  height: 20px;
+}
+
+.icon-gift *,
+.svg-gift * {
+  fill: #FFF;
+}
+
+/*------------------------------------*		Header
+\*------------------------------------*/
+.main-logo {
+  width: 115px;
+  height: 103px;
+  margin: auto;
+  background: transparent url(../img/layout/logo.png) center center no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+}
+
+.logo-jme {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  z-index: 2;
+  opacity: 0;
+  display: block;
+}
+
+/*------------------------------------*		Footer
+\*------------------------------------*/
+.main-footer {
+  height: 110px;
+  line-height: 60px;
+  background: #000;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 114px;
+  z-index: 2;
+  display: none;
+}
+
+.main-footer .main-logo {
+  width: 70px;
+  height: 60px;
+  background-size: contain;
+  float: left;
+}
+
+.main-footer ul {
+  margin: 0;
+  display: block;
+  font-size: 14px;
+  padding: 0;
+  float: right;
+  font-weight: 700;
+}
+
+.main-footer ul li {
+  display: inline-block;
+  padding-left: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  margin-left: 15px;
+  line-height: 1em;
+}
+
+.main-footer ul li:first-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.main-footer ul li a {
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.main-footer ul li a:hover {
+  opacity: 0.7;
+}
+
+.main-footer ul li .social {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  background: #FFF;
+  margin: 0 2px;
+}
+
+.main-footer ul li .social.norounded {
+  background: transparent;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+}
+
+.main-footer ul li .social.norounded .icon {
+  vertical-align: top;
+}
+
+.main-footer ul li .social.norounded svg {
+  fill: #FFF;
+}
+
+.snow {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent url(../img/layout/snow.gif) top left repeat;
+  z-index: 1;
+}
+
+.main-content {
+  height: 695px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  display: none;
+  margin-top: -55px;
+  z-index: 2;
+}
+
+.container-video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.container-video .video-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 0;
+  height: 100%;
+}
+
+@media (min-width: 80em) {
+  .container-video .video-bg {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 0%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.container-video .video-bg.video-stressed {
+  display: none;
+}
+
+.step1 p {
+  font-size: 20px;
+}
+
+.step1 p .icon {
+  top: -4px;
+  margin-right: 5px;
+}
+
+.step1 .presente {
+  position: absolute;
+  margin-top: 20px;
+  font-size: 30px;
+  width: 100%;
+}
+
+.step1 .subtitle {
+  font-size: 25px;
+}
+
+.step1 .hashtag {
+  width: 700px;
+  height: 120px;
+  margin: 5px auto;
+}
+
+.step1 .container-water {
+  width: 100%;
+  height: 260px;
+}
+
+.step1 .water {
+  background: transparent url(../img/calm-water.png) top center no-repeat;
+  -webkit-animation: waterCalm 2.5s steps(59) infinite;
+          animation: waterCalm 2.5s steps(59) infinite;
+  width: 100%;
+  height: 100%;
+  width: 610px;
+  height: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.step1 .water-stressed {
+  background: transparent url(../img/stressed-water.png) top center no-repeat;
+  width: 100%;
+  height: 100%;
+  width: 620px;
+  height: 530px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: waterStressed 5s steps(119) infinite;
+          animation: waterStressed 5s steps(119) infinite;
+}
+
+.step1 .blue {
+  color: #0297d9;
+}
+
+.step1 .btn {
+  margin-bottom: 20px;
+}
+
+@-webkit-keyframes waterCalm {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% -30680px;
+  }
+}
+
+@keyframes waterCalm {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% -30680px;
+  }
+}
+
+@-webkit-keyframes waterStressed {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% -63070px;
+  }
+}
+
+@keyframes waterStressed {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% -63070px;
+  }
+}

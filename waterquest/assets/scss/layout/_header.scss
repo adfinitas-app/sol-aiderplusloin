@@ -1,0 +1,27 @@
+/*------------------------------------*\
+		Header
+\*------------------------------------*/
+
+.main-header {
+
+}
+
+// Logo
+.main-logo {
+	width: 115px;
+	height: 103px;
+	margin: auto;
+	background: transparent url(../img/layout/logo.png) center center no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+}
+
+.logo-jme {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	z-index: z("default", 1);
+	opacity: 0;
+	display: block;
+}

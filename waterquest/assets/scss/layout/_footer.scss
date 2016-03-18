@@ -1,0 +1,80 @@
+/*------------------------------------*\
+		Footer
+\*------------------------------------*/
+
+.main-footer {
+	height: 110px;
+	line-height: 60px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 25px 114px;
+	z-index: z('default', 1);
+	display: none;
+
+	.main-logo {
+		width: 70px;
+		height: 60px;
+		background-size: contain;
+		float: left;
+	}
+
+	ul {
+		margin: 0;
+		display: block;
+		font-size: 14px;
+		padding: 0;
+		float: right;
+		font-weight: 700;
+
+		li {
+			display: inline-block;
+			padding-left: 15px;
+			border-left: 1px solid rgba(255, 255, 255, 0.6);
+			margin-left: 15px;
+			line-height: 1em;
+
+			&:first-child {
+				padding: 0;
+				margin: 0;
+				border: none;
+			}
+
+			a {
+				transition: all 0.3s ease;
+
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+
+		.social {
+			display: inline-block;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 25px;
+			width: 25px;
+			height: 25px;
+			background: #FFF;
+			margin: 0 2px;
+
+			&.norounded {
+				background: transparent;
+				border-radius: 0;
+				width: auto;
+				height: auto;
+
+				.icon {
+					vertical-align: top;
+				}
+
+				svg {
+					fill: #FFF;
+				}
+			}
+		}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+/*---------------------------------------*\
+		Positions & dispositions
+\*---------------------------------------*/
+
+@mixin row {
+
+	&:after,
+	&:before {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+
+
+
+
+/*---------------------------------------*\
+		Typographie
+\*---------------------------------------*/
+
+// Sets the font size in rem's with a px fallback.
+@mixin fz($sizeValue: 16px) {
+	// fallback for old browsers
+	font-size: $sizeValue;
+	font-size: ($sizeValue+px/$font-size) + rem;
+}
+
+@mixin reset-ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+@mixin ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin antialiased {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: antialiased;
+}
+
+// Nicely hyphenate long words
+// cf. https://justmarkup.com/log/2015/07/31/dealing-with-long-words-in-css/
+@mixin hyphenate {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+
+
+
+/*---------------------------------------*\
+		Triangles
+\*---------------------------------------*/
+
+@mixin triangle-up($triangle-up-width, $triangle-up-height, $triangle-up-color) {
+	width: 0;
+	height: 0;
+	border-color: transparent transparent $triangle-up-color;
+	border-style: solid;
+	border-width: 0 $triangle-up-width/2 $triangle-up-height;
+}
+
+@mixin triangle-right($triangle-right-width, $triangle-right-height, $triangle-right-color) {
+	width: 0;
+	height: 0;
+	border-color: transparent transparent transparent $triangle-right-color;
+	border-style: solid;
+	border-width: $triangle-right-height/2 0 $triangle-right-height/2 $triangle-right-widt;
+}
+
+@mixin triangle-down($triangle-down-width, $triangle-down-height, $triangle-down-color) {
+	width: 0;
+	height: 0;
+	border-color: $triangle-down-color transparent transparent;
+	border-style: solid;
+	border-width: $triangle-down-heigh $triangle-down-width/2 0;
+}
+
+@mixin triangle-left($triangle-left-width, $triangle-left-height, $triangle-left-color) {
+	width: 0;
+	height: 0;
+	border-color: transparent $triangle-left-color transparent transparent;
+	border-style: solid;
+	border-width: $triangle-left-height/2 $triangle-left-widt $triangle-left-height/2 0;
+}
+
+
+
+
+
+/*---------------------------------------*\
+		SVG Responsive
+\*---------------------------------------*/
+
+/*
+Utilitaire pour le padding hack qui permet d'avoir des fichiers `*.svg` responsive.
+Plus d'infos ici : http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
+*/
+
+@mixin padding-hack($svg-width, $svg-height, $container-width) {
+	height: 0;
+	width: $container-width;
+	padding-top: strip-units(($svg-height / $svg-width) * $container-width) * 1%;
+}

@@ -1,0 +1,43 @@
+/*------------------------------------*\
+		Pictogrammes
+\*------------------------------------*/
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+
+	svg {
+		transition: all .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+		display: block;
+	}
+}
+
+
+.icon-fb,
+.svg-fb {
+	width: 8px;
+	height: 16px;
+}
+.icon-tw,
+.svg-tw {
+	width: 13px;
+	height: 12px;
+}
+.icon-insta,
+.svg-insta {
+	width: 25px;
+	height: 25px;
+}
+.icon-youtube,
+.svg-youtube {
+	width: 60px;
+	height: 25px;
+}
+.icon-gift,
+.svg-gift {
+	width: 17px;
+	height: 20px;
+
+	* {
+		fill: #FFF;
+	}
+}

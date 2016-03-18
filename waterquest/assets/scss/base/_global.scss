@@ -1,0 +1,97 @@
+/*---------------------------------------*\
+		Styles et réglages globaux
+\*---------------------------------------*/
+
+// Couleurs
+$blue: #0297d9;
+
+// Typographie
+$font-family     : 'Open Sans Condensed', sans-serif;
+$font-size       : 16px;
+$font-color      : #FFF;
+$selection-bg    : #00f;
+$selection-color : #fff;
+
+// Grille
+$container-width     : 96%;
+$container-max-width : 1180px;
+$grid-gutter-smaller : 1.625em;
+$grid-gutter-small   : 1.875em;
+$grid-gutter-medium  : 2.25em;
+
+// Images
+$img-dir : "../img/layout/";
+$svg-dir : "../svg/layout/";
+
+// Z-index
+$z-layers: (
+	"goku"     : 9000,
+	"modal"    : 200,
+	"dropdown" : 100,
+	"default"  : 1,
+	"limbo"    : -999
+);
+
+// Media queries
+$md-breakpoints: (
+	"largest" : 1920,
+	"larger"  : 1440,
+	"large"   : 1280,
+	"normal"  : 1024,
+	"medium"  : 992,
+	"small"   : 768,
+	"smaller" : 480,
+	"retina"  : "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dppx)"
+);
+
+
+
+/*---------------------------------------*\
+		Sélection
+\*---------------------------------------*/
+
+::-moz-selection {
+	text-shadow: none;
+	color: $selection-color;
+	background: $selection-bg;
+}
+
+::selection {
+	text-shadow: none;
+	color: $selection-color;
+	background: $selection-bg;
+}
+
+
+
+
+/*---------------------------------------*\
+		Réglages globaux
+\*---------------------------------------*/
+
+*,
+*:after,
+*:before {
+	position: relative;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-size: $font-size;
+	height: 100%;
+	background: #000;
+
+	// Better font rendering for mac
+	&.mac {
+		@include antialiased;
+	}
+}
+
+body {
+	font-family: $font-family;
+	font-size: 1em;
+	color: $font-color;
+	font-weight: 300;
+	height: 100%;
+}
