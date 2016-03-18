@@ -145,6 +145,6 @@ Pages.step1 = function() {
 		// redirect to quizz
 		setTimeout(function() {
 			window.location = '/waterquest/quiz.html';
-		}, 4500);
+		}, 5500);
 	}
 }
