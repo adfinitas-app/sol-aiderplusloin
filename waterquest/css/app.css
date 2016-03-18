@@ -312,3 +312,8 @@ select {
 .flag-dropdown {
   color: black;
 }
+.close-button {
+  font-family: none;
+  margin-left: 10px;
+  font-size: 20px;
+}
