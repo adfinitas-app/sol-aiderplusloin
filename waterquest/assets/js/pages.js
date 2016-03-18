@@ -46,7 +46,7 @@ Pages.landing = function() {
 	_.loadAssets = function() {
 		var img = new Image();
 
-		img.src = 'assets/img/calm-water.png';
+		img.src = '/waterquest/assets/img/calm-water.png';
 
 		img.onload = function() {
 			console.log('img loading');
