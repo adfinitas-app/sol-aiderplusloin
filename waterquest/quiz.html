@@ -44,7 +44,19 @@ gif_100:
           version    : 'v2.5'
         });
       };
-
+      function myFacebookShare() {
+        FB.api(
+          'me/feed/',
+          'POST',
+          {
+            message: 'This is a GIF',
+            link: 'http://25.media.tumblr.com/08d54accc4beb56a50e752fd931c6b58/tumblr_mlsyqrzwWQ1s3g3ago1_400.gif'
+          },
+          function(response) {
+            console.log(response);
+          }
+        );
+      }
       (function(d, s, id){
          var js, fjs = d.getElementsByTagName(s)[0];
          if (d.getElementById(id)) {return;}
@@ -54,22 +66,7 @@ gif_100:
        }(document, 'script', 'facebook-jssdk'));
 
     </script>
-    <script>
-    // Only works after `FB.init` is called
-    function myFacebookShare() {
-      FB.api(
-        'me/feed/',
-        'POST',
-        {
-          message: 'This is a GIF',
-          link: 'http://25.media.tumblr.com/08d54accc4beb56a50e752fd931c6b58/tumblr_mlsyqrzwWQ1s3g3ago1_400.gif'
-        },
-        function(response) {
-          console.log(response);
-        }
-      );
-    }
-    </script>
+
     <div class="container-video">
       <video class="video-bg video-calm" autoplay="" loop="" preload="">
 	       <source src="/waterquest/assets/media/CalmBG.mp4" type="video/mp4">
@@ -87,7 +84,7 @@ gif_100:
 	</div>
 	<div class="row">
 	  <div class="large-12 columns">
-      <button onclick="myFacebookShare()">Share with Facebook</button>
+      <button onclick="myFacebookShare();">Share with Facebook</button>
 	    <h1 class="title blue hide-for-small"><span class="light">#</span><span class="blue">WATER_</span>QUEST</h1>
 	    <h1 class="title blue show-for-small-only"><span class="light">#<br /></span><span class="blue">WATER<br />_</span>QUEST</h1>
 	    <p class="condensed light subtitle">L’EAU A DES POUVOIRS CACHÉS. TENTEZ DE LES MAITRISER !</p>
