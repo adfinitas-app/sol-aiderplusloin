@@ -28,7 +28,7 @@
 		{% if site.data.waterquest.logo_jme %}
 		<img alt="Journée mondiale de l'eau" src="/waterquest/assets/img/layout/logo-jme.png" class="logo-jme" />
 		{% endif %}
-		
+
 		<div class="main-content">
 			<a href="http://www.solidarites.org" class="main-logo">Solidarités international</a>
 
@@ -146,6 +146,9 @@
 		<script defer src="/waterquest/assets/js/app.js"></script>
 		<!-- ./scripts:app -->
 
+		{% include analytics/analytics.html %}
+		{% include analytics/woopra.html %}
+		
 		<script defer>
 			document.addEventListener('DOMContentLoaded', function() {
 				new App();
