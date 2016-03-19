@@ -1,2 +1,2 @@
-logo_jme: false
-logo_jme_path: /waterquest/img/logo-eau.png
+logo_jme: true
+logo_jme_path: "/waterquest/img/logo-eau.png"
