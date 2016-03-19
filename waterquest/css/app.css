@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/background.png");
+  background-image: url("/waterquest/img/background.png");
   background-attachment: fixed;
   background-color: black;
   color:white;
@@ -7,7 +7,7 @@ body {
   font-family: "open sans";
 }
 .main {
-  margin-top: 6%;
+  margin-top: 0%;
   font-size: 20px;
 }
 .condensed {
@@ -23,7 +23,7 @@ span.blue {
   font-weight: 300;
 }
 .logo {
-  margin-top: 1%;
+  margin-top: 0.5%;
   height: 115px;
   width: 115px;
   margin-bottom: 2%;
@@ -97,10 +97,10 @@ input + label span:not(.radio-txt) {
   float: left;
 }
 input[type="radio"] + label span:not(.radio-txt) {
-  background:url("../img/radiobox.png") left top no-repeat;
+  background:url("/waterquest/img/radiobox.png") left top no-repeat;
 }
 input[type="radio"]:checked + label span:not(.radio-txt) {
-  background:url("../img/radiobox.png") -19px top no-repeat;
+  background:url("/waterquest/img/radiobox.png") -19px top no-repeat;
 }
 .radio-txt {
   overflow:hidden;
@@ -192,7 +192,7 @@ select {
   -webkit-appearance:none;
   -moz-appearance:none;
   cursor: pointer;
-  background: url("../img/select.png") #ffffff no-repeat 98% 50%;
+  background: url("/waterquest/img/select.png") #ffffff no-repeat 98% 50%;
 }
 .bold {
   font-weight: 700;
@@ -270,11 +270,11 @@ select {
   width:136px;
   margin: 0 auto;
 }
-.chart-0 {background-image: url("../img/0-chart.png");}
-.chart-25 {background-image: url("../img/25-chart.png");}
-.chart-50 {background-image: url("../img/50-chart.png");}
-.chart-75 {background-image: url("../img/75-chart.png");}
-.chart-100 {background-image: url("../img/100-chart.png");}
+.chart-0 {background-image: url("/waterquest/img/0-chart.png");}
+.chart-25 {background-image: url("/waterquest/img/25-chart.png");}
+.chart-50 {background-image: url("/waterquest/img/50-chart.png");}
+.chart-75 {background-image: url("/waterquest/img/75-chart.png");}
+.chart-100 {background-image: url("/waterquest/img/100-chart.png");}
 .chart-end {
   font-family: "Open Sans Condensed";
   font-weight: 700;
