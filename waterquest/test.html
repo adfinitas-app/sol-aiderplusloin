@@ -1,0 +1,36 @@
+<html>
+<body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '566228286885826',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+  function myFacebookShare() {
+    FB.api(
+      'me/feed/',
+      'POST',
+      {
+        message: 'This is a GIF',
+        link: 'http://25.media.tumblr.com/08d54accc4beb56a50e752fd931c6b58/tumblr_mlsyqrzwWQ1s3g3ago1_400.gif'
+      },
+      function(response) {
+        console.log(response);
+      }
+    );
+  }
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+</script>
+<button onclick="myFacebookShare();">Share with Facebook</button>
+<a href="https://www.facebook.com/dialog/share?app_id=566228286885826&display=popup&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer">test</a>
+</body>
+</html>
