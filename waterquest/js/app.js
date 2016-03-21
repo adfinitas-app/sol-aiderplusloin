@@ -109,13 +109,29 @@ function formToDb() {
 }
 
 function loadAnswer() {
-$("#id_phone").intlTelInput();
-  $("#myForm").on("submit", function(e) {
-    e.preventDefault();
+$("#id_phone").intlTelInput({utilsScript: "tel-input/lib/libphonenumber/build/utils.js"});
+  $("#myForm").on("formvalid.zf.abide", function() {
     checkFields();
     formToDb();
     showAnswer();
   });
+  $("#myForm").on("formvalid.zf.abide", function(e) {
+    e.preventDefault();
+  });
+}
+
+// This is a trick to add a message in case of errors
+// NB : If the input is required, while empty,
+// the browser will show an (empty) message
+Foundation.Abide.defaults.validators['intlTelInput'] =
+function checkIntlTelInput($el, required, parent) {
+  if ($el.intlTelInput("isValidNumber")) { return true }
+  else
+  {
+    $el.get(0).setCustomValidity("");
+    $el.get(0).setCustomValidity("You're having too much fun!");
+    return false;
+  }
 }
 
 $(document).foundation();

@@ -278,7 +278,7 @@ gif_100:
 	      </div>
 	      <div class="row">
 		<div class="large-12 columns split">
-		  <input type="text" name="zipcode" placeholder="Code Postal*" required/>
+		  <input type="number" name="zipcode" placeholder="Code Postal*" required/>
 		  <input type="text" name="city" placeholder="Ville*" required/>
 		</div>
 	      </div>
@@ -289,7 +289,7 @@ gif_100:
 	      </div>
 	      <div class="row">
 		<div class="large-12 columns split last">
-		  <input id="id_phone" type="tel" name="phone" placeholder="Téléphone*" required/>
+		  <input id="id_phone" type="text" data-validator="intlTelInput" name="phone" placeholder="Téléphone*" />
 		</div>
 	      </div>
 	      <div class="row">

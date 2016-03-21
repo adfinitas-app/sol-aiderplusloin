@@ -179,12 +179,19 @@ form select {
 input, select {
   font-family: "open sans condensed";
 }
-input[type="text"], input[type="tel"], form input[type="email"], select {
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="number"],
+select {
   border: medium none;
   padding: 7px;
   border-radius: 7px;
 }
-form input[type="text"], form input[type="tel"], form input[type="email"] {
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="number"] {
   margin-bottom: 20px;
   color: black;
 }
@@ -356,3 +363,7 @@ select {
             transform: translateY(-50%);
   }
 }
+/* Disabling the spinner on firefox and chrome for input number */
+input[type=number] {-moz-appearance: textfield;}
+::-webkit-inner-spin-button { -webkit-appearance: none;}
+::-webkit-outer-spin-button { -webkit-appearance: none;}
