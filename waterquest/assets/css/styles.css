@@ -1,5 +1,3 @@
----
----
 @charset "UTF-8";
 /*------------------------------------*		CSS Reset
 
@@ -283,12 +281,26 @@ html.mac {
   -moz-osx-font-smoothing: antialiased;
 }
 
+@media (max-width: 30em) {
+  html {
+    height: 100vh;
+    background: #000 url(../img/layout/bg.jpg) bottom left no-repeat;
+    background-size: cover;
+  }
+}
+
 body {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1em;
   color: #FFF;
   font-weight: 300;
   height: 100%;
+}
+
+@media (max-width: 30em) {
+  body {
+    height: auto;
+  }
 }
 
 /*
@@ -364,6 +376,12 @@ a {
   border-radius: 5px;
 }
 
+@media (max-width: 30em) {
+  .btn {
+    font-size: 12px;
+  }
+}
+
 .btn:before {
   -webkit-transition: all 5s linear;
           transition: all 5s linear;
@@ -380,6 +398,12 @@ a {
   display: block;
   line-height: 1.2em;
   padding: 23px 70px;
+}
+
+@media (max-width: 30em) {
+  .btn span {
+    padding: 16px 70px;
+  }
 }
 
 .btn span:before {
@@ -465,10 +489,28 @@ a {
   width: 115px;
   height: 103px;
   margin: auto;
-  background: transparent url(/waterquest/assets/img/layout/logo.png) center center no-repeat;
+  background: transparent url(../img/layout/logo.png) center center no-repeat;
   text-indent: -9999px;
   overflow: hidden;
   display: block;
+}
+
+@media (max-width: 48em) {
+  .main-logo {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 30em) {
+  .main-logo {
+    width: 50px;
+    height: 45px;
+    background-size: contain;
+    top: 15px;
+    left: 15px;
+  }
 }
 
 .logo-jme {
@@ -478,6 +520,15 @@ a {
   z-index: 2;
   opacity: 0;
   display: block;
+}
+
+@media (max-width: 30em) {
+  .logo-jme {
+    top: 15px;
+    width: 65px;
+    right: 15px;
+    opacity: 1;
+  }
 }
 
 /*------------------------------------*		Footer
@@ -495,11 +546,54 @@ a {
   display: none;
 }
 
+@media (max-width: 64em), (max-height: 800px) {
+  .main-footer {
+    padding: 10px 50px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 48em) {
+  .main-footer {
+    height: auto;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 30em) {
+  .main-footer {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    display: block;
+    line-height: 1.4em;
+    padding: 15px 10px;
+  }
+}
+
 .main-footer .main-logo {
   width: 70px;
   height: 60px;
   background-size: contain;
   float: left;
+}
+
+@media (max-width: 48em) {
+  .main-footer .main-logo {
+    position: relative;
+    float: none;
+    margin: auto;
+    margin-bottom: 15px;
+    display: block;
+    top: auto;
+    left: auto;
+  }
+}
+
+@media (max-width: 30em) {
+  .main-footer .main-logo {
+    margin-top: 25px;
+  }
 }
 
 .main-footer ul {
@@ -511,6 +605,20 @@ a {
   font-weight: 700;
 }
 
+@media (max-width: 48em) {
+  .main-footer ul {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 30em) {
+  .main-footer ul {
+    font-size: 12px;
+  }
+}
+
 .main-footer ul li {
   display: inline-block;
   padding-left: 15px;
@@ -519,10 +627,32 @@ a {
   line-height: 1em;
 }
 
+@media (max-width: 30em) {
+  .main-footer ul li {
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
 .main-footer ul li:first-child {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+@media (max-width: 30em) {
+  .main-footer ul li:last-child {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    border: none;
+    display: block;
+  }
+  .main-footer ul li.hidden-xs {
+    display: none;
+  }
 }
 
 .main-footer ul li a {
@@ -560,14 +690,76 @@ a {
   fill: #FFF;
 }
 
+.main-footer .credits {
+  display: none;
+}
+
+@media (max-width: 30em) {
+  .main-footer .credits {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.3em;
+    margin: 25px 0;
+    opacity: 0.5;
+  }
+}
+
 .snow {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background: transparent url(/waterquest/assets/img/layout/snow.gif) top left repeat;
+  background: transparent url(../img/layout/snow.gif) top left repeat;
   z-index: 1;
+}
+
+@media (max-width: 30em) {
+  .snow {
+    display: none;
+  }
+}
+
+.loader {
+  width: 64px;
+  height: 64px;
+  display: block;
+  position: absolute;
+  background: transparent url(../img/layout/loader.png) center center no-repeat;
+  top: 50%;
+  left: 50%;
+  margin-left: -32px;
+  -webkit-animation: loader 1s infinite;
+          animation: loader 1s infinite;
+}
+
+@media (max-width: 30em) {
+  .loader {
+    display: none;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .main-content {
@@ -581,6 +773,37 @@ a {
   display: none;
   margin-top: -55px;
   z-index: 2;
+}
+
+@media (max-width: 64em), (max-height: 800px) {
+  .main-content {
+    height: 635px;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 48em) {
+  .main-content {
+    height: auto;
+    position: relative;
+    width: 95%;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    margin: 0 auto;
+    padding-top: 140px;
+    left: auto;
+    top: auto;
+  }
+}
+
+@media (max-width: 30em) {
+  .main-content {
+    padding-top: 60px;
+    display: block;
+    padding-bottom: 30px;
+    width: 90%;
+  }
 }
 
 .container-video {
@@ -620,6 +843,12 @@ a {
   display: none;
 }
 
+@media (max-width: 30em) {
+  .container-video {
+    display: none;
+  }
+}
+
 .step1 p {
   font-size: 20px;
 }
@@ -629,6 +858,12 @@ a {
   margin-right: 5px;
 }
 
+@media (max-width: 30em) {
+  .step1 p {
+    font-size: 13px;
+  }
+}
+
 .step1 .presente {
   position: absolute;
   margin-top: 20px;
@@ -636,8 +871,33 @@ a {
   width: 100%;
 }
 
+@media (max-width: 48em) {
+  .step1 .presente {
+    top: -90px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 30em) {
+  .step1 .presente {
+    display: none;
+  }
+}
+
 .step1 .subtitle {
   font-size: 25px;
+}
+
+@media (max-width: 64em), (max-height: 800px) {
+  .step1 .subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 30em) {
+  .step1 .subtitle {
+    font-size: 14px;
+  }
 }
 
 .step1 .hashtag {
@@ -646,13 +906,69 @@ a {
   margin: 5px auto;
 }
 
+@media (max-width: 30em) {
+  .step1 .hashtag {
+    display: none;
+  }
+}
+
+.step1 .hashtag-txt {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 54px;
+  text-align: center;
+  font-weight: 800;
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1em;
+}
+
+.step1 .hashtag-txt i {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.step1 .hashtag-txt span {
+  color: #0297d9;
+}
+
+@media (max-width: 30em) {
+  .step1 .hashtag-txt {
+    display: block;
+  }
+}
+
 .step1 .container-water {
   width: 100%;
   height: 260px;
 }
 
+@media (max-width: 64em), (max-height: 800px) {
+  .step1 .container-water {
+    height: 200px;
+  }
+}
+
+@media (max-width: 30em) {
+  .step1 .container-water {
+    height: auto;
+  }
+}
+
+.step1 .container-water img {
+  display: none;
+}
+
+@media (max-width: 30em) {
+  .step1 .container-water img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
 .step1 .water {
-  background: transparent url(/waterquest/assets/img/calm-water.png) top center no-repeat;
+  background: transparent url(../img/calm-water.png) top center no-repeat;
   -webkit-animation: waterCalm 2.5s steps(59) infinite;
           animation: waterCalm 2.5s steps(59) infinite;
   width: 100%;
@@ -667,8 +983,22 @@ a {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 64em), (max-height: 800px) {
+  .step1 .water {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+        -ms-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media (max-width: 30em) {
+  .step1 .water {
+    display: none;
+  }
+}
+
 .step1 .water-stressed {
-  background: transparent url(/waterquest/assets/img/stressed-water.png) top center no-repeat;
+  background: transparent url(../img/stressed-water.png) top center no-repeat;
   width: 100%;
   height: 100%;
   width: 620px;
@@ -682,6 +1012,20 @@ a {
           transform: translate(-50%, -50%);
   -webkit-animation: waterStressed 5s steps(119) infinite;
           animation: waterStressed 5s steps(119) infinite;
+}
+
+@media (max-width: 64em), (max-height: 800px) {
+  .step1 .water-stressed {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+        -ms-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media (max-width: 30em) {
+  .step1 .water-stressed {
+    display: none;
+  }
 }
 
 .step1 .blue {

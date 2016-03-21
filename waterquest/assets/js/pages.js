@@ -1,5 +1,3 @@
----
----
 // Global namespace
 var Pages = Pages || {};
 
@@ -11,11 +9,16 @@ var Pages = Pages || {};
 Pages.landing = function() {
 	'use strict';
 
-	var _ = this;
+	var _ = this,
+		preload = new createjs.LoadQueue(true),
+		loaded = false,
+		finish = false;
 
 	_.init = function() {
 		'use strict';
 
+		if( Modernizr.mobile ) return;
+		
 		var tlLanding 	= new TimelineMax({ paused : true }),
 			$content 	= $('.main-content'),
 			$logo 		= $content.find('.main-logo'),
@@ -27,6 +30,8 @@ Pages.landing = function() {
 	  	stage.start();
 	  	stage.pause();
 
+	  	_.loadAssets();
+
 	  	//tlLanding.duration(9);
 
 		// init timeline landing (loader)
@@ -37,7 +42,10 @@ Pages.landing = function() {
 					.to($presente, 0.4, { autoAlpha : 0, y : 20 }, '+=0.5')
 					.from($hashtag, 0.5, { autoAlpha : 0, onStart : function() { stage.start(); } }, '+=0.3')
 					.add(function() {
-						Utils.hasMethod('step1', 'init');
+						finish = true;
+						if( loaded ) {
+							Utils.hasMethod('step1', 'init');
+						}
 					}, '+=4');
 
 		setTimeout(function() {
@@ -46,13 +54,19 @@ Pages.landing = function() {
 	};
 
 	_.loadAssets = function() {
-		var img = new Image();
+		var imgs = [ "assets/img/calm-water.png", "assets/img/stressed-water.png", "assets/media/CalmBG.mp4", "assets/media/StressedBG.mp4"];
 
-		img.src = '/waterquest/assets/img/calm-water.png';
+		preload.on("complete", loadComplete);
+		preload.loadManifest(imgs);
 
-		img.onload = function() {
-			console.log('img loading');
+		function loadComplete(event) {
+    		loaded = true;
+
+			if( finish ) {
+				Utils.hasMethod('step1', 'init');
+			}
 		};
+
 	};
 };
 
@@ -60,7 +74,7 @@ Pages.landing = function() {
 
 Pages.step1 = function() {
 	var _ = this,
-		tlStep1 		= new TimelineMax({ paused : true, onComplete : function() {
+		tlStep1 = new TimelineMax({ paused : true, onComplete : function() {
 
 			//change song
 			$aLoading.animate({ volume : 0 }, 1000, 'swing', function() {
@@ -71,6 +85,7 @@ Pages.step1 = function() {
 				$aRevelation.animate({ volume : 1}, 500, 'swing')
 			});
 		} }),
+		$loader	 		= $('.loader'),
 		$snow	 		= $('.snow'),
 		$bgVideo 		= $('.video-bg'),
 		$content 		= $('.main-content'),
@@ -100,7 +115,8 @@ Pages.step1 = function() {
 		}, 'onStart');
 
 		tlStep1	.set($footer, {display : 'block' })
-				.to($snow, 0.6, { scaleY : 0, ease : Expo.easeInOut })
+				.to($loader, 0.3, { opacity : 0 }, 'start')
+				.to($snow, 0.6, { scaleY : 0, ease : Expo.easeInOut }, 'start')
 				.fromTo($logo_jme, 0.4, { scale : 0.4, autoAlpha : 0 }, { scale : 1, autoAlpha : 1 })
 				.from($footer, 0.3, { y : '100%'})
 				.fromTo($subtitle, 0.4, { autoAlpha : 0, y : '-40%' }, {autoAlpha : 1, y:'0%' }, '+=0.2')
@@ -135,9 +151,9 @@ Pages.step1 = function() {
 		$vCalm[0].pause();
 
 		// audio
-		$aRevelation.animate({ volume : 0 }, 500, 'swing', function() {
+		/*$aRevelation.animate({ volume : 0 }, 500, 'swing', function() {
 			$aRevelation[0].pause();
-		});
+		});*/
 		$aUp[0].volume = 0;
 		$aUp[0].play();
 		$aUp.animate({ volume : 1 }, 300, 'swing');

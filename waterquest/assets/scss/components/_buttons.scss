@@ -12,6 +12,10 @@
 	font-weight: 700;
 	border-radius: 5px;
 
+	@media #{md('smaller', 'max')} {
+		font-size: 12px;
+	}
+
 	&:before {
 		transition: all 5s linear;
 		content: '';
@@ -27,6 +31,11 @@
 		display: block;
 		line-height: 1.2em;
 		padding: 23px 70px;
+
+
+		@media #{md('smaller', 'max')} {
+			padding: 16px 70px;
+		}
 
 		&:before {
 			position: absolute;
