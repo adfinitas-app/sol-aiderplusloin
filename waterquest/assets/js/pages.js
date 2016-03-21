@@ -76,14 +76,6 @@ Pages.step1 = function() {
 	var _ = this,
 		tlStep1 = new TimelineMax({ paused : true, onComplete : function() {
 
-			//change song
-			$aLoading.animate({ volume : 0 }, 1000, 'swing', function() {
-				$aLoading[0].pause();
-
-				$aRevelation[0].play();
-				$aRevelation[0].volume = 0;
-				$aRevelation.animate({ volume : 1}, 500, 'swing')
-			});
 		} }),
 		$loader	 		= $('.loader'),
 		$snow	 		= $('.snow'),
@@ -107,7 +99,6 @@ Pages.step1 = function() {
 
 		// callback on start animation
 		tlStep1.addCallback(function() {
-
 			$btn.on('click', function(e) {
 				e.preventDefault();
 				_.goTest();
@@ -132,6 +123,16 @@ Pages.step1 = function() {
 
 	_.play = function() {
 		$aEndLoading[0].play();
+
+		//change song
+		$aLoading.animate({ volume : 0 }, 1500, 'swing', function() {
+			$aLoading[0].pause();
+		});
+
+		$aRevelation[0].play();
+		$aRevelation[0].volume = 0;
+		$aRevelation.animate({ volume : 1}, 1000, 'swing');
+
 		tlStep1.play();
 	};
 
