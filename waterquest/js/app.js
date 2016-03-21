@@ -52,16 +52,17 @@ function showAnswer() {
 		  pureStr($("input[name='lastname']").val()));
   $("form#myForm").slideUp();
   $("#result-" + result).slideDown();
-  $(".result-part").slideDown();
+  $(".result-part").slideDown(400, function() {
+    $('html, body').animate({
+      scrollTop: $("#response-anchor").offset().top + 60
+    }, 100);
+  });
   var url = "http://www.facebook.com/sharer/sharer.php?u=" + gif[result].url;
   $("#fb_share").attr("href", url);
   url = "http://twitter.com/share?url=" + gif[result].url
     + "&text=" + gif[result].texte
     + "&via=solidarites_int&hashtags=water_quest";
   $("#twitter_share").attr("href", url);
-  $('html, body').animate({
-    scrollTop: $("#response-anchor").offset().top + 60
-  }, 100);
 }
 
 function pureStr(value) {
