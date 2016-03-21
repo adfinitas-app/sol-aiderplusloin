@@ -47,6 +47,9 @@
 		height: 635px;
 		margin-top: -40px;
 	}
+	@media (max-height: 700px) {
+		margin-top: 0;
+	}
 
 	@media #{md('small', 'max')} {
 		height: auto;

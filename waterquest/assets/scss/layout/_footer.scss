@@ -18,16 +18,20 @@
 		padding: 10px 50px;
 		height: 80px;
 	}
+	@media (max-height: 700px) {
+		display: none !important;
+	}
 	@media #{md('small', 'max')} {
 		height: auto;
 		padding: 10px 20px;
+		display: block;
 	}
 
 	@media #{md('smaller', 'max')} {
 		position: relative;
 		bottom: auto;
 		left: auto;
-		display: block;
+		display: block !important;
 		line-height: 1.4em;
 		padding: 15px 10px;
 	}

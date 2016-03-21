@@ -17,8 +17,8 @@ Pages.landing = function() {
 	_.init = function() {
 		'use strict';
 
-		if( Modernizr.mobile ) return;
-		
+		if( $window.width() <= 480 ) return;
+
 		var tlLanding 	= new TimelineMax({ paused : true }),
 			$content 	= $('.main-content'),
 			$logo 		= $content.find('.main-logo'),

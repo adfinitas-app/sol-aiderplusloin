@@ -553,10 +553,17 @@ a {
   }
 }
 
+@media (max-height: 700px) {
+  .main-footer {
+    display: none !important;
+  }
+}
+
 @media (max-width: 48em) {
   .main-footer {
     height: auto;
     padding: 10px 20px;
+    display: block;
   }
 }
 
@@ -565,7 +572,7 @@ a {
     position: relative;
     bottom: auto;
     left: auto;
-    display: block;
+    display: block !important;
     line-height: 1.4em;
     padding: 15px 10px;
   }
@@ -779,6 +786,12 @@ a {
   .main-content {
     height: 635px;
     margin-top: -40px;
+  }
+}
+
+@media (max-height: 700px) {
+  .main-content {
+    margin-top: 0;
   }
 }
 

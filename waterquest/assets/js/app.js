@@ -1,5 +1,3 @@
----
----
 // Object for global variables
 var Vars = Vars || {};
 
