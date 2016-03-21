@@ -281,6 +281,13 @@ html.mac {
   -moz-osx-font-smoothing: antialiased;
 }
 
+@media (max-width: 64em) {
+  html {
+    background: #000 url(../img/layout/bg-xl.jpg) bottom left no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 30em) {
   html {
     height: 100vh;

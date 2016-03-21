@@ -87,6 +87,11 @@ html {
 		@include antialiased;
 	}
 
+	@media #{md('normal', 'max')} {
+		background: #000 url(../img/layout/bg-xl.jpg) bottom left no-repeat;
+		background-size: cover;
+	}
+
 	@media #{md('smaller', 'max')} {
 		height: 100vh;
 		background: #000 url(../img/layout/bg.jpg) bottom left no-repeat;
