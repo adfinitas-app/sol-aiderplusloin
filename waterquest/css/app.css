@@ -10,6 +10,14 @@ body {
   margin-top: 0%;
   font-size: 20px;
 }
+.container-video {
+  display: none;
+}
+@media screen and (min-width: 64em) {
+  .container-video {
+    display: block;
+  }
+}
 .condensed {
   font-family: "Open Sans Condensed";
 }
@@ -318,6 +326,11 @@ select {
   display: block;
 }
 @media screen and (min-width: 40em) {
+  .chart-sub {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 40em) {
   .show-for-small-only {
     display: none !important;
   }
@@ -369,16 +382,14 @@ select {
   z-index: 0;
   height: 100%;
 }
-@media (min-width: 80em) {
-  .container-video .video-bg {
-    width: 100%;
-    height: auto;
-    top: 50%;
-    left: 0%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
+.container-video .video-bg {
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 /* Disabling the spinner on firefox and chrome for input number */
 input[type=number] {-moz-appearance: textfield;}
