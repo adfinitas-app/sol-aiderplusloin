@@ -145,11 +145,11 @@ Pages.step1 = function() {
 		TweenMax.set($water.find('.water-stressed'), { display : 'block' });
 
 		// videos
-		TweenMax.set($vCalm, { display : 'none' });
-		TweenMax.set($vStressed, { display : 'block' });
+		TweenMax.set($vCalm, { opacity : 0 });
+		TweenMax.set($vStressed, { opacity : 1 });
 
-		$vStressed[0].play();
-		$vCalm[0].pause();
+		/*$vStressed[0].play();
+		$vCalm[0].pause();*/
 
 		// audio
 		/*$aRevelation.animate({ volume : 0 }, 500, 'swing', function() {

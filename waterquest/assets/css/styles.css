@@ -866,7 +866,7 @@ a {
 }
 
 .container-video .video-bg.video-stressed {
-  display: none;
+  opacity: 0;
 }
 
 @media (max-width: 30em) {
