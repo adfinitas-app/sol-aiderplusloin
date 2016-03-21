@@ -281,6 +281,13 @@ html.mac {
   -moz-osx-font-smoothing: antialiased;
 }
 
+@media (max-width: 64em) {
+  html {
+    background: #000 url(../img/layout/bg-xl.jpg) bottom left no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 30em) {
   html {
     height: 100vh;
@@ -546,10 +553,16 @@ a {
   display: none;
 }
 
-@media (max-width: 64em), (max-height: 800px) {
+@media (max-width: 64em) {
   .main-footer {
     padding: 10px 50px;
     height: 80px;
+  }
+}
+
+@media (max-height: 800px) {
+  .main-footer {
+    display: none !important;
   }
 }
 
@@ -557,6 +570,7 @@ a {
   .main-footer {
     height: auto;
     padding: 10px 20px;
+    display: block;
   }
 }
 
@@ -565,7 +579,7 @@ a {
     position: relative;
     bottom: auto;
     left: auto;
-    display: block;
+    display: block !important;
     line-height: 1.4em;
     padding: 15px 10px;
   }
@@ -775,10 +789,16 @@ a {
   z-index: 2;
 }
 
-@media (max-width: 64em), (max-height: 800px) {
+@media (max-width: 64em) {
   .main-content {
     height: 635px;
     margin-top: -40px;
+  }
+}
+
+@media (max-height: 800px) {
+  .main-content {
+    margin-top: 0;
   }
 }
 
@@ -816,6 +836,12 @@ a {
   overflow: hidden;
 }
 
+@media (max-width: 64em) {
+  .container-video {
+    display: none;
+  }
+}
+
 .container-video .video-bg {
   position: absolute;
   top: 0;
@@ -840,7 +866,7 @@ a {
 }
 
 .container-video .video-bg.video-stressed {
-  display: none;
+  opacity: 0;
 }
 
 @media (max-width: 30em) {
@@ -902,8 +928,8 @@ a {
 
 .step1 .hashtag {
   width: 700px;
-  height: 120px;
-  margin: 5px auto;
+  height: 130px;
+  margin: 0 auto;
 }
 
 @media (max-width: 30em) {

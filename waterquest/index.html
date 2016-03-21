@@ -6,6 +6,7 @@
 <!--[if IE 8]><html class="no-js lt-ie9" lang="fr"><![endif]-->
 <!--[if gt IE 8]><html class="no-js" lang="fr"><![endif]-->
 	<head>
+		{% include analytics/woopra.html %}
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -61,7 +62,7 @@
 
 		<!-- AUDIO -->
 		<audio id="loading" preload loop autoplay>
-			<source src="/waterquest/assets/media/loading.mp3" type="audio/mp3">
+			<source src="/waterquest/assets/media/loading-cut-long-low.mp3" type="audio/mp3">
 		</audio>
 		<audio id="end-loading" preload>
 			<source src="/waterquest/assets/media/end-loading.mp3" type="audio/mp3">
@@ -79,7 +80,7 @@
 			<video class="video-bg video-calm" autoplay loop preload>
 				<source src="/waterquest/assets/media/CalmBG.mp4" type="video/mp4"/>
 			</video>
-			<video class="video-bg video-stressed" loop preload>
+			<video class="video-bg video-stressed" autoplay loop preload>
 				<source src="/waterquest/assets/media/StressedBG.mp4" type="video/mp4"/>
 			</video>
 		</div>
@@ -152,9 +153,16 @@
 		<script defer src="/waterquest/assets/js/app.js"></script>
 		<!-- ./scripts:app -->
 
-		{% include analytics/analytics.html %}
-		{% include analytics/woopra.html %}
+		<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-15931825-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 		<script defer>
 			document.addEventListener('DOMContentLoaded', function() {
 				new App();

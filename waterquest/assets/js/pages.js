@@ -10,15 +10,14 @@ Pages.landing = function() {
 	'use strict';
 
 	var _ = this,
-		preload = new createjs.LoadQueue(true),
 		loaded = false,
 		finish = false;
 
 	_.init = function() {
 		'use strict';
 
-		if( Modernizr.mobile ) return;
-		
+		if( $window.width() <= 480 ) return;
+
 		var tlLanding 	= new TimelineMax({ paused : true }),
 			$content 	= $('.main-content'),
 			$logo 		= $content.find('.main-logo'),
@@ -46,7 +45,7 @@ Pages.landing = function() {
 						if( loaded ) {
 							Utils.hasMethod('step1', 'init');
 						}
-					}, '+=4');
+					}, '+=7');
 
 		setTimeout(function() {
 			tlLanding.play();
@@ -54,8 +53,9 @@ Pages.landing = function() {
 	};
 
 	_.loadAssets = function() {
-		var imgs = [ "assets/img/calm-water.png", "assets/img/stressed-water.png", "assets/media/CalmBG.mp4", "assets/media/StressedBG.mp4"];
+		var imgs = [ "assets/img/calm-water.png", "assets/img/stressed-water.png"/*, "assets/media/CalmBG.mp4", "assets/media/StressedBG.mp4"*/];
 
+		var preload = new createjs.LoadQueue(true);
 		preload.on("complete", loadComplete);
 		preload.loadManifest(imgs);
 
@@ -76,14 +76,6 @@ Pages.step1 = function() {
 	var _ = this,
 		tlStep1 = new TimelineMax({ paused : true, onComplete : function() {
 
-			//change song
-			$aLoading.animate({ volume : 0 }, 1000, 'swing', function() {
-				$aLoading[0].pause();
-
-				$aRevelation[0].play();
-				$aRevelation[0].volume = 0;
-				$aRevelation.animate({ volume : 1}, 500, 'swing')
-			});
 		} }),
 		$loader	 		= $('.loader'),
 		$snow	 		= $('.snow'),
@@ -107,7 +99,6 @@ Pages.step1 = function() {
 
 		// callback on start animation
 		tlStep1.addCallback(function() {
-
 			$btn.on('click', function(e) {
 				e.preventDefault();
 				_.goTest();
@@ -132,6 +123,16 @@ Pages.step1 = function() {
 
 	_.play = function() {
 		$aEndLoading[0].play();
+
+		//change song
+		$aLoading.animate({ volume : 0 }, 1500, 'swing', function() {
+			$aLoading[0].pause();
+		});
+
+		$aRevelation[0].play();
+		$aRevelation[0].volume = 0;
+		$aRevelation.animate({ volume : 1}, 1000, 'swing');
+
 		tlStep1.play();
 	};
 
@@ -144,11 +145,11 @@ Pages.step1 = function() {
 		TweenMax.set($water.find('.water-stressed'), { display : 'block' });
 
 		// videos
-		TweenMax.set($vCalm, { display : 'none' });
-		TweenMax.set($vStressed, { display : 'block' });
+		TweenMax.set($vCalm, { opacity : 0 });
+		TweenMax.set($vStressed, { opacity : 1 });
 
-		$vStressed[0].play();
-		$vCalm[0].pause();
+		/*$vStressed[0].play();
+		$vCalm[0].pause();*/
 
 		// audio
 		/*$aRevelation.animate({ volume : 0 }, 500, 'swing', function() {

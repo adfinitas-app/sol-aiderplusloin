@@ -43,9 +43,12 @@
 	margin-top: -55px;
 	z-index: z('default', 1);
 
-	@media #{md('normal', 'max')}, (max-height: 800px) {
+	@media #{md('normal', 'max')} {
 		height: 635px;
 		margin-top: -40px;
+	}
+	@media (max-height: 800px) {
+		margin-top: 0;
 	}
 
 	@media #{md('small', 'max')} {
@@ -77,6 +80,10 @@
 	z-index: z('default', -1);
 	overflow: hidden;
 
+	@media #{md('normal', 'max')} {
+		display: none;
+	}
+
 	.video-bg {
 		position: absolute;
 		top: 0;
@@ -95,7 +102,7 @@
 		}
 
 		&.video-stressed {
-			display: none;
+			opacity: 0;
 		}
 	}
 
