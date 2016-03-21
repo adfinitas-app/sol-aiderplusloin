@@ -30,13 +30,13 @@ gif_100:
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
     <script>
-var gif = [];
-gif[0] = { "url": "test", "texte": "test"};
-gif[0] = { "url": "{{ page.gif_0.gif }}", "texte": "{{ page.gif_0.texte }}"};
-gif[25] = { "url": "{{ page.gif_25.gif }}", "texte": "{{ page.gif_25.texte }}"};
-gif[50] = { "url": "{{ page.gif_50.gif }}", "texte": "{{ page.gif_50.texte }}"};
-gif[75] = { "url": "{{ page.gif_75.gif }}", "texte": "{{ page.gif_75.texte }}"};
-gif[100] = { "url": "{{ page.gif_100.gif }}", "texte": "{{ page.gif_100.texte }}"};
+      var gif = [];
+      gif[0] = { "url": "test", "texte": "test"};
+      gif[0] = { "url": "{{ page.gif_0.gif }}", "texte": "{{ page.gif_0.texte }}"};
+      gif[25] = { "url": "{{ page.gif_25.gif }}", "texte": "{{ page.gif_25.texte }}"};
+      gif[50] = { "url": "{{ page.gif_50.gif }}", "texte": "{{ page.gif_50.texte }}"};
+      gif[75] = { "url": "{{ page.gif_75.gif }}", "texte": "{{ page.gif_75.texte }}"};
+      gif[100] = { "url": "{{ page.gif_100.gif }}", "texte": "{{ page.gif_100.texte }}"};
     </script>
   </head>
   <body>
@@ -304,7 +304,7 @@ gif[100] = { "url": "{{ page.gif_100.gif }}", "texte": "{{ page.gif_100.texte }}
 	      <div class="row">
 		<div class="large-12 columns split last">
 		  <input id="id_phone" type="text" data-validator="intlTelInput" name="phone" placeholder="Téléphone*" />
-		  <small style="display: none;" class="error intl-error">Votre numéro de téléphone est requis</small>
+		  <small style="display: none;" class="error intl-error">Les champs en rouge sont requis</small>
 		</div>
 	      </div>
 	      <div class="row">
