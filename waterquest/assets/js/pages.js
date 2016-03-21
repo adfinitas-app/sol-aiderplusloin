@@ -10,6 +10,7 @@ Pages.landing = function() {
 	'use strict';
 
 	var _ = this,
+		preload = new createjs.LoadQueue(true),
 		loaded = false,
 		finish = false;
 
@@ -42,7 +43,7 @@ Pages.landing = function() {
 					.from($hashtag, 0.5, { autoAlpha : 0, onStart : function() { stage.start(); } }, '+=0.3')
 					.add(function() {
 						finish = true;
-						if( loaded ) {
+						if( preload.progress == 1 ) {
 							Utils.hasMethod('step1', 'init');
 						}
 					}, '+=7');
@@ -55,7 +56,6 @@ Pages.landing = function() {
 	_.loadAssets = function() {
 		var imgs = [ "assets/img/calm-water.png", "assets/img/stressed-water.png"/*, "assets/media/CalmBG.mp4", "assets/media/StressedBG.mp4"*/];
 
-		var preload = new createjs.LoadQueue(true);
 		preload.on("complete", loadComplete);
 		preload.loadManifest(imgs);
 
