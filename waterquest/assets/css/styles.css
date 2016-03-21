@@ -836,6 +836,12 @@ a {
   overflow: hidden;
 }
 
+@media (max-width: 64em) {
+  .container-video {
+    display: none;
+  }
+}
+
 .container-video .video-bg {
   position: absolute;
   top: 0;

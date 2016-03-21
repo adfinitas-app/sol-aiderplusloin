@@ -80,6 +80,10 @@
 	z-index: z('default', -1);
 	overflow: hidden;
 
+	@media #{md('normal', 'max')} {
+		display: none;
+	}
+
 	.video-bg {
 		position: absolute;
 		top: 0;
