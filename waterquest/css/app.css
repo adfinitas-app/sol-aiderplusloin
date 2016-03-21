@@ -184,7 +184,7 @@ form input[type="tel"],
 form input[type="email"],
 form input[type="number"],
 select {
-  border: medium none;
+  border: 2px solid transparent;
   padding: 7px;
   border-radius: 7px;
 }
@@ -367,3 +367,6 @@ select {
 input[type=number] {-moz-appearance: textfield;}
 ::-webkit-inner-spin-button { -webkit-appearance: none;}
 ::-webkit-outer-spin-button { -webkit-appearance: none;}
+.is-invalid-input {
+  border-color: red !important;
+}
