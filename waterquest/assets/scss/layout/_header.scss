@@ -15,6 +15,20 @@
 	text-indent: -9999px;
 	overflow: hidden;
 	display: block;
+
+	@media #{md('small', 'max')} {
+		position: absolute;
+		top: 25px;
+		left: 30px;
+	}
+
+	@media #{md('smaller', 'max')} {
+		width: 50px;
+		height: 45px;
+		background-size: contain;
+		top: 15px;
+		left: 15px;
+	}
 }
 
 .logo-jme {
@@ -24,4 +38,11 @@
 	z-index: z("default", 1);
 	opacity: 0;
 	display: block;
+
+	@media #{md('smaller', 'max')} {
+		top: 15px;
+		width: 65px;
+		right: 15px;
+		opacity: 1;
+	}
 }

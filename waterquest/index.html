@@ -13,7 +13,7 @@
 		<meta name="description" content="Participez au challenge #Water_Quest. L'eau a des pouvoirs cachés. Tentez de les maitriser !">
 		<link rel="canonical" href="/">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=yes">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,800' rel='stylesheet' type='text/css'>
 
 
 		<link rel="shortcut icon" href="favicon.ico">
@@ -35,12 +35,16 @@
 			<div class="step1 tac">
 				<p class="presente"><strong>Présente</strong></p>
 			    <div id="swiffycontainer" class="hashtag"></div>
+			    <h1 class="hashtag-txt"><i>#</i><br><span>WATER<br>_</span>QUEST</h1>
+
+			    <div class="loader"></div>
 			    <p class="subtitle">L’EAU A DES POUVOIRS CACHÉS. TENTEZ DE LES MAITRISER !</p>
 
 
 			    <div class="container-water">
 			    	<div class="water"></div>
 			    	<div class="water-stressed"></div>
+			    	<img src="assets/img/goutte.png" alt="">
 			    </div>
 
 			    <a href="/waterquest/quiz.html" class="btn start-trigger"><span>Je commence le test</span></a>
@@ -82,12 +86,10 @@
 		<!-- /VIDEO -->
 
 		<footer class="main-footer">
-			<a href="http://www.solidarites.org" target="_blank" class="main-logo"></a>
-
 			<ul>
 				<li><a href="http://www.solidarites.org" target="_blank">SOLIDARITÉS INTERNATIONAL</a></li>
 				<li><a href="http://www.solidarites.org/fr/mentions-legales" target="_blank">Mentions légales</a></li>
-				<li><a data-open="credits" target="_blank">Crédits</a></li>
+				<li class="hidden-xs"><a data-open="credits" target="_blank">Crédits</a></li>
 				<li><a href="http://www.solidarites.org/fr/nous-contacter/contacter-le-service-relations-donateurs?view=message&layout=message&pf=1&redirect_on_success=" target="_blank">Contact</a></li>
 				<li>
 					Suivez-nous sur&nbsp;&nbsp;&nbsp;
@@ -129,6 +131,9 @@
 					</a>
 				</li>
 			</ul>
+
+			<a href="http://www.solidarites.org" target="_blank" class="main-logo"></a>
+
 		</footer>
 
 
@@ -137,6 +142,7 @@
 		<script defer src="/waterquest/assets/js/vendor/detectizr.js"></script>
 		<script defer src="/waterquest/assets/js/vendor/jquery-1.8.3.min.js"></script>
 		<script defer src="/waterquest/assets/js/vendor/jquery.easing.js"></script>
+		<script defer src="/waterquest/assets/js/vendor/preloadjs-0.6.2.min.js"></script>
 		<script defer src="/waterquest/assets/js/vendor/TweenMax.js"></script>
 		<!-- ./scripts:vendor -->
 
