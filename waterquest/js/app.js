@@ -129,7 +129,7 @@ function checkIntlTelInput($el, required, parent) {
   else
   {
     $el.get(0).setCustomValidity("");
-    $el.get(0).setCustomValidity("You're having too much fun!");
+    $el.get(0).setCustomValidity("Numéro invalide");
     return false;
   }
 }
