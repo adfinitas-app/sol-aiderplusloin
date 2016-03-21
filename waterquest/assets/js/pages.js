@@ -46,7 +46,7 @@ Pages.landing = function() {
 						if( loaded ) {
 							Utils.hasMethod('step1', 'init');
 						}
-					}, '+=4');
+					}, '+=7');
 
 		setTimeout(function() {
 			tlLanding.play();
