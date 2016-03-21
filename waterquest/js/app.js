@@ -117,11 +117,19 @@ function formToDb() {
 function loadAnswer() {
   $("#id_phone").intlTelInput({utilsScript: "tel-input/lib/libphonenumber/build/utils.js"});
   $("#myForm").on("formvalid.zf.abide", function() {
+    var result = true;
     for (i = 0; i < 4; i++) {
       if ($("input[type='radio'][name='" + (i + 1) + "']:checked").val() == undefined) {
-	alert("Veuillez remplir le questionnaire.");
-	return (false);
+	$(".error.input-" + (i + 1)).show();
+	result = false;
       }
+      else {
+	$(".error.input-" + (i + 1)).hide();
+      }
+    }
+    if (result == false) {
+      alert("Veuillez remplir le questionnaire.");
+      return (false);
     }
     checkFields();
     formToDb();
@@ -142,10 +150,11 @@ Foundation.Abide.defaults.validators['intlTelInput'] =
 function ($el, required, parent) {
   if ($el.intlTelInput("isValidNumber")) {
     $el.get(0).setCustomValidity("");
+    $(".intl-error").hide();
     return true;
   }
-  else
-  {
+  else {
+    $(".intl-error").show();
     $el.get(0).setCustomValidity("");
     $el.get(0).setCustomValidity("Numéro invalide");
     return false;
