@@ -237,6 +237,16 @@ select {
 .footer .suivez-nous {
   margin-right: 10px;
 }
+.footer {
+  height: 110px;
+  padding: 25px 114px;
+}
+.footer .align-left {
+  float: left;
+}
+.footer .links {
+  float: right;
+}
 .challenge {
   font-family: "Open Sans Condensed";
   font-size: 20px;
