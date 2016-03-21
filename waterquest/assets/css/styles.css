@@ -281,6 +281,13 @@ html.mac {
   -moz-osx-font-smoothing: antialiased;
 }
 
+@media (max-width: 64em) {
+  html {
+    background: #000 url(../img/layout/bg-xl.jpg) bottom left no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 30em) {
   html {
     height: 100vh;
@@ -546,14 +553,14 @@ a {
   display: none;
 }
 
-@media (max-width: 64em), (max-height: 800px) {
+@media (max-width: 64em) {
   .main-footer {
     padding: 10px 50px;
     height: 80px;
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 800px) {
   .main-footer {
     display: none !important;
   }
@@ -782,14 +789,14 @@ a {
   z-index: 2;
 }
 
-@media (max-width: 64em), (max-height: 800px) {
+@media (max-width: 64em) {
   .main-content {
     height: 635px;
     margin-top: -40px;
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 800px) {
   .main-content {
     margin-top: 0;
   }
@@ -915,8 +922,8 @@ a {
 
 .step1 .hashtag {
   width: 700px;
-  height: 120px;
-  margin: 5px auto;
+  height: 130px;
+  margin: 0 auto;
 }
 
 @media (max-width: 30em) {
