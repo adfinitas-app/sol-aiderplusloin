@@ -59,9 +59,10 @@ function showAnswer() {
     + "&text=" + gif[result].texte
     + "&via=solidarites_int&hashtags=water_quest";
   $("#twitter_share").attr("href", url);
+  $('html, body').animate({
+    scrollTop: $("#response-anchor").offset().top + 60
+  }, 100);
 }
-
-function checkFields() {}
 
 function pureStr(value) {
   return (value
@@ -131,7 +132,6 @@ function loadAnswer() {
       alert("Veuillez remplir le questionnaire.");
       return (false);
     }
-    checkFields();
     formToDb();
     showAnswer();
   });
