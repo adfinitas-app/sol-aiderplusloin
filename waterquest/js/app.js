@@ -48,11 +48,17 @@ function getResult() {
 
 function showAnswer() {
   var result = getResult();
-  $(".name").html(pureStr($("input[name='firstname']").val()) + " " + 
+  $(".name").html(pureStr($("input[name='firstname']").val()) + " " +
 		  pureStr($("input[name='lastname']").val()));
   $("form#myForm").slideUp();
   $("#result-" + result).slideDown();
   $(".result-part").slideDown();
+  var url = "http://www.facebook.com/sharer/sharer.php?u=" + gif[result].url;
+  $("#fb_share").attr("href", url);
+  url = "http://twitter.com/share?url=" + gif[result].url
+    + "&text=" + gif[result].texte
+    + "&via=solidarites_int&hashtags=water_quest";
+  $("#twitter_share").attr("href", url);
 }
 
 function checkFields() {}
@@ -134,7 +140,7 @@ $(document).ready(loadAnswer);
 // the browser will show an (empty) message
 Foundation.Abide.defaults.validators['intlTelInput'] =
 function ($el, required, parent) {
-  if ($el.intlTelInput("isValidNumber")) { 
+  if ($el.intlTelInput("isValidNumber")) {
     $el.get(0).setCustomValidity("");
     return true;
   }
