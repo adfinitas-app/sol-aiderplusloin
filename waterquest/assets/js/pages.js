@@ -10,7 +10,6 @@ Pages.landing = function() {
 	'use strict';
 
 	var _ = this,
-		preload = new createjs.LoadQueue(true),
 		loaded = false,
 		finish = false;
 
@@ -54,8 +53,9 @@ Pages.landing = function() {
 	};
 
 	_.loadAssets = function() {
-		var imgs = [ "assets/img/calm-water.png", "assets/img/stressed-water.png", "assets/media/CalmBG.mp4", "assets/media/StressedBG.mp4"];
+		var imgs = [ "assets/img/calm-water.png", "assets/img/stressed-water.png"/*, "assets/media/CalmBG.mp4", "assets/media/StressedBG.mp4"*/];
 
+		var preload = new createjs.LoadQueue(true);
 		preload.on("complete", loadComplete);
 		preload.loadManifest(imgs);
 
