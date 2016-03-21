@@ -43,11 +43,11 @@
 	margin-top: -55px;
 	z-index: z('default', 1);
 
-	@media #{md('normal', 'max')}, (max-height: 800px) {
+	@media #{md('normal', 'max')} {
 		height: 635px;
 		margin-top: -40px;
 	}
-	@media (max-height: 700px) {
+	@media (max-height: 800px) {
 		margin-top: 0;
 	}
 

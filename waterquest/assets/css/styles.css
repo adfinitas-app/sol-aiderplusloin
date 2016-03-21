@@ -782,14 +782,14 @@ a {
   z-index: 2;
 }
 
-@media (max-width: 64em), (max-height: 800px) {
+@media (max-width: 64em) {
   .main-content {
     height: 635px;
     margin-top: -40px;
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 800px) {
   .main-content {
     margin-top: 0;
   }
