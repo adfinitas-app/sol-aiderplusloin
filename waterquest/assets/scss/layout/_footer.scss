@@ -14,11 +14,11 @@
 	z-index: z('default', 1);
 	display: none;
 
-	@media #{md('normal', 'max')}, (max-height: 800px) {
+	@media #{md('normal', 'max')} {
 		padding: 10px 50px;
 		height: 80px;
 	}
-	@media (max-height: 700px) {
+	@media (max-height: 800px) {
 		display: none !important;
 	}
 	@media #{md('small', 'max')} {
