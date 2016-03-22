@@ -21,6 +21,7 @@ Pages.landing = function() {
 
 		var tlLanding 	= new TimelineMax({ paused : true }),
 			$content 	= $('.main-content'),
+			$loader 	= $('.loader'),
 			$logo 		= $content.find('.main-logo'),
 			$presente 	= $content.find('.presente'),
 			$hashtag 	= $content.find('.hashtag');
@@ -36,10 +37,11 @@ Pages.landing = function() {
 
 		// init timeline landing (loader)
 		tlLanding 	.set($content, { display : 'block' })
-					.set($content.find('p, .container-water, .btn'), { autoAlpha : 0 })
+					.set($content.find('.desc, .subtitle, .container-water, .btn'), { autoAlpha : 0 })
 					.from($logo, 0.4, { autoAlpha : 0, y : -50 })
 					.from($presente, 0.5, { autoAlpha : 0, y : -30 }, '+=0.2')
-					.to($presente, 0.4, { autoAlpha : 0, y : 20 }, '+=0.5')
+					.staggerFrom($loader.find('p, .btn'), 0.4, {y : -20, autoAlpha : 0 }, 0.1, '-=0.2')
+					.to($presente, 0.4, { autoAlpha : 0, y : 20 }, '+=0.1')
 					.from($hashtag, 0.5, { autoAlpha : 0, onStart : function() { stage.start(); } }, '+=0.3')
 					.add(function() {
 						finish = true;
