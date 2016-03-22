@@ -761,6 +761,11 @@ a {
   margin-top: 15px;
   font-size: 20px;
   margin-bottom: 15px;
+  opacity: 0;
+}
+
+.loader .btn {
+  opacity: 0;
 }
 
 @media (max-width: 30em) {

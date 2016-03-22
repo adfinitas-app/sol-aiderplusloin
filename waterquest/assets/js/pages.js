@@ -40,7 +40,7 @@ Pages.landing = function() {
 					.set($content.find('.desc, .subtitle, .container-water, .btn'), { autoAlpha : 0 })
 					.from($logo, 0.4, { autoAlpha : 0, y : -50 })
 					.from($presente, 0.5, { autoAlpha : 0, y : -30 }, '+=0.2')
-					.staggerFrom($loader.find('p, .btn'), 0.4, {y : -20, autoAlpha : 0 }, 0.1, '-=0.2')
+					.staggerFromTo($loader.find('p, .btn'), 0.4, {y : -20, autoAlpha : 0 }, {y : 0, autoAlpha : 1 }, 0.1, '-=0.2')
 					.to($presente, 0.4, { autoAlpha : 0, y : 20 }, '+=0.1')
 					.from($hashtag, 0.5, { autoAlpha : 0, onStart : function() { stage.start(); } }, '+=0.3')
 					.add(function() {
