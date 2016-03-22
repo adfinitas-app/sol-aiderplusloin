@@ -1,6 +1,7 @@
 body {
   background-image: url("/waterquest/img/background.png");
   background-attachment: fixed;
+  background-size: cover;
   background-color: black;
   color:white;
   text-align: center;
