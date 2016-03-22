@@ -97,6 +97,25 @@ Pages.step1 = function() {
 	_.init = function() {
 		var base = this;
 
+		function addSourceToVideo(element, src, type) {
+		    var source = document.createElement('source');
+
+		    source.src = src;
+		    source.type = type;
+
+		    element.appendChild(source);
+		}
+		// create video calme
+		$vCalm[0].autoplay = true;
+		$vCalm[0].preload = true;
+		$vCalm[0].loop = true;
+		addSourceToVideo($vCalm[0], $vCalm.data('src'), 'video/mp4');
+
+		// create video stressed
+		$vStressed[0].preload = true;
+		$vStressed[0].loop = true;
+		addSourceToVideo($vStressed[0], $vStressed.data('src'), 'video/mp4');
+
 		// callback on start animation
 		tlStep1.addCallback(function() {
 			$btn.on('click', function(e) {
