@@ -10,6 +10,7 @@ Pages.landing = function() {
 	'use strict';
 
 	var _ = this,
+		preload = new createjs.LoadQueue(true),
 		loaded = false,
 		finish = false;
 
@@ -42,7 +43,7 @@ Pages.landing = function() {
 					.from($hashtag, 0.5, { autoAlpha : 0, onStart : function() { stage.start(); } }, '+=0.3')
 					.add(function() {
 						finish = true;
-						if( loaded ) {
+						if( preload.progress == 1 ) {
 							Utils.hasMethod('step1', 'init');
 						}
 					}, '+=7');
@@ -55,7 +56,6 @@ Pages.landing = function() {
 	_.loadAssets = function() {
 		var imgs = [ "assets/img/calm-water.png", "assets/img/stressed-water.png"/*, "assets/media/CalmBG.mp4", "assets/media/StressedBG.mp4"*/];
 
-		var preload = new createjs.LoadQueue(true);
 		preload.on("complete", loadComplete);
 		preload.loadManifest(imgs);
 
@@ -96,6 +96,25 @@ Pages.step1 = function() {
 
 	_.init = function() {
 		var base = this;
+
+		function addSourceToVideo(element, src, type) {
+		    var source = document.createElement('source');
+
+		    source.src = src;
+		    source.type = type;
+
+		    element.appendChild(source);
+		}
+		// create video calme
+		$vCalm[0].autoplay = true;
+		$vCalm[0].preload = true;
+		$vCalm[0].loop = true;
+		addSourceToVideo($vCalm[0], $vCalm.data('src'), 'video/mp4');
+
+		// create video stressed
+		$vStressed[0].preload = true;
+		$vStressed[0].loop = true;
+		addSourceToVideo($vStressed[0], $vStressed.data('src'), 'video/mp4');
 
 		// callback on start animation
 		tlStep1.addCallback(function() {
@@ -148,8 +167,8 @@ Pages.step1 = function() {
 		TweenMax.set($vCalm, { opacity : 0 });
 		TweenMax.set($vStressed, { opacity : 1 });
 
-		/*$vStressed[0].play();
-		$vCalm[0].pause();*/
+		$vStressed[0].play();
+		$vCalm[0].pause();
 
 		// audio
 		/*$aRevelation.animate({ volume : 0 }, 500, 'swing', function() {
