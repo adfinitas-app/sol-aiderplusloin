@@ -264,6 +264,22 @@ select {
 .footer .links {
   float: right;
 }
+@media screen and (max-width: 39.9375em) {
+  .footer {
+    height: auto;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+  .footer .align-left {
+    float: none;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .footer .links {
+    float: none;
+    line-height: 3.5em;
+  }
+}
 .challenge {
   font-family: "Open Sans Condensed";
   font-size: 20px;
