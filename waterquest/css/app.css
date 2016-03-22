@@ -32,16 +32,19 @@ span.blue {
   font-weight: 300;
 }
 .logo {
-  margin-top: 0.5%;
+  margin-top: 25px;
+  margin-left: 30px;
   height: 115px;
   width: 115px;
-  margin-bottom: 2%;
 }
 @media screen and (max-width: 39.9375em) {
   .logo {
     float: left;
-    margin-left: 10px;
-    height: 100px;
+    /*height: 100px;*/
+    width: 50px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 21px;
   }
 }
 .logo-eau {
@@ -52,9 +55,10 @@ span.blue {
 }
 @media screen and (max-width: 39.9375em) {
   .logo-eau {
-    float: right;
-    position: initial;
-    margin-right: 10px;
+    width: 65px;
+    height: auto;
+    top: 15px;
+    right: 15px;
   }
 }
 .subtitle {
@@ -62,14 +66,18 @@ span.blue {
   line-height: 0.8;
 }
 .title.blue {
-  font-weight: 700;
+  font-family: "open sans";
+  font-weight: 800;
   font-size: 70px;
 }
 @media screen and (max-width: 39.9375em) {
   .title.blue {
-    font-size: 70px;
+    font-size: 54px;
     line-height: 1;
-    margin-bottom: 33px;
+    margin-bottom: 15px;
+  }
+  .subtitle {
+    font-size: 14px;
   }
 }
 .nbrquestion {
@@ -255,6 +263,22 @@ select {
 }
 .footer .links {
   float: right;
+}
+@media screen and (max-width: 39.9375em) {
+  .footer {
+    height: auto;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+  .footer .align-left {
+    float: none;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .footer .links {
+    float: none;
+    line-height: 3.5em;
+  }
 }
 .challenge {
   font-family: "Open Sans Condensed";
