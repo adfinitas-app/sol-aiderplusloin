@@ -10,17 +10,15 @@ Pages.landing = function() {
 	'use strict';
 
 	var _ = this,
-		preload = new createjs.LoadQueue(true),
-		loaded = false,
-		finish = false;
+		tlLanding 	= new TimelineMax({ paused : true }),
+		preload = new createjs.LoadQueue(true);
 
 	_.init = function() {
 		'use strict';
 
 		if( $window.width() <= 480 ) return;
 
-		var tlLanding 	= new TimelineMax({ paused : true }),
-			$content 	= $('.main-content'),
+		var $content 	= $('.main-content'),
 			$loader 	= $('.loader'),
 			$logo 		= $content.find('.main-logo'),
 			$presente 	= $content.find('.presente'),
@@ -40,11 +38,10 @@ Pages.landing = function() {
 					.set($content.find('.desc, .subtitle, .container-water, .btn'), { autoAlpha : 0 })
 					.from($logo, 0.4, { autoAlpha : 0, y : -50 })
 					.from($presente, 0.5, { autoAlpha : 0, y : -30 }, '+=0.2')
-					.staggerFromTo($loader.find('p, .btn'), 0.4, {y : -20, autoAlpha : 0 }, {y : 0, autoAlpha : 1 }, 0.1, '-=0.2')
 					.to($presente, 0.4, { autoAlpha : 0, y : 20 }, '+=0.1')
 					.from($hashtag, 0.5, { autoAlpha : 0, onStart : function() { stage.start(); } }, '+=0.3')
+					.staggerFromTo($loader.find('p, .btn'), 0.4, {y : -20, autoAlpha : 0 }, {y : 0, autoAlpha : 1 }, 0.1, '+=2')
 					.add(function() {
-						finish = true;
 						if( preload.progress == 1 ) {
 							Utils.hasMethod('step1', 'init');
 						}
@@ -62,9 +59,7 @@ Pages.landing = function() {
 		preload.loadManifest(imgs);
 
 		function loadComplete(event) {
-    		loaded = true;
-
-			if( finish ) {
+    		if( tlLanding.time() >= tlLanding.duration() ) {
 				Utils.hasMethod('step1', 'init');
 			}
 		};
@@ -86,7 +81,7 @@ Pages.step1 = function() {
 		$subtitle 		= $content.find('.subtitle'),
 		$water	 		= $content.find('.container-water'),
 		$desc	 		= $content.find('.desc'),
-		$btn 	 		= $content.find('.btn'),
+		$btn 	 		= $content.find('.start-trigger'),
 		$logo_jme 		= $('.logo-jme'),
 		$footer 		= $('.main-footer'),
 		$vStressed 		= $('.video-stressed'),
@@ -127,7 +122,7 @@ Pages.step1 = function() {
 		}, 'onStart');
 
 		tlStep1	.set($footer, {display : 'block' })
-				.to($loader, 0.3, { opacity : 0 }, 'start')
+				.to($loader, 0.3, { autoAlpha : 0 }, 'start')
 				.to($snow, 0.6, { scaleY : 0, ease : Expo.easeInOut }, 'start')
 				.fromTo($logo_jme, 0.4, { scale : 0.4, autoAlpha : 0 }, { scale : 1, autoAlpha : 1 })
 				.from($footer, 0.3, { y : '100%'})
@@ -159,8 +154,6 @@ Pages.step1 = function() {
 
 	_.goTest = function() {
 
-		$btn.addClass('active');
-
 		// water
 		TweenMax.set($water.find('.water'), { display : 'none' });
 		TweenMax.set($water.find('.water-stressed'), { display : 'block' });
@@ -181,8 +174,42 @@ Pages.step1 = function() {
 		$aUp.animate({ volume : 1 }, 300, 'swing');
 
 		// redirect to quizz
-		setTimeout(function() {
-			window.location = '/waterquest/quiz.html';
-		}, 5500);
+		TweenMax.to($btn.addClass('active').find('.progress'), 5, { scaleX : 1, transformOrigin : 'left center', onComplete : function() {
+			Utils.hasMethod('step2', 'init');
+		}})
 	}
-}
+};
+
+
+Pages.step2 = function() {
+	var _ = this,
+		tlStep2 = new TimelineMax({ paused : true }),
+		$content 		= $('.main-content'),
+		$step1 			= $content.find('.step1'),
+		$step2 			= $content.find('.step2'),
+		$footer 		= $('.main-footer'),
+		$vStressed 		= $('.video-stressed'),
+		$vCalm  		= $('.video-calm');
+
+	_.init = function() {
+		tlStep2	.add(function() {
+					TweenMax.set($vCalm, { opacity : 1 });
+					TweenMax.set($vStressed, { opacity : 0 });
+
+					$vStressed[0].pause();
+					$vCalm[0].play();
+				})
+				.staggerTo($step1.children(), 0.3, { y : -30, autoAlpha : 0 }, 0.1)
+				.to($content, 0.5, { y : 0, top: 0, marginTop : 40, ease : Power1.easeOut}, 'start-=0.2')
+				.to($footer, 0.4, { y : '100%' }, 'start')
+				.set($step2, { display : 'block' })
+				.add(function() {
+					$body.addClass('quiz');
+				})
+				.staggerFrom($step2.find('form').children(), 0.7, { y : 40, autoAlpha : 0 }, 0.1);
+
+		setTimeout(function() {
+			tlStep2.play();
+		}, 200);
+	};
+};
