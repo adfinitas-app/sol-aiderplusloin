@@ -201,6 +201,7 @@ Une condition dépendante de la variable `$debug` qui permet d'afficher les cont
 html {
   font-size: 16px;
   height: 100%;
+  overflow-x: hidden;
   background: #000;
 }
 
