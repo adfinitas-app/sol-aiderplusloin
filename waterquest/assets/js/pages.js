@@ -58,9 +58,15 @@ Pages.landing = function() {
 		preload.on("complete", loadComplete);
 		preload.loadManifest(imgs);
 
+		var timer = 0;
+
 		function loadComplete(event) {
+			timer = setTimeout(function() {
+				Utils.hasMethod('step1', 'init');
+			}, 5000);
     		if( tlLanding.time() >= tlLanding.duration() ) {
 				Utils.hasMethod('step1', 'init');
+				clearTimeout(timer);
 			}
 		};
 
