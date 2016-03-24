@@ -81,6 +81,7 @@ html {
 	font-size: $font-size;
 	height: 100%;
 	background: #000;
+	overflow-x: hidden;
 
 	// Better font rendering for mac
 	&.mac {
