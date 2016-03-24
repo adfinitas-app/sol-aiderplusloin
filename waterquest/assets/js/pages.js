@@ -61,13 +61,12 @@ Pages.landing = function() {
 		var timer = 0;
 
 		function loadComplete(event) {
-			timer = setTimeout(function() {
+			setTimeout(function() {
 				Utils.hasMethod('step1', 'init');
-			}, 5000);
-    		if( tlLanding.time() >= tlLanding.duration() ) {
+			}, (tlLanding.duration() - tlLanding.time()) * 1000 );
+    		/*if( tlLanding.time() >= tlLanding.duration() ) {
 				Utils.hasMethod('step1', 'init');
-				clearTimeout(timer);
-			}
+			}*/
 		};
 
 	};
@@ -99,6 +98,11 @@ Pages.step1 = function() {
 
 	_.init = function() {
 		var base = this;
+
+		if( typeof Vars.isStep1 == 'undefined' )
+			Vars.isStep1 = true;
+		else 
+			return;
 
 		function addSourceToVideo(element, src, type) {
 		    var source = document.createElement('source');
