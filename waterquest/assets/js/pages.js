@@ -10,17 +10,15 @@ Pages.landing = function() {
 	'use strict';
 
 	var _ = this,
-		preload = new createjs.LoadQueue(true),
-		loaded = false,
-		finish = false;
+		tlLanding 	= new TimelineMax({ paused : true }),
+		preload = new createjs.LoadQueue(true);
 
 	_.init = function() {
 		'use strict';
 
 		if( $window.width() <= 480 ) return;
 
-		var tlLanding 	= new TimelineMax({ paused : true }),
-			$content 	= $('.main-content'),
+		var $content 	= $('.main-content'),
 			$loader 	= $('.loader'),
 			$logo 		= $content.find('.main-logo'),
 			$presente 	= $content.find('.presente'),
@@ -44,7 +42,6 @@ Pages.landing = function() {
 					.to($presente, 0.4, { autoAlpha : 0, y : 20 }, '+=0.1')
 					.from($hashtag, 0.5, { autoAlpha : 0, onStart : function() { stage.start(); } }, '+=0.3')
 					.add(function() {
-						finish = true;
 						if( preload.progress == 1 ) {
 							Utils.hasMethod('step1', 'init');
 						}
@@ -62,9 +59,7 @@ Pages.landing = function() {
 		preload.loadManifest(imgs);
 
 		function loadComplete(event) {
-    		loaded = true;
-
-			if( finish ) {
+    		if( tlLanding.time() >= tlLanding.duration() ) {
 				Utils.hasMethod('step1', 'init');
 			}
 		};
@@ -127,7 +122,7 @@ Pages.step1 = function() {
 		}, 'onStart');
 
 		tlStep1	.set($footer, {display : 'block' })
-				.to($loader, 0.3, { opacity : 0 }, 'start')
+				.to($loader, 0.3, { autoAlpha : 0 }, 'start')
 				.to($snow, 0.6, { scaleY : 0, ease : Expo.easeInOut }, 'start')
 				.fromTo($logo_jme, 0.4, { scale : 0.4, autoAlpha : 0 }, { scale : 1, autoAlpha : 1 })
 				.from($footer, 0.3, { y : '100%'})
