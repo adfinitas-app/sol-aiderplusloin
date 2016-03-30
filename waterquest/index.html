@@ -358,7 +358,7 @@ gif_100:
 									</div>
 									<div class="row">
 										<div class="large-12 columns split last">
-											<input id="id_phone" type="text" {% if page.phone_required %}data-validator="intlTelInput" {%endif %}name="phone" placeholder="Téléphone*" />
+											<input id="id_phone" type="text" {% if page.phone_required %}data-validator="intlTelInput" {% endif %}name="phone" placeholder="Téléphone*" />
 											<small style="display: none;" class="error intl-error">Les champs en rouge sont requis</small>
 										</div>
 									</div>
