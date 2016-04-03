@@ -122,7 +122,8 @@ function formToDb() {
       "cookie": getCookie("wooTracker"), 
       /* Variables de l'evenement  */
       "event": "JME-quizz",
-      "ce_score": result + "%"
+      "ce_score": result + "%",
+      "ce_share_score": result
     }
   }
   makeCorsRequest(data);
