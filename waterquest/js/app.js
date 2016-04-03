@@ -119,6 +119,7 @@ function formToDb() {
       "cv_1er_contact": pureStr($("select[name='origine']").val()),
       "cv_city": pureStr($("input[name='city']").val()),
       "cv_annee_naissance": pureStr($("select[name='annee-naissance']").val()),
+      "cookie": getCookie("wooTracker"), 
       /* Variables de l'evenement  */
       "event": "JME-quizz",
       "ce_score": result + "%"
