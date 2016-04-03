@@ -14,7 +14,8 @@
     })("woopra");
     
     woopra.config({
-        domain: '{{ site.woopra_id }}'
+        domain: '{{ site.woopra_id }}',
+        cookie_domain: '.{{ site.woopra_id }}'
     });
     
     var p = extractUrlParams();
