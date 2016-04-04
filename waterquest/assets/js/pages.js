@@ -10,6 +10,7 @@ Pages.landing = function() {
 	'use strict';
 
 	var _ = this,
+		timer = 0,
 		tlLanding 	= new TimelineMax({ paused : true }),
 		preload = new createjs.LoadQueue(true);
 
@@ -50,6 +51,14 @@ Pages.landing = function() {
 		setTimeout(function() {
 			tlLanding.play();
 		}, 200);
+
+		$('.trigger-skip').on('click', function(e) {
+			e.preventDefault();
+
+			tlLanding.pause();
+			clearTimeout(timer);
+			Utils.hasMethod('step2', 'skip');
+		});
 	};
 
 	_.loadAssets = function() {
@@ -59,9 +68,9 @@ Pages.landing = function() {
 		preload.loadManifest(imgs);
 
 		function loadComplete(event) {
-    		if( tlLanding.time() >= tlLanding.duration() ) {
+    		timer = setTimeout(function () {
 				Utils.hasMethod('step1', 'init');
-			}
+			}, (tlLanding.duration() - tlLanding.time()) * 1000 );
 		};
 
 	};
@@ -71,9 +80,7 @@ Pages.landing = function() {
 
 Pages.step1 = function() {
 	var _ = this,
-		tlStep1 = new TimelineMax({ paused : true, onComplete : function() {
-
-		} }),
+		tlStep1 = new TimelineMax({ paused : true }),
 		$loader	 		= $('.loader'),
 		$snow	 		= $('.snow'),
 		$bgVideo 		= $('.video-bg'),
@@ -93,6 +100,11 @@ Pages.step1 = function() {
 
 	_.init = function() {
 		var base = this;
+
+		if( typeof Vars.isStep1 == 'undefined' )
+			Vars.isStep1 = true;
+		else 
+			return;
 
 		function addSourceToVideo(element, src, type) {
 		    var source = document.createElement('source');
@@ -130,6 +142,7 @@ Pages.step1 = function() {
 				.fromTo($water, 0.7, { autoAlpha : 0, scale : 1.3 }, {autoAlpha : 1, scale : 1 }, '-=0.3')
 				.fromTo($btn, 0.4, { autoAlpha : 0, y : 20 }, {autoAlpha : 1, y : 0 }, '+=0.3')
 				.fromTo($desc, 0.3, { autoAlpha : 0, y : 10 }, {autoAlpha : 1, y : 0 }, '-=0.2');
+
 
 		// launch step1
 		setTimeout(function() {
@@ -185,6 +198,10 @@ Pages.step2 = function() {
 	var _ = this,
 		tlStep2 = new TimelineMax({ paused : true }),
 		$content 		= $('.main-content'),
+		$subtitle 		= $content.find('.subtitle'),
+		$loader	 		= $('.loader'),
+		$snow	 		= $('.snow'),
+		$logo_jme 		= $('.logo-jme'),
 		$step1 			= $content.find('.step1'),
 		$step2 			= $content.find('.step2'),
 		$footer 		= $('.main-footer'),
@@ -200,11 +217,11 @@ Pages.step2 = function() {
 					$vCalm[0].play();
 				})
 				.staggerTo($step1.children(), 0.3, { y : -30, autoAlpha : 0 }, 0.1)
-				.to($content, 0.5, { y : 0, top: 0, marginTop : 40, ease : Power1.easeOut}, 'start-=0.2')
+				.to($content, 0.5, { y : 0, top: 0, marginTop : 0, paddingTop: 40, ease : Power1.easeOut}, 'start-=0.2')
 				.to($footer, 0.4, { y : '100%' }, 'start')
 				.set($step2, { display : 'block' })
 				.add(function() {
-					$body.addClass('quiz');
+					$htmlBody.addClass('quiz');
 				})
 				.staggerFrom($step2.find('form').children(), 0.7, { y : 40, autoAlpha : 0 }, 0.1);
 
@@ -212,4 +229,20 @@ Pages.step2 = function() {
 			tlStep2.play();
 		}, 200);
 	};
+
+	_.skip = function() {
+		var tl = new TimelineMax({ paused : true });
+
+		if( typeof Vars.isStep1 == 'undefined' )
+			Vars.isStep1 = true;
+
+		tl	.to($loader, 0.3, { autoAlpha : 0 }, 'start')
+			.to($snow, 0.6, { scaleY : 0, ease : Expo.easeInOut }, 'start')
+			.fromTo($logo_jme, 0.4, { scale : 0.4, autoAlpha : 0 }, { scale : 1, autoAlpha : 1 })
+			.fromTo($subtitle, 0.4, { autoAlpha : 0, y : '-40%' }, {autoAlpha : 1, y:'0%' }, '-=0.1')
+			.add(function() {
+				_.init();
+			}, '-=1.4')
+			.play();
+	}
 };

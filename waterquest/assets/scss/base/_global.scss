@@ -81,6 +81,7 @@ html {
 	font-size: $font-size;
 	height: 100%;
 	overflow-x: hidden;
+	overflow-y: scroll;
 	background: #000;
 
 	// Better font rendering for mac
@@ -105,9 +106,16 @@ body {
 	font-size: 1em;
 	color: $font-color;
 	font-weight: 300;
+	//overflow: hidden;
 	height: 100%;
+
+	&.quiz {
+		//overflow: auto;
+		height: auto;
+	}
 	
 	@media #{md('smaller', 'max')} {
 		height: auto;
+		overflow: auto;
 	}
 }
