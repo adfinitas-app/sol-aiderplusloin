@@ -964,6 +964,16 @@ a {
           transform: translateX(-50%);
 }
 
+@media (max-width: 30em) {
+  .step1 {
+    position: relative;
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+
 .step1 p {
   font-size: 20px;
 }

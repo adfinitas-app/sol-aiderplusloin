@@ -2,6 +2,12 @@
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+
+	@media #{md('smaller', 'max')} {
+		position: relative;
+		left: 0;
+		transform: none;
+	}
 	
 	p {
 		font-size: 20px;
