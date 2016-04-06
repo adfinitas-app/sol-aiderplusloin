@@ -206,7 +206,11 @@ Pages.step2 = function() {
 		$step2 			= $content.find('.step2'),
 		$footer 		= $('.main-footer'),
 		$vStressed 		= $('.video-stressed'),
-		$vCalm  		= $('.video-calm');
+		$vCalm  		= $('.video-calm')
+		$aLoading 		= $('#loading'),
+		$aEndLoading	= $('#end-loading'),
+		$aRevelation	= $('#revelation'),
+		$aUp 			= $('#up-240');
 
 	_.init = function() {
 		tlStep2	.add(function() {
@@ -242,7 +246,22 @@ Pages.step2 = function() {
 			.fromTo($subtitle, 0.4, { autoAlpha : 0, y : '-40%' }, {autoAlpha : 1, y:'0%' }, '-=0.1')
 			.add(function() {
 				_.init();
-			}, '-=1.4')
-			.play();
+			}, '-=1.4');
+
+		//change song
+		$aLoading.animate({ volume : 0 }, 1500, 'swing', function() {
+			$aLoading[0].pause();
+		});
+
+		$aRevelation[0].play();
+		$aRevelation[0].volume = 0;
+		$aRevelation.animate({ volume : 1}, 1000, 'swing');
+		$aUp[0].volume = 0;
+		$aUp[0].play();
+		$aUp.animate({ volume : 1 }, 300, 'swing');
+
+		TweenMax.to($('.trigger-skip').addClass('active').find('.progress'), 5, { scaleX : 1, transformOrigin : 'left center', onComplete : function() {
+			tl.play();
+		}})
 	}
 };
