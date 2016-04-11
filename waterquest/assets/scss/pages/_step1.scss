@@ -1,4 +1,14 @@
 .step1 {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@media #{md('smaller', 'max')} {
+		position: relative;
+		left: 0;
+		transform: none;
+	}
+	
 	p {
 		font-size: 20px;
 
@@ -9,66 +19,6 @@
 
 		@media #{md('smaller', 'max')} {
 			font-size: 13px;
-		}
-	}
-	.presente {
-		position: absolute;
-		margin-top: 20px;
-		font-size: 30px;
-		width: 100%;
-	
-		@media #{md('small', 'max')} {
-			top: -90px;
-			margin: 0;
-		}
-
-		@media #{md('smaller', 'max')} {
-			display: none;
-		}
-	}
-	.subtitle {
-		font-size: 25px;
-		
-		@media #{md('normal', 'max')}, (max-height: 800px) {
-			font-size: 20px;
-		}
-
-		@media #{md('smaller', 'max')} {
-			font-size: 14px;
-		}
-	}
-
-	.hashtag {
-		width: 700px; 
-		height: 130px;
-		margin: 0 auto;
-
-		@media #{md('smaller', 'max')} {
-			display: none;
-		}
-	}
-
-	.hashtag-txt {
-		margin: 0;
-		margin-bottom: 10px;
-		font-size: 54px;
-		text-align: center;
-		font-weight: 800;
-		display: none;
-		font-family: 'Open Sans', sans-serif;
-		line-height: 1em;
-
-		i {
-			font-style: normal;
-			font-weight: 300;
-		}
-
-		span {
-			color: $blue;
-		}
-
-		@media #{md('smaller', 'max')} {
-			display: block;
 		}
 	}
 

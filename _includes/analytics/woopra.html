@@ -15,7 +15,7 @@
     
     woopra.config({
         domain: '{{ site.woopra_id }}',
-        cookie_domain: '.{{ site.woopra_id }}'
+        cookie_domain: '{{ site.woopra_domain }}'
     });
     
     var p = extractUrlParams();

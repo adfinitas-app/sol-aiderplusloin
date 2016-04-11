@@ -10,6 +10,7 @@ Pages.landing = function() {
 	'use strict';
 
 	var _ = this,
+		timer = 0,
 		tlLanding 	= new TimelineMax({ paused : true }),
 		preload = new createjs.LoadQueue(true);
 
@@ -38,9 +39,9 @@ Pages.landing = function() {
 					.set($content.find('.desc, .subtitle, .container-water, .btn'), { autoAlpha : 0 })
 					.from($logo, 0.4, { autoAlpha : 0, y : -50 })
 					.from($presente, 0.5, { autoAlpha : 0, y : -30 }, '+=0.2')
-					.staggerFromTo($loader.find('p, .btn'), 0.4, {y : -20, autoAlpha : 0 }, {y : 0, autoAlpha : 1 }, 0.1, '-=0.2')
 					.to($presente, 0.4, { autoAlpha : 0, y : 20 }, '+=0.1')
 					.from($hashtag, 0.5, { autoAlpha : 0, onStart : function() { stage.start(); } }, '+=0.3')
+					.staggerFromTo($loader.find('p, .btn'), 0.4, {y : -20, autoAlpha : 0 }, {y : 0, autoAlpha : 1 }, 0.1, '+=2')
 					.add(function() {
 						if( preload.progress == 1 ) {
 							Utils.hasMethod('step1', 'init');
@@ -50,6 +51,14 @@ Pages.landing = function() {
 		setTimeout(function() {
 			tlLanding.play();
 		}, 200);
+
+		$('.trigger-skip').on('click', function(e) {
+			e.preventDefault();
+
+			tlLanding.pause();
+			clearTimeout(timer);
+			Utils.hasMethod('step2', 'skip');
+		});
 	};
 
 	_.loadAssets = function() {
@@ -58,15 +67,10 @@ Pages.landing = function() {
 		preload.on("complete", loadComplete);
 		preload.loadManifest(imgs);
 
-		var timer = 0;
-
 		function loadComplete(event) {
-			setTimeout(function() {
+    		timer = setTimeout(function () {
 				Utils.hasMethod('step1', 'init');
 			}, (tlLanding.duration() - tlLanding.time()) * 1000 );
-    		/*if( tlLanding.time() >= tlLanding.duration() ) {
-				Utils.hasMethod('step1', 'init');
-			}*/
 		};
 
 	};
@@ -76,9 +80,7 @@ Pages.landing = function() {
 
 Pages.step1 = function() {
 	var _ = this,
-		tlStep1 = new TimelineMax({ paused : true, onComplete : function() {
-
-		} }),
+		tlStep1 = new TimelineMax({ paused : true }),
 		$loader	 		= $('.loader'),
 		$snow	 		= $('.snow'),
 		$bgVideo 		= $('.video-bg'),
@@ -86,7 +88,7 @@ Pages.step1 = function() {
 		$subtitle 		= $content.find('.subtitle'),
 		$water	 		= $content.find('.container-water'),
 		$desc	 		= $content.find('.desc'),
-		$btn 	 		= $content.find('.btn'),
+		$btn 	 		= $content.find('.start-trigger'),
 		$logo_jme 		= $('.logo-jme'),
 		$footer 		= $('.main-footer'),
 		$vStressed 		= $('.video-stressed'),
@@ -141,6 +143,7 @@ Pages.step1 = function() {
 				.fromTo($btn, 0.4, { autoAlpha : 0, y : 20 }, {autoAlpha : 1, y : 0 }, '+=0.3')
 				.fromTo($desc, 0.3, { autoAlpha : 0, y : 10 }, {autoAlpha : 1, y : 0 }, '-=0.2');
 
+
 		// launch step1
 		setTimeout(function() {
 			_.play();
@@ -164,8 +167,6 @@ Pages.step1 = function() {
 
 	_.goTest = function() {
 
-		$btn.addClass('active');
-
 		// water
 		TweenMax.set($water.find('.water'), { display : 'none' });
 		TweenMax.set($water.find('.water-stressed'), { display : 'block' });
@@ -186,8 +187,81 @@ Pages.step1 = function() {
 		$aUp.animate({ volume : 1 }, 300, 'swing');
 
 		// redirect to quizz
-		setTimeout(function() {
-			window.location = '/waterquest/quiz.html';
-		}, 5500);
+		TweenMax.to($btn.addClass('active').find('.progress'), 5, { scaleX : 1, transformOrigin : 'left center', onComplete : function() {
+			Utils.hasMethod('step2', 'init');
+		}})
 	}
-}
+};
+
+
+Pages.step2 = function() {
+	var _ = this,
+		tlStep2 = new TimelineMax({ paused : true }),
+		$content 		= $('.main-content'),
+		$subtitle 		= $content.find('.subtitle'),
+		$loader	 		= $('.loader'),
+		$snow	 		= $('.snow'),
+		$logo_jme 		= $('.logo-jme'),
+		$step1 			= $content.find('.step1'),
+		$step2 			= $content.find('.step2'),
+		$footer 		= $('.main-footer'),
+		$vStressed 		= $('.video-stressed'),
+		$vCalm  		= $('.video-calm')
+		$aLoading 		= $('#loading'),
+		$aEndLoading	= $('#end-loading'),
+		$aRevelation	= $('#revelation'),
+		$aUp 			= $('#up-240');
+
+	_.init = function() {
+		tlStep2	.add(function() {
+					TweenMax.set($vCalm, { opacity : 1 });
+					TweenMax.set($vStressed, { opacity : 0 });
+
+					$vStressed[0].pause();
+					$vCalm[0].play();
+				})
+				.staggerTo($step1.children(), 0.3, { y : -30, autoAlpha : 0 }, 0.1)
+				.to($content, 0.5, { y : 0, top: 0, marginTop : 0, paddingTop: 40, ease : Power1.easeOut}, 'start-=0.2')
+				.to($footer, 0.4, { y : '100%' }, 'start')
+				.set($step2, { display : 'block' })
+				.add(function() {
+					$htmlBody.addClass('quiz');
+				})
+				.staggerFrom($step2.find('form').children(), 0.7, { y : 40, autoAlpha : 0 }, 0.1);
+
+		setTimeout(function() {
+			tlStep2.play();
+		}, 200);
+	};
+
+	_.skip = function() {
+		var tl = new TimelineMax({ paused : true });
+
+		if( typeof Vars.isStep1 == 'undefined' )
+			Vars.isStep1 = true;
+
+		tl	.to($loader, 0.3, { autoAlpha : 0 }, 'start')
+			.to($snow, 0.6, { scaleY : 0, ease : Expo.easeInOut }, 'start')
+			.fromTo($logo_jme, 0.4, { scale : 0.4, autoAlpha : 0 }, { scale : 1, autoAlpha : 1 })
+			.fromTo($subtitle, 0.4, { autoAlpha : 0, y : '-40%' }, {autoAlpha : 1, y:'0%' }, '-=0.1')
+			.add(function() {
+				_.init();
+			}, '-=1.4');
+
+		//change song
+		$aLoading.animate({ volume : 0 }, 1500, 'swing', function() {
+			$aLoading[0].pause();
+		});
+
+		$aRevelation[0].play();
+		$aRevelation[0].volume = 0;
+		$aRevelation.animate({ volume : 1}, 1000, 'swing');
+		$aUp[0].volume = 0;
+		$aUp[0].play();
+		$aUp.animate({ volume : 1 }, 300, 'swing');
+
+		TweenMax.to($('.trigger-skip').addClass('active').find('.progress'), 5, { scaleX : 1, transformOrigin : 'left center', onComplete : function() {
+			tl.play();
+		}})
+	}
+};
