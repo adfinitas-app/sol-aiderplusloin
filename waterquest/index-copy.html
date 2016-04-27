@@ -22,6 +22,10 @@ quiz:
     reponse1: "L'augmentation d'accès à l'eau potable réalisée en 20 ans"
     reponse2: "La part de la population mondiale n'ayant pas accès à l'eau potable"
     reponse3: "Le pourcentage d'eau douce utilisable par l'Homme"
+  titre_formulaire_mieux_connaitre: "<span class="blue">Pour mieux</span> vous connaître"
+  titre_formulaire_perso: "Pour découvrir votre résultat merci de valider les informations suivantes. Si vous faites partie des 150 premiers gagnants vous recevrez un économiseur d’eau en cadeau."
+  texte_bouton: "<span class="bold">Validez et découvrez</span><br />si vous êtes un maître de l’eau !"
+  optin: "En laissant mes coordonnées, j'accepte que SOLIDARITÉS INTERNATIONAL me contacte pour m'informer de ses actions."
 gif_0:
   gif: 'http%3A%2F%2Faiderplusloin.solidarites.org%2Fwaterquest%2Fgif%2F0.html'
   texte: 'Je%20suis%20bidon'
@@ -135,12 +139,12 @@ gif_100:
 	    </div>
 
 		<div class="main-content">
-			<a href="http://www.solidarites.org" class="main-logo">Solidarités international</a>
-				<p class="presente"><strong>Présente</strong></p>
+			<a href="http://www.solidarites.org" class="main-logo editable">Solidarités international</a>
+				<p class="presente editable"><strong>Présente</strong></p>
 			    <div id="swiffycontainer" class="hashtag"></div>
-			    <h1 class="hashtag-txt"><i>#</i><br><span>WATER<br>_</span>QUEST</h1>
+			    <h1 class="hashtag-txt editable"><i>#</i><br><span>WATER<br>_</span>QUEST</h1>
 
-			    <p class="subtitle">L’EAU A DES POUVOIRS CACHÉS. TENTEZ DE LES MAITRISER !</p>
+			    <p class="subtitle editable">L’EAU A DES POUVOIRS CACHÉS. TENTEZ DE LES MAITRISER !</p>
 
 			<div class="step1 tac">
 			    <div class="container-water">
@@ -149,7 +153,7 @@ gif_100:
 			    	<img src="assets/img/goutte.png" alt="">
 			    </div>
 
-			    <a href="#" class="btn start-trigger"><i class="progress"></i><span>Je commence le test</span></a>
+			    <a href="#" class="btn start-trigger"><i class="progress"></i><span class="editable">Je commence le test</span></a>
 			    <p class="desc">
 			    	<i class="icon icon-gift">
 					    <svg viewBox="0 0 19.9 22.5" class="svg-gift">
@@ -157,7 +161,7 @@ gif_100:
 					        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-gift"></use>
 					    </svg>
 					</i>
-					<strong>Les 150 premiers gagnants <span class="blue">recevront un économiseur d’eau.</span></strong></p>
+					<strong class="editable">Les 150 premiers gagnants <span class="blue">recevront un économiseur d’eau.</span></strong></p>
 		    </div>
 
 
@@ -231,7 +235,7 @@ gif_100:
 							</div>
 							<div class="row">
 								<div class="large-12 columns">
-									<h3 class="mieux-connaitre"><span class="blue">Pour mieux</span> vous connaître</h3>
+									<h3 class="mieux-connaitre">{{page.quiz.titre_formulaire_mieux_connaitre}}</h3>
 								</div>
 							</div>
 							<div class="row perso">
@@ -372,7 +376,7 @@ gif_100:
 									</select>
 								</div>
 								<div class="large-12 columns inter-text">
-									<p>Pour découvrir votre résultat merci de valider les informations suivantes. Si vous faites partie des 150 premiers gagnants vous recevrez un économiseur d’eau en cadeau.</p>
+									<p>{{page.quiz.titre_formulaire_perso}}</p>
 								</div>
 								<div class="large-12 columns fields">
 									<div class="row">
@@ -414,10 +418,11 @@ gif_100:
 									</div>
 									<div class="row">
 										<div class="large-12 columns">
-											<button type="submit" class="button validate"><span class="bold">Validez et découvrez</span><br />si vous êtes un maître de l’eau !
+											<button type="submit" class="button validate">
+											    {{page.quiz.texte_bouton}}
 											</button>
 											<p class="optin">
-												En laissant mes coordonnées, j'accepte que SOLIDARITÉS INTERNATIONAL me contacte pour m'informer de ses actions.
+												{{texte.quiz.optin}}
 											</p>
 										</div>
 									</div>
