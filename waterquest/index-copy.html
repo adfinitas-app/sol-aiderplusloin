@@ -1,6 +1,27 @@
 ---
 logo_jme: false
 phone_required: true
+quiz:
+  question1:
+    titre: "45 litres c’est :"
+    reponse1: "La quantité d’eau moyenne contenue dans le corps humain"
+    reponse2: "Le nombre de personnes mourant chaque année de la consommation d'une eau insalubre"
+    reponse3: "La quantité d'eau que doivent se partager chaque jour les 30 habitants d'un village du Soudan du Sud"
+  question2:
+    titre: "2 600 000 c’est :"
+    reponse1: "Le nombre de personnes qui manquent d’un assainissement adéquat"
+    reponse2: "Le nombre de personnes mourant chaque année de la consommation d'une eau insalubre"
+    reponse3: "Le nombre de personnes atteintes par le paludisme chaque année"
+  question3:
+    titre: "1% c’est :"
+    reponse1: "La part de Français n'ayant pas accès à l'eau potable"
+    reponse2: "La part de la consommation d'eau dédiée à la boisson en France"
+    reponse3: "Le pourcentage d'habitants ayant accès à l'eau par canalisations en Afrique Sub-saharienne"
+  question4:
+    titre: "50% c’est :"
+    reponse1: "L'augmentation d'accès à l'eau potable réalisée en 20 ans"
+    reponse2: "La part de la population mondiale n'ayant pas accès à l'eau potable"
+    reponse3: "Le pourcentage d'eau douce utilisable par l'Homme"
 gif_0:
   gif: 'http%3A%2F%2Faiderplusloin.solidarites.org%2Fwaterquest%2Fgif%2F0.html'
   texte: 'Je%20suis%20bidon'
@@ -147,15 +168,15 @@ gif_100:
 							<div class="row">
 								<div class="large-12 columns">
 									<p class="nbrquestion"><span class="first">1</span>/4</p>
-									<p class="question editable">45 litres c’est :</p>
+									<p class="question">{{page.quiz.question1.titre}}</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-12 columns reponses">
 									<ul>
-										<li><input type="radio" id="1-1" value="1" name="1"><label for="1-1"><span></span><span class="radio-txt">La quantité d’eau moyenne contenue dans le corps humain</span></label></input></li>
-										<li><input type="radio" id="1-2" value="2" name="1"><label for="1-2"><span></span><span class="radio-txt">Ce que boit un être humain en 15 jours</span></label></input></li>
-										<li><input type="radio" id="1-3" value="3" name="1"><label for="1-3"><span></span><span class="radio-txt">La quantité d'eau que doivent se partager chaque jour les 30 habitants d'un village du Soudan du Sud</span></label></input></li>
+										<li><input type="radio" id="1-1" value="1" name="1"><label for="1-1"><span></span><span class="radio-txt">{{page.quiz.question1.reponse1}}</span></label></input></li>
+										<li><input type="radio" id="1-2" value="2" name="1"><label for="1-2"><span></span><span class="radio-txt">{{page.quiz.question1.reponse2}}</span></label></input></li>
+										<li><input type="radio" id="1-3" value="3" name="1"><label for="1-3"><span></span><span class="radio-txt">{{page.quiz.question1.reponse3}}</span></label></input></li>
 									</ul>
 									<div style="display: none;" class="error input-1">Vous devez faire un choix</div>
 								</div>
@@ -163,15 +184,15 @@ gif_100:
 							<div class="row">
 								<div class="large-12 columns">
 									<p class="nbrquestion"><span class="first">2</span>/4</p>
-									<p class="question">2 600 000 c’est :</p>
+									<p class="question">{{page.quiz.question2.titre}}</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-12 columns reponses">
 									<ul>
-										<li><input type="radio" id="2-1" value="1" name="2"><label for="2-1"><span></span><span class="radio-txt">Le nombre de personnes qui manquent d’un assainissement adéquat</span></label></input></li>
-										<li><input type="radio" id="2-2" value="2" name="2"><label for="2-2"><span></span><span class="radio-txt">Le nombre de personnes mourant chaque année de la consommation d'une eau insalubre</span></label></input></li>
-										<li><input type="radio" id="2-3" value="3" name="2"><label for="2-3"><span></span><span class="radio-txt">Le nombre de personnes atteintes par le paludisme chaque année</span></label></input></li>
+										<li><input type="radio" id="2-1" value="1" name="2"><label for="2-1"><span></span><span class="radio-txt">{{page.quiz.question2.reponse1}}</span></label></input></li>
+										<li><input type="radio" id="2-2" value="2" name="2"><label for="2-2"><span></span><span class="radio-txt">{{page.quiz.question2.reponse2}}</span></label></input></li>
+										<li><input type="radio" id="2-3" value="3" name="2"><label for="2-3"><span></span><span class="radio-txt">{{page.quiz.question2.reponse3}}</span></label></input></li>
 									</ul>
 									<div style="display: none;" class="error input-2">Vous devez faire un choix</div>
 								</div>
@@ -179,15 +200,15 @@ gif_100:
 							<div class="row">
 								<div class="large-12 columns">
 									<p class="nbrquestion"><span class="first">3</span>/4</p>
-									<p class="question">1% c’est :</p>
+									<p class="question">{{page.quiz.question3.titre}}</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-12 columns reponses">
 									<ul>
-										<li><input type="radio" id="3-1" value="1" name="3"><label for="3-1"><span></span><span class="radio-txt">La part de Français n'ayant pas accès à l'eau potable</span></label></input></li>
-										<li><input type="radio" id="3-2" value="2" name="3"><label for="3-2"><span></span><span class="radio-txt">La part de la consommation d'eau dédiée à la boisson en France</span></label></input></li>
-										<li><input type="radio" id="3-3" value="3" name="3"><label for="3-3"><span></span><span class="radio-txt">Le pourcentage d'habitants ayant accès à l'eau par canalisations en Afrique Sub-saharienne</span></label></input></li>
+										<li><input type="radio" id="3-1" value="1" name="3"><label for="3-1"><span></span><span class="radio-txt">{{page.quiz.question3.reponse1}}</span></label></input></li>
+										<li><input type="radio" id="3-2" value="2" name="3"><label for="3-2"><span></span><span class="radio-txt">{{page.quiz.question3.reponse2}}</span></label></input></li>
+										<li><input type="radio" id="3-3" value="3" name="3"><label for="3-3"><span></span><span class="radio-txt">{{page.quiz.question3.reponse3}}</span></label></input></li>
 									</ul>
 									<div style="display: none;" class="error input-3">Vous devez faire un choix</div>
 								</div>
@@ -195,15 +216,15 @@ gif_100:
 							<div class="row">
 								<div class="large-12 columns">
 									<p class="nbrquestion"><span class="first">4</span>/4</p>
-									<p class="question">50% c’est :</p>
+									<p class="question">{{page.quiz.question4.titre}}</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-12 columns reponses">
 									<ul>
-										<li><input type="radio" id="4-1" value="1" name="4"><label for="4-1"><span></span><span class="radio-txt">L'augmentation d'accès à l'eau potable réalisée en 20 ans</span></label></input></li>
-										<li><input type="radio" id="4-2" value="2" name="4"><label for="4-2"><span></span><span class="radio-txt">La part de la population mondiale n'ayant pas accès à l'eau potable</span></label></input></li>
-										<li><input type="radio" id="4-3" value="3" name="4"><label for="4-3"><span></span><span class="radio-txt">Le pourcentage d'eau douce utilisable par l'Homme</span></label></input></li>
+										<li><input type="radio" id="4-1" value="1" name="4"><label for="4-1"><span></span><span class="radio-txt">{{page.quiz.question4.reponse1}}</span></label></input></li>
+										<li><input type="radio" id="4-2" value="2" name="4"><label for="4-2"><span></span><span class="radio-txt">{{page.quiz.question4.reponse2}}</span></label></input></li>
+										<li><input type="radio" id="4-3" value="3" name="4"><label for="4-3"><span></span><span class="radio-txt">{{page.quiz.question4.reponse3}}</span></label></input></li>
 									</ul>
 									<div style="display: none;" class="error input-4">Vous devez faire un choix</div>
 								</div>
