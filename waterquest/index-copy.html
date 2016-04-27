@@ -1,6 +1,15 @@
 ---
 logo_jme: false
 phone_required: true
+panneau_accueil:
+  skip: "Impatient de commencer le test ?"
+  skip_bouton: "Je passe l'introduction"
+  solidarites: "Solidarités international"
+  presente: "Présente"
+  titre: "L’EAU A DES POUVOIRS CACHÉS. TENTEZ DE LES MAITRISER !"
+  waterquest: "<i>#</i><br><span>WATER<br>_</span>QUEST"
+  start: "Je commence le test"
+  prime: "Les 150 premiers gagnants <span class=\"blue\">recevront un économiseur d’eau.</span>"
 quiz:
   question1:
     titre: "45 litres c’est :"
@@ -134,17 +143,19 @@ gif_100:
 		{% endif %}
 
 	    <div class="loader tac">
-	    	<p>Impatient de commencer le test ?</p>
-	    	<a href="/waterquest/quiz-skip.html" class="btn trigger-skip"><i class="progress"></i><span>Je passe l'introduction</span></a>
+	    	<p>{{page.panneau_accueil.skip}}</p>
+	    	<a href="#" class="btn trigger-skip"><i class="progress"></i><span>{{page.panneau_accueil.skip_bouton}}</span></a>
 	    </div>
 
 		<div class="main-content">
-			<a href="http://www.solidarites.org" class="main-logo editable">Solidarités international</a>
-				<p class="presente editable"><strong>Présente</strong></p>
+			<a href="http://www.solidarites.org" class="main-logo">{{page.panneau_accueil.solidarites}}</a>
+			<p class="presente">
+			    <strong>{{page.panneau_accueil.presente}}</strong>
+			</p>
 			    <div id="swiffycontainer" class="hashtag"></div>
-			    <h1 class="hashtag-txt editable"><i>#</i><br><span>WATER<br>_</span>QUEST</h1>
+			    <h1 class="hashtag-txt">{{page.panneau_accueil.waterquest}}</h1>
 
-			    <p class="subtitle editable">L’EAU A DES POUVOIRS CACHÉS. TENTEZ DE LES MAITRISER !</p>
+			    <p class="subtitle">{{page.panneau_accueil.titre}}</p>
 
 			<div class="step1 tac">
 			    <div class="container-water">
@@ -153,7 +164,7 @@ gif_100:
 			    	<img src="assets/img/goutte.png" alt="">
 			    </div>
 
-			    <a href="#" class="btn start-trigger"><i class="progress"></i><span class="editable">Je commence le test</span></a>
+			    <a href="#" class="btn start-trigger"><i class="progress"></i><span class="editable">{{page.panneau_accueil.start}}</span></a>
 			    <p class="desc">
 			    	<i class="icon icon-gift">
 					    <svg viewBox="0 0 19.9 22.5" class="svg-gift">
@@ -161,7 +172,7 @@ gif_100:
 					        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-gift"></use>
 					    </svg>
 					</i>
-					<strong class="editable">Les 150 premiers gagnants <span class="blue">recevront un économiseur d’eau.</span></strong></p>
+					<strong class="editable">{{page.panneau_accueil.prime}</strong></p>
 		    </div>
 
 
