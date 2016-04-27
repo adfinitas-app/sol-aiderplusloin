@@ -1,3 +1,5 @@
+---
+---
 /* form-to-db */
 function getCookie(cname) {
   var name = cname + "=";
@@ -49,7 +51,7 @@ function makeCorsRequest(data) {
 
 function getResult() {
   result = 0;
-  var answers = [1, 2, 2, 2];
+  var answers = [{{site.data.waterquest.bonne_reponse_question1}}, {{site.data.waterquest.bonne_reponse_question2}}, {{site.data.waterquest.bonne_reponse_question3}}, {{site.data.waterquest.bonne_reponse_question4}}];
   for (i = 0; i < 4; i++) {
     if ($("input[type='radio'][name='" + (i + 1) + "']:checked").val() == answers[i])
       result += 25;
