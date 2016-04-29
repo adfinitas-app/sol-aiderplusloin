@@ -35,6 +35,14 @@ quiz:
   titre_formulaire_perso: Pour découvrir votre résultat merci de valider les informations suivantes. Si vous faites partie des 150 premiers gagnants vous recevrez un économiseur d’eau en cadeau.
   texte_bouton: "<span class=\"bold\">Validez et découvrez</span><br />si vous êtes un maître de l’eau\_!"
   optin: "En laissant mes coordonnées, j'accepte que SOLIDARITÉS INTERNATIONAL me contacte pour m'informer de ses actions."
+remerciement:
+  0:
+  25:
+  50:
+  75:
+  100:
+  share_texte: "Partage cette image et challenge tes amis sur les pouvoirs de l’eau.<br /><span class="blue">Sont-ils des maîtres de l’eau ?</span>"
+  envoi_reponses: "Nous vous transmettrons par e-mail les réponses au quiz prochainement"
 gif_0:
   gif: 'http%3A%2F%2Faiderplusloin.solidarites.org%2Fwaterquest%2Fgif%2F0.html'
   texte: 'Je%20suis%20bidon'
@@ -399,7 +407,7 @@ gif_100:
 									<div class="row">
 										<div class="large-12 columns">
 											<input type="email" name="email" placeholder="Email*" required />
-										</div>
+										</div>t
 									</div>
 									<div class="row">
 										<div class="large-12 columns">
@@ -446,18 +454,18 @@ gif_100:
 				<div class="row" id="result-0" style="display: none;">
 					<div class="medium-8 columns medium-offset-2 result">
 						<div class="large-12 columns">
-							<p class="result-title">Suis-je un maître de l’eau ?</p>
+							<p class="result-title">{{page.remerciement.0.titre}}</p>
 						</div>
 						<div class="medium-6 columns">
-							<img src="/waterquest/img/0-img.gif" class="result-img" />
+							<img src="{{page.remerciement.0.gif_path}}" class="result-img" />
 						</div>
 						<div class="medium-6 columns">
-							<p class="chart-title">Je maîtrise le pouvoir de l'eau à</p>
+							<p class="chart-title">{{page.remerciement.0.texte_maitrise}}</p>
 							<div class="chart chart-0">
-								<p>0%</p>
+								<p>{{page.remerciement.0.pourcentage}}</p>
 							</div>
 							<p class="chart-end">
-								Je suis <span class="chart-sub">bidon</span>
+								{{page.remerciement.0.texte_profil}}
 							</p>
 						</div>
 					</div>
@@ -465,15 +473,15 @@ gif_100:
 				<div class="row" id="result-25" style="display: none;">
 					<div class="medium-8 columns medium-offset-2 result">
 						<div class="large-12 columns">
-							<p class="result-title">Suis-je un maître de l’eau ?</p>
+							<p class="result-title">{{page.remerciement.25.titre}}</p>
 						</div>
 						<div class="medium-6 columns">
-							<img src="/waterquest/img/25-img.gif" class="result-img" />
+							<img src="{{page.remerciement.25.gif_path}}" class="result-img" />
 						</div>
 						<div class="medium-6 columns">
-							<p class="chart-title">Je maîtrise le pouvoir de l'eau à</p>
+							<p class="chart-title">{{page.remerciement.25.texte_maitrise}}</p>
 							<div class="chart chart-25">
-								<p>25%</p>
+								<p>{{page.remerciement.25.pourcentage}}</p>
 							</div>
 							<p class="chart-end">
 								Je suis <span class="chart-sub">une gourde</span>
@@ -484,15 +492,15 @@ gif_100:
 				<div class="row" id="result-50" style="display: none;">
 					<div class="medium-8 columns medium-offset-2 result">
 						<div class="large-12 columns">
-							<p class="result-title">Suis-je un maître de l’eau ?</p>
+							<p class="result-title">{{page.remerciement.50.titre}}</p>
 						</div>
 						<div class="medium-6 columns">
-							<img src="/waterquest/img/50-img.gif" class="result-img" />
+							<img src="{{page.remerciement.50.gif_path}}" class="result-img" />
 						</div>
 						<div class="medium-6 columns">
-							<p class="chart-title">Je maîtrise le pouvoir de l'eau à</p>
+							<p class="chart-title">{{page.remerciement.50.texte_maitrise}}</p>
 							<div class="chart chart-50">
-								<p>50%</p>
+								<p>{{page.remerciement.50.pourcentage}}</p>
 							</div>
 							<p class="chart-end">
 								Je suis <span class="chart-sub">waterpouf</span>
@@ -503,15 +511,15 @@ gif_100:
 				<div class="row" id="result-75" style="display: none;">
 					<div class="medium-8 columns medium-offset-2 result">
 						<div class="large-12 columns">
-							<p class="result-title">Suis-je un maître de l’eau ?</p>
+							<p class="result-title">{{page.remerciement.75.titre}}</p>
 						</div>
 						<div class="medium-6 columns">
-							<img src="/waterquest/img/75-img.gif" class="result-img" />
+							<img src="{{page.remerciement.75.gif_path}}" class="result-img" />
 						</div>
 						<div class="medium-6 columns">
-							<p class="chart-title">Je maîtrise le pouvoir de l'eau à</p>
+							<p class="chart-title">{{page.remerciement.75.texte_maitrise}}</p>
 							<div class="chart chart-75">
-								<p>75%</p>
+								<p>{{page.remerciement.75.pourcentage}}</p>
 							</div>
 							<p class="chart-end">
 								Dommage <span class="chart-sub">je reste un seau</span>
@@ -522,15 +530,15 @@ gif_100:
 				<div class="row" id="result-100" style="display: none;">
 					<div class="medium-8 columns medium-offset-2 result">
 						<div class="large-12 columns">
-							<p class="result-title">Suis-je un maître de l’eau ?</p>
+							<p class="result-title">{{page.remerciement.100.titre}}</p>
 						</div>
 						<div class="medium-6 columns">
-							<img src="/waterquest/img/100-img.gif" class="result-img" />
+							<img src="{{page.remerciement.100.gif_path}}" class="result-img" />
 						</div>
 						<div class="medium-6 columns">
-							<p class="chart-title">Je maîtrise le pouvoir de l'eau à</p>
+							<p class="chart-title">{{page.remerciement.100.texte_maitrise}}</p>
 							<div class="chart chart-100">
-								<p>100%</p>
+								<p>{{page.remerciement.100.pourcentage}}</p>
 							</div>
 							<p class="chart-end">
 								Je suis un <span class="chart-sub">maître jedo</span>
@@ -553,8 +561,7 @@ gif_100:
 				<div class="row result-part" style="display: none;">
 					<div class="large-12 columns">
 						<p class="challenge">
-							Partage cette image et challenge tes amis sur les pouvoirs de l’eau.<br />
-							<span class="blue">Sont-ils des maîtres de l’eau ?</span>
+							{{page.remerciement.share_texte}}
 						</p>
 					</div>
 				</div>
@@ -566,7 +573,7 @@ gif_100:
 				</div>
 				<div class="row">
 					<div class="large-12 columns reponse-email">
-						Nous vous transmettrons par e-mail les réponses au quiz prochainement.
+						{{page.remerciement.envoi_reponses}}
 					</div>
 				</div>
 			</div>
