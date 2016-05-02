@@ -3,8 +3,10 @@ meta:
   titre: "SOLIDARITÉS INTERNATIONAL | Water Quest"
   description: "Participez au challenge #Water_Quest. L'eau a des pouvoirs cachés. Tentez de les maitriser !"
 facebook:
-  titre: "Waterquest"
-  description: "Lorem Ipsum"
+  title: "Sur aiderplusloin.solidarites.org/waterquest/, Participez au challenge #Water_Quest. L'eau a des pouvoirs cachés. Tentez de les maitriser !"
+  site_name: "Water Quest"
+  description: "Participez au challenge #Water_Quest. L'eau a des pouvoirs cachés. Tentez de les maitriser !"
+  image_path: "/waterquest/img/logo-share.png"
 logo_jme: false
 phone_required: true
 panneau_accueil:
@@ -103,14 +105,20 @@ gif_100:
 		{% include analytics/woopra.html %}
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+        <meta property="og:title" content="{{page.facebook.title}}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="{{page.facebook.site_name}}" />
+        <meta property="og:description" content="{{page.facebook.description}}" />
+        <meta property="og:url" content="{{site.url}}/waterquest/" />
+        <meta property="og:image" content="{{site.url}}{{page.facebook.image_path}}" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="365" />
 		<title>{{page.meta.title}}</title>
 		<meta name="description" content="{{page.meta.description}}" />
 		<link rel="canonical" href="/" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=yes" />
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,800' rel='stylesheet' type='text/css' />
-
-
 		<link rel="shortcut icon" href="favicon.ico" />
 		<!-- http://realfavicongenerator.net/ pour générer les favicons -->
 		<script type="text/javascript" src="https://www.gstatic.com/swiffy/v7.4/runtime.js"></script>
