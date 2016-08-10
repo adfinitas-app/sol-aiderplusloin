@@ -130,7 +130,6 @@ function formToDb() {
 }
 
 function loadAnswer() {
-    console.log("hello");
   $("#id_phone").intlTelInput({utilsScript: "tel-input/lib/libphonenumber/build/utils.js"});
   $("#myForm").on("formvalid.zf.abide", function() {
     var result = true;
