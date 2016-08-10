@@ -54,7 +54,6 @@ function getResult() {
     if ($("input[type='radio'][name='" + (i + 1) + "']:checked").val() == answers[i])
       result += 25;
   }
-  	  console.log("hellllllooooooooooo:" + result);
   return (result);
 }
 
@@ -84,6 +83,7 @@ function pureStr(value) {
 }
 
 function formToDb() {
+      	  console.log("hellllllooooooooooo:" + result);
   var result = getResult();
   var data = {
     "schema": "sol",
