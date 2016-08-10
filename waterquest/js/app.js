@@ -61,6 +61,7 @@ function showAnswer() {
   var result = getResult();
   $(".name").html(pureStr($("input[name='firstname']").val()) + " " +
 		  pureStr($("input[name='lastname']").val()));
+		  console.log(result);
   $("form#myForm").slideUp();
   $("#result-" + result).slideDown();
   $(".result-part").slideDown(400, function() {
