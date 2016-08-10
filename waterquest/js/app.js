@@ -54,6 +54,7 @@ function getResult() {
     if ($("input[type='radio'][name='" + (i + 1) + "']:checked").val() == answers[i])
       result += 25;
   }
+  	  console.log("hellllllooooooooooo:" + result);
   return (result);
 }
 
@@ -61,7 +62,6 @@ function showAnswer() {
   var result = getResult();
   $(".name").html(pureStr($("input[name='firstname']").val()) + " " +
 		  pureStr($("input[name='lastname']").val()));
-		  console.log("hellllllooooooooooo:" + result);
   $("form#myForm").slideUp();
   $("#result-" + result).slideDown();
   $(".result-part").slideDown(400, function() {
