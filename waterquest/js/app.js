@@ -58,6 +58,7 @@ function getResult() {
 }
 
 function showAnswer() {
+    console.log("HELLO");
   var result = getResult();
   $(".name").html(pureStr($("input[name='firstname']").val()) + " " +
 		  pureStr($("input[name='lastname']").val()));
