@@ -17,7 +17,7 @@ function createCORSRequest(method, url) {
     xhr.open(method, url, true);
   } else if (typeof XDomainRequest != "undefined") {
     // XDomainRequest for IE.
-    xhr = new XDomainRequest();
+    xhr = new XDomainRequest();S
     xhr.open(method, url);
   } else {
     // CORS not supported.
@@ -58,7 +58,6 @@ function getResult() {
 }
 
 function showAnswer() {
-    console.log("HELLO");
   var result = getResult();
   $(".name").html(pureStr($("input[name='firstname']").val()) + " " +
 		  pureStr($("input[name='lastname']").val()));
@@ -148,7 +147,7 @@ function loadAnswer() {
       return (false);
     }
     formToDb();
-    showAnswer();
+//    showAnswer();
   });
   $("#myForm").on("submit", function(e) {
     e.preventDefault();
